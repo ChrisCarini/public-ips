@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "ipaddr.js": "2.2.0"
+    "ipaddr.js": "2.5.0"
   },
   "devDependencies": {
     "typescript": "7.0.2",
