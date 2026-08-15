@@ -1,0 +1,19 @@
+{
+  "status_code": 200,
+  "content_type": "application/json",
+  "body": {
+    "verifiable_password_authentication": true,
+    "ssh_key_fingerprints": {
+      "SHA256_RSA": "example"
+    },
+    "hooks": ["192.30.252.0/22", "185.199.108.0/22"],
+    "web": ["140.82.112.0/20"],
+    "api": ["140.82.113.0/24"],
+    "git": ["140.82.112.0/20"],
+    "packages": ["140.82.121.33/32"],
+    "pages": ["185.199.108.0/22"],
+    "importer": ["140.82.121.33/32"],
+    "actions": ["140.82.112.0/20"],
+    "dependabot": ["140.82.113.0/24"]
+  }
+}

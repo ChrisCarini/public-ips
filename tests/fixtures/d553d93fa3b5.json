@@ -1,0 +1,11 @@
+{
+  "status_code": 200,
+  "content_type": "application/json",
+  "body": {
+    "success": true,
+    "result": {
+      "ipv4_cidrs": ["173.245.48.0/20", "103.21.244.0/22"],
+      "ipv6_cidrs": ["2400:cb00::/32", "2606:4700::/32"]
+    }
+  }
+}

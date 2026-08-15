@@ -1,0 +1,18 @@
+{
+  "name": "public-ips-site",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "ipaddr.js": "2.2.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.2",
+    "vite": "7.1.2"
+  }
+}

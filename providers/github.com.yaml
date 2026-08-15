@@ -1,0 +1,23 @@
+provider_id: github.com
+display_name: GitHub
+output_dir: github.com
+adapter: github_meta
+source_urls:
+  - https://api.github.com/meta
+documentation_url: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses
+attribution: GitHub Meta API
+terms_url: https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+mappings:
+  hooks: hooks
+  web: web
+  api: api
+  git: git
+  packages: packages
+  pages: pages
+  importer: importer
+  actions: actions
+  dependabot: dependabot
+min_ranges: 1
+max_change_absolute: 1000
+max_change_percent: 80.0
+allow_non_global: false

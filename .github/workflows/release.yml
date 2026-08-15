@@ -1,0 +1,27 @@
+name: Snapshot release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Build archives
+        run: |
+          SNAPSHOT="snapshot-$(date -u +%Y%m%dT%H%M%SZ)"
+          tar -czf "$SNAPSHOT-data.tgz" manifest.json changes.jsonl ranges.csv github.com cloudflare.com
+          sha256sum "$SNAPSHOT-data.tgz" > SHA256SUMS
+          echo "snapshot=$SNAPSHOT" >> $GITHUB_ENV
+      - name: Create release
+        uses: softprops/action-gh-release@3d0d9888cb7fd7b750713d6e236d1fcb99157228 # v3.0.2
+        with:
+          tag_name: ${{ env.snapshot }}
+          files: |
+            ${{ env.snapshot }}-data.tgz
+            SHA256SUMS

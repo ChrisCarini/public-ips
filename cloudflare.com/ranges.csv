@@ -1,0 +1,5 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+cloudflare.com,,ipv4,103.21.244.0/22,https://api.cloudflare.com/client/v4/ips,2026-01-02T14:35:22+00:00
+cloudflare.com,,ipv4,173.245.48.0/20,https://api.cloudflare.com/client/v4/ips,2026-01-02T14:35:22+00:00
+cloudflare.com,,ipv6,2400:cb00::/32,https://api.cloudflare.com/client/v4/ips,2026-01-02T14:35:22+00:00
+cloudflare.com,,ipv6,2606:4700::/32,https://api.cloudflare.com/client/v4/ips,2026-01-02T14:35:22+00:00
