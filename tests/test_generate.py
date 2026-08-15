@@ -33,7 +33,12 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
     providers = manifest["providers"]
     assert providers.get("github.com") is not None
     assert providers.get("cloudflare.com") is not None
-    assert "github_enterprise_importer" in providers["github.com"]["categories"]
+    assert {
+        "actions_macos",
+        "codespaces",
+        "copilot",
+        "github_enterprise_importer",
+    } <= providers["github.com"]["categories"].keys()
 
     gh_all = (root / "github.com" / "all.txt").read_text().splitlines()
     gh_v4 = (root / "github.com" / "ipv4.txt").read_text().splitlines()
