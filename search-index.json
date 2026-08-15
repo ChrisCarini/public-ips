@@ -131,6 +131,16 @@
       "source_url": "https://api.github.com/meta"
     },
     {
+      "anchor": "github.com-github_enterprise_importer-ipv4-1",
+      "category": "github_enterprise_importer",
+      "cidr": "140.82.112.0/20",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/github_enterprise_importer/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
       "anchor": "github.com-hooks-ipv4-1",
       "category": "hooks",
       "cidr": "185.199.108.0/22",

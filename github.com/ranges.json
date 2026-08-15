@@ -73,6 +73,24 @@
         "ipv6": "git/ipv6.txt"
       }
     },
+    "github_enterprise_importer": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.112.0/20"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "github_enterprise_importer/all.txt",
+        "collapsed_all": "github_enterprise_importer/collapsed-all.txt",
+        "collapsed_ipv4": "github_enterprise_importer/collapsed-ipv4.txt",
+        "collapsed_ipv6": "github_enterprise_importer/collapsed-ipv6.txt",
+        "ipv4": "github_enterprise_importer/ipv4.txt",
+        "ipv6": "github_enterprise_importer/ipv6.txt"
+      }
+    },
     "hooks": {
       "counts": {
         "ipv4": 2,
@@ -169,7 +187,7 @@
   "documentation_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses",
   "first_observed_at": "2026-01-02T14:35:22+00:00",
   "generated_at": "2026-01-02T14:35:22+00:00",
-  "normalized_data_sha256": "f3c57e12923a1b4740df446e03fb45404df63493d9d81101a2876125631fba01",
+  "normalized_data_sha256": "55cb03ab6079adf50e28a00eea9b4283b6f3a349b1d6fd51caea57f5b7d3a8dc",
   "provider": {
     "counts": {
       "ipv4": 5,
@@ -194,7 +212,7 @@
   },
   "provider_id": "github.com",
   "schema_version": "v1",
-  "source_body_sha256": "47d059d8ca1d22def182b3594b537fadd41243ef2a65e7c28dee756e89f89098",
+  "source_body_sha256": "2c9beee4326727a9eb571fec73c60ad1c0ad5ff4d5c88440f28b78e4ea4c3ad6",
   "source_urls": [
     "https://api.github.com/meta"
   ],
