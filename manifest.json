@@ -60,6 +60,24 @@
             "ipv6": "actions/ipv6.txt"
           }
         },
+        "actions_macos": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "185.199.108.0/22"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "actions_macos/all.txt",
+            "collapsed_all": "actions_macos/collapsed-all.txt",
+            "collapsed_ipv4": "actions_macos/collapsed-ipv4.txt",
+            "collapsed_ipv6": "actions_macos/collapsed-ipv6.txt",
+            "ipv4": "actions_macos/ipv4.txt",
+            "ipv6": "actions_macos/ipv6.txt"
+          }
+        },
         "api": {
           "counts": {
             "ipv4": 1,
@@ -76,6 +94,42 @@
             "collapsed_ipv6": "api/collapsed-ipv6.txt",
             "ipv4": "api/ipv4.txt",
             "ipv6": "api/ipv6.txt"
+          }
+        },
+        "codespaces": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.121.33/32"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "codespaces/all.txt",
+            "collapsed_all": "codespaces/collapsed-all.txt",
+            "collapsed_ipv4": "codespaces/collapsed-ipv4.txt",
+            "collapsed_ipv6": "codespaces/collapsed-ipv6.txt",
+            "ipv4": "codespaces/ipv4.txt",
+            "ipv6": "codespaces/ipv6.txt"
+          }
+        },
+        "copilot": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.112.0/20"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "copilot/all.txt",
+            "collapsed_all": "copilot/collapsed-all.txt",
+            "collapsed_ipv4": "copilot/collapsed-ipv4.txt",
+            "collapsed_ipv6": "copilot/collapsed-ipv6.txt",
+            "ipv4": "copilot/ipv4.txt",
+            "ipv6": "copilot/ipv6.txt"
           }
         },
         "dependabot": {
@@ -228,7 +282,7 @@
       "documentation_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses",
       "first_observed_at": "2026-01-02T14:35:22+00:00",
       "generated_at": "2026-01-02T14:35:22+00:00",
-      "normalized_data_sha256": "55cb03ab6079adf50e28a00eea9b4283b6f3a349b1d6fd51caea57f5b7d3a8dc",
+      "normalized_data_sha256": "caaba47ada296fd509d4e87b5605512796a233089df6d49ca526ce91cd77179e",
       "provider": {
         "counts": {
           "ipv4": 5,
@@ -253,7 +307,7 @@
       },
       "provider_id": "github.com",
       "schema_version": "v1",
-      "source_body_sha256": "2c9beee4326727a9eb571fec73c60ad1c0ad5ff4d5c88440f28b78e4ea4c3ad6",
+      "source_body_sha256": "1fef1cbdfbb4f11b2af0e0a7a76a0d7ad56d9705ab7c5ec1463d7d31d0a9749b",
       "source_urls": [
         "https://api.github.com/meta"
       ],
