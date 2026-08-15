@@ -24,13 +24,14 @@ app.innerHTML = `
   <h1>public-ips</h1>
   <p>Ranges published by or associated with providers.</p>
   <label for="query">Search IP or CIDR</label>
-  <input id="query" value="${queryParam}" placeholder="203.0.113.1 or 2001:db8::/32" />
+  <input id="query" placeholder="203.0.113.1 or 2001:db8::/32" />
   <button id="run">Search</button>
   <p id="error" role="alert"></p>
   <ul id="results"></ul>
 `;
 
 const queryInput = document.querySelector<HTMLInputElement>('#query')!;
+queryInput.value = queryParam;
 const runButton = document.querySelector<HTMLButtonElement>('#run')!;
 const error = document.querySelector<HTMLParagraphElement>('#error')!;
 const results = document.querySelector<HTMLUListElement>('#results')!;

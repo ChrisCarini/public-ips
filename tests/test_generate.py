@@ -30,8 +30,9 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
 
     manifest = json.loads((root / "manifest.json").read_text())
     assert manifest["schema_version"] == "v1"
-    assert "github.com" in manifest["providers"]
-    assert "cloudflare.com" in manifest["providers"]
+    providers = manifest["providers"]
+    assert providers.get("github.com") is not None
+    assert providers.get("cloudflare.com") is not None
 
     gh_all = (root / "github.com" / "all.txt").read_text().splitlines()
     gh_v4 = (root / "github.com" / "ipv4.txt").read_text().splitlines()
