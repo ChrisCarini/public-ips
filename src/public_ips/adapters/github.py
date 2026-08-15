@@ -17,7 +17,7 @@ from public_ips.models import (
 )
 from public_ips.validation import parse_networks, validate_path_component
 
-_CIDR_TOKEN = re.compile(r"^[0-9a-fA-F:.]+/[0-9]{1,3}$")
+_CIDR_TOKEN = re.compile(r"^[0-9a-fA-F:.]+/")
 
 
 def _is_valid_cidr(value: object) -> bool:
@@ -28,6 +28,10 @@ def _is_valid_cidr(value: object) -> bool:
     except ValueError:
         return False
     return True
+
+
+def _looks_like_cidr(value: object) -> bool:
+    return isinstance(value, str) and _CIDR_TOKEN.match(value.strip()) is not None
 
 
 @dataclass(frozen=True)
@@ -95,9 +99,7 @@ class GitHubAdapter:
                 )
                 continue
 
-            if any(valid_cidrs) or any(
-                isinstance(item, str) and _CIDR_TOKEN.fullmatch(item) for item in value
-            ):
+            if any(valid_cidrs) or any(_looks_like_cidr(item) for item in value):
                 raise ValueError(
                     f"github response field '{key}' contains malformed or mixed CIDR data"
                 )

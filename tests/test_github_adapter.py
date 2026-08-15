@@ -84,6 +84,8 @@ def test_github_adapter_ignores_non_cidr_metadata() -> None:
     [
         ["140.82.112.0/20", "not-a-cidr"],
         ["140.82.112.1/20"],
+        ["185.199.108.0/1000"],
+        [" 185.199.108.0/22"],
     ],
 )
 def test_github_adapter_rejects_malformed_or_mixed_cidr_lists(values: list[str]) -> None:
@@ -91,6 +93,7 @@ def test_github_adapter_rejects_malformed_or_mixed_cidr_lists(values: list[str])
         GitHubAdapter(_config()).extract(_raw({"bad_service": values}))
 
 
-def test_github_adapter_rejects_unsafe_category_names() -> None:
+@pytest.mark.parametrize("category", ["../escape", "."])
+def test_github_adapter_rejects_unsafe_category_names(category: str) -> None:
     with pytest.raises(ValueError, match="Invalid path component"):
-        GitHubAdapter(_config()).extract(_raw({"../escape": ["140.82.112.0/20"]}))
+        GitHubAdapter(_config()).extract(_raw({category: ["140.82.112.0/20"]}))
