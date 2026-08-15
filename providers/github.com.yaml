@@ -15,6 +15,7 @@ mappings:
   packages: packages
   pages: pages
   importer: importer
+  github_enterprise_importer: github_enterprise_importer
   actions: actions
   dependabot: dependabot
 min_ranges: 1
