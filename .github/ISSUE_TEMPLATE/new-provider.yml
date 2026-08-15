@@ -1,0 +1,12 @@
+name: New provider request
+description: Request support for a new provider
+body:
+  - type: input
+    attributes:
+      label: Provider ID
+  - type: input
+    attributes:
+      label: Official machine-readable endpoint(s)
+  - type: input
+    attributes:
+      label: Official documentation URL

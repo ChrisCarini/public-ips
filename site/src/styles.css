@@ -1,0 +1,4 @@
+body { font-family: sans-serif; margin: 2rem; }
+input { min-width: 22rem; margin-right: .5rem; }
+#error { color: #b91c1c; }
+li { margin: .4rem 0; }

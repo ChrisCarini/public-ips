@@ -1,0 +1,9 @@
+name: Incorrect or stale data
+description: Report incorrect/stale provider ranges
+body:
+  - type: input
+    attributes:
+      label: Provider
+  - type: textarea
+    attributes:
+      label: Details and source evidence

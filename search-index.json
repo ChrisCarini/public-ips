@@ -1,0 +1,195 @@
+{
+  "entries": [
+    {
+      "anchor": "cloudflare.com-root-ipv4-1",
+      "category": null,
+      "cidr": "103.21.244.0/22",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "cloudflare.com/ipv4.txt",
+      "provider": "cloudflare.com",
+      "source_url": "https://api.cloudflare.com/client/v4/ips"
+    },
+    {
+      "anchor": "cloudflare.com-root-ipv4-2",
+      "category": null,
+      "cidr": "173.245.48.0/20",
+      "ip_family": "ipv4",
+      "line": 2,
+      "path": "cloudflare.com/ipv4.txt",
+      "provider": "cloudflare.com",
+      "source_url": "https://api.cloudflare.com/client/v4/ips"
+    },
+    {
+      "anchor": "cloudflare.com-root-ipv6-1",
+      "category": null,
+      "cidr": "2400:cb00::/32",
+      "ip_family": "ipv6",
+      "line": 1,
+      "path": "cloudflare.com/ipv6.txt",
+      "provider": "cloudflare.com",
+      "source_url": "https://api.cloudflare.com/client/v4/ips"
+    },
+    {
+      "anchor": "cloudflare.com-root-ipv6-2",
+      "category": null,
+      "cidr": "2606:4700::/32",
+      "ip_family": "ipv6",
+      "line": 2,
+      "path": "cloudflare.com/ipv6.txt",
+      "provider": "cloudflare.com",
+      "source_url": "https://api.cloudflare.com/client/v4/ips"
+    },
+    {
+      "anchor": "github.com-root-ipv4-1",
+      "category": null,
+      "cidr": "140.82.112.0/20",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-root-ipv4-2",
+      "category": null,
+      "cidr": "140.82.113.0/24",
+      "ip_family": "ipv4",
+      "line": 2,
+      "path": "github.com/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-root-ipv4-3",
+      "category": null,
+      "cidr": "140.82.121.33/32",
+      "ip_family": "ipv4",
+      "line": 3,
+      "path": "github.com/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-root-ipv4-4",
+      "category": null,
+      "cidr": "185.199.108.0/22",
+      "ip_family": "ipv4",
+      "line": 4,
+      "path": "github.com/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-root-ipv4-5",
+      "category": null,
+      "cidr": "192.30.252.0/22",
+      "ip_family": "ipv4",
+      "line": 5,
+      "path": "github.com/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-actions-ipv4-1",
+      "category": "actions",
+      "cidr": "140.82.112.0/20",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/actions/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-api-ipv4-1",
+      "category": "api",
+      "cidr": "140.82.113.0/24",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/api/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-dependabot-ipv4-1",
+      "category": "dependabot",
+      "cidr": "140.82.113.0/24",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/dependabot/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-git-ipv4-1",
+      "category": "git",
+      "cidr": "140.82.112.0/20",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/git/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-hooks-ipv4-1",
+      "category": "hooks",
+      "cidr": "185.199.108.0/22",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/hooks/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-hooks-ipv4-2",
+      "category": "hooks",
+      "cidr": "192.30.252.0/22",
+      "ip_family": "ipv4",
+      "line": 2,
+      "path": "github.com/hooks/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-importer-ipv4-1",
+      "category": "importer",
+      "cidr": "140.82.121.33/32",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/importer/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-packages-ipv4-1",
+      "category": "packages",
+      "cidr": "140.82.121.33/32",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/packages/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-pages-ipv4-1",
+      "category": "pages",
+      "cidr": "185.199.108.0/22",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/pages/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    },
+    {
+      "anchor": "github.com-web-ipv4-1",
+      "category": "web",
+      "cidr": "140.82.112.0/20",
+      "ip_family": "ipv4",
+      "line": 1,
+      "path": "github.com/web/ipv4.txt",
+      "provider": "github.com",
+      "source_url": "https://api.github.com/meta"
+    }
+  ],
+  "schema_version": "v1"
+}

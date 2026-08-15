@@ -1,0 +1,202 @@
+{
+  "attribution": "GitHub Meta API",
+  "categories": {
+    "actions": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.112.0/20"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "actions/all.txt",
+        "collapsed_all": "actions/collapsed-all.txt",
+        "collapsed_ipv4": "actions/collapsed-ipv4.txt",
+        "collapsed_ipv6": "actions/collapsed-ipv6.txt",
+        "ipv4": "actions/ipv4.txt",
+        "ipv6": "actions/ipv6.txt"
+      }
+    },
+    "api": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.113.0/24"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "api/all.txt",
+        "collapsed_all": "api/collapsed-all.txt",
+        "collapsed_ipv4": "api/collapsed-ipv4.txt",
+        "collapsed_ipv6": "api/collapsed-ipv6.txt",
+        "ipv4": "api/ipv4.txt",
+        "ipv6": "api/ipv6.txt"
+      }
+    },
+    "dependabot": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.113.0/24"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "dependabot/all.txt",
+        "collapsed_all": "dependabot/collapsed-all.txt",
+        "collapsed_ipv4": "dependabot/collapsed-ipv4.txt",
+        "collapsed_ipv6": "dependabot/collapsed-ipv6.txt",
+        "ipv4": "dependabot/ipv4.txt",
+        "ipv6": "dependabot/ipv6.txt"
+      }
+    },
+    "git": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.112.0/20"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "git/all.txt",
+        "collapsed_all": "git/collapsed-all.txt",
+        "collapsed_ipv4": "git/collapsed-ipv4.txt",
+        "collapsed_ipv6": "git/collapsed-ipv6.txt",
+        "ipv4": "git/ipv4.txt",
+        "ipv6": "git/ipv6.txt"
+      }
+    },
+    "hooks": {
+      "counts": {
+        "ipv4": 2,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "185.199.108.0/22",
+        "192.30.252.0/22"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "hooks/all.txt",
+        "collapsed_all": "hooks/collapsed-all.txt",
+        "collapsed_ipv4": "hooks/collapsed-ipv4.txt",
+        "collapsed_ipv6": "hooks/collapsed-ipv6.txt",
+        "ipv4": "hooks/ipv4.txt",
+        "ipv6": "hooks/ipv6.txt"
+      }
+    },
+    "importer": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.121.33/32"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "importer/all.txt",
+        "collapsed_all": "importer/collapsed-all.txt",
+        "collapsed_ipv4": "importer/collapsed-ipv4.txt",
+        "collapsed_ipv6": "importer/collapsed-ipv6.txt",
+        "ipv4": "importer/ipv4.txt",
+        "ipv6": "importer/ipv6.txt"
+      }
+    },
+    "packages": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.121.33/32"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "packages/all.txt",
+        "collapsed_all": "packages/collapsed-all.txt",
+        "collapsed_ipv4": "packages/collapsed-ipv4.txt",
+        "collapsed_ipv6": "packages/collapsed-ipv6.txt",
+        "ipv4": "packages/ipv4.txt",
+        "ipv6": "packages/ipv6.txt"
+      }
+    },
+    "pages": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "185.199.108.0/22"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "pages/all.txt",
+        "collapsed_all": "pages/collapsed-all.txt",
+        "collapsed_ipv4": "pages/collapsed-ipv4.txt",
+        "collapsed_ipv6": "pages/collapsed-ipv6.txt",
+        "ipv4": "pages/ipv4.txt",
+        "ipv6": "pages/ipv6.txt"
+      }
+    },
+    "web": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 0
+      },
+      "ipv4": [
+        "140.82.112.0/20"
+      ],
+      "ipv6": [],
+      "paths": {
+        "all": "web/all.txt",
+        "collapsed_all": "web/collapsed-all.txt",
+        "collapsed_ipv4": "web/collapsed-ipv4.txt",
+        "collapsed_ipv6": "web/collapsed-ipv6.txt",
+        "ipv4": "web/ipv4.txt",
+        "ipv6": "web/ipv6.txt"
+      }
+    }
+  },
+  "display_name": "GitHub",
+  "documentation_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses",
+  "first_observed_at": "2026-01-02T14:35:22+00:00",
+  "generated_at": "2026-01-02T14:35:22+00:00",
+  "normalized_data_sha256": "f3c57e12923a1b4740df446e03fb45404df63493d9d81101a2876125631fba01",
+  "provider": {
+    "counts": {
+      "ipv4": 5,
+      "ipv6": 0
+    },
+    "ipv4": [
+      "140.82.112.0/20",
+      "140.82.113.0/24",
+      "140.82.121.33/32",
+      "185.199.108.0/22",
+      "192.30.252.0/22"
+    ],
+    "ipv6": [],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "github.com",
+  "schema_version": "v1",
+  "source_body_sha256": "47d059d8ca1d22def182b3594b537fadd41243ef2a65e7c28dee756e89f89098",
+  "source_urls": [
+    "https://api.github.com/meta"
+  ],
+  "terms_url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+}

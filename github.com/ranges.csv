@@ -1,0 +1,16 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+github.com,,ipv4,140.82.112.0/20,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,,ipv4,140.82.113.0/24,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,,ipv4,140.82.121.33/32,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,,ipv4,185.199.108.0/22,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,,ipv4,192.30.252.0/22,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,actions,ipv4,140.82.112.0/20,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,api,ipv4,140.82.113.0/24,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,dependabot,ipv4,140.82.113.0/24,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,git,ipv4,140.82.112.0/20,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,hooks,ipv4,185.199.108.0/22,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,hooks,ipv4,192.30.252.0/22,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,importer,ipv4,140.82.121.33/32,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,packages,ipv4,140.82.121.33/32,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,pages,ipv4,185.199.108.0/22,https://api.github.com/meta,2026-01-02T14:35:22+00:00
+github.com,web,ipv4,140.82.112.0/20,https://api.github.com/meta,2026-01-02T14:35:22+00:00

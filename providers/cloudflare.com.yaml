@@ -1,0 +1,13 @@
+provider_id: cloudflare.com
+display_name: Cloudflare
+output_dir: cloudflare.com
+adapter: cloudflare_ips
+source_urls:
+  - https://api.cloudflare.com/client/v4/ips
+documentation_url: https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/
+attribution: Cloudflare IPs API
+terms_url: https://www.cloudflare.com/website-terms/
+min_ranges: 1
+max_change_absolute: 1000
+max_change_percent: 80.0
+allow_non_global: false
