@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import os
 import random
 import time
 
@@ -18,12 +19,22 @@ class RetryingHttpClient:
             connect=timeout_connect, read=timeout_read, write=timeout_read, pool=timeout_connect
         )
         self._retries = retries
+        self._github_token = os.getenv("PUBLIC_IPS_GITHUB_TOKEN")
+
+    def _headers_for(self, url: str) -> dict[str, str]:
+        headers: dict[str, str] = {
+            "User-Agent": "public-ips-updater",
+        }
+        if self._github_token and url.startswith("https://api.github.com/"):
+            headers["Authorization"] = "Bearer " + self._github_token
+            headers["X-GitHub-Api-Version"] = "2022-11-28"
+        return headers
 
     def get(self, url: str) -> tuple[int, bytes, str | None, str | None, str | None]:
         attempt = 0
         with httpx.Client(timeout=self._timeout, follow_redirects=True) as client:
             while True:
-                response = client.get(url)
+                response = client.get(url, headers=self._headers_for(url))
                 if response.status_code not in {429, 500, 502, 503, 504}:
                     break
                 attempt += 1
