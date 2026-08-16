@@ -3,21 +3,39 @@
   "categories": {},
   "display_name": "Cloudflare",
   "documentation_url": "https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/",
-  "first_observed_at": "2026-01-02T14:35:22+00:00",
-  "generated_at": "2026-01-02T14:35:22+00:00",
-  "normalized_data_sha256": "cbafad849651f8c3c1e6a6f9b913c2ba4070fbc934a8706fa5cf0e2fbd20b339",
+  "first_observed_at": "2026-08-16T02:38:54+00:00",
+  "generated_at": "2026-08-16T02:38:54+00:00",
+  "normalized_data_sha256": "d4d32352fab48dad1618e01a640dc33749a9725e93796fb825d45af057bc2cf7",
   "provider": {
     "counts": {
-      "ipv4": 2,
-      "ipv6": 2
+      "ipv4": 15,
+      "ipv6": 7
     },
     "ipv4": [
       "103.21.244.0/22",
-      "173.245.48.0/20"
+      "103.22.200.0/22",
+      "103.31.4.0/22",
+      "104.16.0.0/13",
+      "104.24.0.0/14",
+      "108.162.192.0/18",
+      "131.0.72.0/22",
+      "141.101.64.0/18",
+      "162.158.0.0/15",
+      "172.64.0.0/13",
+      "173.245.48.0/20",
+      "188.114.96.0/20",
+      "190.93.240.0/20",
+      "197.234.240.0/22",
+      "198.41.128.0/17"
     ],
     "ipv6": [
       "2400:cb00::/32",
-      "2606:4700::/32"
+      "2405:8100::/32",
+      "2405:b500::/32",
+      "2606:4700::/32",
+      "2803:f800::/32",
+      "2a06:98c0::/29",
+      "2c0f:f248::/32"
     ],
     "paths": {
       "all": "all.txt",
@@ -30,7 +48,7 @@
   },
   "provider_id": "cloudflare.com",
   "schema_version": "v1",
-  "source_body_sha256": "c24feaae97eb4282ff74870cb8629ff7302aa4e83aa910f2438e33c09231e3bd",
+  "source_body_sha256": "f3d0a35768afd4a9a8307aa1033d50b9fa011b73836c9235c170aa31acac5efd",
   "source_urls": [
     "https://api.cloudflare.com/client/v4/ips"
   ],
