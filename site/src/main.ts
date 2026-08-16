@@ -76,7 +76,9 @@ const runSearch = async (): Promise<void> => {
     url.searchParams.set('q', queryInput.value.trim());
     history.replaceState(null, '', url);
 
-    const index = (await fetch('/search-index.json').then((r) => r.json())) as SearchIndex;
+    const index = (await fetch(`${import.meta.env.BASE_URL}search-index.json`).then((r) =>
+      r.json()
+    )) as SearchIndex;
     const matches = index.entries
       .map((entry) => ({ entry, rel: matchRelation(query, entry.cidr) }))
       .filter((item) => item.rel !== 'none');
