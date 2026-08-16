@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import difflib
 import filecmp
 import hashlib
 import json
@@ -335,6 +336,40 @@ def run_generation(
     return 0
 
 
+def _collect_diffs(cmp_obj: Any, rel_path: str = "") -> list[tuple[str, str]]:
+    """Recursively collect (status, relative_path) pairs describing dircmp differences."""
+    diffs: list[tuple[str, str]] = []
+    for name in sorted(cmp_obj.left_only):
+        diffs.append(("removed", f"{rel_path}{name}"))
+    for name in sorted(cmp_obj.right_only):
+        diffs.append(("added", f"{rel_path}{name}"))
+    for name in sorted(cmp_obj.diff_files):
+        diffs.append(("changed", f"{rel_path}{name}"))
+    for name, sub_cmp in sorted(cmp_obj.subdirs.items()):
+        diffs.extend(_collect_diffs(sub_cmp, f"{rel_path}{name}/"))
+    return diffs
+
+
+def _print_file_diff(committed_path: Path, generated_path: Path, rel_path: str) -> None:
+    try:
+        old_lines = committed_path.read_text().splitlines(keepends=True)
+        new_lines = generated_path.read_text().splitlines(keepends=True)
+    except (UnicodeDecodeError, OSError):
+        print(f"    (binary or unreadable file, unable to show diff for {rel_path})")
+        return
+    diff = difflib.unified_diff(
+        old_lines,
+        new_lines,
+        fromfile=f"committed/{rel_path}",
+        tofile=f"generated/{rel_path}",
+    )
+    diff_text = "".join(diff)
+    if diff_text:
+        print(diff_text)
+    else:
+        print(f"    (no textual diff found for {rel_path})")
+
+
 def _check_mode(root: Path, fixtures: Path | None, timestamp: str | None) -> int:
     def has_diff(cmp_obj: Any) -> bool:
         if cmp_obj.left_only or cmp_obj.right_only or cmp_obj.diff_files:
@@ -355,6 +390,15 @@ def _check_mode(root: Path, fixtures: Path | None, timestamp: str | None) -> int
         left = filecmp.dircmp(root, tmp_root, ignore=[".git", ".pytest_cache", "__pycache__"])
         if has_diff(left):
             print("Generated files are stale. Run generation and commit changes.")
+            diffs = _collect_diffs(left)
+            for status, rel_path in diffs:
+                print(f"  {status}: {rel_path}")
+            print()
+            for status, rel_path in diffs:
+                if status != "changed":
+                    continue
+                print(f"--- diff for {rel_path} ---")
+                _print_file_diff(root / rel_path, tmp_root / rel_path, rel_path)
             return 1
     return 0
 
