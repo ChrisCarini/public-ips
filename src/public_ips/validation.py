@@ -35,5 +35,12 @@ def parse_networks(
 
 
 def validate_path_component(value: str) -> None:
-    if not value or value.startswith("/") or ".." in value or "/" in value or "\\" in value:
+    if (
+        not value
+        or value == "."
+        or value.startswith("/")
+        or ".." in value
+        or "/" in value
+        or "\\" in value
+    ):
         raise ValueError(f"Invalid path component: {value}")

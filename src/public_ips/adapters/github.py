@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 from dataclasses import dataclass
+from ipaddress import ip_network
 from pathlib import Path
 
 from public_ips.adapters.base import HttpClient
@@ -14,9 +15,23 @@ from public_ips.models import (
     RawFetch,
     utc_now,
 )
-from public_ips.validation import parse_networks
+from public_ips.validation import parse_networks, validate_path_component
 
-_CIDR_TOKEN = re.compile(r"^[0-9a-fA-F:.]+/[0-9]{1,3}$")
+_CIDR_TOKEN = re.compile(r"^[0-9a-fA-F:.]+/")
+
+
+def _is_valid_cidr(value: object) -> bool:
+    if not isinstance(value, str) or "/" not in value:
+        return False
+    try:
+        ip_network(value, strict=True)
+    except ValueError:
+        return False
+    return True
+
+
+def _looks_like_cidr(value: object) -> bool:
+    return isinstance(value, str) and _CIDR_TOKEN.match(value.strip()) is not None
 
 
 @dataclass(frozen=True)
@@ -61,24 +76,53 @@ class GitHubAdapter:
             raw_list = payload.get(source_field, [])
             if not isinstance(raw_list, list):
                 raise ValueError(f"github field '{source_field}' must be a list")
-            cidrs = [str(x) for x in raw_list]
-            family = parse_networks(
-                cidrs,
-                allow_non_global=self.config.allow_non_global,
-                warning_prefix=f"{self.config.provider_id}:{category}",
-                warnings=snapshot.warnings,
+            if not all(isinstance(item, str) for item in raw_list):
+                raise ValueError(f"github field '{source_field}' must contain only CIDR strings")
+            self._add_category(
+                snapshot,
+                source_field,
+                category,
+                [item for item in raw_list if isinstance(item, str)],
             )
-            snapshot.categories[category] = family
 
         for key, value in payload.items():
-            if key in mapped_fields:
+            if key in mapped_fields or not isinstance(value, list) or not value:
                 continue
-            if isinstance(value, list) and value and all(isinstance(item, str) for item in value):
-                values = [str(item) for item in value]
-                if all(_CIDR_TOKEN.match(item) for item in values):
-                    raise ValueError(
-                        f"github response field '{key}' appears CIDR-like but is not mapped. "
-                        "Add it to providers/github.com.yaml mappings."
-                    )
+
+            valid_cidrs = [_is_valid_cidr(item) for item in value]
+            if all(valid_cidrs):
+                self._add_category(
+                    snapshot,
+                    key,
+                    key,
+                    [item for item in value if isinstance(item, str)],
+                )
+                continue
+
+            if any(valid_cidrs) or any(_looks_like_cidr(item) for item in value):
+                raise ValueError(
+                    f"github response field '{key}' contains malformed or mixed CIDR data"
+                )
 
         return snapshot
+
+    def _add_category(
+        self,
+        snapshot: ProviderSnapshot,
+        source_field: str,
+        category: str,
+        cidrs: list[str],
+    ) -> None:
+        validate_path_component(category)
+        if category in snapshot.categories:
+            raise ValueError(
+                f"github fields produce duplicate category '{category}' "
+                f"(including '{source_field}')"
+            )
+        family = parse_networks(
+            cidrs,
+            allow_non_global=self.config.allow_non_global,
+            warning_prefix=f"{self.config.provider_id}:{category}",
+            warnings=snapshot.warnings,
+        )
+        snapshot.categories[category] = family
