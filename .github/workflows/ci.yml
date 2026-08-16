@@ -11,8 +11,12 @@ permissions:
 jobs:
   python:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref || github.sha }}
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
@@ -26,7 +30,23 @@ jobs:
         run: mypy src
       - name: Tests
         run: pytest
+      - name: Update PR branch
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        env:
+          PR_BRANCH: ${{ github.head_ref }}
+          PUBLIC_IPS_GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          public-ips generate
+          git add --all
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(data): update published ranges"
+          git push origin "HEAD:${PR_BRANCH}"
       - name: Regenerate check
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
         env:
           PUBLIC_IPS_GITHUB_TOKEN: ${{ github.token }}
         run: public-ips check
