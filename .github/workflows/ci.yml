@@ -27,7 +27,9 @@ jobs:
       - name: Tests
         run: pytest
       - name: Regenerate check
-        run: public-ips check --fixtures tests/fixtures --timestamp 2026-01-02T14:35:22+00:00
+        env:
+          PUBLIC_IPS_GITHUB_TOKEN: ${{ github.token }}
+        run: public-ips check
 
   site:
     runs-on: ubuntu-latest
