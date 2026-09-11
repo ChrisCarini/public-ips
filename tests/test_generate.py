@@ -51,3 +51,24 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
 
     cf_children = [p.name for p in (root / "cloudflare.com").iterdir() if p.is_dir()]
     assert cf_children == []
+
+
+def test_generate_preserves_changelog_history_when_no_new_events(tmp_path: Path) -> None:
+    src_root = Path(__file__).resolve().parents[1]
+    root = tmp_path / "repo"
+    root.mkdir()
+    _copy_repo_tree(src_root, root)
+
+    assert run_generation(root, fixtures=root / "tests" / "fixtures", timestamp=FIXED_TS) == 0
+    first_changes = (root / "changes.jsonl").read_text()
+    first_root_changelog = (root / "CHANGELOG.md").read_text()
+    first_provider_changelog = (root / "github.com" / "CHANGELOG.md").read_text()
+    assert first_changes.strip()
+    assert "## " in first_root_changelog
+    assert "## " in first_provider_changelog
+
+    assert run_generation(root, fixtures=root / "tests" / "fixtures", timestamp=FIXED_TS) == 0
+
+    assert (root / "changes.jsonl").read_text() == first_changes
+    assert (root / "CHANGELOG.md").read_text() == first_root_changelog
+    assert (root / "github.com" / "CHANGELOG.md").read_text() == first_provider_changelog

@@ -303,6 +303,9 @@ def run_generation(
             if existing_manifest and not all_events
             else now
         )
+        existing_changes = root / "changes.jsonl"
+        if existing_changes.exists():
+            shutil.copy2(existing_changes, tmp_dir / "changes.jsonl")
         write_root_files(
             tmp_dir,
             provider_rows,
