@@ -31,7 +31,7 @@ jobs:
       - name: Tests
         run: pytest
       - name: Update PR branch
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && contains(github.event.pull_request.labels.*.name, 'data-update')
         env:
           PR_BRANCH: ${{ github.head_ref }}
           PUBLIC_IPS_GITHUB_TOKEN: ${{ github.token }}
