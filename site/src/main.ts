@@ -14,6 +14,11 @@ type SearchEntry = {
 
 type SearchIndex = { schema_version: string; entries: SearchEntry[] };
 
+const GITHUB_REPO_BLOB_BASE = 'https://github.com/ChrisCarini/public-ips/blob/main/';
+
+const githubFileUrl = (path: string, line: number): string =>
+  `${GITHUB_REPO_BLOB_BASE}${path}#L${line}`;
+
 const app = document.querySelector<HTMLDivElement>('#app');
 if (!app) throw new Error('missing app element');
 
@@ -90,7 +95,14 @@ const runSearch = async (): Promise<void> => {
 
     for (const item of matches) {
       const li = document.createElement('li');
-      li.textContent = `${item.entry.provider} ${item.entry.category ? `(${item.entry.category})` : ''} ${item.entry.cidr} - ${item.rel} @ ${item.entry.path}:${item.entry.line}`;
+      const prefix = `${item.entry.provider} ${item.entry.category ? `(${item.entry.category})` : ''} ${item.entry.cidr} - ${item.rel} @ `;
+      li.append(prefix);
+      const link = document.createElement('a');
+      link.href = githubFileUrl(item.entry.path, item.entry.line);
+      link.textContent = `${item.entry.path}:${item.entry.line}`;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      li.appendChild(link);
       results.appendChild(li);
     }
   } catch (e) {
