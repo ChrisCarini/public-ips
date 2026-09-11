@@ -63,6 +63,9 @@ def test_generate_preserves_changelog_history_when_no_new_events(tmp_path: Path)
     first_changes = (root / "changes.jsonl").read_text()
     first_root_changelog = (root / "CHANGELOG.md").read_text()
     first_provider_changelog = (root / "github.com" / "CHANGELOG.md").read_text()
+    assert first_changes.strip()
+    assert "## " in first_root_changelog
+    assert "## " in first_provider_changelog
 
     assert run_generation(root, fixtures=root / "tests" / "fixtures", timestamp=FIXED_TS) == 0
 
