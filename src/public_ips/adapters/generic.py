@@ -51,8 +51,10 @@ def _hash_documents(documents: dict[str, FetchDocument]) -> str:
     return digest.hexdigest()
 
 
-def _category(value: str) -> str:
+def _category(value: str, fallback: str) -> str:
     category = re.sub(r"[^A-Za-z0-9._-]+", "_", value.strip().lower()).strip("._-")
+    if not category:
+        category = fallback
     validate_path_component(category)
     return category
 
@@ -70,7 +72,11 @@ def _is_network(value: str) -> bool:
 def _normalize_networks(raws: list[str], *, warning_prefix: str, warnings: list[str]) -> list[str]:
     normalized: list[str] = []
     for raw in raws:
-        network = ip_network(raw, strict=False)
+        try:
+            network = ip_network(raw, strict=False)
+        except ValueError:
+            warnings.append(f"{warning_prefix}: skipped invalid upstream CIDR '{raw}'")
+            continue
         canonical = str(network)
         if raw != canonical:
             warnings.append(f"{warning_prefix}: normalized upstream CIDR '{raw}' to '{canonical}'")
@@ -99,7 +105,7 @@ def _extract_json_networks(payload: Any) -> list[str]:
 
 
 def _extract_text_networks(body: bytes) -> list[str]:
-    text = body.decode("utf-8-sig")
+    text = body.decode("utf-8-sig", errors="replace")
     return [match.group(0) for match in _CIDR_OR_IP_TOKEN.finditer(text)]
 
 
@@ -191,9 +197,9 @@ class AwsIpRangesAdapter:
                 service = str(record.get("service", "amazon"))
                 cidr = record.get(cidr_key)
                 if isinstance(cidr, str):
-                    categories.setdefault(_category(service), []).append(cidr)
+                    categories.setdefault(_category(service, "amazon"), []).append(cidr)
 
-        snapshot = _new_snapshot(self.config, hashlib.sha256(doc.body).hexdigest())
+        snapshot = _new_snapshot(self.config, _hash_documents({doc.url: doc}))
         for category, cidrs in sorted(categories.items()):
             _add_category(snapshot, category, cidrs, self.config)
         return snapshot
@@ -259,7 +265,7 @@ class AzureServiceTagsAdapter:
                 isinstance(item, str) for item in prefixes
             ):
                 raise ValueError("azure addressPrefixes must be a list of strings")
-            categories.setdefault(_category(service), []).extend(prefixes)
+            categories.setdefault(_category(service, "azure"), []).extend(prefixes)
         for category, cidrs in sorted(categories.items()):
             _add_category(snapshot, category, cidrs, self.config)
         return snapshot
@@ -283,7 +289,7 @@ class GoogleCloudAdapter:
         if not isinstance(prefixes, list):
             raise ValueError("google cloud field 'prefixes' must be a list")
 
-        snapshot = _new_snapshot(self.config, hashlib.sha256(doc.body).hexdigest())
+        snapshot = _new_snapshot(self.config, _hash_documents({doc.url: doc}))
         categories: dict[str, list[str]] = {}
         for record in prefixes:
             if not isinstance(record, dict):
@@ -291,7 +297,7 @@ class GoogleCloudAdapter:
             service = str(record.get("service", "google_cloud"))
             cidr = record.get("ipv4Prefix") or record.get("ipv6Prefix")
             if isinstance(cidr, str):
-                categories.setdefault(_category(service), []).append(cidr)
+                categories.setdefault(_category(service, "google_cloud"), []).append(cidr)
         for category, cidrs in sorted(categories.items()):
             _add_category(snapshot, category, cidrs, self.config)
         return snapshot
