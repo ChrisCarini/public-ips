@@ -10,7 +10,6 @@ from typing import Any
 
 from public_ips.adapters.base import HttpClient
 from public_ips.models import (
-    FamilyNetworks,
     FetchDocument,
     ProviderConfig,
     ProviderSnapshot,
@@ -62,10 +61,21 @@ def _is_network(value: str) -> bool:
     if "/" not in value and "." not in value and ":" not in value:
         return False
     try:
-        ip_network(value, strict=True)
+        ip_network(value, strict=False)
     except ValueError:
         return False
     return True
+
+
+def _normalize_networks(raws: list[str], *, warning_prefix: str, warnings: list[str]) -> list[str]:
+    normalized: list[str] = []
+    for raw in raws:
+        network = ip_network(raw, strict=False)
+        canonical = str(network)
+        if raw != canonical:
+            warnings.append(f"{warning_prefix}: normalized upstream CIDR '{raw}' to '{canonical}'")
+        normalized.append(canonical)
+    return normalized
 
 
 def _extract_json_networks(payload: Any) -> list[str]:
@@ -93,14 +103,16 @@ def _extract_text_networks(body: bytes) -> list[str]:
     return [match.group(0) for match in _CIDR_OR_IP_TOKEN.finditer(text)]
 
 
-def _family_from_cidrs(
-    cidrs: list[str], *, config: ProviderConfig, warning_prefix: str, warnings: list[str]
-) -> FamilyNetworks:
-    return parse_networks(
-        cidrs,
-        allow_non_global=config.allow_non_global,
-        warning_prefix=warning_prefix,
-        warnings=warnings,
+def _new_snapshot(config: ProviderConfig, source_body_hash: str) -> ProviderSnapshot:
+    return ProviderSnapshot(
+        provider_id=config.provider_id,
+        display_name=config.display_name,
+        output_dir=Path(config.output_dir),
+        source_urls=config.source_urls,
+        documentation_url=config.documentation_url,
+        attribution=config.attribution,
+        terms_url=config.terms_url,
+        source_body_hash=source_body_hash,
     )
 
 
@@ -136,22 +148,17 @@ class GenericCidrAdapter:
                 )
             try:
                 cidrs.extend(_extract_json_networks(json.loads(doc.body)))
-            except json.JSONDecodeError:
+            except (json.JSONDecodeError, UnicodeDecodeError):
                 cidrs.extend(_extract_text_networks(doc.body))
 
-        snapshot = ProviderSnapshot(
-            provider_id=self.config.provider_id,
-            display_name=self.config.display_name,
-            output_dir=Path(self.config.output_dir),
-            source_urls=self.config.source_urls,
-            documentation_url=self.config.documentation_url,
-            attribution=self.config.attribution,
-            terms_url=self.config.terms_url,
-            source_body_hash=_hash_documents(raw.documents),
-        )
-        snapshot.uncategorized = _family_from_cidrs(
-            cidrs,
-            config=self.config,
+        snapshot = _new_snapshot(self.config, _hash_documents(raw.documents))
+        snapshot.uncategorized = parse_networks(
+            _normalize_networks(
+                cidrs,
+                warning_prefix=self.config.provider_id,
+                warnings=snapshot.warnings,
+            ),
+            allow_non_global=self.config.allow_non_global,
             warning_prefix=self.config.provider_id,
             warnings=snapshot.warnings,
         )
@@ -186,16 +193,7 @@ class AwsIpRangesAdapter:
                 if isinstance(cidr, str):
                     categories.setdefault(_category(service), []).append(cidr)
 
-        snapshot = ProviderSnapshot(
-            provider_id=self.config.provider_id,
-            display_name=self.config.display_name,
-            output_dir=Path(self.config.output_dir),
-            source_urls=self.config.source_urls,
-            documentation_url=self.config.documentation_url,
-            attribution=self.config.attribution,
-            terms_url=self.config.terms_url,
-            source_body_hash=hashlib.sha256(doc.body).hexdigest(),
-        )
+        snapshot = _new_snapshot(self.config, hashlib.sha256(doc.body).hexdigest())
         for category, cidrs in sorted(categories.items()):
             _add_category(snapshot, category, cidrs, self.config)
         return snapshot
@@ -232,6 +230,11 @@ class AzureServiceTagsAdapter:
             None,
         )
         if doc is None:
+            landing = raw.documents.get(self.config.source_urls[0])
+            if landing is not None and landing.status_code != 200:
+                raise ValueError(
+                    f"azure landing page fetch failed: status={landing.status_code}"
+                )
             raise ValueError("azure: could not locate ServiceTags_Public JSON download URL")
         if doc.status_code != 200:
             raise ValueError(f"azure fetch failed: status={doc.status_code}")
@@ -242,16 +245,7 @@ class AzureServiceTagsAdapter:
         if not isinstance(values, list):
             raise ValueError("azure response field 'values' must be a list")
 
-        snapshot = ProviderSnapshot(
-            provider_id=self.config.provider_id,
-            display_name=self.config.display_name,
-            output_dir=Path(self.config.output_dir),
-            source_urls=self.config.source_urls,
-            documentation_url=self.config.documentation_url,
-            attribution=self.config.attribution,
-            terms_url=self.config.terms_url,
-            source_body_hash=_hash_documents({doc.url: doc}),
-        )
+        snapshot = _new_snapshot(self.config, _hash_documents({doc.url: doc}))
         categories: dict[str, list[str]] = {}
         for record in values:
             if not isinstance(record, dict):
@@ -289,16 +283,7 @@ class GoogleCloudAdapter:
         if not isinstance(prefixes, list):
             raise ValueError("google cloud field 'prefixes' must be a list")
 
-        snapshot = ProviderSnapshot(
-            provider_id=self.config.provider_id,
-            display_name=self.config.display_name,
-            output_dir=Path(self.config.output_dir),
-            source_urls=self.config.source_urls,
-            documentation_url=self.config.documentation_url,
-            attribution=self.config.attribution,
-            terms_url=self.config.terms_url,
-            source_body_hash=hashlib.sha256(doc.body).hexdigest(),
-        )
+        snapshot = _new_snapshot(self.config, hashlib.sha256(doc.body).hexdigest())
         categories: dict[str, list[str]] = {}
         for record in prefixes:
             if not isinstance(record, dict):
