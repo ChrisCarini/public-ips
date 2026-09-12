@@ -1,0 +1,20 @@
+{
+  "body": {
+    "changeNumber": 1,
+    "cloud": "Public",
+    "values": [
+      {
+        "name": "AzureCloud.eastus",
+        "properties": {
+          "addressPrefixes": [
+            "4.150.0.0/16",
+            "2603:1030::/48"
+          ],
+          "systemService": "AzureCloud"
+        }
+      }
+    ]
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}

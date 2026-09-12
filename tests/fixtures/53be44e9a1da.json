@@ -1,0 +1,15 @@
+{
+  "body": {
+    "creationTime": "2026-01-01T00:00:00Z",
+    "prefixes": [
+      {
+        "ipv4Prefix": "40.77.167.0/24"
+      },
+      {
+        "ipv6Prefix": "2a01:111:f403::/48"
+      }
+    ]
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}

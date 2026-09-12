@@ -1,0 +1,13 @@
+provider_id: googlebot.com
+display_name: Google Bot
+output_dir: googlebot.com
+adapter: generic_cidr
+source_urls:
+  - https://developers.google.com/search/apis/ipranges/googlebot.json
+documentation_url: https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot
+attribution: Googlebot IP ranges JSON
+terms_url: https://developers.google.com/terms
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

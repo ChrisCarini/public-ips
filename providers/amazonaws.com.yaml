@@ -1,0 +1,13 @@
+provider_id: amazonaws.com
+display_name: Amazon AWS
+output_dir: amazonaws.com
+adapter: aws_ip_ranges
+source_urls:
+  - https://ip-ranges.amazonaws.com/ip-ranges.json
+documentation_url: https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html
+attribution: AWS IP address ranges JSON
+terms_url: https://aws.amazon.com/service-terms/
+min_ranges: 1
+max_change_absolute: 100000
+max_change_percent: 100.0
+allow_non_global: false

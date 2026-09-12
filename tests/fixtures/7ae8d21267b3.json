@@ -1,0 +1,22 @@
+{
+  "body": {
+    "createDate": "2026-01-01-00-00-00",
+    "ipv6_prefixes": [
+      {
+        "ipv6_prefix": "2600:1f18::/36",
+        "region": "us-east-1",
+        "service": "AMAZON"
+      }
+    ],
+    "prefixes": [
+      {
+        "ip_prefix": "3.5.140.0/22",
+        "region": "us-east-1",
+        "service": "AMAZON"
+      }
+    ],
+    "syncToken": "1"
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}

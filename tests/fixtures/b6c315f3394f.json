@@ -1,0 +1,17 @@
+{
+  "body": {
+    "last_updated_timestamp": "2026-01-01T00:00:00.000Z",
+    "regions": [
+      {
+        "cidrs": [
+          {
+            "cidr": "129.80.0.0/16"
+          }
+        ],
+        "region": "us-ashburn-1"
+      }
+    ]
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}

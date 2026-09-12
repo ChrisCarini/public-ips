@@ -1,0 +1,20 @@
+{
+  "body": {
+    "creationTime": "2026-01-01T00:00:00Z",
+    "prefixes": [
+      {
+        "ipv4Prefix": "34.128.0.0/10",
+        "scope": "global",
+        "service": "Google Cloud"
+      },
+      {
+        "ipv6Prefix": "2600:1900::/35",
+        "scope": "global",
+        "service": "Google Cloud"
+      }
+    ],
+    "syncToken": "1"
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}

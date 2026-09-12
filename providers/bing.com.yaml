@@ -1,0 +1,13 @@
+provider_id: bing.com
+display_name: Bing (BingBot)
+output_dir: bing.com
+adapter: generic_cidr
+source_urls:
+  - https://www.bing.com/toolbox/bingbot.json
+documentation_url: https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f
+attribution: Bingbot IP ranges JSON
+terms_url: https://www.microsoft.com/servicesagreement
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

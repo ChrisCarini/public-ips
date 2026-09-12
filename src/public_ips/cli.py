@@ -14,7 +14,15 @@ from typing import Any, cast
 
 from jsonschema import validate
 
-from public_ips.adapters import CloudflareAdapter, GitHubAdapter
+from public_ips.adapters import (
+    AwsIpRangesAdapter,
+    AzureServiceTagsAdapter,
+    CloudflareAdapter,
+    GenericCidrAdapter,
+    GitHubAdapter,
+    GoogleCloudAdapter,
+)
+from public_ips.adapters.base import ProviderAdapter
 from public_ips.changelog import render_changelogs
 from public_ips.config import load_provider_configs
 from public_ips.diffing import diff_family
@@ -42,11 +50,19 @@ class FileHttpClient:
         return int(payload["status_code"]), body, str(payload.get("content_type")), None, None
 
 
-def _adapter_for(config: ProviderConfig) -> GitHubAdapter | CloudflareAdapter:
+def _adapter_for(config: ProviderConfig) -> ProviderAdapter:
+    if config.adapter == "aws_ip_ranges":
+        return AwsIpRangesAdapter(config)
+    if config.adapter == "azure_service_tags":
+        return AzureServiceTagsAdapter(config)
     if config.adapter == "github_meta":
         return GitHubAdapter(config)
     if config.adapter == "cloudflare_ips":
         return CloudflareAdapter(config)
+    if config.adapter == "generic_cidr":
+        return GenericCidrAdapter(config)
+    if config.adapter == "google_cloud":
+        return GoogleCloudAdapter(config)
     raise ValueError(f"Unknown adapter: {config.adapter}")
 
 
