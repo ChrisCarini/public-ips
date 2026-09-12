@@ -18,9 +18,6 @@ from public_ips.models import (
 )
 from public_ips.validation import parse_networks, validate_path_component
 
-_CIDR_OR_IP_TOKEN = re.compile(
-    r"(?<![0-9A-Fa-f:.])(?:[0-9]{1,3}(?:\.[0-9]{1,3}){3}|[0-9A-Fa-f:]*:[0-9A-Fa-f:.]+)(?:/\d{1,3})?(?![0-9A-Fa-f:.])"
-)
 _AZURE_DOWNLOAD_URL = re.compile(
     r"https://download\.microsoft\.com/download/[^\"'<>]+ServiceTags_Public_[^\"'<>]+\.json"
 )
@@ -91,11 +88,13 @@ def _extract_json_networks(payload: Any) -> list[str]:
 
 def _extract_text_networks(body: bytes) -> list[str]:
     text = body.decode("utf-8-sig", errors="replace")
-    return [
-        match.group(0)
-        for match in _CIDR_OR_IP_TOKEN.finditer(text)
-        if _is_network(match.group(0))
-    ]
+    networks: list[str] = []
+    for line in text.splitlines():
+        for field in line.split(","):
+            value = field.strip().strip("\"'")
+            if _is_network(value):
+                networks.append(value)
+    return networks
 
 
 def _new_snapshot(config: ProviderConfig, source_body_hash: str) -> ProviderSnapshot:
@@ -194,7 +193,11 @@ class AwsIpRangesAdapter:
 
 @dataclass(frozen=True)
 class AzureServiceTagsAdapter:
-    """Resolves Azure's stable download page to its versioned ServiceTags JSON URL."""
+    """Resolves Azure's stable download page to its versioned ServiceTags JSON URL.
+
+    Fetch keeps the landing document when discovery fails so extract can raise the
+    same provider-specific validation errors used by the other adapters.
+    """
 
     config: ProviderConfig
 

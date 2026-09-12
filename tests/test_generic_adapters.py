@@ -43,7 +43,7 @@ def _raw(config: ProviderConfig, body: bytes, *, status_code: int = 200) -> RawF
 def test_generic_adapter_text_fallback_normalizes_and_warns() -> None:
     config = _config()
     snapshot = GenericCidrAdapter(config).extract(
-        _raw(config, b"\xff 8.8.8.8/24 2001:4860:4860::8888")
+        _raw(config, b"\xff\n8.8.8.8/24\n2001:4860:4860::8888\n")
     )
 
     assert {str(network) for network in snapshot.uncategorized.ipv4} == {"8.8.8.0/24"}
