@@ -94,13 +94,13 @@ def _extract_text_networks(body: bytes) -> list[str]:
 
 
 def _family_from_cidrs(
-    cidrs: list[str], *, config: ProviderConfig, warning_prefix: str
+    cidrs: list[str], *, config: ProviderConfig, warning_prefix: str, warnings: list[str]
 ) -> FamilyNetworks:
     return parse_networks(
         cidrs,
         allow_non_global=config.allow_non_global,
         warning_prefix=warning_prefix,
-        warnings=[],
+        warnings=warnings,
     )
 
 
@@ -139,10 +139,7 @@ class GenericCidrAdapter:
             except json.JSONDecodeError:
                 cidrs.extend(_extract_text_networks(doc.body))
 
-        family = _family_from_cidrs(
-            cidrs, config=self.config, warning_prefix=self.config.provider_id
-        )
-        return ProviderSnapshot(
+        snapshot = ProviderSnapshot(
             provider_id=self.config.provider_id,
             display_name=self.config.display_name,
             output_dir=Path(self.config.output_dir),
@@ -150,9 +147,15 @@ class GenericCidrAdapter:
             documentation_url=self.config.documentation_url,
             attribution=self.config.attribution,
             terms_url=self.config.terms_url,
-            uncategorized=family,
             source_body_hash=_hash_documents(raw.documents),
         )
+        snapshot.uncategorized = _family_from_cidrs(
+            cidrs,
+            config=self.config,
+            warning_prefix=self.config.provider_id,
+            warnings=snapshot.warnings,
+        )
+        return snapshot
 
 
 @dataclass(frozen=True)
@@ -224,8 +227,12 @@ class AzureServiceTagsAdapter:
         return raw
 
     def extract(self, raw: RawFetch) -> ProviderSnapshot:
-        docs = list(raw.documents.values())
-        doc = docs[-1]
+        doc = next(
+            (doc for doc in raw.documents.values() if _AZURE_DOWNLOAD_URL.match(doc.url)),
+            None,
+        )
+        if doc is None:
+            raise ValueError("azure: could not locate ServiceTags_Public JSON download URL")
         if doc.status_code != 200:
             raise ValueError(f"azure fetch failed: status={doc.status_code}")
         payload = json.loads(doc.body)

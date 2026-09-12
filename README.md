@@ -10,6 +10,7 @@
 - `azure.microsoft.com` — source: `https://www.microsoft.com/en-us/download/details.aspx?id=56519`
 - `bing.com` — source: `https://www.bing.com/toolbox/bingbot.json`
 - `cloud.google.com` — source: `https://www.gstatic.com/ipranges/cloud.json`
+- `cloudflare.com` — source: `https://api.cloudflare.com/client/v4/ips`
 - `facebook.com` — source: `https://www.facebook.com/ips-v4`, `https://www.facebook.com/ips-v6`
 - `github.com` — source: `https://api.github.com/meta`
 - `googlebot.com` — source: `https://developers.google.com/search/apis/ipranges/googlebot.json`
@@ -17,7 +18,6 @@
 - `oracle.com` — source: `https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json`
 - `perplexity.com` — source: `https://www.perplexity.com/perplexitybot.json`
 - `pingdom.com` — source: `https://my.pingdom.com/probes/ipv4`, `https://my.pingdom.com/probes/ipv6`
-- `cloudflare.com` — source: `https://api.cloudflare.com/client/v4/ips`
 
 ## Data outputs
 
