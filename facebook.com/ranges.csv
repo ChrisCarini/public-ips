@@ -1,3 +1,0 @@
-provider,category,ip_family,cidr,source_url,first_observed_at
-facebook.com,,ipv4,31.13.24.0/21,https://www.facebook.com/ips-v4,2026-01-02T14:35:22+00:00
-facebook.com,,ipv6,2a03:2880::/32,https://www.facebook.com/ips-v4,2026-01-02T14:35:22+00:00

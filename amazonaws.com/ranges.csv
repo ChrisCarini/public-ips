@@ -1,5 +1,0 @@
-provider,category,ip_family,cidr,source_url,first_observed_at
-amazonaws.com,,ipv4,3.5.140.0/22,https://ip-ranges.amazonaws.com/ip-ranges.json,2026-01-02T14:35:22+00:00
-amazonaws.com,,ipv6,2600:1f18::/36,https://ip-ranges.amazonaws.com/ip-ranges.json,2026-01-02T14:35:22+00:00
-amazonaws.com,amazon,ipv4,3.5.140.0/22,https://ip-ranges.amazonaws.com/ip-ranges.json,2026-01-02T14:35:22+00:00
-amazonaws.com,amazon,ipv6,2600:1f18::/36,https://ip-ranges.amazonaws.com/ip-ranges.json,2026-01-02T14:35:22+00:00
