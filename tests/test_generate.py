@@ -31,8 +31,34 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
     manifest = json.loads((root / "manifest.json").read_text())
     assert manifest["schema_version"] == "v1"
     providers = manifest["providers"]
-    assert providers.get("github.com") is not None
-    assert providers.get("cloudflare.com") is not None
+    assert {
+        "amazonaws.com",
+        "anthropic.com",
+        "apple.com",
+        "azure.microsoft.com",
+        "bing.com",
+        "cloud.google.com",
+        "cloudflare.com",
+        "facebook.com",
+        "github.com",
+        "googlebot.com",
+        "openai.com",
+        "oracle.com",
+        "perplexity.com",
+        "pingdom.com",
+    } <= providers.keys()
+    assert providers["amazonaws.com"]["categories"]["amazon"]["counts"] == {
+        "ipv4": 1,
+        "ipv6": 1,
+    }
+    assert providers["azure.microsoft.com"]["categories"]["azurecloud"]["counts"] == {
+        "ipv4": 1,
+        "ipv6": 1,
+    }
+    assert providers["cloud.google.com"]["categories"]["google_cloud"]["counts"] == {
+        "ipv4": 1,
+        "ipv6": 1,
+    }
     github_categories = providers["github.com"]["categories"]
     assert {
         "actions_macos",

@@ -1,0 +1,34 @@
+{
+  "attribution": "PerplexityBot IP ranges JSON",
+  "categories": {},
+  "display_name": "Perplexity",
+  "documentation_url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers",
+  "first_observed_at": "2026-01-02T14:35:22+00:00",
+  "generated_at": "2026-01-02T14:35:22+00:00",
+  "normalized_data_sha256": "9d0ce6ac435005ce78a580547172bc9c52efb4ca7e10e45c90cab0c70a1947ba",
+  "provider": {
+    "counts": {
+      "ipv4": 1,
+      "ipv6": 0
+    },
+    "ipv4": [
+      "64.23.132.0/24"
+    ],
+    "ipv6": [],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "perplexity.com",
+  "schema_version": "v1",
+  "source_body_sha256": "1ca107c88be01e7d92f6483c062ec28ca552eb363d0dfb31cd821137702eb25f",
+  "source_urls": [
+    "https://www.perplexity.com/perplexitybot.json"
+  ],
+  "terms_url": "https://www.perplexity.ai/hub/legal/terms-of-service"
+}

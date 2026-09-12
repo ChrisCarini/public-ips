@@ -131,7 +131,9 @@ class GenericCidrAdapter:
         cidrs: list[str] = []
         for doc in raw.documents.values():
             if doc.status_code != 200:
-                raise ValueError(f"{self.config.provider_id} fetch failed: status={doc.status_code}")
+                raise ValueError(
+                    f"{self.config.provider_id} fetch failed: status={doc.status_code}"
+                )
             try:
                 cidrs.extend(_extract_json_networks(json.loads(doc.body)))
             except json.JSONDecodeError:
@@ -252,7 +254,9 @@ class AzureServiceTagsAdapter:
                 raise ValueError("azure value properties must be an object")
             service = str(properties.get("systemService") or record.get("name") or "azure")
             prefixes = properties.get("addressPrefixes", [])
-            if not isinstance(prefixes, list) or not all(isinstance(item, str) for item in prefixes):
+            if not isinstance(prefixes, list) or not all(
+                isinstance(item, str) for item in prefixes
+            ):
                 raise ValueError("azure addressPrefixes must be a list of strings")
             categories.setdefault(_category(service), []).extend(prefixes)
         for category, cidrs in sorted(categories.items()):

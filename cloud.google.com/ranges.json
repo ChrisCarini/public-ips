@@ -1,0 +1,57 @@
+{
+  "attribution": "Google Cloud IP ranges JSON",
+  "categories": {
+    "google_cloud": {
+      "counts": {
+        "ipv4": 1,
+        "ipv6": 1
+      },
+      "ipv4": [
+        "34.128.0.0/10"
+      ],
+      "ipv6": [
+        "2600:1900::/35"
+      ],
+      "paths": {
+        "all": "google_cloud/all.txt",
+        "collapsed_all": "google_cloud/collapsed-all.txt",
+        "collapsed_ipv4": "google_cloud/collapsed-ipv4.txt",
+        "collapsed_ipv6": "google_cloud/collapsed-ipv6.txt",
+        "ipv4": "google_cloud/ipv4.txt",
+        "ipv6": "google_cloud/ipv6.txt"
+      }
+    }
+  },
+  "display_name": "Google Cloud",
+  "documentation_url": "https://cloud.google.com/vpc/docs/configure-private-google-access",
+  "first_observed_at": "2026-01-02T14:35:22+00:00",
+  "generated_at": "2026-01-02T14:35:22+00:00",
+  "normalized_data_sha256": "7af31b557dd27f14d2c2158f1cd7bfbd8af496ffd209f6e5cd8c1a1bfdcd0b17",
+  "provider": {
+    "counts": {
+      "ipv4": 1,
+      "ipv6": 1
+    },
+    "ipv4": [
+      "34.128.0.0/10"
+    ],
+    "ipv6": [
+      "2600:1900::/35"
+    ],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "cloud.google.com",
+  "schema_version": "v1",
+  "source_body_sha256": "32fee4f71f17632d5a017cc42fb8d54ed4c86607308aaa822d5a6c6458c7cf38",
+  "source_urls": [
+    "https://www.gstatic.com/ipranges/cloud.json"
+  ],
+  "terms_url": "https://cloud.google.com/terms"
+}

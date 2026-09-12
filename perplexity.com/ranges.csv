@@ -1,0 +1,2 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+perplexity.com,,ipv4,64.23.132.0/24,https://www.perplexity.com/perplexitybot.json,2026-01-02T14:35:22+00:00
