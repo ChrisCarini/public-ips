@@ -69,21 +69,6 @@ def _is_network(value: str) -> bool:
     return True
 
 
-def _normalize_networks(raws: list[str], *, warning_prefix: str, warnings: list[str]) -> list[str]:
-    normalized: list[str] = []
-    for raw in raws:
-        try:
-            network = ip_network(raw, strict=False)
-        except ValueError:
-            warnings.append(f"{warning_prefix}: skipped invalid upstream CIDR '{raw}'")
-            continue
-        canonical = str(network)
-        if raw != canonical:
-            warnings.append(f"{warning_prefix}: normalized upstream CIDR '{raw}' to '{canonical}'")
-        normalized.append(canonical)
-    return normalized
-
-
 def _extract_json_networks(payload: Any) -> list[str]:
     networks: list[str] = []
 
@@ -106,7 +91,11 @@ def _extract_json_networks(payload: Any) -> list[str]:
 
 def _extract_text_networks(body: bytes) -> list[str]:
     text = body.decode("utf-8-sig", errors="replace")
-    return [match.group(0) for match in _CIDR_OR_IP_TOKEN.finditer(text)]
+    return [
+        match.group(0)
+        for match in _CIDR_OR_IP_TOKEN.finditer(text)
+        if _is_network(match.group(0))
+    ]
 
 
 def _new_snapshot(config: ProviderConfig, source_body_hash: str) -> ProviderSnapshot:
@@ -150,7 +139,8 @@ class GenericCidrAdapter:
         for doc in raw.documents.values():
             if doc.status_code != 200:
                 raise ValueError(
-                    f"{self.config.provider_id} fetch failed: status={doc.status_code}"
+                    f"{self.config.provider_id} fetch failed for {doc.url}: "
+                    f"status={doc.status_code}"
                 )
             try:
                 cidrs.extend(_extract_json_networks(json.loads(doc.body)))
@@ -159,14 +149,11 @@ class GenericCidrAdapter:
 
         snapshot = _new_snapshot(self.config, _hash_documents(raw.documents))
         snapshot.uncategorized = parse_networks(
-            _normalize_networks(
-                cidrs,
-                warning_prefix=self.config.provider_id,
-                warnings=snapshot.warnings,
-            ),
+            cidrs,
             allow_non_global=self.config.allow_non_global,
             warning_prefix=self.config.provider_id,
             warnings=snapshot.warnings,
+            normalize_host_bits=True,
         )
         return snapshot
 
@@ -207,6 +194,8 @@ class AwsIpRangesAdapter:
 
 @dataclass(frozen=True)
 class AzureServiceTagsAdapter:
+    """Resolves Azure's stable download page to its versioned ServiceTags JSON URL."""
+
     config: ProviderConfig
 
     def fetch(self, client: HttpClient) -> RawFetch:
