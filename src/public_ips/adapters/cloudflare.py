@@ -5,13 +5,13 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 
-from public_ips.adapters.base import HttpClient
+from public_ips.adapters.base import HttpClient, RegisteredProviderAdapter
 from public_ips.models import FetchDocument, ProviderConfig, ProviderSnapshot, RawFetch, utc_now
 from public_ips.validation import parse_networks
 
 
 @dataclass(frozen=True)
-class CloudflareAdapter:
+class CloudflareAdapter(RegisteredProviderAdapter, adapter_name="cloudflare_ips"):
     config: ProviderConfig
 
     def fetch(self, client: HttpClient) -> RawFetch:

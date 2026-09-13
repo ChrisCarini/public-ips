@@ -14,20 +14,12 @@ from typing import Any, cast
 
 from jsonschema import validate
 
-from public_ips.adapters import (
-    AwsIpRangesAdapter,
-    AzureServiceTagsAdapter,
-    CloudflareAdapter,
-    GenericCidrAdapter,
-    GitHubAdapter,
-    GoogleCloudAdapter,
-)
-from public_ips.adapters.base import ProviderAdapter
+from public_ips.adapters import adapter_for
 from public_ips.changelog import render_changelogs
 from public_ips.config import load_provider_configs
 from public_ips.diffing import diff_family
 from public_ips.http_client import RetryingHttpClient
-from public_ips.models import ChangeEvent, FamilyNetworks, ProviderConfig, ProviderSnapshot
+from public_ips.models import ChangeEvent, FamilyNetworks, ProviderSnapshot
 from public_ips.rendering import (
     canonical_hash,
     provider_union,
@@ -48,22 +40,6 @@ class FileHttpClient:
         payload = json.loads(path.read_text())
         body = json.dumps(payload["body"], separators=(",", ":"), sort_keys=True).encode("utf-8")
         return int(payload["status_code"]), body, str(payload.get("content_type")), None, None
-
-
-def _adapter_for(config: ProviderConfig) -> ProviderAdapter:
-    if config.adapter == "aws_ip_ranges":
-        return AwsIpRangesAdapter(config)
-    if config.adapter == "azure_service_tags":
-        return AzureServiceTagsAdapter(config)
-    if config.adapter == "github_meta":
-        return GitHubAdapter(config)
-    if config.adapter == "cloudflare_ips":
-        return CloudflareAdapter(config)
-    if config.adapter == "generic_cidr":
-        return GenericCidrAdapter(config)
-    if config.adapter == "google_cloud":
-        return GoogleCloudAdapter(config)
-    raise ValueError(f"Unknown adapter: {config.adapter}")
 
 
 def _load_existing_ranges(path: Path) -> dict[str, Any] | None:
@@ -279,7 +255,7 @@ def run_generation(
 
     try:
         for config in configs:
-            adapter = _adapter_for(config)
+            adapter = adapter_for(config)
             raw = adapter.fetch(client)
             snapshot = adapter.extract(raw)
             normalized = canonical_hash(snapshot)

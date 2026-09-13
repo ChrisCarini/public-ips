@@ -8,7 +8,7 @@ from ipaddress import ip_network
 from pathlib import Path
 from typing import Any
 
-from public_ips.adapters.base import HttpClient
+from public_ips.adapters.base import HttpClient, RegisteredProviderAdapter
 from public_ips.models import (
     FetchDocument,
     ProviderConfig,
@@ -127,7 +127,7 @@ def _add_category(
 
 
 @dataclass(frozen=True)
-class GenericCidrAdapter:
+class GenericCidrAdapter(RegisteredProviderAdapter, adapter_name="generic_cidr"):
     config: ProviderConfig
 
     def fetch(self, client: HttpClient) -> RawFetch:
@@ -158,7 +158,7 @@ class GenericCidrAdapter:
 
 
 @dataclass(frozen=True)
-class AwsIpRangesAdapter:
+class AwsIpRangesAdapter(RegisteredProviderAdapter, adapter_name="aws_ip_ranges"):
     config: ProviderConfig
 
     def fetch(self, client: HttpClient) -> RawFetch:
@@ -192,7 +192,7 @@ class AwsIpRangesAdapter:
 
 
 @dataclass(frozen=True)
-class AzureServiceTagsAdapter:
+class AzureServiceTagsAdapter(RegisteredProviderAdapter, adapter_name="azure_service_tags"):
     """Resolves Azure's stable download page to its versioned ServiceTags JSON URL.
 
     Fetch keeps the landing document when discovery fails so extract can raise the
@@ -264,7 +264,7 @@ class AzureServiceTagsAdapter:
 
 
 @dataclass(frozen=True)
-class GoogleCloudAdapter:
+class GoogleCloudAdapter(RegisteredProviderAdapter, adapter_name="google_cloud"):
     config: ProviderConfig
 
     def fetch(self, client: HttpClient) -> RawFetch:

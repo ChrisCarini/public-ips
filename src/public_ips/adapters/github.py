@@ -7,7 +7,7 @@ from dataclasses import dataclass
 from ipaddress import ip_network
 from pathlib import Path
 
-from public_ips.adapters.base import HttpClient
+from public_ips.adapters.base import HttpClient, RegisteredProviderAdapter
 from public_ips.models import (
     FetchDocument,
     ProviderConfig,
@@ -35,7 +35,7 @@ def _looks_like_cidr(value: object) -> bool:
 
 
 @dataclass(frozen=True)
-class GitHubAdapter:
+class GitHubAdapter(RegisteredProviderAdapter, adapter_name="github_meta"):
     config: ProviderConfig
 
     def fetch(self, client: HttpClient) -> RawFetch:
