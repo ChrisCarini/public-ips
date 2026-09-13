@@ -4,8 +4,9 @@ output_dir: perplexity.com
 adapter: generic_cidr
 source_urls:
   - https://www.perplexity.com/perplexitybot.json
+  - https://www.perplexity.com/perplexity-user.json
 documentation_url: https://docs.perplexity.ai/docs/resources/perplexity-crawlers
-attribution: PerplexityBot IP ranges JSON
+attribution: Perplexity crawler IP ranges JSON
 terms_url: https://www.perplexity.ai/hub/legal/terms-of-service
 min_ranges: 1
 max_change_absolute: 10000

@@ -6,6 +6,7 @@ source_urls:
   - https://openai.com/gptbot.json
   - https://openai.com/searchbot.json
   - https://openai.com/chatgpt-user.json
+  - https://openai.com/adsbot.json
 documentation_url: https://platform.openai.com/docs/bots
 attribution: OpenAI crawler IP ranges JSON
 terms_url: https://openai.com/policies/terms-of-use
