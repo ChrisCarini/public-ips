@@ -121,7 +121,7 @@ const renderExamples = async (): Promise<void> => {
       li.appendChild(link);
       fragment.appendChild(li);
     }
-    examples.appendChild(fragment);
+    examples.replaceChildren(fragment);
   } catch (renderError) {
     console.error(renderError);
     examples.replaceChildren();
