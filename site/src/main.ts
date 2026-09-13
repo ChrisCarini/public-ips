@@ -47,10 +47,19 @@ const error = document.querySelector<HTMLParagraphElement>('#error')!;
 const results = document.querySelector<HTMLUListElement>('#results')!;
 const examples = document.querySelector<HTMLUListElement>('#examples')!;
 
-const indexPromise = fetch(`${import.meta.env.BASE_URL}search-index.json`).then(async (response) => {
-  if (!response.ok) throw new Error('Unable to load the search index.');
-  return (await response.json()) as SearchIndex;
-});
+let indexPromise: Promise<SearchIndex> | undefined;
+const loadIndex = (): Promise<SearchIndex> => {
+  indexPromise ??= fetch(`${import.meta.env.BASE_URL}search-index.json`)
+    .then(async (response) => {
+      if (!response.ok) throw new Error('Unable to load the search index.');
+      return (await response.json()) as SearchIndex;
+    })
+    .catch((loadError: unknown) => {
+      indexPromise = undefined;
+      throw loadError;
+    });
+  return indexPromise;
+};
 
 const parseInput = (raw: string): { type: 'addr' | 'cidr'; value: ipaddr.IPv4 | ipaddr.IPv6; prefix?: number } => {
   const input = raw.trim();
@@ -85,7 +94,7 @@ const matchRelation = (
 
 const renderExamples = async (): Promise<void> => {
   try {
-    const index = await indexPromise;
+    const index = await loadIndex();
     const providerExamples = new Map<string, string>();
 
     for (const entry of index.entries) {
@@ -98,14 +107,21 @@ const renderExamples = async (): Promise<void> => {
     for (const [provider, address] of providerExamples) {
       const li = document.createElement('li');
       const link = document.createElement('a');
-      const url = new URL(window.location.href);
+      const url = new URL(window.location.pathname, window.location.origin);
       url.searchParams.set('q', address);
       link.href = url.toString();
       link.textContent = `${provider}: ${address}`;
+      link.addEventListener('click', (event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        queryInput.value = address;
+        void runSearch();
+      });
       li.appendChild(link);
       examples.appendChild(li);
     }
-  } catch {
+  } catch (renderError) {
+    console.error(renderError);
     examples.innerHTML = '<li>Example searches are unavailable.</li>';
   }
 };
@@ -119,7 +135,7 @@ const runSearch = async (): Promise<void> => {
     url.searchParams.set('q', queryInput.value.trim());
     history.replaceState(null, '', url);
 
-    const index = await indexPromise;
+    const index = await loadIndex();
     const matches = index.entries
       .map((entry) => ({ entry, rel: matchRelation(query, entry.cidr) }))
       .filter((item) => item.rel !== 'none');
