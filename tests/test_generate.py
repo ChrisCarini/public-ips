@@ -39,7 +39,6 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
         "bing.com",
         "cloud.google.com",
         "cloudflare.com",
-        "facebook.com",
         "github.com",
         "googlebot.com",
         "openai.com",

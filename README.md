@@ -11,7 +11,6 @@
 - `bing.com` — source: `https://www.bing.com/toolbox/bingbot.json`
 - `cloud.google.com` — source: `https://www.gstatic.com/ipranges/cloud.json`
 - `cloudflare.com` — source: `https://api.cloudflare.com/client/v4/ips`
-- `facebook.com` — source: `https://www.facebook.com/ips-v4`, `https://www.facebook.com/ips-v6`
 - `github.com` — source: `https://api.github.com/meta`
 - `googlebot.com` — source: `https://developers.google.com/search/apis/ipranges/googlebot.json`
 - `openai.com` — source: `https://openai.com/gptbot.json`, `https://openai.com/searchbot.json`, `https://openai.com/chatgpt-user.json`
