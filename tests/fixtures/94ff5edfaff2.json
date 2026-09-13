@@ -1,0 +1,12 @@
+{
+  "body": {
+    "creationTime": "2026-01-01T00:00:00Z",
+    "prefixes": [
+      {
+        "ipv4Prefix": "64.23.132.0/24"
+      }
+    ]
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}

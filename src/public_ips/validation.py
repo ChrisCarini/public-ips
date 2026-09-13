@@ -11,17 +11,29 @@ def _is_global_network(cidr: str) -> bool:
 
 
 def parse_networks(
-    cidrs: list[str], *, allow_non_global: bool, warning_prefix: str, warnings: list[str]
+    cidrs: list[str],
+    *,
+    allow_non_global: bool,
+    warning_prefix: str,
+    warnings: list[str],
+    normalize_host_bits: bool = False,
 ) -> FamilyNetworks:
     family = FamilyNetworks()
     seen: set[str] = set()
     for raw in cidrs:
-        network = ip_network(raw, strict=True)
+        try:
+            network = ip_network(raw, strict=True)
+        except ValueError:
+            if not normalize_host_bits:
+                raise
+            network = ip_network(raw, strict=False)
         canonical = str(network)
         if canonical in seen:
             warnings.append(f"{warning_prefix}: duplicate upstream CIDR '{canonical}'")
             continue
         seen.add(canonical)
+        if normalize_host_bits and raw != canonical:
+            warnings.append(f"{warning_prefix}: normalized upstream CIDR '{raw}' to '{network}'")
         if not allow_non_global and not _is_global_network(canonical):
             message = (
                 f"{warning_prefix}: non-global CIDR '{canonical}' blocked; "

@@ -1,0 +1,14 @@
+provider_id: pingdom.com
+display_name: Pingdom
+output_dir: pingdom.com
+adapter: generic_cidr
+source_urls:
+  - https://my.pingdom.com/probes/ipv4
+  - https://my.pingdom.com/probes/ipv6
+documentation_url: https://documentation.solarwinds.com/en/success_center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm
+attribution: Pingdom probe server IP addresses
+terms_url: https://www.solarwinds.com/legal/terms
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

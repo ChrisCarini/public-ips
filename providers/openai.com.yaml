@@ -1,0 +1,16 @@
+provider_id: openai.com
+display_name: OpenAI
+output_dir: openai.com
+adapter: generic_cidr
+source_urls:
+  - https://openai.com/gptbot.json
+  - https://openai.com/searchbot.json
+  - https://openai.com/chatgpt-user.json
+  - https://openai.com/adsbot.json
+documentation_url: https://platform.openai.com/docs/bots
+attribution: OpenAI crawler IP ranges JSON
+terms_url: https://openai.com/policies/terms-of-use
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
