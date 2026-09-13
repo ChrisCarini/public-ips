@@ -3,7 +3,7 @@ display_name: Google Bot
 output_dir: googlebot.com
 adapter: generic_cidr
 source_urls:
-  - https://developers.google.com/search/apis/ipranges/googlebot.json
+  - https://developers.google.com/crawling/ipranges/googlebot.json
 documentation_url: https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot
 attribution: Googlebot IP ranges JSON
 terms_url: https://developers.google.com/terms
