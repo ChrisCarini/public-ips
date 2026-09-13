@@ -1,3 +1,0 @@
-provider,category,ip_family,cidr,source_url,first_observed_at
-pingdom.com,,ipv4,104.129.24.0/24,https://my.pingdom.com/probes/ipv4,2026-01-02T14:35:22+00:00
-pingdom.com,,ipv6,2620:12a:8000::/48,https://my.pingdom.com/probes/ipv4,2026-01-02T14:35:22+00:00
