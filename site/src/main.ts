@@ -124,7 +124,10 @@ const renderExamples = async (): Promise<void> => {
     examples.appendChild(fragment);
   } catch (renderError) {
     console.error(renderError);
-    examples.innerHTML = '<li>Example searches are unavailable.</li>';
+    examples.replaceChildren();
+    const li = document.createElement('li');
+    li.textContent = 'Example searches are unavailable.';
+    examples.appendChild(li);
   }
 };
 
