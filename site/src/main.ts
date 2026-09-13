@@ -33,6 +33,11 @@ app.innerHTML = `
   <button id="run">Search</button>
   <p id="error" role="alert"></p>
   <ul id="results"></ul>
+  <section>
+    <h2>Example searches</h2>
+    <p>Select an example IP to search the published ranges for that provider.</p>
+    <ul id="examples"></ul>
+  </section>
 `;
 
 const queryInput = document.querySelector<HTMLInputElement>('#query')!;
@@ -40,6 +45,21 @@ queryInput.value = queryParam;
 const runButton = document.querySelector<HTMLButtonElement>('#run')!;
 const error = document.querySelector<HTMLParagraphElement>('#error')!;
 const results = document.querySelector<HTMLUListElement>('#results')!;
+const examples = document.querySelector<HTMLUListElement>('#examples')!;
+
+let indexPromise: Promise<SearchIndex> | undefined;
+const loadIndex = (): Promise<SearchIndex> => {
+  indexPromise ??= fetch(`${import.meta.env.BASE_URL}search-index.json`)
+    .then(async (response) => {
+      if (!response.ok) throw new Error('Unable to load the search index.');
+      return (await response.json()) as SearchIndex;
+    })
+    .catch((loadError: unknown) => {
+      indexPromise = undefined;
+      throw loadError;
+    });
+  return indexPromise;
+};
 
 const parseInput = (raw: string): { type: 'addr' | 'cidr'; value: ipaddr.IPv4 | ipaddr.IPv6; prefix?: number } => {
   const input = raw.trim();
@@ -72,6 +92,45 @@ const matchRelation = (
   return 'none';
 };
 
+const renderExamples = async (): Promise<void> => {
+  try {
+    const index = await loadIndex();
+    const providerExamples = new Map<string, string>();
+
+    for (const entry of index.entries) {
+      if (!providerExamples.has(entry.provider)) {
+        const [address] = ipaddr.parseCIDR(entry.cidr);
+        providerExamples.set(entry.provider, address.toNormalizedString());
+      }
+    }
+
+    const fragment = document.createDocumentFragment();
+    for (const [provider, address] of providerExamples) {
+      const li = document.createElement('li');
+      const link = document.createElement('a');
+      const url = new URL(window.location.href);
+      url.searchParams.set('q', address);
+      link.href = url.toString();
+      link.textContent = `${provider}: ${address}`;
+      link.addEventListener('click', (event) => {
+        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        queryInput.value = address;
+        void runSearch();
+      });
+      li.appendChild(link);
+      fragment.appendChild(li);
+    }
+    examples.replaceChildren(fragment);
+  } catch (renderError) {
+    console.error(renderError);
+    examples.replaceChildren();
+    const li = document.createElement('li');
+    li.textContent = 'Example searches are unavailable.';
+    examples.appendChild(li);
+  }
+};
+
 const runSearch = async (): Promise<void> => {
   error.textContent = '';
   results.innerHTML = '';
@@ -81,9 +140,7 @@ const runSearch = async (): Promise<void> => {
     url.searchParams.set('q', queryInput.value.trim());
     history.replaceState(null, '', url);
 
-    const index = (await fetch(`${import.meta.env.BASE_URL}search-index.json`).then((r) =>
-      r.json()
-    )) as SearchIndex;
+    const index = await loadIndex();
     const matches = index.entries
       .map((entry) => ({ entry, rel: matchRelation(query, entry.cidr) }))
       .filter((item) => item.rel !== 'none');
@@ -111,6 +168,7 @@ const runSearch = async (): Promise<void> => {
 };
 
 runButton.addEventListener('click', () => void runSearch());
+void renderExamples();
 if (queryParam) {
   void runSearch();
 }
