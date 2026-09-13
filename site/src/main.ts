@@ -104,10 +104,11 @@ const renderExamples = async (): Promise<void> => {
       }
     }
 
+    const fragment = document.createDocumentFragment();
     for (const [provider, address] of providerExamples) {
       const li = document.createElement('li');
       const link = document.createElement('a');
-      const url = new URL(window.location.pathname, window.location.origin);
+      const url = new URL(window.location.href);
       url.searchParams.set('q', address);
       link.href = url.toString();
       link.textContent = `${provider}: ${address}`;
@@ -118,8 +119,9 @@ const renderExamples = async (): Promise<void> => {
         void runSearch();
       });
       li.appendChild(link);
-      examples.appendChild(li);
+      fragment.appendChild(li);
     }
+    examples.appendChild(fragment);
   } catch (renderError) {
     console.error(renderError);
     examples.innerHTML = '<li>Example searches are unavailable.</li>';
