@@ -1,0 +1,1206 @@
+{
+  "generated_at": "2026-01-02T14:35:22+00:00",
+  "providers": {
+    "amazonaws.com": {
+      "attribution": "AWS IP address ranges JSON",
+      "categories": {
+        "amazon": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 1
+          },
+          "ipv4": [
+            "3.5.140.0/22"
+          ],
+          "ipv6": [
+            "2600:1f18::/36"
+          ],
+          "paths": {
+            "all": "amazon/all.txt",
+            "collapsed_all": "amazon/collapsed-all.txt",
+            "collapsed_ipv4": "amazon/collapsed-ipv4.txt",
+            "collapsed_ipv6": "amazon/collapsed-ipv6.txt",
+            "ipv4": "amazon/ipv4.txt",
+            "ipv6": "amazon/ipv6.txt"
+          }
+        }
+      },
+      "display_name": "Amazon AWS",
+      "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "fe89741a771df04be558e86c86033cc3c00bed128b2b739b43746032fd669acf",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 1
+        },
+        "ipv4": [
+          "3.5.140.0/22"
+        ],
+        "ipv6": [
+          "2600:1f18::/36"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "amazonaws.com",
+      "schema_version": "v1",
+      "source_body_sha256": "a35099e271354025487f824347d28e94f86d17f7a55001be075d1b8bb1d49b1f",
+      "source_urls": [
+        "https://ip-ranges.amazonaws.com/ip-ranges.json"
+      ],
+      "terms_url": "https://aws.amazon.com/service-terms/"
+    },
+    "anthropic.com": {
+      "attribution": "Anthropic crawler IP ranges JSON",
+      "categories": {},
+      "display_name": "Anthropic",
+      "documentation_url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "ae0b3d8c85be11b1bfb021c162b278d78a05b96152f2eb4eabaef0ccd1de6b01",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 0
+        },
+        "ipv4": [
+          "160.79.104.0/23"
+        ],
+        "ipv6": [],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "anthropic.com",
+      "schema_version": "v1",
+      "source_body_sha256": "66578a022e90128535f1a3501340d795bf937d21a8d29240155805b47e30a1f4",
+      "source_urls": [
+        "https://claude.com/crawling/bots.json"
+      ],
+      "terms_url": "https://www.anthropic.com/legal/consumer-terms"
+    },
+    "apple.com": {
+      "attribution": "Apple iCloud Private Relay egress IP ranges",
+      "categories": {},
+      "display_name": "Apple",
+      "documentation_url": "https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "252a9ccb01ba950562baf9a75e8ccc531c69ac6f963d2e20cb308e3b317d2840",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 1
+        },
+        "ipv4": [
+          "17.0.0.0/8"
+        ],
+        "ipv6": [
+          "2a01:b740::/32"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "apple.com",
+      "schema_version": "v1",
+      "source_body_sha256": "efdaa1672274d2257c26b0cc3bb21293f9c0827353269833403732a1473f9c4f",
+      "source_urls": [
+        "https://mask-api.icloud.com/egress-ip-ranges.csv"
+      ],
+      "terms_url": "https://www.apple.com/legal/internet-services/terms/site.html"
+    },
+    "azure.microsoft.com": {
+      "attribution": "Azure IP Ranges and Service Tags - Public Cloud",
+      "categories": {
+        "azurecloud": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 1
+          },
+          "ipv4": [
+            "4.150.0.0/16"
+          ],
+          "ipv6": [
+            "2603:1030::/48"
+          ],
+          "paths": {
+            "all": "azurecloud/all.txt",
+            "collapsed_all": "azurecloud/collapsed-all.txt",
+            "collapsed_ipv4": "azurecloud/collapsed-ipv4.txt",
+            "collapsed_ipv6": "azurecloud/collapsed-ipv6.txt",
+            "ipv4": "azurecloud/ipv4.txt",
+            "ipv6": "azurecloud/ipv6.txt"
+          }
+        }
+      },
+      "display_name": "Microsoft Azure",
+      "documentation_url": "https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "278edcfee60fd09974b16b05eb035c15ab898046c4bba56d11b4bb9be55232ea",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 1
+        },
+        "ipv4": [
+          "4.150.0.0/16"
+        ],
+        "ipv6": [
+          "2603:1030::/48"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "azure.microsoft.com",
+      "schema_version": "v1",
+      "source_body_sha256": "d46470415640d163ad73887bbfa36e6cd61a28ac822a22213f89688d3e37bbf9",
+      "source_urls": [
+        "https://www.microsoft.com/en-us/download/details.aspx?id=56519"
+      ],
+      "terms_url": "https://www.microsoft.com/legal/terms-of-use"
+    },
+    "bing.com": {
+      "attribution": "Bingbot IP ranges JSON",
+      "categories": {},
+      "display_name": "Bing (BingBot)",
+      "documentation_url": "https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "00979f96359c28caee7b8b36bf2dcb35488213f5a5af8b1a30f004db24c73b65",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 1
+        },
+        "ipv4": [
+          "40.77.167.0/24"
+        ],
+        "ipv6": [
+          "2a01:111:f403::/48"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "bing.com",
+      "schema_version": "v1",
+      "source_body_sha256": "4df3ed358d3a45bb76914519cbe09b8f6ea9918bc718f817cda8dda406012a1b",
+      "source_urls": [
+        "https://www.bing.com/toolbox/bingbot.json"
+      ],
+      "terms_url": "https://www.microsoft.com/servicesagreement"
+    },
+    "cloud.google.com": {
+      "attribution": "Google Cloud IP ranges JSON",
+      "categories": {
+        "google_cloud": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 1
+          },
+          "ipv4": [
+            "34.128.0.0/10"
+          ],
+          "ipv6": [
+            "2600:1900::/35"
+          ],
+          "paths": {
+            "all": "google_cloud/all.txt",
+            "collapsed_all": "google_cloud/collapsed-all.txt",
+            "collapsed_ipv4": "google_cloud/collapsed-ipv4.txt",
+            "collapsed_ipv6": "google_cloud/collapsed-ipv6.txt",
+            "ipv4": "google_cloud/ipv4.txt",
+            "ipv6": "google_cloud/ipv6.txt"
+          }
+        }
+      },
+      "display_name": "Google Cloud",
+      "documentation_url": "https://cloud.google.com/vpc/docs/configure-private-google-access",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "7af31b557dd27f14d2c2158f1cd7bfbd8af496ffd209f6e5cd8c1a1bfdcd0b17",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 1
+        },
+        "ipv4": [
+          "34.128.0.0/10"
+        ],
+        "ipv6": [
+          "2600:1900::/35"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "cloud.google.com",
+      "schema_version": "v1",
+      "source_body_sha256": "b79575d41efc429a265df50ad6271605b936c92225e83ef4f5f770f65e271951",
+      "source_urls": [
+        "https://www.gstatic.com/ipranges/cloud.json"
+      ],
+      "terms_url": "https://cloud.google.com/terms"
+    },
+    "cloudflare.com": {
+      "attribution": "Cloudflare IPs API",
+      "categories": {},
+      "display_name": "Cloudflare",
+      "documentation_url": "https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "cbafad849651f8c3c1e6a6f9b913c2ba4070fbc934a8706fa5cf0e2fbd20b339",
+      "provider": {
+        "counts": {
+          "ipv4": 2,
+          "ipv6": 2
+        },
+        "ipv4": [
+          "103.21.244.0/22",
+          "173.245.48.0/20"
+        ],
+        "ipv6": [
+          "2400:cb00::/32",
+          "2606:4700::/32"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "cloudflare.com",
+      "schema_version": "v1",
+      "source_body_sha256": "c24feaae97eb4282ff74870cb8629ff7302aa4e83aa910f2438e33c09231e3bd",
+      "source_urls": [
+        "https://api.cloudflare.com/client/v4/ips"
+      ],
+      "terms_url": "https://www.cloudflare.com/website-terms/"
+    },
+    "github.com": {
+      "attribution": "GitHub Meta API",
+      "categories": {
+        "actions": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.112.0/20"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "actions/all.txt",
+            "collapsed_all": "actions/collapsed-all.txt",
+            "collapsed_ipv4": "actions/collapsed-ipv4.txt",
+            "collapsed_ipv6": "actions/collapsed-ipv6.txt",
+            "ipv4": "actions/ipv4.txt",
+            "ipv6": "actions/ipv6.txt"
+          }
+        },
+        "actions_macos": {
+          "counts": {
+            "ipv4": 8,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "13.105.49.0/24",
+            "13.105.117.0/24",
+            "13.105.220.0/25",
+            "13.105.220.128/27",
+            "13.105.220.160/28",
+            "13.105.220.176/29",
+            "13.105.220.184/30",
+            "13.105.220.188/31"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "actions_macos/all.txt",
+            "collapsed_all": "actions_macos/collapsed-all.txt",
+            "collapsed_ipv4": "actions_macos/collapsed-ipv4.txt",
+            "collapsed_ipv6": "actions_macos/collapsed-ipv6.txt",
+            "ipv4": "actions_macos/ipv4.txt",
+            "ipv6": "actions_macos/ipv6.txt"
+          }
+        },
+        "api": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.113.0/24"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "api/all.txt",
+            "collapsed_all": "api/collapsed-all.txt",
+            "collapsed_ipv4": "api/collapsed-ipv4.txt",
+            "collapsed_ipv6": "api/collapsed-ipv6.txt",
+            "ipv4": "api/ipv4.txt",
+            "ipv6": "api/ipv6.txt"
+          }
+        },
+        "codespaces": {
+          "counts": {
+            "ipv4": 191,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "4.147.189.192/28",
+            "4.154.216.160/28",
+            "4.154.218.144/28",
+            "4.154.218.192/28",
+            "4.154.218.240/28",
+            "4.154.222.240/28",
+            "4.154.223.64/28",
+            "4.154.223.208/28",
+            "4.154.241.160/28",
+            "4.154.242.96/28",
+            "4.154.243.0/28",
+            "4.154.243.16/28",
+            "4.154.243.48/28",
+            "4.154.243.112/28",
+            "4.154.243.144/28",
+            "4.154.243.240/28",
+            "4.154.244.192/28",
+            "4.154.245.80/28",
+            "4.155.12.0/28",
+            "4.155.45.96/28",
+            "4.155.74.48/28",
+            "4.155.240.32/28",
+            "4.180.183.240/28",
+            "4.196.143.240/28",
+            "4.196.180.176/28",
+            "4.196.181.112/28",
+            "4.196.181.128/28",
+            "4.196.181.192/28",
+            "4.196.182.32/28",
+            "4.196.182.112/28",
+            "4.196.182.128/28",
+            "4.196.182.160/28",
+            "4.197.69.64/28",
+            "4.210.177.96/28",
+            "4.210.177.128/28",
+            "4.210.179.32/28",
+            "4.210.179.112/28",
+            "4.210.179.128/28",
+            "4.210.179.192/28",
+            "4.210.179.208/28",
+            "4.210.180.0/28",
+            "4.210.180.32/28",
+            "4.210.180.48/28",
+            "4.210.180.96/28",
+            "4.210.180.112/28",
+            "4.210.180.208/28",
+            "4.210.180.240/28",
+            "4.210.181.32/28",
+            "4.210.181.128/28",
+            "4.210.181.192/28",
+            "4.210.182.0/28",
+            "4.210.182.16/28",
+            "4.210.182.80/28",
+            "4.234.134.160/28",
+            "4.234.134.176/28",
+            "4.234.135.0/28",
+            "4.234.135.48/28",
+            "4.234.135.112/28",
+            "4.234.135.128/28",
+            "4.234.135.144/28",
+            "4.234.135.160/28",
+            "4.234.197.192/28",
+            "4.234.199.224/28",
+            "4.240.18.224/28",
+            "4.240.19.128/28",
+            "4.240.20.128/28",
+            "4.240.20.160/28",
+            "4.240.20.176/28",
+            "4.240.20.192/28",
+            "4.240.20.208/28",
+            "4.240.20.224/28",
+            "4.240.20.240/28",
+            "4.240.21.0/28",
+            "4.240.21.16/28",
+            "4.240.21.64/28",
+            "4.240.37.96/28",
+            "4.240.39.192/28",
+            "4.240.39.240/28",
+            "4.246.100.240/28",
+            "13.71.3.96/28",
+            "13.76.118.16/28",
+            "13.76.118.32/28",
+            "13.76.118.48/28",
+            "13.76.118.64/28",
+            "13.76.118.80/28",
+            "13.76.118.112/28",
+            "13.76.118.128/28",
+            "13.76.118.176/28",
+            "13.76.118.192/28",
+            "13.76.118.208/28",
+            "13.76.118.224/28",
+            "13.76.217.32/28",
+            "20.3.226.144/28",
+            "20.27.101.128/28",
+            "20.42.11.16/28",
+            "20.55.13.192/28",
+            "20.61.126.208/28",
+            "20.61.127.48/28",
+            "20.61.206.192/28",
+            "20.63.210.192/28",
+            "20.63.212.48/28",
+            "20.63.217.192/28",
+            "20.77.127.144/28",
+            "20.162.254.128/28",
+            "20.162.255.0/28",
+            "20.162.255.224/28",
+            "20.163.40.128/28",
+            "20.171.127.64/28",
+            "20.192.21.48/28",
+            "20.227.135.112/28",
+            "20.227.135.160/28",
+            "20.227.140.176/28",
+            "20.227.141.208/28",
+            "20.227.144.160/28",
+            "20.227.144.176/28",
+            "20.227.145.64/28",
+            "20.227.145.144/28",
+            "20.227.146.16/28",
+            "20.227.146.224/28",
+            "20.227.146.240/28",
+            "20.227.147.64/28",
+            "23.97.62.112/28",
+            "23.97.62.128/28",
+            "23.97.62.144/28",
+            "23.97.62.240/28",
+            "51.8.152.64/28",
+            "51.8.152.96/28",
+            "51.8.152.112/28",
+            "51.8.154.192/28",
+            "51.8.154.208/28",
+            "51.8.154.224/28",
+            "51.8.155.16/28",
+            "51.8.155.128/28",
+            "51.8.155.144/28",
+            "51.8.155.160/28",
+            "51.143.4.80/28",
+            "51.145.53.144/28",
+            "52.172.130.176/28",
+            "68.218.39.192/28",
+            "74.249.85.192/28",
+            "104.46.239.0/28",
+            "104.215.250.48/28",
+            "104.215.251.96/28",
+            "104.215.252.144/28",
+            "104.215.255.144/28",
+            "104.215.255.224/28",
+            "135.237.130.224/28",
+            "138.91.25.112/28",
+            "172.166.151.112/28",
+            "172.166.156.96/28",
+            "172.166.156.160/28",
+            "172.182.192.176/28",
+            "172.182.192.192/28",
+            "172.182.200.128/28",
+            "172.182.200.240/28",
+            "172.182.201.64/28",
+            "172.182.201.80/28",
+            "172.182.201.96/28",
+            "172.182.201.112/28",
+            "172.182.208.144/28",
+            "172.182.208.192/28",
+            "172.182.208.208/28",
+            "172.182.208.224/28",
+            "172.182.208.240/28",
+            "172.182.209.0/28",
+            "172.182.209.16/28",
+            "172.182.209.32/28",
+            "172.191.151.48/28",
+            "172.203.190.64/28",
+            "172.203.190.240/28",
+            "172.210.53.192/28",
+            "172.210.53.208/28",
+            "172.210.53.240/28",
+            "172.210.54.0/28",
+            "172.210.54.16/28",
+            "172.210.54.32/28",
+            "172.210.54.48/28",
+            "172.210.54.64/28",
+            "172.210.54.80/28",
+            "172.210.54.96/28",
+            "172.210.54.112/28",
+            "172.210.54.128/28",
+            "172.210.54.144/28",
+            "172.210.54.160/28",
+            "172.210.54.176/28",
+            "172.210.54.192/28",
+            "172.210.54.208/28",
+            "172.210.54.224/28",
+            "207.46.224.80/28",
+            "207.46.227.144/28",
+            "207.46.230.240/28"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "codespaces/all.txt",
+            "collapsed_all": "codespaces/collapsed-all.txt",
+            "collapsed_ipv4": "codespaces/collapsed-ipv4.txt",
+            "collapsed_ipv6": "codespaces/collapsed-ipv6.txt",
+            "ipv4": "codespaces/ipv4.txt",
+            "ipv6": "codespaces/ipv6.txt"
+          }
+        },
+        "copilot": {
+          "counts": {
+            "ipv4": 15,
+            "ipv6": 2
+          },
+          "ipv4": [
+            "4.225.11.192/32",
+            "4.228.31.153/32",
+            "4.237.22.41/32",
+            "4.249.131.160/32",
+            "13.107.5.93/32",
+            "20.85.130.105/32",
+            "20.199.39.224/32",
+            "20.250.119.64/32",
+            "52.140.63.241/32",
+            "52.175.140.176/32",
+            "138.91.182.224/32",
+            "140.82.112.0/20",
+            "143.55.64.0/20",
+            "185.199.108.0/22",
+            "192.30.252.0/22"
+          ],
+          "ipv6": [
+            "2606:50c0::/32",
+            "2a0a:a440::/29"
+          ],
+          "paths": {
+            "all": "copilot/all.txt",
+            "collapsed_all": "copilot/collapsed-all.txt",
+            "collapsed_ipv4": "copilot/collapsed-ipv4.txt",
+            "collapsed_ipv6": "copilot/collapsed-ipv6.txt",
+            "ipv4": "copilot/ipv4.txt",
+            "ipv6": "copilot/ipv6.txt"
+          }
+        },
+        "dependabot": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.113.0/24"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "dependabot/all.txt",
+            "collapsed_all": "dependabot/collapsed-all.txt",
+            "collapsed_ipv4": "dependabot/collapsed-ipv4.txt",
+            "collapsed_ipv6": "dependabot/collapsed-ipv6.txt",
+            "ipv4": "dependabot/ipv4.txt",
+            "ipv6": "dependabot/ipv6.txt"
+          }
+        },
+        "git": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.112.0/20"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "git/all.txt",
+            "collapsed_all": "git/collapsed-all.txt",
+            "collapsed_ipv4": "git/collapsed-ipv4.txt",
+            "collapsed_ipv6": "git/collapsed-ipv6.txt",
+            "ipv4": "git/ipv4.txt",
+            "ipv6": "git/ipv6.txt"
+          }
+        },
+        "github_enterprise_importer": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.112.0/20"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "github_enterprise_importer/all.txt",
+            "collapsed_all": "github_enterprise_importer/collapsed-all.txt",
+            "collapsed_ipv4": "github_enterprise_importer/collapsed-ipv4.txt",
+            "collapsed_ipv6": "github_enterprise_importer/collapsed-ipv6.txt",
+            "ipv4": "github_enterprise_importer/ipv4.txt",
+            "ipv6": "github_enterprise_importer/ipv6.txt"
+          }
+        },
+        "hooks": {
+          "counts": {
+            "ipv4": 2,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "185.199.108.0/22",
+            "192.30.252.0/22"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "hooks/all.txt",
+            "collapsed_all": "hooks/collapsed-all.txt",
+            "collapsed_ipv4": "hooks/collapsed-ipv4.txt",
+            "collapsed_ipv6": "hooks/collapsed-ipv6.txt",
+            "ipv4": "hooks/ipv4.txt",
+            "ipv6": "hooks/ipv6.txt"
+          }
+        },
+        "importer": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.121.33/32"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "importer/all.txt",
+            "collapsed_all": "importer/collapsed-all.txt",
+            "collapsed_ipv4": "importer/collapsed-ipv4.txt",
+            "collapsed_ipv6": "importer/collapsed-ipv6.txt",
+            "ipv4": "importer/ipv4.txt",
+            "ipv6": "importer/ipv6.txt"
+          }
+        },
+        "packages": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.121.33/32"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "packages/all.txt",
+            "collapsed_all": "packages/collapsed-all.txt",
+            "collapsed_ipv4": "packages/collapsed-ipv4.txt",
+            "collapsed_ipv6": "packages/collapsed-ipv6.txt",
+            "ipv4": "packages/ipv4.txt",
+            "ipv6": "packages/ipv6.txt"
+          }
+        },
+        "pages": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "185.199.108.0/22"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "pages/all.txt",
+            "collapsed_all": "pages/collapsed-all.txt",
+            "collapsed_ipv4": "pages/collapsed-ipv4.txt",
+            "collapsed_ipv6": "pages/collapsed-ipv6.txt",
+            "ipv4": "pages/ipv4.txt",
+            "ipv6": "pages/ipv6.txt"
+          }
+        },
+        "web": {
+          "counts": {
+            "ipv4": 1,
+            "ipv6": 0
+          },
+          "ipv4": [
+            "140.82.112.0/20"
+          ],
+          "ipv6": [],
+          "paths": {
+            "all": "web/all.txt",
+            "collapsed_all": "web/collapsed-all.txt",
+            "collapsed_ipv4": "web/collapsed-ipv4.txt",
+            "collapsed_ipv6": "web/collapsed-ipv6.txt",
+            "ipv4": "web/ipv4.txt",
+            "ipv6": "web/ipv6.txt"
+          }
+        }
+      },
+      "display_name": "GitHub",
+      "documentation_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "6e2641e5bc3e5934a8a16d781c727f66e43a6a3849b0cbb6b47d85c3306168a0",
+      "provider": {
+        "counts": {
+          "ipv4": 216,
+          "ipv6": 2
+        },
+        "ipv4": [
+          "4.147.189.192/28",
+          "4.154.216.160/28",
+          "4.154.218.144/28",
+          "4.154.218.192/28",
+          "4.154.218.240/28",
+          "4.154.222.240/28",
+          "4.154.223.64/28",
+          "4.154.223.208/28",
+          "4.154.241.160/28",
+          "4.154.242.96/28",
+          "4.154.243.0/28",
+          "4.154.243.16/28",
+          "4.154.243.48/28",
+          "4.154.243.112/28",
+          "4.154.243.144/28",
+          "4.154.243.240/28",
+          "4.154.244.192/28",
+          "4.154.245.80/28",
+          "4.155.12.0/28",
+          "4.155.45.96/28",
+          "4.155.74.48/28",
+          "4.155.240.32/28",
+          "4.180.183.240/28",
+          "4.196.143.240/28",
+          "4.196.180.176/28",
+          "4.196.181.112/28",
+          "4.196.181.128/28",
+          "4.196.181.192/28",
+          "4.196.182.32/28",
+          "4.196.182.112/28",
+          "4.196.182.128/28",
+          "4.196.182.160/28",
+          "4.197.69.64/28",
+          "4.210.177.96/28",
+          "4.210.177.128/28",
+          "4.210.179.32/28",
+          "4.210.179.112/28",
+          "4.210.179.128/28",
+          "4.210.179.192/28",
+          "4.210.179.208/28",
+          "4.210.180.0/28",
+          "4.210.180.32/28",
+          "4.210.180.48/28",
+          "4.210.180.96/28",
+          "4.210.180.112/28",
+          "4.210.180.208/28",
+          "4.210.180.240/28",
+          "4.210.181.32/28",
+          "4.210.181.128/28",
+          "4.210.181.192/28",
+          "4.210.182.0/28",
+          "4.210.182.16/28",
+          "4.210.182.80/28",
+          "4.225.11.192/32",
+          "4.228.31.153/32",
+          "4.234.134.160/28",
+          "4.234.134.176/28",
+          "4.234.135.0/28",
+          "4.234.135.48/28",
+          "4.234.135.112/28",
+          "4.234.135.128/28",
+          "4.234.135.144/28",
+          "4.234.135.160/28",
+          "4.234.197.192/28",
+          "4.234.199.224/28",
+          "4.237.22.41/32",
+          "4.240.18.224/28",
+          "4.240.19.128/28",
+          "4.240.20.128/28",
+          "4.240.20.160/28",
+          "4.240.20.176/28",
+          "4.240.20.192/28",
+          "4.240.20.208/28",
+          "4.240.20.224/28",
+          "4.240.20.240/28",
+          "4.240.21.0/28",
+          "4.240.21.16/28",
+          "4.240.21.64/28",
+          "4.240.37.96/28",
+          "4.240.39.192/28",
+          "4.240.39.240/28",
+          "4.246.100.240/28",
+          "4.249.131.160/32",
+          "13.71.3.96/28",
+          "13.76.118.16/28",
+          "13.76.118.32/28",
+          "13.76.118.48/28",
+          "13.76.118.64/28",
+          "13.76.118.80/28",
+          "13.76.118.112/28",
+          "13.76.118.128/28",
+          "13.76.118.176/28",
+          "13.76.118.192/28",
+          "13.76.118.208/28",
+          "13.76.118.224/28",
+          "13.76.217.32/28",
+          "13.105.49.0/24",
+          "13.105.117.0/24",
+          "13.105.220.0/25",
+          "13.105.220.128/27",
+          "13.105.220.160/28",
+          "13.105.220.176/29",
+          "13.105.220.184/30",
+          "13.105.220.188/31",
+          "13.107.5.93/32",
+          "20.3.226.144/28",
+          "20.27.101.128/28",
+          "20.42.11.16/28",
+          "20.55.13.192/28",
+          "20.61.126.208/28",
+          "20.61.127.48/28",
+          "20.61.206.192/28",
+          "20.63.210.192/28",
+          "20.63.212.48/28",
+          "20.63.217.192/28",
+          "20.77.127.144/28",
+          "20.85.130.105/32",
+          "20.162.254.128/28",
+          "20.162.255.0/28",
+          "20.162.255.224/28",
+          "20.163.40.128/28",
+          "20.171.127.64/28",
+          "20.192.21.48/28",
+          "20.199.39.224/32",
+          "20.227.135.112/28",
+          "20.227.135.160/28",
+          "20.227.140.176/28",
+          "20.227.141.208/28",
+          "20.227.144.160/28",
+          "20.227.144.176/28",
+          "20.227.145.64/28",
+          "20.227.145.144/28",
+          "20.227.146.16/28",
+          "20.227.146.224/28",
+          "20.227.146.240/28",
+          "20.227.147.64/28",
+          "20.250.119.64/32",
+          "23.97.62.112/28",
+          "23.97.62.128/28",
+          "23.97.62.144/28",
+          "23.97.62.240/28",
+          "51.8.152.64/28",
+          "51.8.152.96/28",
+          "51.8.152.112/28",
+          "51.8.154.192/28",
+          "51.8.154.208/28",
+          "51.8.154.224/28",
+          "51.8.155.16/28",
+          "51.8.155.128/28",
+          "51.8.155.144/28",
+          "51.8.155.160/28",
+          "51.143.4.80/28",
+          "51.145.53.144/28",
+          "52.140.63.241/32",
+          "52.172.130.176/28",
+          "52.175.140.176/32",
+          "68.218.39.192/28",
+          "74.249.85.192/28",
+          "104.46.239.0/28",
+          "104.215.250.48/28",
+          "104.215.251.96/28",
+          "104.215.252.144/28",
+          "104.215.255.144/28",
+          "104.215.255.224/28",
+          "135.237.130.224/28",
+          "138.91.25.112/28",
+          "138.91.182.224/32",
+          "140.82.112.0/20",
+          "140.82.113.0/24",
+          "140.82.121.33/32",
+          "143.55.64.0/20",
+          "172.166.151.112/28",
+          "172.166.156.96/28",
+          "172.166.156.160/28",
+          "172.182.192.176/28",
+          "172.182.192.192/28",
+          "172.182.200.128/28",
+          "172.182.200.240/28",
+          "172.182.201.64/28",
+          "172.182.201.80/28",
+          "172.182.201.96/28",
+          "172.182.201.112/28",
+          "172.182.208.144/28",
+          "172.182.208.192/28",
+          "172.182.208.208/28",
+          "172.182.208.224/28",
+          "172.182.208.240/28",
+          "172.182.209.0/28",
+          "172.182.209.16/28",
+          "172.182.209.32/28",
+          "172.191.151.48/28",
+          "172.203.190.64/28",
+          "172.203.190.240/28",
+          "172.210.53.192/28",
+          "172.210.53.208/28",
+          "172.210.53.240/28",
+          "172.210.54.0/28",
+          "172.210.54.16/28",
+          "172.210.54.32/28",
+          "172.210.54.48/28",
+          "172.210.54.64/28",
+          "172.210.54.80/28",
+          "172.210.54.96/28",
+          "172.210.54.112/28",
+          "172.210.54.128/28",
+          "172.210.54.144/28",
+          "172.210.54.160/28",
+          "172.210.54.176/28",
+          "172.210.54.192/28",
+          "172.210.54.208/28",
+          "172.210.54.224/28",
+          "185.199.108.0/22",
+          "192.30.252.0/22",
+          "207.46.224.80/28",
+          "207.46.227.144/28",
+          "207.46.230.240/28"
+        ],
+        "ipv6": [
+          "2606:50c0::/32",
+          "2a0a:a440::/29"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "github.com",
+      "schema_version": "v1",
+      "source_body_sha256": "687c25b084e1001ba585ee27684e35cf4a941fca5d9f26b7cea4d4828ad80beb",
+      "source_urls": [
+        "https://api.github.com/meta"
+      ],
+      "terms_url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service"
+    },
+    "googlebot.com": {
+      "attribution": "Googlebot IP ranges JSON",
+      "categories": {},
+      "display_name": "Google Bot",
+      "documentation_url": "https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "6ae5db4c12beca31eab60064f92e16b7f948fd7fcee394097ac9d3990c979e6a",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 1
+        },
+        "ipv4": [
+          "66.249.64.0/19"
+        ],
+        "ipv6": [
+          "2001:4860:4801::/48"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "googlebot.com",
+      "schema_version": "v1",
+      "source_body_sha256": "3f997d019c0900bc74a33d7f8e14dcb37234da6aacaf4b0f87c90b09c43f8269",
+      "source_urls": [
+        "https://developers.google.com/search/apis/ipranges/googlebot.json"
+      ],
+      "terms_url": "https://developers.google.com/terms"
+    },
+    "openai.com": {
+      "attribution": "OpenAI crawler IP ranges JSON",
+      "categories": {},
+      "display_name": "OpenAI",
+      "documentation_url": "https://platform.openai.com/docs/bots",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "6e0e86062c934badb69b33092345a89c567a2fb6dbf5cd570e00f1fa62d3c34e",
+      "provider": {
+        "counts": {
+          "ipv4": 4,
+          "ipv6": 0
+        },
+        "ipv4": [
+          "4.227.36.0/25",
+          "20.42.10.176/28",
+          "20.171.206.0/24",
+          "20.171.207.0/24"
+        ],
+        "ipv6": [],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "openai.com",
+      "schema_version": "v1",
+      "source_body_sha256": "436f537a1e1c70f0df46b8ad171d653e2ec8663f9a34bb96ad3b9a0b86b70266",
+      "source_urls": [
+        "https://openai.com/gptbot.json",
+        "https://openai.com/searchbot.json",
+        "https://openai.com/chatgpt-user.json",
+        "https://openai.com/adsbot.json"
+      ],
+      "terms_url": "https://openai.com/policies/terms-of-use"
+    },
+    "oracle.com": {
+      "attribution": "Oracle Cloud Infrastructure public IP ranges JSON",
+      "categories": {},
+      "display_name": "Oracle Cloud",
+      "documentation_url": "https://docs.oracle.com/en-us/iaas/Content/General/Concepts/addressranges.htm",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "1acdaf0a3216e5cc8fb3f25103173c18dc89f243d809f5898cd5265e36374cdb",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 0
+        },
+        "ipv4": [
+          "129.80.0.0/16"
+        ],
+        "ipv6": [],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "oracle.com",
+      "schema_version": "v1",
+      "source_body_sha256": "8eba31b1c6e7c2d64472e60a208434bed00e3c15cc91847c1bfb7c2284f0ad21",
+      "source_urls": [
+        "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json"
+      ],
+      "terms_url": "https://www.oracle.com/legal/terms.html"
+    },
+    "perplexity.com": {
+      "attribution": "Perplexity crawler IP ranges JSON",
+      "categories": {},
+      "display_name": "Perplexity",
+      "documentation_url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "0c63385991d7242c5f251a944a4ae588ea819cee8e5b8edc6b990111b3b6e43b",
+      "provider": {
+        "counts": {
+          "ipv4": 2,
+          "ipv6": 0
+        },
+        "ipv4": [
+          "44.208.221.197/32",
+          "64.23.132.0/24"
+        ],
+        "ipv6": [],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "perplexity.com",
+      "schema_version": "v1",
+      "source_body_sha256": "5e3e8da10f1db5e41ff0cf7b6fe010a02794040f5a2bc7a9755306d27fe60c11",
+      "source_urls": [
+        "https://www.perplexity.com/perplexitybot.json",
+        "https://www.perplexity.com/perplexity-user.json"
+      ],
+      "terms_url": "https://www.perplexity.ai/hub/legal/terms-of-service"
+    },
+    "pingdom.com": {
+      "attribution": "Pingdom probe server IP addresses",
+      "categories": {},
+      "display_name": "Pingdom",
+      "documentation_url": "https://documentation.solarwinds.com/en/success_center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm",
+      "first_observed_at": "2026-01-02T14:35:22+00:00",
+      "generated_at": "2026-01-02T14:35:22+00:00",
+      "normalized_data_sha256": "4ad1cb32c70e21725a56cee1cd2ccb426fa3e4f28167ebd182cbdf69dfae4f12",
+      "provider": {
+        "counts": {
+          "ipv4": 1,
+          "ipv6": 1
+        },
+        "ipv4": [
+          "104.129.24.0/24"
+        ],
+        "ipv6": [
+          "2620:12a:8000::/48"
+        ],
+        "paths": {
+          "all": "all.txt",
+          "collapsed_all": "collapsed-all.txt",
+          "collapsed_ipv4": "collapsed-ipv4.txt",
+          "collapsed_ipv6": "collapsed-ipv6.txt",
+          "ipv4": "ipv4.txt",
+          "ipv6": "ipv6.txt"
+        }
+      },
+      "provider_id": "pingdom.com",
+      "schema_version": "v1",
+      "source_body_sha256": "b1ad2bf09256ace7e00b2c02d3908eccc2203a450548d785996ad95e322c89ed",
+      "source_urls": [
+        "https://my.pingdom.com/probes/ipv4",
+        "https://my.pingdom.com/probes/ipv6"
+      ],
+      "terms_url": "https://www.solarwinds.com/legal/terms"
+    }
+  },
+  "schema_version": "v1"
+}

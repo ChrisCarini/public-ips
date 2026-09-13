@@ -1,0 +1,5 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+azure.microsoft.com,,ipv4,4.150.0.0/16,https://www.microsoft.com/en-us/download/details.aspx?id=56519,2026-01-02T14:35:22+00:00
+azure.microsoft.com,,ipv6,2603:1030::/48,https://www.microsoft.com/en-us/download/details.aspx?id=56519,2026-01-02T14:35:22+00:00
+azure.microsoft.com,azurecloud,ipv4,4.150.0.0/16,https://www.microsoft.com/en-us/download/details.aspx?id=56519,2026-01-02T14:35:22+00:00
+azure.microsoft.com,azurecloud,ipv6,2603:1030::/48,https://www.microsoft.com/en-us/download/details.aspx?id=56519,2026-01-02T14:35:22+00:00

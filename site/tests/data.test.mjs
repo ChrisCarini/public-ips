@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import ipaddr from 'ipaddr.js';
-import { buildMarkers, containsAddress, locateAddress } from '../src/data.ts';
+import { buildMarkers, containsAddress, decodeSearchIndex, listFileUrl, locateAddress } from '../src/data.ts';
 
 const entry = (provider, cidr, category = null) => ({
   provider, cidr, category, ip_family: cidr.includes(':') ? 'ipv6' : 'ipv4',
@@ -79,4 +79,40 @@ test('zero coordinates are valid, and multiple segments at a location do not dup
   assert.equal(markers.length, 2);
   assert.deepEqual(markers[0].entries, [root, category]);
   assert.equal(markers[0].segments.length, 2);
+});
+
+test('compact Pages index preserves providers, families, memberships and source links', () => {
+  const strings = ['one.example', '8.8.8.0/24', 'one.example/ipv4.txt', 'https://example.org/ranges',
+    'dns', '2001:4860::/32', 'one.example/dns/ipv6.txt'];
+  const decoded = decodeSearchIndex({
+    schema_version: 'v2', strings, entries: [[0, -1, 4, 1, 2, 7, 3], [0, 4, 6, 5, 6, 8, 3]],
+  });
+  assert.deepEqual(decoded.entries.map(({ anchor, ...value }) => value), [
+    { provider: strings[0], category: null, ip_family: 'ipv4', cidr: strings[1],
+      path: strings[2], line: 7, source_url: strings[3] },
+    { provider: strings[0], category: 'dns', ip_family: 'ipv6', cidr: strings[5],
+      path: strings[6], line: 8, source_url: strings[3] },
+  ]);
+  assert.equal(buildMarkers(decoded, geo, filters).length, 2);
+  assert.equal(decodeSearchIndex(index), index);
+});
+
+test('invalid compact indices fail clearly instead of decoding incorrect locations', () => {
+  for (const input of [null, {}, { schema_version: 'v3', entries: [] },
+    { schema_version: 'v2', entries: [], strings: null },
+    { schema_version: 'v2', entries: [[0, -1, 4, 0, 0, 1, 0]], strings: [] },
+    { schema_version: 'v2', entries: [[0, -1, 5, 0, 0, 1, 0]], strings: ['x'] },
+    { schema_version: 'v2', entries: [[0, -1, 4, 0, 0, 0, 0]], strings: ['x'] }]) {
+    assert.throws(() => decodeSearchIndex(input), /search index/i);
+  }
+});
+
+test('list links use the deployed Pages snapshot and safely encode path segments', () => {
+  assert.equal(listFileUrl('one.example/dns/ipv6.txt', '/public-ips/'),
+    '/public-ips/one.example/dns/ipv6.txt');
+  assert.equal(listFileUrl('one.example/service name/ipv4.txt', '/public-ips/'),
+    '/public-ips/one.example/service%20name/ipv4.txt');
+  for (const path of ['../secret', '/host/file', 'https://other.example/file']) {
+    assert.throws(() => listFileUrl(path, '/public-ips/'), /Invalid published list path/);
+  }
 });

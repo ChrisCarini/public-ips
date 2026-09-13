@@ -1,0 +1,13 @@
+provider_id: azure.microsoft.com
+display_name: Microsoft Azure
+output_dir: azure.microsoft.com
+adapter: azure_service_tags
+source_urls:
+  - https://www.microsoft.com/en-us/download/details.aspx?id=56519
+documentation_url: https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview
+attribution: Azure IP Ranges and Service Tags - Public Cloud
+terms_url: https://www.microsoft.com/legal/terms-of-use
+min_ranges: 1
+max_change_absolute: 100000
+max_change_percent: 100.0
+allow_non_global: false

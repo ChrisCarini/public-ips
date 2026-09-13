@@ -78,14 +78,24 @@ can span multiple locations.
 
 ### Geographic data and local preview
 
+Every Pages deployment regenerates **all configured providers**, regardless of which
+generated data is checked in. After the frontend build, the publisher creates a
+deploy-only compact search index (v2, with shared strings and numeric entry rows)
+and copies the referenced text lists and their sibling `all.txt` files into
+`site/dist`, preserving their exact contents and line numbers. Search and list
+links use this same snapshot; large generated indexes and lists are uploaded as
+Pages artifacts, not committed to Git.
+
 Pages builds download the current monthly
 [DB-IP City Lite](https://db-ip.com/db/download/ip-to-city-lite) database
 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), falling back to the
 previous month only if the current download returns 404. Both IP families are
 resolved **at build time**, intersecting published CIDRs with the database's subnets
 so a search uses the queried IP's subnet, not a representative IP from a broad range.
-No visitor search is sent to a geolocation service. Only the resulting
-`geolocation.json` is deployed; the downloaded database is not committed.
+All visitor searches run locally in the browser; no search is sent to an external
+service. Geolocation is built from the full generated root index, alongside the
+compact deployed index. Only the resulting `geolocation.json` is deployed;
+the downloaded database is neither deployed nor committed.
 The map uses public-domain Natural Earth land boundaries through `world-atlas`.
 
 To preview the complete site (Python 3.12+, Node.js 22+):
@@ -94,14 +104,18 @@ To preview the complete site (Python 3.12+, Node.js 22+):
 python -m pip install -e '.[geo]'
 npm --prefix site ci
 npm --prefix site run build
-cp search-index.json site/dist/search-index.json
+public-ips generate
+python -m public_ips.site --root . --output site/dist
 python -m public_ips.geolocation --index search-index.json --output site/dist/geolocation.json --download
 npm --prefix site run preview
 ```
 
-Open the preview server's `/public-ips/` path. For offline builds, replace
-`--download` with `--database /path/to/dbip-city-lite.mmdb`. Rebuild the geographic
-artifact whenever the search index changes. If downloading or processing the
+Open the preview server's `/public-ips/` path. Optionally set
+`PUBLIC_IPS_GITHUB_TOKEN` when generating to increase GitHub API rate limits;
+Pages uses its built-in GitHub token. For offline builds, use
+`public-ips generate --fixtures tests/fixtures` and replace `--download` with
+`--database /path/to/dbip-city-lite.mmdb`. Regenerate the deployed snapshot and
+geographic artifact whenever the root search index changes. If downloading or processing the
 database fails, Pages deployment stops rather than publishing fabricated or
 incomplete data. The exporter also fails explicitly if its lookup safety limit is
 exceeded; `--max-lookups` can raise that limit for larger source lists. If geographic

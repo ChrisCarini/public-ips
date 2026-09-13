@@ -1,0 +1,38 @@
+{
+  "attribution": "Cloudflare IPs API",
+  "categories": {},
+  "display_name": "Cloudflare",
+  "documentation_url": "https://developers.cloudflare.com/fundamentals/concepts/cloudflare-ip-addresses/",
+  "first_observed_at": "2026-01-02T14:35:22+00:00",
+  "generated_at": "2026-01-02T14:35:22+00:00",
+  "normalized_data_sha256": "cbafad849651f8c3c1e6a6f9b913c2ba4070fbc934a8706fa5cf0e2fbd20b339",
+  "provider": {
+    "counts": {
+      "ipv4": 2,
+      "ipv6": 2
+    },
+    "ipv4": [
+      "103.21.244.0/22",
+      "173.245.48.0/20"
+    ],
+    "ipv6": [
+      "2400:cb00::/32",
+      "2606:4700::/32"
+    ],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "cloudflare.com",
+  "schema_version": "v1",
+  "source_body_sha256": "c24feaae97eb4282ff74870cb8629ff7302aa4e83aa910f2438e33c09231e3bd",
+  "source_urls": [
+    "https://api.cloudflare.com/client/v4/ips"
+  ],
+  "terms_url": "https://www.cloudflare.com/website-terms/"
+}

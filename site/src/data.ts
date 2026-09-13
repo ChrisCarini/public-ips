@@ -43,8 +43,44 @@ export const continents: Record<string, string> = {
   NA: 'North America', OC: 'Oceania', SA: 'South America',
 };
 
-export const githubFileUrl = (path: string, line: number): string =>
-  `https://github.com/ChrisCarini/public-ips/blob/main/${path}#L${line}`;
+export const listFileUrl = (path: string, base: string): string => {
+  const parts = path.split('/');
+  if (parts.some((part) => !part || part === '.' || part === '..')) {
+    throw new Error('Invalid published list path.');
+  }
+  return `${base}${parts.map(encodeURIComponent).join('/')}`;
+};
+
+export const decodeSearchIndex = (data: unknown): SearchIndex => {
+  if (!data || typeof data !== 'object') throw new Error('Invalid search index.');
+  const index = data as Record<string, unknown>;
+  if (!Array.isArray(index.entries)) throw new Error('Invalid search index entries.');
+  if (index.schema_version === 'v1') return data as SearchIndex;
+  if (index.schema_version !== 'v2' || !Array.isArray(index.strings)) {
+    throw new Error('Unsupported search index.');
+  }
+  const strings: unknown[] = index.strings;
+  const text = (id: unknown): string => {
+    if (typeof id !== 'number' || !Number.isInteger(id) || typeof strings[id] !== 'string') {
+      throw new Error('Invalid search index string reference.');
+    }
+    return strings[id] as string;
+  };
+  return {
+    schema_version: 'v1',
+    entries: index.entries.map((row: unknown) => {
+      if (!Array.isArray(row) || row.length !== 7 ||
+          ![4, 6].includes(row[2]) || !Number.isInteger(row[5]) || row[5] < 1) {
+        throw new Error('Invalid search index row.');
+      }
+      return {
+        provider: text(row[0]), category: row[1] === -1 ? null : text(row[1]),
+        ip_family: row[2] === 4 ? 'ipv4' : 'ipv6', cidr: text(row[3]),
+        path: text(row[4]), line: row[5], source_url: text(row[6]), anchor: '',
+      };
+    }),
+  };
+};
 
 export const containsAddress = (address: ipaddr.IPv4 | ipaddr.IPv6, cidr: string): boolean => {
   const [network, prefix] = ipaddr.parseCIDR(cidr);

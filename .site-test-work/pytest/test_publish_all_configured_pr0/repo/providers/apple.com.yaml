@@ -1,0 +1,13 @@
+provider_id: apple.com
+display_name: Apple
+output_dir: apple.com
+adapter: generic_cidr
+source_urls:
+  - https://mask-api.icloud.com/egress-ip-ranges.csv
+documentation_url: https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay
+attribution: Apple iCloud Private Relay egress IP ranges
+terms_url: https://www.apple.com/legal/internet-services/terms/site.html
+min_ranges: 1
+max_change_absolute: 100000
+max_change_percent: 100.0
+allow_non_global: false

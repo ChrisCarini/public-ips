@@ -1,0 +1,2 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+oracle.com,,ipv4,129.80.0.0/16,https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json,2026-01-02T14:35:22+00:00

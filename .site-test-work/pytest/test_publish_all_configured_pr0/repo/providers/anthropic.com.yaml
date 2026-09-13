@@ -1,0 +1,13 @@
+provider_id: anthropic.com
+display_name: Anthropic
+output_dir: anthropic.com
+adapter: generic_cidr
+source_urls:
+  - https://claude.com/crawling/bots.json
+documentation_url: https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler
+attribution: Anthropic crawler IP ranges JSON
+terms_url: https://www.anthropic.com/legal/consumer-terms
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

@@ -1,0 +1,5 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+cloud.google.com,,ipv4,34.128.0.0/10,https://www.gstatic.com/ipranges/cloud.json,2026-01-02T14:35:22+00:00
+cloud.google.com,,ipv6,2600:1900::/35,https://www.gstatic.com/ipranges/cloud.json,2026-01-02T14:35:22+00:00
+cloud.google.com,google_cloud,ipv4,34.128.0.0/10,https://www.gstatic.com/ipranges/cloud.json,2026-01-02T14:35:22+00:00
+cloud.google.com,google_cloud,ipv6,2600:1900::/35,https://www.gstatic.com/ipranges/cloud.json,2026-01-02T14:35:22+00:00

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://public-ips.example/schemas/manifest.v1.json",
+  "type": "object",
+  "required": ["schema_version", "generated_at", "providers"],
+  "properties": {
+    "schema_version": {"const": "v1"},
+    "generated_at": {"type": "string"},
+    "providers": {
+      "type": "object",
+      "additionalProperties": {"type": "object"}
+    }
+  }
+}

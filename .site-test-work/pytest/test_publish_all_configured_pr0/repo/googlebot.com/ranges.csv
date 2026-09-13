@@ -1,0 +1,3 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+googlebot.com,,ipv4,66.249.64.0/19,https://developers.google.com/search/apis/ipranges/googlebot.json,2026-01-02T14:35:22+00:00
+googlebot.com,,ipv6,2001:4860:4801::/48,https://developers.google.com/search/apis/ipranges/googlebot.json,2026-01-02T14:35:22+00:00

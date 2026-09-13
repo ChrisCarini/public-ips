@@ -1,7 +1,7 @@
 import './styles.css';
 import ipaddr from 'ipaddr.js';
 import { Globe } from './globe';
-import { buildMarkers, locateAddress, continents, githubFileUrl } from './data';
+import { buildMarkers, locateAddress, continents, decodeSearchIndex, listFileUrl } from './data';
 import type { GeoIndex, Marker, SearchEntry, SearchIndex } from './data';
 
 const app = document.querySelector<HTMLDivElement>('#app');
@@ -67,6 +67,7 @@ app.innerHTML = `
     <h2 id="results-title">Search results</h2>
     <p id="search-status" role="status"></p>
     <ul id="results"></ul>
+    <button id="more-results" type="button" hidden>Show more results</button>
   </section>
   <section class="examples-section">
     <h2>Example searches</h2>
@@ -79,6 +80,7 @@ const queryInput = document.querySelector<HTMLInputElement>('#query')!;
 queryInput.value = queryParam;
 const error = document.querySelector<HTMLParagraphElement>('#error')!;
 const results = document.querySelector<HTMLUListElement>('#results')!;
+const moreResults = document.querySelector<HTMLButtonElement>('#more-results')!;
 const examples = document.querySelector<HTMLUListElement>('#examples')!;
 const providerFilter = document.querySelector<HTMLSelectElement>('#provider')!;
 const familyFilter = document.querySelector<HTMLSelectElement>('#family')!;
@@ -109,6 +111,15 @@ const externalLink = (label: string, href: string): HTMLAnchorElement => {
   link.target = '_blank';
   link.rel = 'noopener noreferrer';
   return link;
+};
+
+const publishedListUrl = (path: string): string => listFileUrl(path, import.meta.env.BASE_URL);
+
+const revealGlobe = (): void => {
+  document.querySelector<HTMLCanvasElement>('#globe')!.scrollIntoView({
+    block: 'center',
+    behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+  });
 };
 
 const locationName = (marker: Marker): string =>
@@ -171,8 +182,8 @@ const showDetails = (
       const cidr = document.createElement('strong');
       cidr.textContent = `${entry.cidr} · ${entry.ip_family.toUpperCase()}`;
       item.append(cidr, document.createElement('br'),
-        externalLink(`${entry.provider} / ${entry.category ?? 'all services'}`, githubFileUrl(entry.path, entry.line)),
-        ' · ', externalLink('combined list', githubFileUrl(entry.path.replace(/ipv[46]\.txt$/, 'all.txt'), 1)),
+        externalLink(`${entry.provider} / ${entry.category ?? 'all services'} (line ${entry.line})`, publishedListUrl(entry.path)),
+        ' · ', externalLink('combined list', publishedListUrl(entry.path.replace(/ipv[46]\.txt$/, 'all.txt'))),
       );
       // Source URLs are remote metadata; only expose web links.
       if (/^https?:\/\//i.test(entry.source_url)) item.append(' · ', externalLink('source', entry.source_url));
@@ -193,7 +204,7 @@ const renderLocations = (): void => {
     const item = document.createElement('li');
     const button = document.createElement('button');
     button.textContent = `${marker.provider} — ${locationName(marker)} (${new Set(marker.entries.map((entry) => entry.cidr)).size} ranges)`;
-    button.addEventListener('click', () => { globe?.focus(marker); showDetails(marker); });
+    button.addEventListener('click', () => { globe?.focus(marker); showDetails(marker); revealGlobe(); });
     item.append(button);
     locations.append(item);
   }
@@ -228,7 +239,7 @@ const loadIndex = (): Promise<SearchIndex> => {
   indexPromise ??= fetch(`${import.meta.env.BASE_URL}search-index.json`)
     .then(async (response) => {
       if (!response.ok) throw new Error('Unable to load the search index.');
-      return (await response.json()) as SearchIndex;
+      return decodeSearchIndex(await response.json());
     })
     .catch((loadError: unknown) => {
       indexPromise = undefined;
@@ -347,6 +358,7 @@ const runSearch = async (): Promise<void> => {
   error.textContent = '';
   searchStatus.textContent = '';
   results.innerHTML = '';
+  moreResults.hidden = true;
   globe?.select();
   details.classList.remove('has-selection');
   details.innerHTML = '<h3 id="details-title">Explore a location</h3><p>Select a dot or search for an IP to explore.</p>';
@@ -359,8 +371,16 @@ const runSearch = async (): Promise<void> => {
 
     const index = await loadIndex();
     if (version !== searchVersion) return;
+    const relations = new Map<string, ReturnType<typeof matchRelation>>();
     const matches = index.entries
-      .map((entry) => ({ entry, rel: matchRelation(query, entry.cidr) }))
+      .map((entry) => {
+        let rel = relations.get(entry.cidr);
+        if (!rel) {
+          rel = matchRelation(query, entry.cidr);
+          relations.set(entry.cidr, rel);
+        }
+        return { entry, rel };
+      })
       .filter((item) => item.rel !== 'none');
 
     if (!matches.length) {
@@ -369,18 +389,21 @@ const runSearch = async (): Promise<void> => {
     }
 
     searchStatus.textContent = `${matches.length.toLocaleString()} matching list entries. Search covers all providers, independently of globe filters.`;
-    for (const item of matches) {
-      const li = document.createElement('li');
-      const prefix = `${item.entry.provider} ${item.entry.category ? `(${item.entry.category})` : ''} ${item.entry.cidr} - ${item.rel} @ `;
-      li.append(prefix);
-      const link = document.createElement('a');
-      link.href = githubFileUrl(item.entry.path, item.entry.line);
-      link.textContent = `${item.entry.path}:${item.entry.line}`;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      li.appendChild(link);
-      results.appendChild(li);
-    }
+    let shown = 0;
+    const appendResults = (): void => {
+      const fragment = document.createDocumentFragment();
+      for (const item of matches.slice(shown, shown + 100)) {
+        const li = document.createElement('li');
+        const prefix = `${item.entry.provider} ${item.entry.category ? `(${item.entry.category})` : ''} ${item.entry.cidr} - ${item.rel} @ `;
+        li.append(prefix, externalLink(`${item.entry.path}:${item.entry.line}`, publishedListUrl(item.entry.path)));
+        fragment.appendChild(li);
+      }
+      results.appendChild(fragment);
+      shown += 100;
+      moreResults.hidden = shown >= matches.length;
+    };
+    moreResults.onclick = appendResults;
+    appendResults();
     if (query.type === 'addr') {
       await globeReady;
       if (version !== searchVersion) return;
@@ -400,6 +423,7 @@ const runSearch = async (): Promise<void> => {
       if (marker) {
         globe.focus(marker);
         showDetails(marker, [], query.value.toString(), matches.map(({ entry }) => entry));
+        revealGlobe();
         searchStatus.textContent += ` Approximate location highlighted: ${locationName(marker)}.${filtersChanged ? ' Globe filters were cleared to reveal the match.' : ''}`;
       }
     } else {

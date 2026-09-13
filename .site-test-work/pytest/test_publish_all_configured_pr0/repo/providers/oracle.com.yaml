@@ -1,0 +1,13 @@
+provider_id: oracle.com
+display_name: Oracle Cloud
+output_dir: oracle.com
+adapter: generic_cidr
+source_urls:
+  - https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json
+documentation_url: https://docs.oracle.com/en-us/iaas/Content/General/Concepts/addressranges.htm
+attribution: Oracle Cloud Infrastructure public IP ranges JSON
+terms_url: https://www.oracle.com/legal/terms.html
+min_ranges: 1
+max_change_absolute: 100000
+max_change_percent: 100.0
+allow_non_global: false

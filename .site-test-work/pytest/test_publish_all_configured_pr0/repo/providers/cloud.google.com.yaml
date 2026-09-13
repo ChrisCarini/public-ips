@@ -1,0 +1,13 @@
+provider_id: cloud.google.com
+display_name: Google Cloud
+output_dir: cloud.google.com
+adapter: google_cloud
+source_urls:
+  - https://www.gstatic.com/ipranges/cloud.json
+documentation_url: https://cloud.google.com/vpc/docs/configure-private-google-access
+attribution: Google Cloud IP ranges JSON
+terms_url: https://cloud.google.com/terms
+min_ranges: 1
+max_change_absolute: 100000
+max_change_percent: 100.0
+allow_non_global: false

@@ -1,0 +1,2 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+anthropic.com,,ipv4,160.79.104.0/23,https://claude.com/crawling/bots.json,2026-01-02T14:35:22+00:00

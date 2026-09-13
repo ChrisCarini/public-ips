@@ -1,0 +1,40 @@
+{
+  "attribution": "OpenAI crawler IP ranges JSON",
+  "categories": {},
+  "display_name": "OpenAI",
+  "documentation_url": "https://platform.openai.com/docs/bots",
+  "first_observed_at": "2026-01-02T14:35:22+00:00",
+  "generated_at": "2026-01-02T14:35:22+00:00",
+  "normalized_data_sha256": "6e0e86062c934badb69b33092345a89c567a2fb6dbf5cd570e00f1fa62d3c34e",
+  "provider": {
+    "counts": {
+      "ipv4": 4,
+      "ipv6": 0
+    },
+    "ipv4": [
+      "4.227.36.0/25",
+      "20.42.10.176/28",
+      "20.171.206.0/24",
+      "20.171.207.0/24"
+    ],
+    "ipv6": [],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "openai.com",
+  "schema_version": "v1",
+  "source_body_sha256": "436f537a1e1c70f0df46b8ad171d653e2ec8663f9a34bb96ad3b9a0b86b70266",
+  "source_urls": [
+    "https://openai.com/gptbot.json",
+    "https://openai.com/searchbot.json",
+    "https://openai.com/chatgpt-user.json",
+    "https://openai.com/adsbot.json"
+  ],
+  "terms_url": "https://openai.com/policies/terms-of-use"
+}

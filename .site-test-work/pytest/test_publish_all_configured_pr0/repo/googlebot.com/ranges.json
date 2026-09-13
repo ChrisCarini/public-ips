@@ -1,0 +1,36 @@
+{
+  "attribution": "Googlebot IP ranges JSON",
+  "categories": {},
+  "display_name": "Google Bot",
+  "documentation_url": "https://developers.google.com/search/docs/crawling-indexing/verifying-googlebot",
+  "first_observed_at": "2026-01-02T14:35:22+00:00",
+  "generated_at": "2026-01-02T14:35:22+00:00",
+  "normalized_data_sha256": "6ae5db4c12beca31eab60064f92e16b7f948fd7fcee394097ac9d3990c979e6a",
+  "provider": {
+    "counts": {
+      "ipv4": 1,
+      "ipv6": 1
+    },
+    "ipv4": [
+      "66.249.64.0/19"
+    ],
+    "ipv6": [
+      "2001:4860:4801::/48"
+    ],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "googlebot.com",
+  "schema_version": "v1",
+  "source_body_sha256": "3f997d019c0900bc74a33d7f8e14dcb37234da6aacaf4b0f87c90b09c43f8269",
+  "source_urls": [
+    "https://developers.google.com/search/apis/ipranges/googlebot.json"
+  ],
+  "terms_url": "https://developers.google.com/terms"
+}
