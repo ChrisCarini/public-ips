@@ -12,7 +12,7 @@
 - `cloud.google.com` — source: `https://www.gstatic.com/ipranges/cloud.json`
 - `cloudflare.com` — source: `https://api.cloudflare.com/client/v4/ips`
 - `github.com` — source: `https://api.github.com/meta`
-- `googlebot.com` — source: `https://developers.google.com/crawling/ipranges/googlebot.json`
+- `googlebot.com` — source: `https://developers.google.com/search/apis/ipranges/googlebot.json`
 - `openai.com` — source: `https://openai.com/gptbot.json`, `https://openai.com/searchbot.json`, `https://openai.com/chatgpt-user.json`, `https://openai.com/adsbot.json`
 - `oracle.com` — source: `https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json`
 - `perplexity.com` — source: `https://www.perplexity.com/perplexitybot.json`, `https://www.perplexity.com/perplexity-user.json`
