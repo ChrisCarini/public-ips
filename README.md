@@ -50,8 +50,62 @@ mypy src
 pytest
 public-ips check --fixtures tests/fixtures --timestamp 2026-01-02T14:35:22+00:00
 npm --prefix site ci
+npm --prefix site test
 npm --prefix site run build
 ```
+
+## Interactive globe
+
+The [GitHub Pages explorer](https://chriscarini.github.io/public-ips/) shows a
+rotatable globe with provider colors, combined provider/IP-family/continent
+filters, and clickable location details linking to the published lists and sources.
+Search a single IPv4 or IPv6 address to rotate to its estimated location, highlight
+it, and display every matching list entry. Successful location searches clear globe
+filters so the result is visible; CIDR searches remain list searches because a range
+can span multiple locations.
+
+- Drag to rotate; use pinch gestures or the zoom buttons to zoom. Keyboard users
+  can focus the globe and use arrow keys and `+`/`-`, or browse the equivalent
+  **mapped locations** list. Normal page scrolling is preserved outside the canvas;
+  Ctrl/Command + wheel also zooms the globe.
+- Dots group **address-range segments by provider and coordinates**, rather than
+  enumerating individual addresses. Co-located providers have separate colored dots.
+  Location details show the corresponding CIDRs, IP versions, and list memberships.
+- Geolocation is approximate. Broad CIDRs can span countries, and anycast addresses
+  can operate worldwide. Unknown locations are never guessed; those addresses still
+  appear in search results. Coverage counts show ranges with at least one mapped
+  segment, not the percentage of individual addresses geolocated.
+
+### Geographic data and local preview
+
+Pages builds download the current monthly
+[DB-IP City Lite](https://db-ip.com/db/download/ip-to-city-lite) database
+([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), falling back to the
+previous month only if the current download returns 404. Both IP families are
+resolved **at build time**, intersecting published CIDRs with the database's subnets
+so a search uses the queried IP's subnet, not a representative IP from a broad range.
+No visitor search is sent to a geolocation service. Only the resulting
+`geolocation.json` is deployed; the downloaded database is not committed.
+The map uses public-domain Natural Earth land boundaries through `world-atlas`.
+
+To preview the complete site (Python 3.12+, Node.js 22+):
+
+```bash
+python -m pip install -e '.[geo]'
+npm --prefix site ci
+npm --prefix site run build
+cp search-index.json site/dist/search-index.json
+python -m public_ips.geolocation --index search-index.json --output site/dist/geolocation.json --download
+npm --prefix site run preview
+```
+
+Open the preview server's `/public-ips/` path. For offline builds, replace
+`--download` with `--database /path/to/dbip-city-lite.mmdb`. Rebuild the geographic
+artifact whenever the search index changes. If downloading or processing the
+database fails, Pages deployment stops rather than publishing fabricated or
+incomplete data. The exporter also fails explicitly if its lookup safety limit is
+exceeded; `--max-lookups` can raise that limit for larger source lists. If geographic
+data cannot be loaded in the browser, IP search remains usable.
 
 ## Safety disclaimer
 

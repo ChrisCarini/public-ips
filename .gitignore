@@ -5,3 +5,5 @@ __pycache__/
 .venv/
 site/node_modules/
 site/dist/
+*.mmdb
+*.mmdb.gz
