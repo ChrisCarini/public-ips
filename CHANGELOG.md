@@ -2,6 +2,19 @@
 
 ## 2026-09-14
 
+### 20:41:33Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `45.33.164.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:612c::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:6139::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:612c::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:6139::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:612c::/48` to `s3` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:6139::/48` to `s3` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `45.33.164.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:612c::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:6139::/48` (IPv6).
+
 ### 00:42:22Z
 
 - [amazonaws.com](./amazonaws.com/CHANGELOG.md): Initial import with 7792 IPv4 ranges, 3421 IPv6 ranges, and 28 categories.
