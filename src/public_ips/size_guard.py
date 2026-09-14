@@ -47,17 +47,19 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     try:
-        blocking = oversized_files(args.root, limit=args.limit_bytes)
-        warning = [
-            item
-            for item in oversized_files(args.root, limit=args.warn_bytes)
-            if item not in blocking
-        ]
+        # One scan of the working tree covers both thresholds.
+        large = oversized_files(args.root, limit=min(args.limit_bytes, args.warn_bytes))
     except (OSError, subprocess.CalledProcessError) as error:
         parser.exit(1, f"Size check failed: {error}\n")
 
+    blocking = [item for item in large if item[1] >= args.limit_bytes]
+    warning = [item for item in large if item[1] < args.limit_bytes]
+
     for path, size in warning:
-        print(f"warning: {path} is {_megabytes(size)}, above GitHub's recommended maximum")
+        print(
+            f"warning: {path} is {_megabytes(size)}, above GitHub's "
+            f"{_megabytes(args.warn_bytes)} recommended maximum"
+        )
     if not blocking:
         return 0
 

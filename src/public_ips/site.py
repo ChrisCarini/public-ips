@@ -93,7 +93,7 @@ def publish_site(root: Path, output: Path) -> None:
     # The combined CSV is a deploy-only download; it is generated, never committed.
     csv_source = _within(root, Path(ROOT_CSV_NAME))
     if not csv_source.is_file():
-        raise ValueError(f"Missing source list: {ROOT_CSV_NAME}")
+        raise ValueError(f"Missing generated CSV: {ROOT_CSV_NAME} (run 'public-ips generate')")
     copies.append((csv_source, _within(output, Path(ROOT_CSV_NAME))))
     destination_index = _within(output, Path(ROOT_INDEX_NAME))
     for source, destination in copies:

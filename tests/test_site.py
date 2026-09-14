@@ -196,13 +196,20 @@ def test_reject_symlink_escape(tmp_path: Path, side: str, relative: str) -> None
     assert list(outside.iterdir()) == [protected]
 
 
-@pytest.mark.parametrize("relative", ["example.com/ipv4.txt", "example.com/all.txt", "ranges.csv"])
-def test_fail_on_missing_snapshot_list(tmp_path: Path, relative: str) -> None:
+@pytest.mark.parametrize(
+    ("relative", "message"),
+    [
+        ("example.com/ipv4.txt", "Missing source list"),
+        ("example.com/all.txt", "Missing source list"),
+        ("ranges.csv", "Missing generated CSV"),
+    ],
+)
+def test_fail_on_missing_snapshot_file(tmp_path: Path, relative: str, message: str) -> None:
     root = tmp_path / "repo"
     _source(root, [_entry()])
     (root / relative).unlink()
     output = root / "site" / "dist"
-    with pytest.raises(ValueError, match="Missing source list"):
+    with pytest.raises(ValueError, match=message):
         publish_site(root, output)
     assert not output.exists()
 

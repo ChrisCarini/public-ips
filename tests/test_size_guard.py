@@ -57,7 +57,10 @@ def test_warns_without_failing(tmp_path: Path, capsys: pytest.CaptureFixture[str
     _write(root, "manifest.json", 2 * MB)
 
     assert main(["--root", str(root), "--limit-bytes", str(4 * MB), "--warn-bytes", str(MB)]) == 0
-    assert "warning: manifest.json is 2.00 MB" in capsys.readouterr().out
+    assert (
+        "warning: manifest.json is 2.00 MB, above GitHub's 1.00 MB recommended maximum"
+        in capsys.readouterr().out
+    )
 
 
 def test_ignores_files_git_will_not_commit(tmp_path: Path) -> None:
