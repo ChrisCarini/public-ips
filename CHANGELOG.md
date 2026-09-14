@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-09-14
+
+### 00:42:22Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Initial import with 7792 IPv4 ranges, 3421 IPv6 ranges, and 28 categories.
+- [anthropic.com](./anthropic.com/CHANGELOG.md): Initial import with 26 IPv4 ranges, 0 IPv6 ranges, and 0 categories.
+- [apple.com](./apple.com/CHANGELOG.md): Initial import with 41981 IPv4 ranges, 245860 IPv6 ranges, and 0 categories.
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Initial import with 43957 IPv4 ranges, 16848 IPv6 ranges, and 177 categories.
+- [bing.com](./bing.com/CHANGELOG.md): Initial import with 28 IPv4 ranges, 0 IPv6 ranges, and 0 categories.
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Initial import with 1008 IPv4 ranges, 95 IPv6 ranges, and 1 categories.
+- [googlebot.com](./googlebot.com/CHANGELOG.md): Initial import with 170 IPv4 ranges, 147 IPv6 ranges, and 0 categories.
+- [openai.com](./openai.com/CHANGELOG.md): Initial import with 269 IPv4 ranges, 0 IPv6 ranges, and 0 categories.
+- [oracle.com](./oracle.com/CHANGELOG.md): Initial import with 1107 IPv4 ranges, 220 IPv6 ranges, and 0 categories.
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Initial import with 12 IPv4 ranges, 0 IPv6 ranges, and 0 categories.
+- [pingdom.com](./pingdom.com/CHANGELOG.md): Initial import with 149 IPv4 ranges, 57 IPv6 ranges, and 0 categories.
+
 ## 2026-09-12
 
 ### 07:57:55Z
