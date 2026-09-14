@@ -40,6 +40,7 @@ jobs:
           PUBLIC_IPS_GITHUB_TOKEN: ${{ github.token }}
         run: |
           public-ips generate
+          python -m public_ips.size_guard --root .
           git add --all
           if git diff --cached --quiet; then
             exit 0

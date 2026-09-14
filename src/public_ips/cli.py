@@ -21,6 +21,7 @@ from public_ips.diffing import diff_family
 from public_ips.http_client import RetryingHttpClient
 from public_ips.models import ChangeEvent, FamilyNetworks, ProviderSnapshot
 from public_ips.rendering import (
+    DEPLOY_ONLY_ROOT_FILES,
     canonical_hash,
     provider_union,
     write_provider_outputs,
@@ -366,11 +367,6 @@ def _print_file_diff(committed_path: Path, generated_path: Path, rel_path: str) 
 
 
 def _check_mode(root: Path, fixtures: Path | None, timestamp: str | None) -> int:
-    def has_diff(cmp_obj: Any) -> bool:
-        if cmp_obj.left_only or cmp_obj.right_only or cmp_obj.diff_files:
-            return True
-        return any(has_diff(sub) for sub in cmp_obj.subdirs.values())
-
     with tempfile.TemporaryDirectory(prefix="public-ips-check-") as tmp:
         tmp_root = Path(tmp)
         for item in root.iterdir():
@@ -383,9 +379,10 @@ def _check_mode(root: Path, fixtures: Path | None, timestamp: str | None) -> int
                 shutil.copy2(item, target)
         run_generation(tmp_root, fixtures=fixtures, timestamp=timestamp)
         left = filecmp.dircmp(root, tmp_root, ignore=[".git", ".pytest_cache", "__pycache__"])
-        if has_diff(left):
+        # Deploy-only root aggregates are not committed, so they are never compared.
+        diffs = [diff for diff in _collect_diffs(left) if diff[1] not in DEPLOY_ONLY_ROOT_FILES]
+        if diffs:
             print("Generated files are stale. Run generation and commit changes.")
-            diffs = _collect_diffs(left)
             for status, rel_path in diffs:
                 print(f"  {status}: {rel_path}")
             print()

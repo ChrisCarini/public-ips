@@ -15,7 +15,7 @@ jobs:
       - name: Build archives
         run: |
           SNAPSHOT="snapshot-$(date -u +%Y%m%dT%H%M%SZ)"
-          tar -czf "$SNAPSHOT-data.tgz" manifest.json changes.jsonl ranges.csv github.com cloudflare.com
+          tar -czf "$SNAPSHOT-data.tgz" manifest.json changes.jsonl github.com cloudflare.com
           sha256sum "$SNAPSHOT-data.tgz" > SHA256SUMS
           echo "snapshot=$SNAPSHOT" >> $GITHUB_ENV
       - name: Create release

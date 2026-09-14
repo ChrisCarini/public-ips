@@ -4,7 +4,9 @@ import json
 import shutil
 from pathlib import Path
 
-from public_ips.cli import run_generation
+import pytest
+
+from public_ips.cli import _check_mode, run_generation
 
 FIXED_TS = "2026-01-02T14:35:22+00:00"
 
@@ -97,3 +99,25 @@ def test_generate_preserves_changelog_history_when_no_new_events(tmp_path: Path)
     assert (root / "changes.jsonl").read_text() == first_changes
     assert (root / "CHANGELOG.md").read_text() == first_root_changelog
     assert (root / "github.com" / "CHANGELOG.md").read_text() == first_provider_changelog
+
+
+def test_check_ignores_deploy_only_root_files(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    src_root = Path(__file__).resolve().parents[1]
+    root = tmp_path / "repo"
+    root.mkdir()
+    _copy_repo_tree(src_root, root)
+    fixtures = root / "tests" / "fixtures"
+    assert run_generation(root, fixtures=fixtures, timestamp=FIXED_TS) == 0
+    # A fresh checkout has no committed copy of the deploy-only aggregates.
+    for name in ("ranges.csv", "search-index.json"):
+        (root / name).unlink()
+
+    assert _check_mode(root, fixtures=fixtures, timestamp=FIXED_TS) == 0
+
+    provider_csv = root / "github.com" / "ranges.csv"
+    provider_csv.write_text(provider_csv.read_text() + "stale\n")
+
+    assert _check_mode(root, fixtures=fixtures, timestamp=FIXED_TS) == 1
+    assert "changed: github.com/ranges.csv" in capsys.readouterr().out
