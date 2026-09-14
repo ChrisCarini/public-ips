@@ -51,6 +51,50 @@ with the offending paths and sizes before a push can be rejected by GitHub.
 - Collapsed files are derived convenience outputs.
 - The same CIDR can legitimately appear in multiple categories/providers.
 
+## Automated update GitHub App
+
+The scheduled **Update provider data** workflow creates its pull requests as a
+GitHub App. This lets the repository treat the update branch as an internal,
+trusted branch, so its CI workflows run without the **Approve workflows to run**
+prompt that applies to untrusted contributions.
+
+Set up the app as follows:
+
+1. In GitHub, open **Settings** → **Developer settings** → **GitHub Apps** →
+   **New GitHub App**. Give it a descriptive name such as
+   `public-ips-updater`, set the homepage URL to this repository, and leave
+   **Webhook** inactive; this workflow does not receive app events.
+2. Under **Repository permissions**, grant exactly:
+   - **Contents: Read and write** — creates and updates the data branch and
+     commits generated provider data.
+   - **Pull requests: Read and write** — opens, labels, updates, and enables
+     auto-merge for the update pull request.
+   - **Metadata: Read-only** — automatically included by GitHub Apps.
+
+   Do not grant **Actions**, **Workflows**, **Administration**, organization,
+   account, or webhook permissions. The app creates a branch in this repository;
+   it does not dispatch workflows, edit workflow files, or administer repository
+   settings.
+3. Create the app, then select **Install App** and install it only on this
+   repository. Approve the requested permissions if GitHub prompts for approval.
+4. On the app's settings page, create a private key and download the generated
+   `.pem` file. In this repository's **Settings** → **Secrets and variables** →
+   **Actions**, create the secret `PUBLIC_IPS_UPDATE_APP_PRIVATE_KEY` whose value
+   is the complete contents of that file, including its `BEGIN` and `END` lines.
+   Treat this value as a credential and never commit it.
+5. On that same GitHub App settings page, copy the **Client ID**. In this
+   repository's **Settings** → **Secrets and variables** → **Actions** →
+   **Variables**, create `PUBLIC_IPS_UPDATE_APP_CLIENT_ID` with that value.
+6. Run **Update provider data** manually once from the **Actions** tab to verify
+   that it creates a PR authored by `<app-slug>[bot]`. Subsequent scheduled
+   update PRs use the same identity and their CI starts normally without manual
+   workflow approval.
+
+The workflow mints a short-lived installation token scoped to this repository
+and explicitly requests only the two write permissions above. The private key
+remains in GitHub Actions secrets; the generated token is masked and revoked
+when the job finishes.
+
 ## Local development
 
 ```bash
