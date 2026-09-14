@@ -65,5 +65,7 @@ jobs:
           cache-dependency-path: site/package-lock.json
       - name: Install
         run: npm --prefix site ci
+      - name: Globe data tests
+        run: npm --prefix site test
       - name: Build
         run: npm --prefix site run build

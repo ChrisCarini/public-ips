@@ -21,7 +21,22 @@ jobs:
           cache-dependency-path: site/package-lock.json
       - run: npm --prefix site ci
       - run: npm --prefix site run build
-      - run: cp search-index.json site/dist/search-index.json
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - run: pip install '.[geo]'
+      - name: Generate all configured providers
+        run: public-ips generate
+        env:
+          PUBLIC_IPS_GITHUB_TOKEN: ${{ github.token }}
+      - name: Publish compact search index and list snapshot
+        run: python -m public_ips.site --root . --output site/dist
+      - name: Geolocate published ranges
+        run: >-
+          python -m public_ips.geolocation
+          --index search-index.json
+          --output site/dist/geolocation.json
+          --download
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site/dist
