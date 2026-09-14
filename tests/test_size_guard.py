@@ -31,12 +31,13 @@ def test_reports_every_oversized_path(tmp_path: Path, capsys: pytest.CaptureFixt
     _write(root, "example.com/all.txt", 2 * MB)
     _write(root, "small.txt", 16)
 
-    with pytest.raises(SystemExit) as error:
-        main(["--root", str(root), "--limit-bytes", str(2 * MB), "--warn-bytes", str(MB)])
+    assert main(["--root", str(root), "--limit-bytes", str(2 * MB), "--warn-bytes", str(MB)]) == 1
 
-    assert error.value.code == 1
     message = capsys.readouterr().err
-    assert "example.com/all.txt is 2.00 MB, above GitHub's 2.00 MB file size limit" in message
+    assert (
+        "error: example.com/all.txt is 2.00 MB, at or above GitHub's 2.00 MB file size limit"
+        in message
+    )
     assert "search-index.json" in message
     assert "small.txt" not in message
     assert "Publish bulky generated data with the Pages build" in message
@@ -58,7 +59,7 @@ def test_warns_without_failing(tmp_path: Path, capsys: pytest.CaptureFixture[str
 
     assert main(["--root", str(root), "--limit-bytes", str(4 * MB), "--warn-bytes", str(MB)]) == 0
     assert (
-        "warning: manifest.json is 2.00 MB, above GitHub's 1.00 MB recommended maximum"
+        "warning: manifest.json is 2.00 MB, at or above GitHub's 1.00 MB recommended maximum"
         in capsys.readouterr().out
     )
 

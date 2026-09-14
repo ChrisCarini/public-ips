@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import argparse
 import subprocess
+import sys
 from pathlib import Path
 
-# GitHub rejects any pushed blob larger than 100 MB and warns above 50 MB.
+# GitHub rejects any pushed blob larger than 100 MB and warns above 50 MB. The guard is
+# deliberately conservative and treats a file that reaches a threshold as having crossed it.
 GITHUB_LIMIT_BYTES = 100 * 1024 * 1024
 GITHUB_WARNING_BYTES = 50 * 1024 * 1024
 
@@ -50,29 +52,30 @@ def main(argv: list[str] | None = None) -> int:
         # One scan of the working tree covers both thresholds.
         large = oversized_files(args.root, limit=min(args.limit_bytes, args.warn_bytes))
     except (OSError, subprocess.CalledProcessError) as error:
-        parser.exit(1, f"Size check failed: {error}\n")
+        print(f"Size check failed: {error}", file=sys.stderr)
+        return 1
 
     blocking = [item for item in large if item[1] >= args.limit_bytes]
     warning = [item for item in large if item[1] < args.limit_bytes]
 
     for path, size in warning:
         print(
-            f"warning: {path} is {_megabytes(size)}, above GitHub's "
+            f"warning: {path} is {_megabytes(size)}, at or above GitHub's "
             f"{_megabytes(args.warn_bytes)} recommended maximum"
         )
     if not blocking:
         return 0
 
     lines = [
-        f"error: {path} is {_megabytes(size)}, above GitHub's {_megabytes(args.limit_bytes)} "
-        "file size limit"
+        f"error: {path} is {_megabytes(size)}, at or above GitHub's "
+        f"{_megabytes(args.limit_bytes)} file size limit"
         for path, size in blocking
     ]
     lines.append(
         "Pushing these files will be rejected. Publish bulky generated data with the "
         "Pages build (see 'Data outputs' in README.md) or shard it instead of committing it."
     )
-    parser.exit(1, "\n".join(lines) + "\n")
+    print("\n".join(lines), file=sys.stderr)
     return 1
 
 
