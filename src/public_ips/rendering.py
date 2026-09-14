@@ -10,6 +10,12 @@ from typing import Any
 from public_ips.models import ChangeEvent, FamilyNetworks, ProviderSnapshot
 from public_ips.normalization import collapse_family, format_family_lines
 
+ROOT_CSV_NAME = "ranges.csv"
+ROOT_INDEX_NAME = "search-index.json"
+# Aggregated root outputs grow past GitHub's per-file push limit, so they are generated
+# for deployment and local use only, and are never committed.
+DEPLOY_ONLY_ROOT_FILES = (ROOT_CSV_NAME, ROOT_INDEX_NAME)
+
 
 def _write_text_file(path: Path, lines: list[str]) -> None:
     body = "\n".join(lines)
@@ -249,7 +255,7 @@ def write_root_files(
     }
     (root / "manifest.json").write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
 
-    with (root / "ranges.csv").open("w", newline="") as csv_file:
+    with (root / ROOT_CSV_NAME).open("w", newline="") as csv_file:
         writer = csv.DictWriter(
             csv_file,
             fieldnames=[
@@ -264,7 +270,7 @@ def write_root_files(
         writer.writeheader()
         writer.writerows(all_csv_rows)
 
-    (root / "search-index.json").write_text(
+    (root / ROOT_INDEX_NAME).write_text(
         json.dumps({"schema_version": "v1", "entries": search_entries}, indent=2, sort_keys=True)
         + "\n"
     )

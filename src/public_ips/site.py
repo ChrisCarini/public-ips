@@ -5,6 +5,8 @@ import json
 import shutil
 from pathlib import Path
 
+from public_ips.rendering import ROOT_CSV_NAME, ROOT_INDEX_NAME
+
 
 def _within(base: Path, relative: Path) -> Path:
     path = base / relative
@@ -33,7 +35,7 @@ def publish_site(root: Path, output: Path) -> None:
     output = output.resolve()
     if root.is_relative_to(output):
         raise ValueError("Output must not contain or replace the source root")
-    index_path = _within(root, Path("search-index.json"))
+    index_path = _within(root, Path(ROOT_INDEX_NAME))
     with index_path.open(encoding="utf-8") as stream:
         index = json.load(stream)
     if (
@@ -88,7 +90,12 @@ def publish_site(root: Path, output: Path) -> None:
         if not source.is_file():
             raise ValueError(f"Missing source list: {relative}")
         copies.append((source, destination))
-    destination_index = _within(output, Path("search-index.json"))
+    # The combined CSV is a deploy-only download; it is generated, never committed.
+    csv_source = _within(root, Path(ROOT_CSV_NAME))
+    if not csv_source.is_file():
+        raise ValueError(f"Missing source list: {ROOT_CSV_NAME}")
+    copies.append((csv_source, _within(output, Path(ROOT_CSV_NAME))))
+    destination_index = _within(output, Path(ROOT_INDEX_NAME))
     for source, destination in copies:
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(source, destination)

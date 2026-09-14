@@ -8,3 +8,5 @@ site/node_modules/
 site/dist/
 *.mmdb
 *.mmdb.gz
+/ranges.csv
+/search-index.json

@@ -31,6 +31,8 @@ jobs:
       - name: Generate
         id: generate
         run: public-ips generate
+      - name: Check generated file sizes
+        run: python -m public_ips.size_guard --root .
       - name: Summary
         run: |
           echo "## Provider update" >> $GITHUB_STEP_SUMMARY

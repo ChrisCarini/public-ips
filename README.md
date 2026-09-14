@@ -26,13 +26,23 @@ Per provider:
 - `collapsed-all.txt`, `collapsed-ipv4.txt`, `collapsed-ipv6.txt` (derived compact coverage)
 - `ranges.json`, `ranges.csv`, `CHANGELOG.md`
 
-Root outputs:
+Root outputs committed to Git:
 
 - `manifest.json`
-- `ranges.csv`
-- `search-index.json`
 - `changes.jsonl`
 - `CHANGELOG.md`
+
+Root outputs generated for deployment only (not committed, because they outgrow
+GitHub's 100 MB per-file push limit):
+
+- `ranges.csv` — every provider row, published at
+  [`/public-ips/ranges.csv`](https://chriscarini.github.io/public-ips/ranges.csv)
+- `search-index.json` — the full v1 index, published as the deployed compact v2 index at
+  [`/public-ips/search-index.json`](https://chriscarini.github.io/public-ips/search-index.json)
+
+Both are written into the repository root by `public-ips generate` and are ignored by Git.
+Every push that commits generated data runs `python -m public_ips.size_guard`, which fails
+with the offending paths and sizes before a push can be rejected by GitHub.
 
 ## Semantics
 
@@ -80,9 +90,10 @@ can span multiple locations.
 
 Every Pages deployment regenerates **all configured providers**, regardless of which
 generated data is checked in. After the frontend build, the publisher creates a
-deploy-only compact search index (v2, with shared strings and numeric entry rows)
-and copies the referenced text lists and their sibling `all.txt` files into
-`site/dist`, preserving their exact contents and line numbers. Search and list
+deploy-only compact search index (v2, with shared strings and numeric entry rows),
+copies the referenced text lists and their sibling `all.txt` files into
+`site/dist`, preserving their exact contents and line numbers, and copies the
+combined `ranges.csv` download alongside them. Search and list
 links use this same snapshot; large generated indexes and lists are uploaded as
 Pages artifacts, not committed to Git.
 

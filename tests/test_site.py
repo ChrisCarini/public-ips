@@ -31,6 +31,9 @@ def _source(root: Path, entries: list[dict[str, object]]) -> None:
     (root / "search-index.json").write_text(
         json.dumps({"schema_version": "v1", "entries": entries})
     )
+    (root / "ranges.csv").write_text(
+        "provider,category,ip_family,cidr,source_url,first_observed_at\n"
+    )
     provider = root / "example.com"
     provider.mkdir(exist_ok=True)
     (provider / "ipv4.txt").write_bytes(b"1.1.1.0/24\r\n8.8.8.0/24\r\n")
@@ -115,6 +118,7 @@ def test_publish_roundtrip_and_exact_snapshot(tmp_path: Path) -> None:
     assert len({row[6] for row in compact["entries"]}) == 1
     assert (root / "search-index.json").read_bytes() == original_index
     assert (output / "index.html").read_text() == "frontend"
+    assert (output / "ranges.csv").read_bytes() == (root / "ranges.csv").read_bytes()
     assert not (output / "private.json").exists()
     assert len((output / "search-index.json").read_bytes()) < len(original_index)
 
@@ -137,6 +141,7 @@ def test_publish_all_configured_providers_from_fixtures(tmp_path: Path) -> None:
     expected = {config.provider_id for config in load_provider_configs(root)}
     assert len(expected) >= 13
     assert {entry["provider"] for entry in decoded} == expected
+    assert (output / "ranges.csv").read_bytes() == (root / "ranges.csv").read_bytes()
     assert not (output / "providers").exists()
     assert not (output / "schemas").exists()
     assert not list(output.rglob("ranges.json"))
@@ -191,7 +196,7 @@ def test_reject_symlink_escape(tmp_path: Path, side: str, relative: str) -> None
     assert list(outside.iterdir()) == [protected]
 
 
-@pytest.mark.parametrize("relative", ["example.com/ipv4.txt", "example.com/all.txt"])
+@pytest.mark.parametrize("relative", ["example.com/ipv4.txt", "example.com/all.txt", "ranges.csv"])
 def test_fail_on_missing_snapshot_list(tmp_path: Path, relative: str) -> None:
     root = tmp_path / "repo"
     _source(root, [_entry()])
