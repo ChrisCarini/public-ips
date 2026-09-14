@@ -17,9 +17,10 @@ def committable_files(root: Path) -> list[Path]:
         ["git", "-C", str(root), "ls-files", "-z", "--cached", "--others", "--exclude-standard"],
         capture_output=True,
         check=True,
-        text=True,
     )
-    return [Path(name) for name in result.stdout.split("\0") if name]
+    # Git emits raw path bytes, which need not be valid UTF-8 in the current locale.
+    names = result.stdout.decode("utf-8", "surrogateescape").split("\0")
+    return [Path(name) for name in names if name]
 
 
 def oversized_files(root: Path, *, limit: int = GITHUB_LIMIT_BYTES) -> list[tuple[Path, int]]:
@@ -56,7 +57,7 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     blocking = [item for item in large if item[1] >= args.limit_bytes]
-    warning = [item for item in large if item[1] < args.limit_bytes]
+    warning = [item for item in large if args.warn_bytes <= item[1] < args.limit_bytes]
 
     for path, size in warning:
         print(

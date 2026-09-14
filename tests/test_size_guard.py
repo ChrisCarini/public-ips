@@ -83,3 +83,16 @@ def test_repository_does_not_track_deploy_only_outputs() -> None:
         text=True,
     )
     assert tracked.stdout == ""
+
+
+def test_warn_threshold_above_limit_only_reports_errors(
+    tmp_path: Path, capsys: pytest.CaptureFixture[str]
+) -> None:
+    root = _repo(tmp_path)
+    _write(root, "search-index.json", 2 * MB)
+
+    assert main(["--root", str(root), "--limit-bytes", str(MB), "--warn-bytes", str(4 * MB)]) == 1
+
+    captured = capsys.readouterr()
+    assert captured.out == ""
+    assert "error: search-index.json is 2.00 MB" in captured.err
