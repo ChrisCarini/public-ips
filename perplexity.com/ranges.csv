@@ -1,0 +1,13 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+perplexity.com,,ipv4,3.211.124.183/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,3.222.232.239/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,3.224.62.45/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,3.231.139.107/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,18.97.1.228/30,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,18.97.9.96/29,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,18.97.21.0/30,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,18.97.43.80/29,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,18.210.92.235/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,34.193.163.52/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,44.208.221.197/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00
+perplexity.com,,ipv4,107.20.236.150/32,https://www.perplexity.com/perplexitybot.json,2026-09-14T00:42:22+00:00

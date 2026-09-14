@@ -1,0 +1,61 @@
+{
+  "attribution": "Bingbot IP ranges JSON",
+  "categories": {},
+  "display_name": "Bing (BingBot)",
+  "documentation_url": "https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f",
+  "first_observed_at": "2026-09-14T00:42:22+00:00",
+  "generated_at": "2026-09-14T00:42:22+00:00",
+  "normalized_data_sha256": "aabe78cfaa2315b43e4295d4a760be20fe897e928ae7a44277ec30aa544537de",
+  "provider": {
+    "counts": {
+      "ipv4": 28,
+      "ipv6": 0
+    },
+    "ipv4": [
+      "13.66.139.0/24",
+      "13.66.144.0/24",
+      "13.67.10.16/28",
+      "13.69.66.240/28",
+      "13.71.172.224/28",
+      "20.15.133.160/27",
+      "20.36.108.32/28",
+      "20.43.120.16/28",
+      "20.74.197.0/28",
+      "20.79.107.240/28",
+      "20.125.163.80/28",
+      "40.77.139.0/25",
+      "40.77.167.0/24",
+      "40.77.177.0/24",
+      "40.77.178.0/23",
+      "40.77.188.0/22",
+      "40.77.202.0/24",
+      "40.79.131.208/28",
+      "40.79.186.176/28",
+      "51.105.67.0/28",
+      "52.167.144.0/24",
+      "52.231.148.0/28",
+      "65.55.210.0/24",
+      "139.217.52.0/28",
+      "157.55.39.0/24",
+      "191.233.204.224/28",
+      "199.30.24.0/23",
+      "207.46.13.0/24"
+    ],
+    "ipv6": [],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "bing.com",
+  "schema_version": "v1",
+  "source_body_sha256": "5aabb1b979b7fd62a7785626dd0ec1d4c041609169e9662e001545b8f6c9f391",
+  "source_urls": [
+    "https://www.bing.com/toolbox/bingbot.json"
+  ],
+  "terms_url": "https://www.microsoft.com/servicesagreement"
+}

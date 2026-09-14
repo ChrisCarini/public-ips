@@ -1,0 +1,46 @@
+{
+  "attribution": "Perplexity crawler IP ranges JSON",
+  "categories": {},
+  "display_name": "Perplexity",
+  "documentation_url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers",
+  "first_observed_at": "2026-09-14T00:42:22+00:00",
+  "generated_at": "2026-09-14T00:42:22+00:00",
+  "normalized_data_sha256": "c029b750726d51ecf939134fa5f2da3baa79c0ea0100ebd1c67b99b34dac95da",
+  "provider": {
+    "counts": {
+      "ipv4": 12,
+      "ipv6": 0
+    },
+    "ipv4": [
+      "3.211.124.183/32",
+      "3.222.232.239/32",
+      "3.224.62.45/32",
+      "3.231.139.107/32",
+      "18.97.1.228/30",
+      "18.97.9.96/29",
+      "18.97.21.0/30",
+      "18.97.43.80/29",
+      "18.210.92.235/32",
+      "34.193.163.52/32",
+      "44.208.221.197/32",
+      "107.20.236.150/32"
+    ],
+    "ipv6": [],
+    "paths": {
+      "all": "all.txt",
+      "collapsed_all": "collapsed-all.txt",
+      "collapsed_ipv4": "collapsed-ipv4.txt",
+      "collapsed_ipv6": "collapsed-ipv6.txt",
+      "ipv4": "ipv4.txt",
+      "ipv6": "ipv6.txt"
+    }
+  },
+  "provider_id": "perplexity.com",
+  "schema_version": "v1",
+  "source_body_sha256": "ac4bfc9a1080d918c896138b77aea897413b1b2811a6878e374b9e3061164cc7",
+  "source_urls": [
+    "https://www.perplexity.com/perplexitybot.json",
+    "https://www.perplexity.com/perplexity-user.json"
+  ],
+  "terms_url": "https://www.perplexity.ai/hub/legal/terms-of-service"
+}
