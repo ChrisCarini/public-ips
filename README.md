@@ -37,7 +37,8 @@ GitHub's 100 MB per-file push limit):
 
 - `ranges.csv` — every provider row, published at
   [`/public-ips/ranges.csv`](https://chriscarini.github.io/public-ips/ranges.csv)
-- `search-index.json` — the full v1 index, published as the deployed compact v2 index at
+- `search-index.json` — the full v1 index used by local tooling and the Pages build. Pages
+  serves the separately generated compact v2 index at the same name,
   [`/public-ips/search-index.json`](https://chriscarini.github.io/public-ips/search-index.json)
 
 Both are written into the repository root by `public-ips generate` and are ignored by Git.
