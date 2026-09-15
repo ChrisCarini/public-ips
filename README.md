@@ -17,6 +17,7 @@
 - `oracle.com` — source: `https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json`
 - `perplexity.com` — source: `https://www.perplexity.com/perplexitybot.json`, `https://www.perplexity.com/perplexity-user.json`
 - `pingdom.com` — source: `https://my.pingdom.com/probes/ipv4`, `https://my.pingdom.com/probes/ipv6`
+- `uptimerobot.com` — source: `https://uptimerobot.com/inc/files/ips/IPv4.txt`, `https://uptimerobot.com/inc/files/ips/IPv6.txt`
 
 ## Data outputs
 
