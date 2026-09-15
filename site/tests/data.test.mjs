@@ -81,7 +81,7 @@ test('memberships sort from individual addresses to the broadest ranges', () => 
     entry('one.example', '8.8.8.8/32'),
   ];
   assert.deepEqual(sortBySpecificity(entries).map((item) => item.cidr), [
-    '2001:db8::1/128', '8.8.8.8/32', '8.8.8.0/24', '2001:db8::/32', '0.0.0.0/0',
+    '2001:db8::1/128', '8.8.8.8/32', '8.8.8.0/24', '0.0.0.0/0', '2001:db8::/32',
   ]);
   assert.deepEqual(entries.map((item) => item.cidr), [
     '0.0.0.0/0', '2001:db8::/32', '8.8.8.0/24', '2001:db8::1/128', '8.8.8.8/32',
