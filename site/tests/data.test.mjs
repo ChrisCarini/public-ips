@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import ipaddr from 'ipaddr.js';
-import { buildMarkers, containsAddress, decodeSearchIndex, listFileUrl, locateAddress } from '../src/data.ts';
+import { buildMarkers, containsAddress, decodeSearchIndex, groupSearchEntries, listFileUrl, locateAddress } from '../src/data.ts';
 
 const entry = (provider, cidr, category = null) => ({
   provider, cidr, category, ip_family: cidr.includes(':') ? 'ipv6' : 'ipv4',
@@ -42,6 +42,21 @@ test('co-located ranges cluster per provider without losing list memberships', (
   assert.deepEqual(northAmerica.entries, [root, category, v6]);
   assert.equal(northAmerica.segments.length, 2);
   assert.equal(new Set(markers.map((marker) => marker.id)).size, markers.length);
+});
+
+test('list memberships group repeated provider CIDRs while preserving sources', () => {
+  const groups = groupSearchEntries([
+    { ...root, line: 340 },
+    { ...category, category: 'amazon', path: 'one.example/amazon/ipv4.txt', line: 333 },
+    { ...category, category: 'ec2', path: 'one.example/ec2/ipv4.txt', line: 183 },
+    other,
+  ]);
+  assert.equal(groups.length, 2);
+  assert.equal(groups[0].provider, root.provider);
+  assert.equal(groups[0].cidr, root.cidr);
+  assert.equal(groups[0].ip_family, root.ip_family);
+  assert.deepEqual(groups[0].entries.map((item) => item.category), [null, 'amazon', 'ec2']);
+  assert.deepEqual(groups[1].entries, [other]);
 });
 
 test('provider, family and continent filters intersect', () => {
