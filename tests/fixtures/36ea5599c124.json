@@ -1,0 +1,30 @@
+{
+  "body": {
+    "items": [
+      {
+        "cidr": "8.8.8.0/24",
+        "direction": [
+          "egress"
+        ],
+        "network": "8.8.8.0",
+        "product": [
+          "jira",
+          "confluence"
+        ]
+      },
+      {
+        "cidr": "2001:4860:4860::/48",
+        "direction": [
+          "egress"
+        ],
+        "network": "2001:4860:4860::",
+        "product": [
+          "bitbucket"
+        ]
+      }
+    ]
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}
+

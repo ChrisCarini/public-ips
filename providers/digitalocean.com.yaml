@@ -1,0 +1,14 @@
+provider_id: digitalocean.com
+display_name: DigitalOcean
+output_dir: digitalocean.com
+adapter: generic_cidr
+source_urls:
+  - https://www.digitalocean.com/geo/google.csv
+documentation_url: https://docs.digitalocean.com/platform/
+attribution: DigitalOcean geofeed CSV
+terms_url: https://www.digitalocean.com/legal/terms-of-service-agreement
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
+

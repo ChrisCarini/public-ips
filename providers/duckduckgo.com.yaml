@@ -1,0 +1,14 @@
+provider_id: duckduckgo.com
+display_name: DuckDuckGo
+output_dir: duckduckgo.com
+adapter: generic_cidr
+source_urls:
+  - https://duckduckgo.com/duckduckbot.json
+documentation_url: https://duckduckgo.com/duckduckgo-help-pages/results/duckduckbot
+attribution: DuckDuckBot IP ranges JSON
+terms_url: https://duckduckgo.com/terms
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
+

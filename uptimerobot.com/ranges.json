@@ -3,8 +3,8 @@
   "categories": {},
   "display_name": "UptimeRobot",
   "documentation_url": "https://uptimerobot.com/help/locations/",
-  "first_observed_at": "2026-09-15T05:51:22+00:00",
-  "generated_at": "2026-09-15T05:51:22+00:00",
+  "first_observed_at": "2026-09-15T06:04:01+00:00",
+  "generated_at": "2026-09-15T06:04:01+00:00",
   "normalized_data_sha256": "1de191c96d86cf0a7cd2c815da3ed092c09715a671813a87796d2911c1ca9889",
   "provider": {
     "counts": {
@@ -232,7 +232,7 @@
   },
   "provider_id": "uptimerobot.com",
   "schema_version": "v1",
-  "source_body_sha256": "53fed4be041a0dfc1237f9f501a06ab99773e29917c5fa9a4767102201728de7",
+  "source_body_sha256": "222edb27491ce58c6a3386a1de9294705af6526dba5292233f072c5610d7f055",
   "source_urls": [
     "https://uptimerobot.com/inc/files/ips/IPv4.txt",
     "https://uptimerobot.com/inc/files/ips/IPv6.txt"

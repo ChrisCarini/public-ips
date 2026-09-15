@@ -1,0 +1,17 @@
+{
+  "body": {
+    "creationTime": "2026-01-02T14:35:22Z",
+    "prefixes": [
+      {
+        "ipv4Prefix": "8.8.8.0/24"
+      },
+      {
+        "ipv6Prefix": "2001:4860:4860::/48"
+      }
+    ],
+    "synctoken": "20260102143522"
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}
+

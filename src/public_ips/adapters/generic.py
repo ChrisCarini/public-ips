@@ -264,6 +264,80 @@ class AzureServiceTagsAdapter(RegisteredProviderAdapter, adapter_name="azure_ser
 
 
 @dataclass(frozen=True)
+class AtlassianIpRangesAdapter(RegisteredProviderAdapter, adapter_name="atlassian_ip_ranges"):
+    config: ProviderConfig
+
+    def fetch(self, client: HttpClient) -> RawFetch:
+        return _fetch_configured_urls(self.config, client)
+
+    def extract(self, raw: RawFetch) -> ProviderSnapshot:
+        doc = raw.documents[self.config.source_urls[0]]
+        if doc.status_code != 200:
+            raise ValueError(f"atlassian fetch failed: status={doc.status_code}")
+        payload = json.loads(doc.body)
+        if not isinstance(payload, dict):
+            raise ValueError("atlassian response must be an object")
+        items = payload.get("items", [])
+        if not isinstance(items, list):
+            raise ValueError("atlassian response field 'items' must be a list")
+
+        snapshot = _new_snapshot(self.config, _hash_documents({doc.url: doc}))
+        categories: dict[str, list[str]] = {}
+        for item in items:
+            if not isinstance(item, dict):
+                raise ValueError("atlassian items must contain objects")
+            cidr = item.get("cidr")
+            if not isinstance(cidr, str):
+                continue
+            products = item.get("product") or ["atlassian"]
+            if not isinstance(products, list) or not all(
+                isinstance(product, str) for product in products
+            ):
+                raise ValueError("atlassian product must be a list of strings")
+            for product in products:
+                categories.setdefault(_category(product, "atlassian"), []).append(cidr)
+
+        for category, cidrs in sorted(categories.items()):
+            _add_category(snapshot, category, cidrs, self.config)
+        return snapshot
+
+
+@dataclass(frozen=True)
+class DatadogIpRangesAdapter(RegisteredProviderAdapter, adapter_name="datadog_ip_ranges"):
+    config: ProviderConfig
+
+    def fetch(self, client: HttpClient) -> RawFetch:
+        return _fetch_configured_urls(self.config, client)
+
+    def extract(self, raw: RawFetch) -> ProviderSnapshot:
+        doc = raw.documents[self.config.source_urls[0]]
+        if doc.status_code != 200:
+            raise ValueError(f"datadog fetch failed: status={doc.status_code}")
+        payload = json.loads(doc.body)
+        if not isinstance(payload, dict):
+            raise ValueError("datadog response must be an object")
+
+        snapshot = _new_snapshot(self.config, _hash_documents({doc.url: doc}))
+        for key, value in sorted(payload.items()):
+            if key in {"version", "modified"}:
+                continue
+            if not isinstance(value, dict):
+                raise ValueError(f"datadog field '{key}' must be an object")
+            cidrs: list[str] = []
+            for prefix_key in ("prefixes_ipv4", "prefixes_ipv6"):
+                prefixes = value.get(prefix_key, [])
+                if not isinstance(prefixes, list) or not all(
+                    isinstance(prefix, str) for prefix in prefixes
+                ):
+                    raise ValueError(
+                        f"datadog field '{key}.{prefix_key}' must be a list of strings"
+                    )
+                cidrs.extend(prefixes)
+            _add_category(snapshot, _category(key, "datadog"), cidrs, self.config)
+        return snapshot
+
+
+@dataclass(frozen=True)
 class GoogleCloudAdapter(RegisteredProviderAdapter, adapter_name="google_cloud"):
     config: ProviderConfig
 

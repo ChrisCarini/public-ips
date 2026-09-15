@@ -1,0 +1,13 @@
+{
+  "body": {
+    "addresses": [
+      "8.8.8.0/24"
+    ],
+    "ipv6_addresses": [
+      "2001:4860:4860::/48"
+    ]
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}
+

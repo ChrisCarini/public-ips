@@ -1,0 +1,11 @@
+{
+  "body": {
+    "WEBHOOKS": [
+      "8.8.8.8",
+      "2001:4860:4860::8888"
+    ]
+  },
+  "content_type": "application/json",
+  "status_code": 200
+}
+
