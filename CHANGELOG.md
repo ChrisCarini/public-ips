@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-15
+
+### 05:51:22Z
+
+- [uptimerobot.com](./uptimerobot.com/CHANGELOG.md): Initial import with 103 IPv4 ranges, 103 IPv6 ranges, and 0 categories.
+
 ## 2026-09-14
 
 ### 20:41:33Z
