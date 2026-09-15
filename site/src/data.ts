@@ -11,6 +11,12 @@ export type SearchEntry = {
   source_url: string;
 };
 
+export type SearchEntryGroup = {
+  provider: string;
+  cidr: string;
+  ip_family: 'ipv4' | 'ipv6';
+  entries: SearchEntry[];
+};
 export type SearchIndex = { schema_version: string; entries: SearchEntry[] };
 export type GeoEntry = {
   cidr: string;
@@ -94,6 +100,25 @@ export const locateAddress = (
 ): GeoEntry | undefined => {
   const cidrs = new Set(matches.map((entry) => entry.cidr));
   return geo.entries.find((entry) => cidrs.has(entry.cidr) && containsAddress(address, entry.network));
+};
+
+export const groupSearchEntries = (entries: SearchEntry[]): SearchEntryGroup[] => {
+  const groups = new Map<string, SearchEntryGroup>();
+  for (const entry of entries) {
+    const key = `${entry.provider}|${entry.ip_family}|${entry.cidr}`;
+    let group = groups.get(key);
+    if (!group) {
+      group = {
+        provider: entry.provider,
+        cidr: entry.cidr,
+        ip_family: entry.ip_family,
+        entries: [],
+      };
+      groups.set(key, group);
+    }
+    group.entries.push(entry);
+  }
+  return [...groups.values()];
 };
 
 export const buildMarkers = (index: SearchIndex, geo: GeoIndex, filters: Filters): Marker[] => {
