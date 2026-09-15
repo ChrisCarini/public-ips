@@ -1,0 +1,14 @@
+provider_id: commoncrawl.org
+display_name: Common Crawl
+output_dir: commoncrawl.org
+adapter: generic_cidr
+source_urls:
+  - https://index.commoncrawl.org/ccbot.json
+documentation_url: https://commoncrawl.org/faq/
+attribution: Common Crawl CCBot IP ranges JSON
+terms_url: https://commoncrawl.org/terms-of-use/
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
+

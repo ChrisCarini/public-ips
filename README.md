@@ -7,16 +7,24 @@
 - `amazonaws.com` — source: `https://ip-ranges.amazonaws.com/ip-ranges.json`
 - `anthropic.com` — source: `https://claude.com/crawling/bots.json`
 - `apple.com` — source: `https://mask-api.icloud.com/egress-ip-ranges.csv`
+- `atlassian.com` — source: `https://ip-ranges.atlassian.com/`
 - `azure.microsoft.com` — source: `https://www.microsoft.com/en-us/download/details.aspx?id=56519`
 - `bing.com` — source: `https://www.bing.com/toolbox/bingbot.json`
 - `cloud.google.com` — source: `https://www.gstatic.com/ipranges/cloud.json`
 - `cloudflare.com` — source: `https://api.cloudflare.com/client/v4/ips`
+- `commoncrawl.org` — source: `https://index.commoncrawl.org/ccbot.json`
+- `datadoghq.com` — source: `https://ip-ranges.datadoghq.com/`
+- `digitalocean.com` — source: `https://www.digitalocean.com/geo/google.csv`
+- `duckduckgo.com` — source: `https://duckduckgo.com/duckduckbot.json`
+- `fastly.com` — source: `https://api.fastly.com/public-ip-list`
 - `github.com` — source: `https://api.github.com/meta`
 - `googlebot.com` — source: `https://developers.google.com/search/apis/ipranges/googlebot.json`
 - `openai.com` — source: `https://openai.com/gptbot.json`, `https://openai.com/searchbot.json`, `https://openai.com/chatgpt-user.json`, `https://openai.com/adsbot.json`
 - `oracle.com` — source: `https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json`
 - `perplexity.com` — source: `https://www.perplexity.com/perplexitybot.json`, `https://www.perplexity.com/perplexity-user.json`
 - `pingdom.com` — source: `https://my.pingdom.com/probes/ipv4`, `https://my.pingdom.com/probes/ipv6`
+- `stripe.com` — source: `https://stripe.com/files/ips/ips_webhooks.json`
+- `uptimerobot.com` — source: `https://uptimerobot.com/inc/files/ips/IPv4andIPv6.txt`
 
 ## Data outputs
 

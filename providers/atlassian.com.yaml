@@ -1,0 +1,14 @@
+provider_id: atlassian.com
+display_name: Atlassian
+output_dir: atlassian.com
+adapter: atlassian_ip_ranges
+source_urls:
+  - https://ip-ranges.atlassian.com/
+documentation_url: https://support.atlassian.com/organization-administration/docs/ip-addresses-and-domains-for-atlassian-cloud-products/
+attribution: Atlassian Cloud IP ranges JSON
+terms_url: https://www.atlassian.com/legal/cloud-terms-of-service
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
+

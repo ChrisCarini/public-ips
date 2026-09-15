@@ -5,7 +5,12 @@ from datetime import UTC, datetime
 
 import pytest
 
-from public_ips.adapters.generic import AzureServiceTagsAdapter, GenericCidrAdapter
+from public_ips.adapters.generic import (
+    AtlassianIpRangesAdapter,
+    AzureServiceTagsAdapter,
+    DatadogIpRangesAdapter,
+    GenericCidrAdapter,
+)
 from public_ips.models import FetchDocument, ProviderConfig, RawFetch
 
 
@@ -118,6 +123,74 @@ def test_azure_adapter_rejects_invalid_values_shape() -> None:
                         content_type="application/json",
                         status_code=200,
                     )
+
+
+def test_atlassian_adapter_extracts_cidrs_by_product_without_network_field() -> None:
+    config = _config(adapter="atlassian_ip_ranges")
+    snapshot = AtlassianIpRangesAdapter(config).extract(
+                    _raw(
+                        config,
+                        json.dumps(
+                            {
+                                "items": [
+                                    {
+                                        "network": "8.8.8.0",
+                                        "cidr": "8.8.8.0/24",
+                                        "product": ["jira", "confluence"],
+                                    },
+                                    {
+                                        "network": "2001:4860:4860::",
+                                        "cidr": "2001:4860:4860::/48",
+                                        "product": ["bitbucket"],
+                                    },
+                                ]
+                            }
+                        ).encode(),
+                    )
+    )
+
+    assert {str(network) for network in snapshot.categories["jira"].ipv4} == {"8.8.8.0/24"}
+    assert {str(network) for network in snapshot.categories["confluence"].ipv4} == {
+                    "8.8.8.0/24"
+    }
+    assert {str(network) for network in snapshot.categories["bitbucket"].ipv6} == {
+                    "2001:4860:4860::/48"
+    }
+    assert all(not snapshot.categories[category].ipv4 for category in ["bitbucket"])
+    assert not snapshot.uncategorized.ipv4
+
+
+def test_datadog_adapter_extracts_top_level_categories() -> None:
+    config = _config(adapter="datadog_ip_ranges")
+    snapshot = DatadogIpRangesAdapter(config).extract(
+                    _raw(
+                        config,
+                        json.dumps(
+                            {
+                                "version": 1,
+                                "modified": "2026-01-01T00:00:00",
+                                "synthetics": {
+                                    "prefixes_ipv4": ["8.8.8.0/24"],
+                                    "prefixes_ipv6": ["2001:4860:4860::/48"],
+                                },
+                                "remote-configuration": {
+                                    "prefixes_ipv4": ["8.8.4.0/24"],
+                                    "prefixes_ipv6": [],
+                                },
+                            }
+                        ).encode(),
+                    )
+    )
+
+    assert {str(network) for network in snapshot.categories["synthetics"].ipv4} == {
+                    "8.8.8.0/24"
+    }
+    assert {str(network) for network in snapshot.categories["synthetics"].ipv6} == {
+                    "2001:4860:4860::/48"
+    }
+    assert {str(network) for network in snapshot.categories["remote-configuration"].ipv4} == {
+                    "8.8.4.0/24"
+    }
                 },
             )
         )

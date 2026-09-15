@@ -1,0 +1,14 @@
+provider_id: datadoghq.com
+display_name: Datadog
+output_dir: datadoghq.com
+adapter: datadog_ip_ranges
+source_urls:
+  - https://ip-ranges.datadoghq.com/
+documentation_url: https://docs.datadoghq.com/api/latest/ip-ranges/
+attribution: Datadog IP ranges JSON
+terms_url: https://www.datadoghq.com/legal/terms/
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
+

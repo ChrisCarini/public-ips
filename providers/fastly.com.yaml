@@ -1,0 +1,14 @@
+provider_id: fastly.com
+display_name: Fastly
+output_dir: fastly.com
+adapter: generic_cidr
+source_urls:
+  - https://api.fastly.com/public-ip-list
+documentation_url: https://www.fastly.com/documentation/reference/api/utils/public-ip-list/
+attribution: Fastly public IP list API
+terms_url: https://www.fastly.com/legal/terms-of-service
+min_ranges: 1
+max_change_absolute: 1000
+max_change_percent: 80.0
+allow_non_global: false
+

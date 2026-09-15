@@ -1,0 +1,14 @@
+provider_id: stripe.com
+display_name: Stripe
+output_dir: stripe.com
+adapter: generic_cidr
+source_urls:
+  - https://stripe.com/files/ips/ips_webhooks.json
+documentation_url: https://docs.stripe.com/ips
+attribution: Stripe webhook IP addresses JSON
+terms_url: https://stripe.com/legal
+min_ranges: 1
+max_change_absolute: 1000
+max_change_percent: 100.0
+allow_non_global: false
+
