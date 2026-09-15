@@ -139,8 +139,33 @@ const revealGlobe = (): void => {
 const locationName = (marker: Marker): string =>
   [marker.location.city, marker.location.country, continents[marker.location.continent]].filter(Boolean).join(', ');
 
+type MembershipProviderGroup = {
+  provider: string;
+  entries: SearchEntry[];
+};
+
+type MembershipCidrGroup = {
+  cidr: string;
+  ip_family: SearchEntry['ip_family'];
+  providers: MembershipProviderGroup[];
+};
+
+const groupMembershipsForDisplay = (memberships: SearchEntry[]): MembershipCidrGroup[] => {
+  const cidrGroups = new Map<string, MembershipCidrGroup>();
+  for (const group of groupSearchEntries(sortBySpecificity(memberships))) {
+    const key = `${group.cidr}|${group.ip_family}`;
+    let cidrGroup = cidrGroups.get(key);
+    if (!cidrGroup) {
+      cidrGroup = { cidr: group.cidr, ip_family: group.ip_family, providers: [] };
+      cidrGroups.set(key, cidrGroup);
+    }
+    cidrGroup.providers.push({ provider: group.provider, entries: group.entries });
+  }
+  return [...cidrGroups.values()];
+};
+
 const appendMemberships = (memberships: SearchEntry[]): void => {
-  const groupedMemberships = groupSearchEntries(sortBySpecificity(memberships));
+  const groupedMemberships = groupMembershipsForDisplay(memberships);
   const listHeading = document.createElement('h4');
   listHeading.className = 'membership-heading';
   listHeading.textContent = `Published list memberships (${memberships.length.toLocaleString()})`;
@@ -156,22 +181,24 @@ const appendMemberships = (memberships: SearchEntry[]): void => {
       cidr.className = 'membership-cidr';
       cidr.textContent = `${group.cidr} · ${group.ip_family.toUpperCase()}`;
       const providers = document.createElement('ul');
-      const provider = document.createElement('li');
-      provider.textContent = group.provider;
-      const sources = document.createElement('ul');
-      for (const entry of group.entries) {
-        const source = document.createElement('li');
-        source.className = 'membership-source';
-        source.append(
-          externalLink(`${entry.category ?? 'all services'} (line ${entry.line})`, publishedListUrl(entry.path)),
-          ' · ', externalLink('combined list', publishedListUrl(entry.path.replace(/ipv[46]\.txt$/, 'all.txt'))),
-        );
-        // Source URLs are remote metadata; only expose web links.
-        if (/^https?:\/\//i.test(entry.source_url)) source.append(' · ', externalLink('source', entry.source_url));
-        sources.append(source);
+      for (const providerGroup of group.providers) {
+        const provider = document.createElement('li');
+        provider.textContent = providerGroup.provider;
+        const sources = document.createElement('ul');
+        for (const entry of providerGroup.entries) {
+          const source = document.createElement('li');
+          source.className = 'membership-source';
+          source.append(
+            externalLink(`${entry.category ?? 'all services'} (line ${entry.line})`, publishedListUrl(entry.path)),
+            ' · ', externalLink('combined list', publishedListUrl(entry.path.replace(/ipv[46]\.txt$/, 'all.txt'))),
+          );
+          // Source URLs are remote metadata; only expose web links.
+          if (/^https?:\/\//i.test(entry.source_url)) source.append(' · ', externalLink('source', entry.source_url));
+          sources.append(source);
+        }
+        provider.append(sources);
+        providers.append(provider);
       }
-      provider.append(sources);
-      providers.append(provider);
       item.append(cidr, providers);
       list.append(item);
     }
