@@ -11,6 +11,12 @@ export type SearchEntry = {
   source_url: string;
 };
 
+export type SearchEntryGroup = {
+  provider: string;
+  cidr: string;
+  ip_family: 'ipv4' | 'ipv6';
+  entries: SearchEntry[];
+};
 export type SearchIndex = { schema_version: string; entries: SearchEntry[] };
 export type GeoEntry = {
   cidr: string;
@@ -87,6 +93,18 @@ export const containsAddress = (address: ipaddr.IPv4 | ipaddr.IPv6, cidr: string
   return address.kind() === network.kind() && address.match([network, prefix]);
 };
 
+export const sortBySpecificity = (entries: SearchEntry[]): SearchEntry[] =>
+  [...entries].sort((left, right) => {
+    const [leftAddress, leftPrefix] = ipaddr.parseCIDR(left.cidr);
+    const [rightAddress, rightPrefix] = ipaddr.parseCIDR(right.cidr);
+    const leftHostBits = (leftAddress.kind() === 'ipv4' ? 32 : 128) - leftPrefix;
+    const rightHostBits = (rightAddress.kind() === 'ipv4' ? 32 : 128) - rightPrefix;
+    return leftHostBits - rightHostBits ||
+      rightPrefix - leftPrefix ||
+      left.cidr.localeCompare(right.cidr) ||
+      left.provider.localeCompare(right.provider);
+  });
+
 export const locateAddress = (
   address: ipaddr.IPv4 | ipaddr.IPv6,
   matches: SearchEntry[],
@@ -94,6 +112,25 @@ export const locateAddress = (
 ): GeoEntry | undefined => {
   const cidrs = new Set(matches.map((entry) => entry.cidr));
   return geo.entries.find((entry) => cidrs.has(entry.cidr) && containsAddress(address, entry.network));
+};
+
+export const groupSearchEntries = (entries: SearchEntry[]): SearchEntryGroup[] => {
+  const groups = new Map<string, SearchEntryGroup>();
+  for (const entry of entries) {
+    const key = `${entry.provider}|${entry.ip_family}|${entry.cidr}`;
+    let group = groups.get(key);
+    if (!group) {
+      group = {
+        provider: entry.provider,
+        cidr: entry.cidr,
+        ip_family: entry.ip_family,
+        entries: [],
+      };
+      groups.set(key, group);
+    }
+    group.entries.push(entry);
+  }
+  return [...groups.values()];
 };
 
 export const buildMarkers = (index: SearchIndex, geo: GeoIndex, filters: Filters): Marker[] => {

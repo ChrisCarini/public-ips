@@ -78,8 +78,6 @@ export class Globe {
       }
     });
     canvas.addEventListener('wheel', (event) => {
-      // Normal scrolling still works on a page dominated by the globe.
-      if (!event.ctrlKey && !event.metaKey) return;
       event.preventDefault();
       this.changeZoom(Math.exp(-event.deltaY * 0.002));
     }, { passive: false });
@@ -124,7 +122,7 @@ export class Globe {
   }
 
   changeZoom(factor: number): void {
-    this.zoom = Math.max(1, Math.min(5, this.zoom * factor));
+    this.zoom = Math.max(1, Math.min(20, this.zoom * factor));
     this.resize();
   }
 
