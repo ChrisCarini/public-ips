@@ -47,6 +47,7 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
         "oracle.com",
         "perplexity.com",
         "pingdom.com",
+        "uptimerobot.com",
     } <= providers.keys()
     assert providers["amazonaws.com"]["categories"]["amazon"]["counts"] == {
         "ipv4": 1,
