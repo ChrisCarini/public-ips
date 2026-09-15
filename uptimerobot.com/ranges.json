@@ -1,5 +1,5 @@
 {
-  "attribution": "UptimeRobot monitor IP addresses",
+  "attribution": "UptimeRobot probe server IP addresses",
   "categories": {},
   "display_name": "UptimeRobot",
   "documentation_url": "https://uptimerobot.com/help/locations/",
@@ -234,7 +234,8 @@
   "schema_version": "v1",
   "source_body_sha256": "222edb27491ce58c6a3386a1de9294705af6526dba5292233f072c5610d7f055",
   "source_urls": [
-    "https://uptimerobot.com/inc/files/ips/IPv4andIPv6.txt"
+    "https://uptimerobot.com/inc/files/ips/IPv4.txt",
+    "https://uptimerobot.com/inc/files/ips/IPv6.txt"
   ],
   "terms_url": "https://uptimerobot.com/terms"
 }

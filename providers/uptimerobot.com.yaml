@@ -3,12 +3,12 @@ display_name: UptimeRobot
 output_dir: uptimerobot.com
 adapter: generic_cidr
 source_urls:
-  - https://uptimerobot.com/inc/files/ips/IPv4andIPv6.txt
+  - https://uptimerobot.com/inc/files/ips/IPv4.txt
+  - https://uptimerobot.com/inc/files/ips/IPv6.txt
 documentation_url: https://uptimerobot.com/help/locations/
-attribution: UptimeRobot monitor IP addresses
+attribution: UptimeRobot probe server IP addresses
 terms_url: https://uptimerobot.com/terms
 min_ranges: 1
 max_change_absolute: 10000
 max_change_percent: 100.0
 allow_non_global: false
-

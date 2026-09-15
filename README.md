@@ -24,7 +24,7 @@
 - `perplexity.com` — source: `https://www.perplexity.com/perplexitybot.json`, `https://www.perplexity.com/perplexity-user.json`
 - `pingdom.com` — source: `https://my.pingdom.com/probes/ipv4`, `https://my.pingdom.com/probes/ipv6`
 - `stripe.com` — source: `https://stripe.com/files/ips/ips_webhooks.json`
-- `uptimerobot.com` — source: `https://uptimerobot.com/inc/files/ips/IPv4andIPv6.txt`
+- `uptimerobot.com` — source: `https://uptimerobot.com/inc/files/ips/IPv4.txt`, `https://uptimerobot.com/inc/files/ips/IPv6.txt`
 
 ## Data outputs
 

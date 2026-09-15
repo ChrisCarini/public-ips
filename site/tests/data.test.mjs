@@ -1,7 +1,10 @@
 import assert from 'node:assert/strict';
 import { test } from 'node:test';
 import ipaddr from 'ipaddr.js';
-import { buildMarkers, containsAddress, decodeSearchIndex, groupSearchEntries, listFileUrl, locateAddress } from '../src/data.ts';
+import {
+  buildMarkers, containsAddress, decodeSearchIndex, groupSearchEntries, listFileUrl, locateAddress,
+  sortBySpecificity,
+} from '../src/data.ts';
 
 const entry = (provider, cidr, category = null) => ({
   provider, cidr, category, ip_family: cidr.includes(':') ? 'ipv6' : 'ipv4',
@@ -83,6 +86,22 @@ test('IPv4/IPv6 network containment includes both boundaries and excludes other 
   assert.ok(containsAddress(ipaddr.parse('2001:4860:ffff:ffff:ffff:ffff:ffff:ffff'), '2001:4860::/32'));
   assert.ok(!containsAddress(ipaddr.parse('8.8.8.8'), '2001:4860::/32'));
   assert.ok(!containsAddress(ipaddr.parse('2001:4860::8888'), '8.8.8.0/24'));
+});
+
+test('memberships sort from individual addresses to the broadest ranges', () => {
+  const entries = [
+    entry('one.example', '0.0.0.0/0'),
+    entry('one.example', '2001:db8::/32'),
+    entry('one.example', '8.8.8.0/24'),
+    entry('one.example', '2001:db8::1/128'),
+    entry('one.example', '8.8.8.8/32'),
+  ];
+  assert.deepEqual(sortBySpecificity(entries).map((item) => item.cidr), [
+    '2001:db8::1/128', '8.8.8.8/32', '8.8.8.0/24', '0.0.0.0/0', '2001:db8::/32',
+  ]);
+  assert.deepEqual(entries.map((item) => item.cidr), [
+    '0.0.0.0/0', '2001:db8::/32', '8.8.8.0/24', '2001:db8::1/128', '8.8.8.8/32',
+  ]);
 });
 
 test('zero coordinates are valid, and multiple segments at a location do not duplicate lists', () => {

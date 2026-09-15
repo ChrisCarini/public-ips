@@ -65,8 +65,7 @@ li { margin: .5rem 0; overflow-wrap: anywhere; }
 summary { cursor: pointer; min-height: 44px; }
 #locations { max-height: 22rem; overflow: auto; list-style: none; padding: 0; }
 #locations button { text-align: left; width: 100%; }
-#search-results, .examples-section { margin-top: 2rem; border-top: 1px solid #2c455c; padding-top: .5rem; }
-#results { max-height: 32rem; overflow: auto; }
+.examples-section { margin-top: 2rem; border-top: 1px solid #2c455c; padding-top: .5rem; }
 #examples { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; list-style: none; padding: 0; }
 #examples a { display: inline-block; padding: .4rem 0; }
 @media (max-width: 850px) {
