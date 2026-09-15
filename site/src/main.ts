@@ -1,7 +1,10 @@
 import './styles.css';
 import ipaddr from 'ipaddr.js';
 import { Globe } from './globe';
-import { buildMarkers, locateAddress, continents, decodeSearchIndex, groupSearchEntries, listFileUrl } from './data';
+import {
+  buildMarkers, locateAddress, continents, decodeSearchIndex, groupSearchEntries, listFileUrl,
+  sortBySpecificity,
+} from './data';
 import type { GeoIndex, Marker, SearchEntry, SearchIndex } from './data';
 
 const app = document.querySelector<HTMLDivElement>('#app');
@@ -24,6 +27,7 @@ app.innerHTML = `
     </div>
   </form>
   <p id="error" role="alert"></p>
+  <p id="search-status" role="status"></p>
   <section aria-labelledby="globe-title">
     <div class="section-heading"><h2 id="globe-title">A world of networks</h2><span class="badge">IPv4 + IPv6</span></div>
     <div class="filters">
@@ -45,7 +49,7 @@ app.innerHTML = `
           <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
           <button id="reset-view" type="button">Reset view</button>
         </div>
-        <p id="globe-help">Drag to rotate · Pinch to zoom · Tap a dot to explore<br>Keyboard: arrow keys and + / −. Or use the mapped locations list below.</p>
+        <p id="globe-help">Drag to rotate · Scroll or pinch to zoom · Tap a dot to explore<br>Keyboard: arrow keys and + / −. Or use the mapped locations list below.</p>
       </div>
       <aside id="details" aria-labelledby="details-title">
         <h3 id="details-title">Explore a location</h3>
@@ -63,12 +67,6 @@ app.innerHTML = `
       <ul id="locations"></ul><button id="more-locations" type="button" hidden>Show more locations</button>
     </details>
   </section>
-  <section id="search-results" aria-labelledby="results-title" hidden>
-    <h2 id="results-title">Search results</h2>
-    <p id="search-status" role="status"></p>
-    <ul id="results"></ul>
-    <button id="more-results" type="button" hidden>Show more results</button>
-  </section>
   <section class="examples-section">
     <h2>Example searches</h2>
     <p>Select an example IP to search the published ranges for that provider.</p>
@@ -79,8 +77,6 @@ app.innerHTML = `
 const queryInput = document.querySelector<HTMLInputElement>('#query')!;
 queryInput.value = queryParam;
 const error = document.querySelector<HTMLParagraphElement>('#error')!;
-const results = document.querySelector<HTMLUListElement>('#results')!;
-const moreResults = document.querySelector<HTMLButtonElement>('#more-results')!;
 const examples = document.querySelector<HTMLUListElement>('#examples')!;
 const providerFilter = document.querySelector<HTMLSelectElement>('#provider')!;
 const familyFilter = document.querySelector<HTMLSelectElement>('#family')!;
@@ -124,6 +120,41 @@ const revealGlobe = (): void => {
 
 const locationName = (marker: Marker): string =>
   [marker.location.city, marker.location.country, continents[marker.location.continent]].filter(Boolean).join(', ');
+
+const appendMemberships = (memberships: SearchEntry[]): void => {
+  const groupedMemberships = groupSearchEntries(sortBySpecificity(memberships));
+  const listHeading = document.createElement('h4');
+  listHeading.textContent = `Published list memberships (${memberships.length.toLocaleString()})`;
+  const list = document.createElement('ul');
+  const more = document.createElement('button');
+  more.textContent = 'Show more memberships';
+  let shown = 0;
+  const appendNext = (): void => {
+    for (const group of groupedMemberships.slice(shown, shown + 50)) {
+      const item = document.createElement('li');
+      const cidr = document.createElement('strong');
+      cidr.textContent = `${group.cidr} · ${group.ip_family.toUpperCase()}`;
+      const sources = document.createElement('ul');
+      for (const entry of group.entries) {
+        const source = document.createElement('li');
+        source.append(
+          externalLink(`${entry.provider} / ${entry.category ?? 'all services'} (line ${entry.line})`, publishedListUrl(entry.path)),
+          ' · ', externalLink('combined list', publishedListUrl(entry.path.replace(/ipv[46]\.txt$/, 'all.txt'))),
+        );
+        // Source URLs are remote metadata; only expose web links.
+        if (/^https?:\/\//i.test(entry.source_url)) source.append(' · ', externalLink('source', entry.source_url));
+        sources.append(source);
+      }
+      item.append(cidr, sources);
+      list.append(item);
+    }
+    shown += 50;
+    more.hidden = shown >= groupedMemberships.length;
+  };
+  more.addEventListener('click', appendNext);
+  appendNext();
+  details.append(listHeading, list, more);
+};
 
 const showDetails = (
   marker: Marker,
@@ -170,39 +201,22 @@ const showDetails = (
       details.append(button);
     }
   }
-  const groupedMemberships = groupSearchEntries(memberships);
-  const listHeading = document.createElement('h4');
-  listHeading.textContent = `Published list memberships (${memberships.length.toLocaleString()})`;
-  const list = document.createElement('ul');
-  const more = document.createElement('button');
-  more.textContent = 'Show more memberships';
-  let shown = 0;
-  const appendMemberships = (): void => {
-    for (const group of groupedMemberships.slice(shown, shown + 50)) {
-      const item = document.createElement('li');
-      const cidr = document.createElement('strong');
-      cidr.textContent = `${group.cidr} · ${group.ip_family.toUpperCase()}`;
-      const sources = document.createElement('ul');
-      for (const entry of group.entries) {
-        const source = document.createElement('li');
-        source.append(
-          externalLink(`${entry.provider} / ${entry.category ?? 'all services'} (line ${entry.line})`, publishedListUrl(entry.path)),
-          ' · ', externalLink('combined list', publishedListUrl(entry.path.replace(/ipv[46]\.txt$/, 'all.txt'))),
-        );
-        // Source URLs are remote metadata; only expose web links.
-        if (/^https?:\/\//i.test(entry.source_url)) source.append(' · ', externalLink('source', entry.source_url));
-        sources.append(source);
-      }
-      item.append(cidr, sources);
-      list.append(item);
-    }
-    shown += 50;
-    more.hidden = shown >= groupedMemberships.length;
-  };
-  more.addEventListener('click', appendMemberships);
-  appendMemberships();
-  details.append(listHeading, list, more);
+  appendMemberships(memberships);
   heading.focus({ preventScroll: true });
+};
+
+const showSearchMemberships = (query: string, memberships: SearchEntry[]): void => {
+  details.classList.add('has-selection');
+  details.replaceChildren();
+  const heading = document.createElement('h3');
+  heading.id = 'details-title';
+  heading.textContent = query;
+  const summary = document.createElement('p');
+  summary.textContent = memberships.length
+    ? 'Published ranges matching this search, ordered from most specific to least specific.'
+    : 'No published list memberships match this search.';
+  details.append(heading, summary);
+  if (memberships.length) appendMemberships(memberships);
 };
 
 const renderLocations = (): void => {
@@ -364,12 +378,9 @@ const runSearch = async (): Promise<void> => {
   const version = ++searchVersion;
   error.textContent = '';
   searchStatus.textContent = '';
-  results.innerHTML = '';
-  moreResults.hidden = true;
   globe?.select();
   details.classList.remove('has-selection');
   details.innerHTML = '<h3 id="details-title">Explore a location</h3><p>Select a dot or search for an IP to explore.</p>';
-  document.querySelector<HTMLElement>('#search-results')!.hidden = false;
   try {
     const query = parseInput(queryInput.value);
     const url = new URL(window.location.href);
@@ -391,26 +402,13 @@ const runSearch = async (): Promise<void> => {
       .filter((item) => item.rel !== 'none');
 
     if (!matches.length) {
-      results.innerHTML = '<li>No matches.</li>';
+      showSearchMemberships(queryInput.value.trim(), []);
       return;
     }
 
     searchStatus.textContent = `${matches.length.toLocaleString()} matching list entries. Search covers all providers, independently of globe filters.`;
-    let shown = 0;
-    const appendResults = (): void => {
-      const fragment = document.createDocumentFragment();
-      for (const item of matches.slice(shown, shown + 100)) {
-        const li = document.createElement('li');
-        const prefix = `${item.entry.provider} ${item.entry.category ? `(${item.entry.category})` : ''} ${item.entry.cidr} - ${item.rel} @ `;
-        li.append(prefix, externalLink(`${item.entry.path}:${item.entry.line}`, publishedListUrl(item.entry.path)));
-        fragment.appendChild(li);
-      }
-      results.appendChild(fragment);
-      shown += 100;
-      moreResults.hidden = shown >= matches.length;
-    };
-    moreResults.onclick = appendResults;
-    appendResults();
+    const matchingEntries = sortBySpecificity(matches.map(({ entry }) => entry));
+    showSearchMemberships(queryInput.value.trim(), matchingEntries);
     if (query.type === 'addr') {
       await globeReady;
       if (version !== searchVersion) return;
@@ -418,7 +416,7 @@ const runSearch = async (): Promise<void> => {
         searchStatus.textContent += ' Geographic data is unavailable; list matches are shown below.';
         return;
       }
-      const segment = locateAddress(query.value, matches.map(({ entry }) => entry), geoIndex);
+      const segment = locateAddress(query.value, matchingEntries, geoIndex);
       if (!segment) {
         searchStatus.textContent += ' This IP is in the published lists, but has no known location. It has not been placed on the globe.';
         return;
@@ -429,7 +427,7 @@ const runSearch = async (): Promise<void> => {
       const marker = markers.find((candidate) => candidate.segments.includes(segment));
       if (marker) {
         globe.focus(marker);
-        showDetails(marker, [], query.value.toString(), matches.map(({ entry }) => entry));
+        showDetails(marker, [], query.value.toString(), matchingEntries);
         revealGlobe();
         searchStatus.textContent += ` Approximate location highlighted: ${locationName(marker)}.${filtersChanged ? ' Globe filters were cleared to reveal the match.' : ''}`;
       }
