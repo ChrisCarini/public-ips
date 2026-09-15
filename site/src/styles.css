@@ -8,7 +8,7 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; }
-main { max-width: 1280px; margin: auto; padding: 2.5rem 2rem; }
+main { max-width: 1600px; margin: auto; padding: 2.5rem 2rem; }
 header { margin-bottom: 2rem; }
 h1 { font-size: clamp(2rem, 5vw, 3.2rem); letter-spacing: -.04em; margin: 0; }
 h1 span { font-weight: 400; color: #90adc5; }
@@ -44,16 +44,19 @@ li { margin: .5rem 0; overflow-wrap: anywhere; }
 .badge { font-size: .75rem; border: 1px solid #416079; border-radius: 2rem; padding: .25rem .6rem; white-space: nowrap; }
 .filters { display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; gap: .8rem; align-items: end; }
 #globe-status { color: #b2c8da; font-size: .9rem; min-height: 1.5rem; }
-.explorer { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1rem; align-items: start; }
+.explorer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, min(42vw, 640px)); gap: 1rem; align-items: start; }
 .globe-stage { position: relative; min-width: 0; border: 1px solid #253e54; border-radius: 1rem; background: radial-gradient(ellipse at 50% 42%, #172c43, #0b1827 70%); overflow: hidden; }
 #globe { width: 100%; height: auto; aspect-ratio: 1.12; display: block; touch-action: none; cursor: grab; }
 #globe:active { cursor: grabbing; }
 .globe-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; padding: 0 .5rem; }
 .globe-controls button { min-width: 44px; }
 #globe-help { text-align: center; font-size: .75rem; color: #a6c0d5; padding: .3rem .8rem .6rem; }
-#details { background: #102136; border: 1px solid #2c455c; border-radius: .8rem; padding: 1.1rem; max-height: 660px; overflow: auto; overflow-wrap: anywhere; font-size: .9rem; }
+#details { background: #102136; border: 1px solid #2c455c; border-radius: .8rem; padding: 1.1rem; overflow: auto; overflow-wrap: normal; font-size: .9rem; }
 #details h3 { color: #fff; font-size: 1.1rem; clear: both; }
 #details li { margin: .9rem 0; }
+.membership-tree, .membership-tree ul { width: max-content; max-width: none; }
+.membership-tree li { overflow-wrap: normal; }
+.membership-heading, .membership-cidr, .membership-source { white-space: nowrap; }
 .close-details { font-size: .8rem; float: right; margin-bottom: .5rem; }
 .nearby { width: 100%; margin: .2rem 0; text-align: left; font-size: .8rem; }
 .muted, .geo-note, .attribution { color: #a6c0d5; font-size: .8rem; }
