@@ -329,7 +329,9 @@ class DatadogIpRangesAdapter(RegisteredProviderAdapter, adapter_name="datadog_ip
                 if not isinstance(prefixes, list) or not all(
                     isinstance(prefix, str) for prefix in prefixes
                 ):
-                    raise ValueError(f"datadog field '{key}.{prefix_key}' must be a list of strings")
+                    raise ValueError(
+                        f"datadog field '{key}.{prefix_key}' must be a list of strings"
+                    )
                 cidrs.extend(prefixes)
             _add_category(snapshot, _category(key, "datadog"), cidrs, self.config)
         return snapshot

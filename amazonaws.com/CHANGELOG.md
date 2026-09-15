@@ -1,5 +1,15 @@
 # Changelog - amazonaws.com
 
+## 2026-09-15
+
+### 06:04:01Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Added `2600:1f17:4356:f100::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `1.178.86.0/24` (IPv4).
+- Added `2600:1f17:4356:f100::/56` (IPv6).
+
 ## 2026-09-14
 
 ### 20:41:33Z

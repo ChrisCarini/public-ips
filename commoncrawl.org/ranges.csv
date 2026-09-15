@@ -1,0 +1,6 @@
+provider,category,ip_family,cidr,source_url,first_observed_at
+commoncrawl.org,,ipv4,3.41.188.32/29,https://index.commoncrawl.org/ccbot.json,2026-09-15T06:04:01+00:00
+commoncrawl.org,,ipv4,18.97.9.168/29,https://index.commoncrawl.org/ccbot.json,2026-09-15T06:04:01+00:00
+commoncrawl.org,,ipv4,18.97.14.80/29,https://index.commoncrawl.org/ccbot.json,2026-09-15T06:04:01+00:00
+commoncrawl.org,,ipv4,18.97.14.88/30,https://index.commoncrawl.org/ccbot.json,2026-09-15T06:04:01+00:00
+commoncrawl.org,,ipv6,2600:1f28:365:8000::/56,https://index.commoncrawl.org/ccbot.json,2026-09-15T06:04:01+00:00
