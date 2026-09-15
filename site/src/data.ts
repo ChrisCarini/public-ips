@@ -87,6 +87,18 @@ export const containsAddress = (address: ipaddr.IPv4 | ipaddr.IPv6, cidr: string
   return address.kind() === network.kind() && address.match([network, prefix]);
 };
 
+export const sortBySpecificity = (entries: SearchEntry[]): SearchEntry[] =>
+  [...entries].sort((left, right) => {
+    const [leftAddress, leftPrefix] = ipaddr.parseCIDR(left.cidr);
+    const [rightAddress, rightPrefix] = ipaddr.parseCIDR(right.cidr);
+    const leftHostBits = (leftAddress.kind() === 'ipv4' ? 32 : 128) - leftPrefix;
+    const rightHostBits = (rightAddress.kind() === 'ipv4' ? 32 : 128) - rightPrefix;
+    return leftHostBits - rightHostBits ||
+      rightPrefix - leftPrefix ||
+      left.cidr.localeCompare(right.cidr) ||
+      left.provider.localeCompare(right.provider);
+  });
+
 export const locateAddress = (
   address: ipaddr.IPv4 | ipaddr.IPv6,
   matches: SearchEntry[],
