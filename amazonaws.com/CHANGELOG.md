@@ -1,5 +1,64 @@
 # Changelog - amazonaws.com
 
+## 2026-09-16
+
+### 08:34:10Z
+
+- Added `2600:f0f0:c01:8000::/56` to `amazon` (IPv6).
+- Added `2600:f0f0:cf9::/56` to `amazon` (IPv6).
+- Added `2406:da10:847f:a100::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da11:438:2300::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da12:4b:c200::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da12:8b2e:9c00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da14:17bd:2f00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da14:80bb:ea00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da19:e19:4a00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da1b:e7c:ad00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da1c:8d8c:4600::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da1e:705:1600::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2406:da1f:396:9100::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2600:1f13:417:4d00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2600:1f16:1923:3000::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2600:1f18:7530:7200::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2600:1f1a:4568:b500::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2600:1f1e:a7:2300::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d011:531:1800::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d014:1362:b000::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d016:9ed:de00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d018:1a3a:2d00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d019:80b:e300::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d01a:8a9:be00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d01c:343:c300::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2a05:d025:e59:fb00::/56` to `cloudfront_origin_facing` (IPv6).
+- Added `2600:f0f0:c01:8000::/56` to `ec2` (IPv6).
+- Added `2600:f0f0:cf9::/56` to `ec2` (IPv6).
+- Added `2406:da10:847f:a100::/56` (IPv6).
+- Added `2406:da11:438:2300::/56` (IPv6).
+- Added `2406:da12:4b:c200::/56` (IPv6).
+- Added `2406:da12:8b2e:9c00::/56` (IPv6).
+- Added `2406:da14:17bd:2f00::/56` (IPv6).
+- Added `2406:da14:80bb:ea00::/56` (IPv6).
+- Added `2406:da19:e19:4a00::/56` (IPv6).
+- Added `2406:da1b:e7c:ad00::/56` (IPv6).
+- Added `2406:da1c:8d8c:4600::/56` (IPv6).
+- Added `2406:da1e:705:1600::/56` (IPv6).
+- Added `2406:da1f:396:9100::/56` (IPv6).
+- Added `2600:1f13:417:4d00::/56` (IPv6).
+- Added `2600:1f16:1923:3000::/56` (IPv6).
+- Added `2600:1f18:7530:7200::/56` (IPv6).
+- Added `2600:1f1a:4568:b500::/56` (IPv6).
+- Added `2600:1f1e:a7:2300::/56` (IPv6).
+- Added `2600:f0f0:c01:8000::/56` (IPv6).
+- Added `2600:f0f0:cf9::/56` (IPv6).
+- Added `2a05:d011:531:1800::/56` (IPv6).
+- Added `2a05:d014:1362:b000::/56` (IPv6).
+- Added `2a05:d016:9ed:de00::/56` (IPv6).
+- Added `2a05:d018:1a3a:2d00::/56` (IPv6).
+- Added `2a05:d019:80b:e300::/56` (IPv6).
+- Added `2a05:d01a:8a9:be00::/56` (IPv6).
+- Added `2a05:d01c:343:c300::/56` (IPv6).
+- Added `2a05:d025:e59:fb00::/56` (IPv6).
+
 ## 2026-09-15
 
 ### 08:39:32Z
