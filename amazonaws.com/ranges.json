@@ -4,7 +4,7 @@
     "amazon": {
       "counts": {
         "ipv4": 5968,
-        "ipv6": 3240
+        "ipv6": 3239
       },
       "ipv4": [
         "1.178.1.0/24",
@@ -8060,7 +8060,6 @@
         "2600:f0f0:c14c::/48",
         "2600:f0f0:c14d::/48",
         "2600:f0f0:c14e::/48",
-        "2600:f0f0:c14f::/48",
         "2600:f0f1:10::/47",
         "2600:f0f1:12::/47",
         "2600:f0f1:14::/47",
@@ -10433,7 +10432,7 @@
     "ec2": {
       "counts": {
         "ipv4": 1859,
-        "ipv6": 2552
+        "ipv6": 2551
       },
       "ipv4": [
         "1.178.1.0/24",
@@ -13923,7 +13922,6 @@
         "2600:f0f0:c14c::/48",
         "2600:f0f0:c14d::/48",
         "2600:f0f0:c14e::/48",
-        "2600:f0f0:c14f::/48",
         "2600:f0f1:10::/47",
         "2600:f0f1:12::/47",
         "2600:f0f1:14::/47",
@@ -18019,13 +18017,13 @@
   },
   "display_name": "Amazon AWS",
   "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-  "first_observed_at": "2026-09-17T08:38:23+00:00",
-  "generated_at": "2026-09-17T08:38:23+00:00",
-  "normalized_data_sha256": "89294304bd40f7fc6a6831b97bc8a98acbc593fd751d15be6a1a2681b1422bde",
+  "first_observed_at": "2026-09-18T08:13:44+00:00",
+  "generated_at": "2026-09-18T08:13:44+00:00",
+  "normalized_data_sha256": "b80e48980d858bdd7609a9d6afabd679a7fec3397ffca6f89616625f4ae93d6a",
   "provider": {
     "counts": {
       "ipv4": 7791,
-      "ipv6": 3479
+      "ipv6": 3478
     },
     "ipv4": [
       "1.178.1.0/24",
@@ -28084,7 +28082,6 @@
       "2600:f0f0:c14c::/48",
       "2600:f0f0:c14d::/48",
       "2600:f0f0:c14e::/48",
-      "2600:f0f0:c14f::/48",
       "2600:f0f1:10::/47",
       "2600:f0f1:12::/47",
       "2600:f0f1:14::/47",
@@ -29312,7 +29309,7 @@
   },
   "provider_id": "amazonaws.com",
   "schema_version": "v1",
-  "source_body_sha256": "204dd834ed035f964f55f9b6c671f5fe5a6a2c704774e72988f00ae78949a6b2",
+  "source_body_sha256": "9d0b983ad1684165067140dc0d2a149b403719ca6a6d2115a49d05fa13472436",
   "source_urls": [
     "https://ip-ranges.amazonaws.com/ip-ranges.json"
   ],

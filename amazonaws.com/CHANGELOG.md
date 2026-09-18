@@ -1,5 +1,13 @@
 # Changelog - amazonaws.com
 
+## 2026-09-18
+
+### 08:13:44Z
+
+- Removed `2600:f0f0:c14f::/48` from `amazon` (IPv6).
+- Removed `2600:f0f0:c14f::/48` from `ec2` (IPv6).
+- Removed `2600:f0f0:c14f::/48` (IPv6).
+
 ## 2026-09-17
 
 ### 08:38:23Z
