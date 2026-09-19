@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-19
+
+### 08:01:59Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `54.117.38.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `54.117.38.0/23` (IPv4).
+
 ## 2026-09-18
 
 ### 08:13:44Z
