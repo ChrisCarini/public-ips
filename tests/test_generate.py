@@ -1,14 +1,36 @@
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 from pathlib import Path
 
 import pytest
 
-from public_ips.cli import _check_mode, run_generation
+from public_ips.cli import FileHttpClient, _check_mode, run_generation
 
 FIXED_TS = "2026-01-02T14:35:22+00:00"
+
+
+@pytest.mark.parametrize(
+    ("content_type", "body", "expected"),
+    [
+        ("text/plain", "8.8.8.0/24\n2001:4860::/32\n", b"8.8.8.0/24\n2001:4860::/32\n"),
+        ("text/csv", "8.8.8.0/24,US,US-CA,Los Angeles,\n", b"8.8.8.0/24,US,US-CA,Los Angeles,\n"),
+        ("text/html", '<a href="https://example.test">feed</a>', b'<a href="https://example.test">feed</a>'),
+        ("application/json", {"prefixes": ["8.8.8.0/24"]}, b'{"prefixes":["8.8.8.0/24"]}'),
+    ],
+)
+def test_file_http_client_preserves_body_format(
+    tmp_path: Path, content_type: str, body: object, expected: bytes
+) -> None:
+    url = "https://example.test/feed"
+    slug = hashlib.sha256(url.encode("utf-8")).hexdigest()[:12]
+    (tmp_path / f"{slug}.json").write_text(
+        json.dumps({"status_code": 200, "content_type": content_type, "body": body})
+    )
+
+    assert FileHttpClient(tmp_path).get(url) == (200, expected, content_type, None, None)
 
 
 def _copy_repo_tree(src: Path, dst: Path) -> None:
