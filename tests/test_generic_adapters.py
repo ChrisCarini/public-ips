@@ -10,6 +10,7 @@ from public_ips.adapters.generic import (
     AzureServiceTagsAdapter,
     DatadogIpRangesAdapter,
     GenericCidrAdapter,
+    VultrIpRangesAdapter,
 )
 from public_ips.models import FetchDocument, ProviderConfig, RawFetch
 
@@ -64,6 +65,40 @@ def test_generic_adapter_text_fallback_normalizes_and_warns() -> None:
         "to '2001:4860:4860::8888/128'" in warning
         for warning in snapshot.warnings
     )
+
+
+@pytest.mark.parametrize(
+    "body",
+    [b"10.0.0.0/8\n", b"127.0.0.0/8\n", b"fc00::/7\n", b"192.0.2.0/25\n"],
+)
+def test_vultr_rejects_unexpected_non_global_ranges(body: bytes) -> None:
+    config = _config(adapter="vultr_ip_ranges")
+
+    with pytest.raises(ValueError, match="non-global CIDR"):
+        VultrIpRangesAdapter(config).extract(_raw(config, b"45.32.0.0/21\n" + body))
+
+
+@pytest.mark.parametrize("body", [b"", b"# No prefixes\n", b"192.0.2.0/24\n2001:db8::/32\n"])
+def test_vultr_rejects_empty_public_list(body: bytes) -> None:
+    config = _config(adapter="vultr_ip_ranges")
+
+    with pytest.raises(ValueError, match="no public ranges found"):
+        VultrIpRangesAdapter(config).extract(_raw(config, body))
+
+
+@pytest.mark.parametrize("body", [b"<html>Error</html>", b"not-a-cidr", b"45.32.0.1/21"])
+def test_vultr_rejects_malformed_prefixes(body: bytes) -> None:
+    config = _config(adapter="vultr_ip_ranges")
+
+    with pytest.raises(ValueError):
+        VultrIpRangesAdapter(config).extract(_raw(config, body))
+
+
+def test_vultr_rejects_http_failure() -> None:
+    config = _config(adapter="vultr_ip_ranges")
+
+    with pytest.raises(ValueError, match="vultr fetch failed: status=503"):
+        VultrIpRangesAdapter(config).extract(_raw(config, b"Unavailable", status_code=503))
 
 
 class _StubClient:

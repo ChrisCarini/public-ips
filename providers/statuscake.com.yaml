@@ -1,0 +1,13 @@
+provider_id: statuscake.com
+display_name: StatusCake
+output_dir: statuscake.com
+adapter: generic_cidr
+source_urls:
+  - https://app.statuscake.com/Workfloor/Locations.php?format=json
+  - https://app.statuscake.com/API/SpeedLocations/json
+documentation_url: https://www.statuscake.com/kb/knowledge-base/what-are-your-ips/
+attribution: StatusCake uptime and Page Speed monitoring nodes (not SSL or webhook addresses)
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

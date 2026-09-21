@@ -71,12 +71,16 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
         "fastly.com",
         "github.com",
         "googlebot.com",
+        "linode.com",
         "openai.com",
         "oracle.com",
         "perplexity.com",
         "pingdom.com",
+        "statuscake.com",
         "stripe.com",
+        "telegram.org",
         "uptimerobot.com",
+        "vultr.com",
     } <= providers.keys()
     assert providers["amazonaws.com"]["categories"]["amazon"]["counts"] == {
         "ipv4": 1,
@@ -90,6 +94,18 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
         "ipv4": 1,
         "ipv6": 1,
     }
+    for provider, counts in {
+        "linode.com": {"ipv4": 1, "ipv6": 1},
+        "statuscake.com": {"ipv4": 4, "ipv6": 2},
+        "telegram.org": {"ipv4": 3, "ipv6": 2},
+        "vultr.com": {"ipv4": 2, "ipv6": 2},
+    }.items():
+        assert providers[provider]["provider"]["counts"] == counts
+        ipv4 = (root / provider / "ipv4.txt").read_text().splitlines()
+        ipv6 = (root / provider / "ipv6.txt").read_text().splitlines()
+        assert len(ipv4) == counts["ipv4"]
+        assert len(ipv6) == counts["ipv6"]
+        assert (root / provider / "all.txt").read_text().splitlines() == ipv4 + ipv6
     github_categories = providers["github.com"]["categories"]
     assert {
         "actions_macos",

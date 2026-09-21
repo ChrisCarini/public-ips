@@ -1,0 +1,12 @@
+provider_id: linode.com
+display_name: Linode
+output_dir: linode.com
+adapter: generic_cidr
+source_urls:
+  - https://geoip.linode.com/
+documentation_url: https://geoip.linode.com/
+attribution: Linode self-published geofeed prefixes (not all Akamai IP space)
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
