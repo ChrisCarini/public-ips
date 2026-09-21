@@ -1,0 +1,13 @@
+provider_id: zoom.us
+display_name: Zoom Meetings
+output_dir: zoom.us
+adapter: generic_cidr
+source_urls:
+  - https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt
+  - https://assets.zoom.us/docs/ipranges/ZoomMeetings-IPv6.txt
+documentation_url: https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060548
+attribution: Zoom Meetings and Webinars connectivity ranges (not all Zoom products)
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

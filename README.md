@@ -10,6 +10,7 @@
 - `atlassian.com` — source: `https://ip-ranges.atlassian.com/`
 - `azure.microsoft.com` — source: `https://www.microsoft.com/en-us/download/details.aspx?id=56519`
 - `bing.com` — source: `https://www.bing.com/toolbox/bingbot.json`
+- `bunny.net` — source: `https://api.bunny.net/system/edgeserverlist`, `https://api.bunny.net/system/edgeserverlist/ipv6`
 - `cloud.google.com` — source: `https://www.gstatic.com/ipranges/cloud.json`
 - `cloudflare.com` — source: `https://api.cloudflare.com/client/v4/ips`
 - `commoncrawl.org` — source: `https://index.commoncrawl.org/ccbot.json`
@@ -26,13 +27,19 @@
 - `pingdom.com` — source: `https://my.pingdom.com/probes/ipv4`, `https://my.pingdom.com/probes/ipv6`
 - `statuscake.com` — source: `https://app.statuscake.com/Workfloor/Locations.php?format=json`, `https://app.statuscake.com/API/SpeedLocations/json`
 - `stripe.com` — source: `https://stripe.com/files/ips/ips_webhooks.json`
+- `tailscale.com` — source: `https://controlplane.tailscale.com/derpmap/default`
 - `telegram.org` — source: `https://core.telegram.org/resources/cidr.txt`
 - `uptimerobot.com` — source: `https://uptimerobot.com/inc/files/ips/IPv4.txt`, `https://uptimerobot.com/inc/files/ips/IPv6.txt`
 - `vultr.com` — source: `https://geofeed.constant.com/?text`
+- `zoom.us` — source: `https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt`, `https://assets.zoom.us/docs/ipranges/ZoomMeetings-IPv6.txt`
 
 ### Source scope
 
+- Bunny.net lists [CDN edge-server addresses](https://bunny.net/docs/cdn/connectivity),
+  not all Bunny services.
 - Linode's self-published geofeed is not a list of all Akamai IP space.
+- Tailscale lists its [default DERP relays](https://tailscale.com/docs/reference/derp-servers),
+  not tailnet devices, custom relays, or all Tailscale infrastructure.
 - Telegram's published network prefixes are not a webhook-specific allowlist;
   [webhook documentation](https://core.telegram.org/bots/webhooks#the-short-version)
   specifies a narrower set.
@@ -46,6 +53,9 @@
   them as Vultr public allocations. Other non-global entries still fail validation.
 - OpenAI and DuckDuckGo list their published crawler/user-agent addresses,
   not all addresses owned or used by those companies.
+- Zoom lists Meetings and Webinars connectivity ranges from its
+  [firewall documentation](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060548),
+  not all Zoom products such as Phone or Contact Center.
 
 ### Requested providers not yet enabled
 

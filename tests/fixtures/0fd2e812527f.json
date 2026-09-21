@@ -1,0 +1,9 @@
+{
+  "status_code": 200,
+  "content_type": "application/json; charset=utf-8",
+  "body": [
+    "89.187.188.228",
+    "89.187.188.227",
+    "89.187.188.227"
+  ]
+}

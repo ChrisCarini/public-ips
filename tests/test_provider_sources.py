@@ -12,7 +12,17 @@ from public_ips.config import load_provider_configs
 @pytest.mark.parametrize(
     ("provider_id", "ipv4", "ipv6"),
     [
+        (
+            "bunny.net",
+            {"89.187.188.227/32", "89.187.188.228/32"},
+            {"2400:52e0:1500::714:1/128", "2400:52e0:1500::715:1/128"},
+        ),
         ("linode.com", {"72.14.177.0/24"}, {"2600:3c00::/32"}),
+        (
+            "tailscale.com",
+            {"199.38.181.104/32", "209.177.145.120/32", "192.73.240.161/32"},
+            {"2607:f740:f::bc/128", "2607:f740:f::3eb/128"},
+        ),
         (
             "telegram.org",
             {"91.108.4.0/22", "91.108.56.0/22", "149.154.160.0/20"},
@@ -27,6 +37,11 @@ from public_ips.config import load_provider_configs
             "vultr.com",
             {"43.224.32.0/22", "45.32.0.0/21"},
             {"2001:19f0:8000::/38", "2a05:f480:1000::/38"},
+        ),
+        (
+            "zoom.us",
+            {"3.7.35.0/25", "3.235.82.0/23", "3.235.96.0/23"},
+            {"2407:30c0::/32", "2600:9000:2600::/48", "2620:123:2000::/40"},
         ),
     ],
 )
@@ -43,7 +58,7 @@ def test_official_source_formats(provider_id: str, ipv4: set[str], ipv6: set[str
     assert {str(network) for network in snapshot.uncategorized.ipv6} == ipv6
     assert snapshot.categories == {}
     assert not config.allow_non_global
-    if provider_id == "linode.com":
+    if provider_id in {"bunny.net", "linode.com"}:
         assert any("duplicate upstream CIDR" in warning for warning in snapshot.warnings)
     if provider_id == "vultr.com":
         assert len(snapshot.warnings) == 7

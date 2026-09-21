@@ -62,6 +62,7 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
         "atlassian.com",
         "azure.microsoft.com",
         "bing.com",
+        "bunny.net",
         "cloud.google.com",
         "cloudflare.com",
         "commoncrawl.org",
@@ -78,9 +79,11 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
         "pingdom.com",
         "statuscake.com",
         "stripe.com",
+        "tailscale.com",
         "telegram.org",
         "uptimerobot.com",
         "vultr.com",
+        "zoom.us",
     } <= providers.keys()
     assert providers["amazonaws.com"]["categories"]["amazon"]["counts"] == {
         "ipv4": 1,
@@ -95,10 +98,13 @@ def test_generate_from_fixtures(tmp_path: Path) -> None:
         "ipv6": 1,
     }
     for provider, counts in {
+        "bunny.net": {"ipv4": 2, "ipv6": 2},
         "linode.com": {"ipv4": 1, "ipv6": 1},
         "statuscake.com": {"ipv4": 4, "ipv6": 2},
+        "tailscale.com": {"ipv4": 3, "ipv6": 2},
         "telegram.org": {"ipv4": 3, "ipv6": 2},
         "vultr.com": {"ipv4": 2, "ipv6": 2},
+        "zoom.us": {"ipv4": 3, "ipv6": 3},
     }.items():
         assert providers[provider]["provider"]["counts"] == counts
         ipv4 = (root / provider / "ipv4.txt").read_text().splitlines()
