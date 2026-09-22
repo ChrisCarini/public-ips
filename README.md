@@ -10,6 +10,7 @@
 - `atlassian.com` — source: `https://ip-ranges.atlassian.com/`
 - `azure.microsoft.com` — source: `https://www.microsoft.com/en-us/download/details.aspx?id=56519`
 - `bing.com` — source: `https://www.bing.com/toolbox/bingbot.json`
+- `bunny.net` — source: `https://api.bunny.net/system/edgeserverlist`, `https://api.bunny.net/system/edgeserverlist/ipv6`
 - `cloud.google.com` — source: `https://www.gstatic.com/ipranges/cloud.json`
 - `cloudflare.com` — source: `https://api.cloudflare.com/client/v4/ips`
 - `commoncrawl.org` — source: `https://index.commoncrawl.org/ccbot.json`
@@ -19,12 +20,56 @@
 - `fastly.com` — source: `https://api.fastly.com/public-ip-list`
 - `github.com` — source: `https://api.github.com/meta`
 - `googlebot.com` — source: `https://developers.google.com/search/apis/ipranges/googlebot.json`
+- `linode.com` — source: `https://geoip.linode.com/`
 - `openai.com` — source: `https://openai.com/gptbot.json`, `https://openai.com/searchbot.json`, `https://openai.com/chatgpt-user.json`, `https://openai.com/adsbot.json`
 - `oracle.com` — source: `https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json`
 - `perplexity.com` — source: `https://www.perplexity.com/perplexitybot.json`, `https://www.perplexity.com/perplexity-user.json`
 - `pingdom.com` — source: `https://my.pingdom.com/probes/ipv4`, `https://my.pingdom.com/probes/ipv6`
+- `statuscake.com` — source: `https://app.statuscake.com/Workfloor/Locations.php?format=json`, `https://app.statuscake.com/API/SpeedLocations/json`
 - `stripe.com` — source: `https://stripe.com/files/ips/ips_webhooks.json`
+- `tailscale.com` — source: `https://controlplane.tailscale.com/derpmap/default`
+- `telegram.org` — source: `https://core.telegram.org/resources/cidr.txt`
 - `uptimerobot.com` — source: `https://uptimerobot.com/inc/files/ips/IPv4.txt`, `https://uptimerobot.com/inc/files/ips/IPv6.txt`
+- `vultr.com` — source: `https://geofeed.constant.com/?text`
+- `zoom.us` — source: `https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt`, `https://assets.zoom.us/docs/ipranges/ZoomMeetings-IPv6.txt`
+
+### Source scope
+
+- Bunny.net lists [CDN edge-server addresses](https://bunny.net/docs/cdn/connectivity),
+  not all Bunny services.
+- Linode's self-published geofeed is not a list of all Akamai IP space.
+- Tailscale lists its [default DERP relays](https://tailscale.com/docs/reference/derp-servers),
+  not tailnet devices, custom relays, or all Tailscale infrastructure.
+- Telegram's published network prefixes are not a webhook-specific allowlist;
+  [webhook documentation](https://core.telegram.org/bots/webhooks#the-short-version)
+  specifies a narrower set.
+- StatusCake includes uptime and Page Speed monitoring nodes. Its
+  [IP documentation](https://www.statuscake.com/kb/knowledge-base/what-are-your-ips/)
+  lists SSL monitoring and webhook alerting separately; those are not included.
+- Vultr's [official IP-space feed](https://docs.vultr.com/vultr-ip-space)
+  includes seven special-purpose entries: `192.0.2.0/24`, `198.51.100.0/24`,
+  `203.0.113.0/24`, `2001:2::/48`, `2001:10::/28`, `2001:db8::/32`, and
+  `2002::/16`. Its adapter excludes these with warnings rather than publishing
+  them as Vultr public allocations. Other non-global entries still fail validation.
+- OpenAI and DuckDuckGo list their published crawler/user-agent addresses,
+  not all addresses owned or used by those companies.
+- Zoom lists Meetings and Webinars connectivity ranges from its
+  [firewall documentation](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060548),
+  not all Zoom products such as Phone or Contact Center.
+
+### Requested providers not yet enabled
+
+- **Facebook / Meta:** the public [geofeed](https://www.facebook.com/peering/geofeed/)
+  covers a subset of Meta sources and restricts use to CDN services benefiting
+  Meta users. General-purpose redistribution is deferred pending clarification
+  of those terms.
+- **Twitter / X:** no usable first-party downloadable IP list has been verified.
+  Unofficial ASN/WHOIS-derived lists are not substituted for a provider-published feed.
+- **Proton VPN:** unauthenticated requests to its server-list endpoints, including
+  `https://vpn-api.proton.me/vpn/v1/logicals?SecureCoreFilter=all&WithState=true`,
+  returned HTTP 400 during verification. Public access requirements need verification
+  before enabling automated collection; this does not establish that authentication
+  is required. A future integration must distinguish VPN entry and exit addresses.
 
 ## Data outputs
 

@@ -1,0 +1,5 @@
+{
+  "status_code": 200,
+  "content_type": "text/plain; charset=UTF-8",
+  "body": "# Self-published geofeed (RFC 8805)\n# ip_prefix, alpha2code, region, city, postal_code\n2600:3c00::/32,US,US-TX,Richardson,\n72.14.177.0/24,US,US-TX,Richardson,\n72.14.177.0/24,US,US-TX,Richardson,\n\n"
+}

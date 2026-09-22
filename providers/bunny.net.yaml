@@ -1,0 +1,13 @@
+provider_id: bunny.net
+display_name: Bunny.net CDN
+output_dir: bunny.net
+adapter: generic_cidr
+source_urls:
+  - https://api.bunny.net/system/edgeserverlist
+  - https://api.bunny.net/system/edgeserverlist/ipv6
+documentation_url: https://bunny.net/docs/cdn/connectivity
+attribution: Bunny.net CDN edge-server IPv4 and IPv6 addresses (not all Bunny services)
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

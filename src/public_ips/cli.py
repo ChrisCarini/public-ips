@@ -39,7 +39,12 @@ class FileHttpClient:
         if not path.exists():
             raise FileNotFoundError(f"Fixture for URL not found: {url} -> {path.name}")
         payload = json.loads(path.read_text())
-        body = json.dumps(payload["body"], separators=(",", ":"), sort_keys=True).encode("utf-8")
+        content = payload["body"]
+        body = (
+            content.encode("utf-8")
+            if isinstance(content, str)
+            else json.dumps(content, separators=(",", ":"), sort_keys=True).encode("utf-8")
+        )
         return int(payload["status_code"]), body, str(payload.get("content_type")), None, None
 
 

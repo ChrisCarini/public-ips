@@ -158,6 +158,51 @@ class GenericCidrAdapter(RegisteredProviderAdapter, adapter_name="generic_cidr")
 
 
 @dataclass(frozen=True)
+class VultrIpRangesAdapter(RegisteredProviderAdapter, adapter_name="vultr_ip_ranges"):
+    config: ProviderConfig
+
+    def fetch(self, client: HttpClient) -> RawFetch:
+        return _fetch_configured_urls(self.config, client)
+
+    def extract(self, raw: RawFetch) -> ProviderSnapshot:
+        doc = raw.documents[self.config.source_urls[0]]
+        if doc.status_code != 200:
+            raise ValueError(f"vultr fetch failed: status={doc.status_code}")
+        snapshot = _new_snapshot(self.config, _hash_documents(raw.documents))
+        # The official geofeed includes these IANA special-purpose entries.
+        # Exclude only known entries; unexpected non-global ranges must still fail validation.
+        special_purpose = {
+            "192.0.2.0/24",
+            "198.51.100.0/24",
+            "203.0.113.0/24",
+            "2001:2::/48",
+            "2001:10::/28",
+            "2001:db8::/32",
+            "2002::/16",
+        }
+        cidrs: list[str] = []
+        for line in doc.body.decode("utf-8-sig").splitlines():
+            cidr = line.strip()
+            if not cidr or cidr.startswith("#"):
+                continue
+            if str(ip_network(cidr, strict=True)) in special_purpose:
+                snapshot.warnings.append(
+                    f"{self.config.provider_id}: excluded special-purpose CIDR '{cidr}'"
+                )
+                continue
+            cidrs.append(cidr)
+        if not cidrs:
+            raise ValueError("vultr: no public ranges found")
+        snapshot.uncategorized = parse_networks(
+            cidrs,
+            allow_non_global=self.config.allow_non_global,
+            warning_prefix=self.config.provider_id,
+            warnings=snapshot.warnings,
+        )
+        return snapshot
+
+
+@dataclass(frozen=True)
 class AwsIpRangesAdapter(RegisteredProviderAdapter, adapter_name="aws_ip_ranges"):
     config: ProviderConfig
 

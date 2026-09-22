@@ -1,0 +1,12 @@
+provider_id: tailscale.com
+display_name: Tailscale DERP
+output_dir: tailscale.com
+adapter: generic_cidr
+source_urls:
+  - https://controlplane.tailscale.com/derpmap/default
+documentation_url: https://tailscale.com/docs/reference/derp-servers
+attribution: Tailscale-operated default DERP relays (not tailnet devices or custom relays)
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

@@ -1,0 +1,12 @@
+provider_id: telegram.org
+display_name: Telegram
+output_dir: telegram.org
+adapter: generic_cidr
+source_urls:
+  - https://core.telegram.org/resources/cidr.txt
+documentation_url: https://core.telegram.org/
+attribution: Telegram-published network prefixes (not a webhook-specific allowlist)
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false

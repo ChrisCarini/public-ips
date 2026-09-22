@@ -1,0 +1,12 @@
+provider_id: vultr.com
+display_name: Vultr
+output_dir: vultr.com
+adapter: vultr_ip_ranges
+source_urls:
+  - https://geofeed.constant.com/?text
+documentation_url: https://docs.vultr.com/vultr-ip-space
+attribution: Vultr / Constant geofeed prefixes, excluding known special-purpose entries
+min_ranges: 1
+max_change_absolute: 10000
+max_change_percent: 100.0
+allow_non_global: false
