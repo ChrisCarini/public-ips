@@ -1,5 +1,129 @@
 # Changelog - amazonaws.com
 
+## 2026-09-23
+
+### 08:33:17Z
+
+- Added `2600:f0f3:f010:1400::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:2800::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:3200::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:3600::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:3700::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:3900::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:900::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:a00::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:f00::/56` to `amazon` (IPv6).
+- Removed `2406:da33:1000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:2800::/40` from `amazon` (IPv6).
+- Removed `2406:da33:4800::/40` from `amazon` (IPv6).
+- Removed `2406:da33:6000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:7000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:8800::/40` from `amazon` (IPv6).
+- Removed `2406:da33:9000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:b000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:c800::/40` from `amazon` (IPv6).
+- Removed `2406:da33:f000::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:7400::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:800::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:a400::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:c200::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:e200::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:ec00::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:4800::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:800::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:8800::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:9000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:b000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:e000::/40` from `amazon` (IPv6).
+- Added `3.41.208.0/25` to `aurora_dsql` (IPv4).
+- Added `2600:1f10:4040:3800::/56` to `aurora_dsql` (IPv6).
+- Added `2600:f0f3:f010:1400::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:2800::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:3200::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:3600::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:3700::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:3900::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:900::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:a00::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:f00::/56` to `ec2` (IPv6).
+- Removed `2406:da33:1000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:2800::/40` from `ec2` (IPv6).
+- Removed `2406:da33:4800::/40` from `ec2` (IPv6).
+- Removed `2406:da33:6000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:7000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:8800::/40` from `ec2` (IPv6).
+- Removed `2406:da33:9000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:b000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:c800::/40` from `ec2` (IPv6).
+- Removed `2406:da33:f000::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:7400::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:800::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:a400::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:c200::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:e200::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:ec00::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:4800::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:800::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:8800::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:9000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:b000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:e000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:1000::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:2800::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:4800::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:6000::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:7000::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:8800::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:9000::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:b000::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:c800::/40` from `iot_core` (IPv6).
+- Removed `2406:da33:f000::/40` from `iot_core` (IPv6).
+- Removed `2600:1f33:7400::/40` from `iot_core` (IPv6).
+- Removed `2600:1f33:800::/40` from `iot_core` (IPv6).
+- Removed `2600:1f33:a400::/40` from `iot_core` (IPv6).
+- Removed `2600:1f33:c200::/40` from `iot_core` (IPv6).
+- Removed `2600:1f33:e200::/40` from `iot_core` (IPv6).
+- Removed `2600:1f33:ec00::/40` from `iot_core` (IPv6).
+- Removed `2a05:d033:4800::/40` from `iot_core` (IPv6).
+- Removed `2a05:d033:800::/40` from `iot_core` (IPv6).
+- Removed `2a05:d033:8800::/40` from `iot_core` (IPv6).
+- Removed `2a05:d033:9000::/40` from `iot_core` (IPv6).
+- Removed `2a05:d033:b000::/40` from `iot_core` (IPv6).
+- Removed `2a05:d033:e000::/40` from `iot_core` (IPv6).
+- Added `3.41.208.0/25` (IPv4).
+- Added `2600:1f10:4040:3800::/56` (IPv6).
+- Added `2600:f0f3:f010:1400::/56` (IPv6).
+- Added `2600:f0f3:f010:2800::/56` (IPv6).
+- Added `2600:f0f3:f010:3200::/56` (IPv6).
+- Added `2600:f0f3:f010:3600::/56` (IPv6).
+- Added `2600:f0f3:f010:3700::/56` (IPv6).
+- Added `2600:f0f3:f010:3900::/56` (IPv6).
+- Added `2600:f0f3:f010:900::/56` (IPv6).
+- Added `2600:f0f3:f010:a00::/56` (IPv6).
+- Added `2600:f0f3:f010:f00::/56` (IPv6).
+- Removed `2406:da33:1000::/40` (IPv6).
+- Removed `2406:da33:2800::/40` (IPv6).
+- Removed `2406:da33:4800::/40` (IPv6).
+- Removed `2406:da33:6000::/40` (IPv6).
+- Removed `2406:da33:7000::/40` (IPv6).
+- Removed `2406:da33:8800::/40` (IPv6).
+- Removed `2406:da33:9000::/40` (IPv6).
+- Removed `2406:da33:b000::/40` (IPv6).
+- Removed `2406:da33:c800::/40` (IPv6).
+- Removed `2406:da33:f000::/40` (IPv6).
+- Removed `2600:1f33:7400::/40` (IPv6).
+- Removed `2600:1f33:800::/40` (IPv6).
+- Removed `2600:1f33:a400::/40` (IPv6).
+- Removed `2600:1f33:c200::/40` (IPv6).
+- Removed `2600:1f33:e200::/40` (IPv6).
+- Removed `2600:1f33:ec00::/40` (IPv6).
+- Removed `2a05:d033:4800::/40` (IPv6).
+- Removed `2a05:d033:800::/40` (IPv6).
+- Removed `2a05:d033:8800::/40` (IPv6).
+- Removed `2a05:d033:9000::/40` (IPv6).
+- Removed `2a05:d033:b000::/40` (IPv6).
+- Removed `2a05:d033:e000::/40` (IPv6).
+
 ## 2026-09-22
 
 ### 08:31:18Z

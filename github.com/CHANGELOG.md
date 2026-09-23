@@ -1,5 +1,50 @@
 # Changelog - github.com
 
+## 2026-09-23
+
+### 08:33:17Z
+
+- Added `100.62.132.232/32` to `actions` (IPv4).
+- Added `100.62.139.158/32` to `actions` (IPv4).
+- Added `18.214.123.177/32` to `actions` (IPv4).
+- Added `18.233.87.154/32` to `actions` (IPv4).
+- Added `3.219.87.128/32` to `actions` (IPv4).
+- Added `34.202.115.28/32` to `actions` (IPv4).
+- Added `34.202.143.207/32` to `actions` (IPv4).
+- Added `34.223.158.89/32` to `actions` (IPv4).
+- Added `34.237.233.57/32` to `actions` (IPv4).
+- Added `35.174.28.24/32` to `actions` (IPv4).
+- Added `44.228.147.113/32` to `actions` (IPv4).
+- Added `50.16.210.73/32` to `actions` (IPv4).
+- Added `52.200.10.122/32` to `actions` (IPv4).
+- Added `52.35.47.185/32` to `actions` (IPv4).
+- Added `52.40.23.199/32` to `actions` (IPv4).
+- Added `52.7.11.124/32` to `actions` (IPv4).
+- Added `54.211.170.155/32` to `actions` (IPv4).
+- Added `54.235.15.98/32` to `actions` (IPv4).
+- Added `54.245.203.201/32` to `actions` (IPv4).
+- Added `98.89.53.239/32` to `actions` (IPv4).
+- Added `100.62.132.232/32` (IPv4).
+- Added `100.62.139.158/32` (IPv4).
+- Added `18.214.123.177/32` (IPv4).
+- Added `18.233.87.154/32` (IPv4).
+- Added `3.219.87.128/32` (IPv4).
+- Added `34.202.115.28/32` (IPv4).
+- Added `34.202.143.207/32` (IPv4).
+- Added `34.223.158.89/32` (IPv4).
+- Added `34.237.233.57/32` (IPv4).
+- Added `35.174.28.24/32` (IPv4).
+- Added `44.228.147.113/32` (IPv4).
+- Added `50.16.210.73/32` (IPv4).
+- Added `52.200.10.122/32` (IPv4).
+- Added `52.35.47.185/32` (IPv4).
+- Added `52.40.23.199/32` (IPv4).
+- Added `52.7.11.124/32` (IPv4).
+- Added `54.211.170.155/32` (IPv4).
+- Added `54.235.15.98/32` (IPv4).
+- Added `54.245.203.201/32` (IPv4).
+- Added `98.89.53.239/32` (IPv4).
+
 ## 2026-09-22
 
 ### 08:31:18Z
