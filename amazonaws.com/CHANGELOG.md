@@ -1,5 +1,86 @@
 # Changelog - amazonaws.com
 
+## 2026-09-24
+
+### 08:25:55Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Added `2600:f0f0:540a::/48` to `amazon` (IPv6).
+- Removed `2406:da33:2000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:4000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:8000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:800::/40` from `amazon` (IPv6).
+- Removed `2406:da33:a000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:c000::/40` from `amazon` (IPv6).
+- Removed `2406:da33:e000::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:1000::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:2000::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:4000::/39` from `amazon` (IPv6).
+- Removed `2600:1f33:5000::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:6000::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:8000::/39` from `amazon` (IPv6).
+- Removed `2600:1f33:c000::/40` from `amazon` (IPv6).
+- Removed `2600:1f33:e000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:1000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:2000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:4000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:5000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:6000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:8000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:a000::/40` from `amazon` (IPv6).
+- Removed `2a05:d033:c000::/40` from `amazon` (IPv6).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `2600:f0f0:540a::/48` to `ec2` (IPv6).
+- Removed `2406:da33:2000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:4000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:8000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:800::/40` from `ec2` (IPv6).
+- Removed `2406:da33:a000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:c000::/40` from `ec2` (IPv6).
+- Removed `2406:da33:e000::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:1000::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:2000::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:4000::/39` from `ec2` (IPv6).
+- Removed `2600:1f33:5000::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:6000::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:8000::/39` from `ec2` (IPv6).
+- Removed `2600:1f33:c000::/40` from `ec2` (IPv6).
+- Removed `2600:1f33:e000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:1000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:2000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:4000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:5000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:6000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:8000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:a000::/40` from `ec2` (IPv6).
+- Removed `2a05:d033:c000::/40` from `ec2` (IPv6).
+- Added `2600:f0f0:540a::/48` to `ivs_realtime` (IPv6).
+- Added `1.178.86.0/24` (IPv4).
+- Added `2600:f0f0:540a::/48` (IPv6).
+- Removed `2406:da33:2000::/40` (IPv6).
+- Removed `2406:da33:4000::/40` (IPv6).
+- Removed `2406:da33:8000::/40` (IPv6).
+- Removed `2406:da33:800::/40` (IPv6).
+- Removed `2406:da33:a000::/40` (IPv6).
+- Removed `2406:da33:c000::/40` (IPv6).
+- Removed `2406:da33:e000::/40` (IPv6).
+- Removed `2600:1f33:1000::/40` (IPv6).
+- Removed `2600:1f33:2000::/40` (IPv6).
+- Removed `2600:1f33:4000::/39` (IPv6).
+- Removed `2600:1f33:5000::/40` (IPv6).
+- Removed `2600:1f33:6000::/40` (IPv6).
+- Removed `2600:1f33:8000::/39` (IPv6).
+- Removed `2600:1f33:c000::/40` (IPv6).
+- Removed `2600:1f33:e000::/40` (IPv6).
+- Removed `2a05:d033:1000::/40` (IPv6).
+- Removed `2a05:d033:2000::/40` (IPv6).
+- Removed `2a05:d033:4000::/40` (IPv6).
+- Removed `2a05:d033:5000::/40` (IPv6).
+- Removed `2a05:d033:6000::/40` (IPv6).
+- Removed `2a05:d033:8000::/40` (IPv6).
+- Removed `2a05:d033:a000::/40` (IPv6).
+- Removed `2a05:d033:c000::/40` (IPv6).
+
 ## 2026-09-23
 
 ### 08:33:17Z
