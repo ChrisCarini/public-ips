@@ -1,5 +1,16 @@
 # Changelog - amazonaws.com
 
+## 2026-09-26
+
+### 08:34:31Z
+
+- Added `83.160.88.0/23` to `amazon` (IPv4).
+- Added `2001:3fc4:1000::/40` to `amazon` (IPv6).
+- Added `2001:3fc4:1000::/40` to `ec2` (IPv6).
+- Added `2001:3fc4:1000::/40` to `s3` (IPv6).
+- Added `83.160.88.0/23` (IPv4).
+- Added `2001:3fc4:1000::/40` (IPv6).
+
 ## 2026-09-25
 
 ### 08:47:50Z
