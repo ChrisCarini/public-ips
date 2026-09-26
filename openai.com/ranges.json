@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "OpenAI",
   "documentation_url": "https://platform.openai.com/docs/bots",
-  "first_observed_at": "2026-09-23T08:33:17+00:00",
-  "generated_at": "2026-09-23T08:33:17+00:00",
-  "normalized_data_sha256": "c97ec73094bdcfec5c66557bff92bc883ff2cf8a256337d75e5e8803380555f3",
+  "first_observed_at": "2026-09-26T08:34:31+00:00",
+  "generated_at": "2026-09-26T08:34:31+00:00",
+  "normalized_data_sha256": "73357dd7de2f911858fdead0ce096f75b5a09b52095462b08798e416362cc1eb",
   "provider": {
     "counts": {
-      "ipv4": 282,
+      "ipv4": 283,
       "ipv6": 0
     },
     "ipv4": [
@@ -270,6 +270,7 @@
       "172.182.224.0/28",
       "172.183.143.224/28",
       "172.183.222.128/28",
+      "172.185.193.176/28",
       "172.192.112.208/28",
       "172.197.160.192/28",
       "172.197.203.16/28",
@@ -307,7 +308,7 @@
   },
   "provider_id": "openai.com",
   "schema_version": "v1",
-  "source_body_sha256": "b96ffa58679cc47f7fc2f0de2077d4773b0f95ca40412bcdda261ba70e7e58ae",
+  "source_body_sha256": "690638bc4f7739024168f9282ad31c1e7b7e18acc066dc9c8e13221788dbf3e0",
   "source_urls": [
     "https://openai.com/gptbot.json",
     "https://openai.com/searchbot.json",
