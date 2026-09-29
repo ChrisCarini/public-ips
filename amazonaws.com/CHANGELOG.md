@@ -1,5 +1,14 @@
 # Changelog - amazonaws.com
 
+## 2026-09-29
+
+### 09:47:52Z
+
+- Added `51.168.170.0/23` to `amazon` (IPv4).
+- Added `51.168.172.0/23` to `amazon` (IPv4).
+- Added `51.168.170.0/23` (IPv4).
+- Added `51.168.172.0/23` (IPv4).
+
 ## 2026-09-28
 
 ### 09:44:22Z
