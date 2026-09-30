@@ -1,5 +1,17 @@
 # Changelog - amazonaws.com
 
+## 2026-09-30
+
+### 09:40:22Z
+
+- Added `69.107.13.80/29` to `amazon` (IPv4).
+- Added `69.107.13.88/29` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `69.107.13.80/29` (IPv4).
+- Added `69.107.13.88/29` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+
 ## 2026-09-29
 
 ### 09:47:52Z
