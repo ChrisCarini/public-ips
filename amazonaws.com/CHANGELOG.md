@@ -1,5 +1,56 @@
 # Changelog - amazonaws.com
 
+## 2026-10-02
+
+### 09:44:43Z
+
+- Added `64.7.200.0/23` to `amazon` (IPv4).
+- Added `64.7.202.0/23` to `amazon` (IPv4).
+- Added `64.7.204.0/23` to `amazon` (IPv4).
+- Added `64.7.206.0/23` to `amazon` (IPv4).
+- Added `69.107.13.104/29` to `amazon` (IPv4).
+- Added `69.107.13.96/29` to `amazon` (IPv4).
+- Added `83.160.92.0/24` to `amazon` (IPv4).
+- Added `83.160.93.0/24` to `amazon` (IPv4).
+- Added `83.160.94.0/24` to `amazon` (IPv4).
+- Added `83.160.95.0/24` to `amazon` (IPv4).
+- Added `83.160.96.0/24` to `amazon` (IPv4).
+- Added `83.160.97.0/24` to `amazon` (IPv4).
+- Removed `64.7.200.0/21` from `amazon` (IPv4).
+- Added `2600:f0fb:c004::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c005::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c006::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c900:4000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:ca02::/52` to `amazon` (IPv6).
+- Added `64.7.200.0/23` to `ec2` (IPv4).
+- Added `64.7.202.0/23` to `ec2` (IPv4).
+- Added `64.7.204.0/23` to `ec2` (IPv4).
+- Added `64.7.206.0/23` to `ec2` (IPv4).
+- Removed `64.7.200.0/21` from `ec2` (IPv4).
+- Added `2600:f0fb:c004::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c005::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c006::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c900:4000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:ca02::/52` to `ec2` (IPv6).
+- Added `64.7.200.0/23` (IPv4).
+- Added `64.7.202.0/23` (IPv4).
+- Added `64.7.204.0/23` (IPv4).
+- Added `64.7.206.0/23` (IPv4).
+- Added `69.107.13.104/29` (IPv4).
+- Added `69.107.13.96/29` (IPv4).
+- Added `83.160.92.0/24` (IPv4).
+- Added `83.160.93.0/24` (IPv4).
+- Added `83.160.94.0/24` (IPv4).
+- Added `83.160.95.0/24` (IPv4).
+- Added `83.160.96.0/24` (IPv4).
+- Added `83.160.97.0/24` (IPv4).
+- Removed `64.7.200.0/21` (IPv4).
+- Added `2600:f0fb:c004::/48` (IPv6).
+- Added `2600:f0fb:c005::/48` (IPv6).
+- Added `2600:f0fb:c006::/48` (IPv6).
+- Added `2600:f0fb:c900:4000::/52` (IPv6).
+- Added `2600:f0fb:ca02::/52` (IPv6).
+
 ## 2026-10-01
 
 ### 10:06:15Z
