@@ -1,5 +1,31 @@
 # Changelog
 
+## 2026-10-03
+
+### 09:07:31Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.28.0/22` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:5000::/52` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:6000::/52` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca03::/52` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca04::/52` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.28.0/22` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:5000::/52` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:6000::/52` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca03::/52` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca04::/52` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.28.0/22` to `s3` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.28.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:5000::/52` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:6000::/52` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca03::/52` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca04::/52` (IPv6).
+- [anthropic.com](./anthropic.com/CHANGELOG.md): Added `160.79.106.128/28` (IPv4).
+- [anthropic.com](./anthropic.com/CHANGELOG.md): Added `160.79.106.16/28` (IPv4).
+
 ## 2026-10-02
 
 ### 09:44:43Z

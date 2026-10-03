@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "Anthropic",
   "documentation_url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
-  "first_observed_at": "2026-09-14T00:42:22+00:00",
-  "generated_at": "2026-09-14T00:42:22+00:00",
-  "normalized_data_sha256": "e50249dd1e1c8531cb351179f4d9225dd0fc0d4930904e5804f1908859af7a18",
+  "first_observed_at": "2026-10-03T09:07:31+00:00",
+  "generated_at": "2026-10-03T09:07:31+00:00",
+  "normalized_data_sha256": "253ac976e6140e457915e4658cbcd578223b66eb7f4a071edd375e654992dede",
   "provider": {
     "counts": {
-      "ipv4": 26,
+      "ipv4": 28,
       "ipv6": 0
     },
     "ipv4": [
@@ -37,6 +37,8 @@
       "35.245.175.129/32",
       "40.124.101.48/28",
       "136.107.176.208/32",
+      "160.79.106.16/28",
+      "160.79.106.128/28",
       "216.73.216.0/22"
     ],
     "ipv6": [],
@@ -51,7 +53,7 @@
   },
   "provider_id": "anthropic.com",
   "schema_version": "v1",
-  "source_body_sha256": "a65bba0ef7207fef2426f847af192215184c0683aa3e671eff4bb9201dbd5aa8",
+  "source_body_sha256": "46cb64a137e9bb6ac9dc097f7d9eec33a2719ac8245d73c88e352024c240edda",
   "source_urls": [
     "https://claude.com/crawling/bots.json"
   ],
