@@ -1,5 +1,29 @@
 # Changelog - amazonaws.com
 
+## 2026-10-03
+
+### 09:07:31Z
+
+- Added `16.15.28.0/22` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Added `2600:f0fb:c900:5000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:c900:6000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:ca03::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:ca04::/52` to `amazon` (IPv6).
+- Added `16.15.28.0/22` to `ec2` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `2600:f0fb:c900:5000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:c900:6000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:ca03::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:ca04::/52` to `ec2` (IPv6).
+- Added `16.15.28.0/22` to `s3` (IPv4).
+- Added `16.15.28.0/22` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+- Added `2600:f0fb:c900:5000::/52` (IPv6).
+- Added `2600:f0fb:c900:6000::/52` (IPv6).
+- Added `2600:f0fb:ca03::/52` (IPv6).
+- Added `2600:f0fb:ca04::/52` (IPv6).
+
 ## 2026-10-02
 
 ### 09:44:43Z
