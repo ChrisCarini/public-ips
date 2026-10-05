@@ -1,5 +1,13 @@
 # Changelog - amazonaws.com
 
+## 2026-10-05
+
+### 10:23:37Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `1.178.86.0/24` (IPv4).
+
 ## 2026-10-03
 
 ### 09:07:31Z
