@@ -1,5 +1,465 @@
 # Changelog - azure.microsoft.com
 
+## 2026-10-06
+
+### 10:15:21Z
+
+- Added `52.112.36.0/22` to `azurecloud` (IPv4).
+- Added `52.112.48.0/20` to `azurecloud` (IPv4).
+- Removed `52.112.37.0/24` from `azurecloud` (IPv4).
+- Removed `52.112.38.0/23` from `azurecloud` (IPv4).
+- Removed `52.112.48.0/22` from `azurecloud` (IPv4).
+- Removed `52.112.53.0/24` from `azurecloud` (IPv4).
+- Removed `52.112.54.0/23` from `azurecloud` (IPv4).
+- Removed `52.112.56.0/21` from `azurecloud` (IPv4).
+- Added `2603:1030:1008:4::/63` to `azurecloud` (IPv6).
+- Added `2603:1030:1008:6::/64` to `azurecloud` (IPv6).
+- Added `2603:104c:0:200::/55` to `azurecloud` (IPv6).
+- Added `2603:1063:4d::/56` to `azurecloud` (IPv6).
+- Added `2603:1063:63a::/56` to `azurecloud` (IPv6).
+- Added `2603:1063:701::/56` to `azurecloud` (IPv6).
+- Added `2603:1063:734:100::/64` to `azurecloud` (IPv6).
+- Removed `2603:1030:1008:4::/64` from `azurecloud` (IPv6).
+- Added `40.120.176.0/23` to `azurecloud.australiaeast` (IPv4).
+- Added `57.163.90.0/23` to `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.176.0/24` from `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.177.0/26` from `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.177.128/25` from `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.177.64/28` from `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.177.80/29` from `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.177.88/30` from `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.177.94/31` from `azurecloud.australiaeast` (IPv4).
+- Removed `40.120.177.96/27` from `azurecloud.australiaeast` (IPv4).
+- Added `20.20.121.240/30` to `azurecloud.belgiumcentral` (IPv4).
+- Added `2603:1061:1016:f0::/63` to `azurecloud.belgiumcentral` (IPv6).
+- Added `2603:1063:63a::/56` to `azurecloud.belgiumcentral` (IPv6).
+- Added `48.208.100.0/24` to `azurecloud.canadaeast` (IPv4).
+- Added `48.208.96.0/24` to `azurecloud.canadaeast` (IPv4).
+- Added `48.208.98.0/24` to `azurecloud.canadaeast` (IPv4).
+- Added `2603:1030:1008:4::/63` to `azurecloud.canadaeast` (IPv6).
+- Added `2603:1030:1008:6::/64` to `azurecloud.canadaeast` (IPv6).
+- Removed `2603:1030:1008:4::/64` from `azurecloud.canadaeast` (IPv6).
+- Added `20.20.85.224/29` to `azurecloud.centralindia` (IPv4).
+- Added `20.20.85.232/30` to `azurecloud.centralindia` (IPv4).
+- Added `20.20.85.236/31` to `azurecloud.centralindia` (IPv4).
+- Added `2603:104c:0:200::/55` to `azurecloud.centralindia` (IPv6).
+- Added `40.123.169.160/27` to `azurecloud.centralus` (IPv4).
+- Added `40.123.170.88/29` to `azurecloud.centralus` (IPv4).
+- Removed `40.123.169.160/28` from `azurecloud.centralus` (IPv4).
+- Removed `40.123.169.176/31` from `azurecloud.centralus` (IPv4).
+- Removed `40.123.169.180/30` from `azurecloud.centralus` (IPv4).
+- Removed `40.123.169.184/29` from `azurecloud.centralus` (IPv4).
+- Removed `40.123.170.88/30` from `azurecloud.centralus` (IPv4).
+- Removed `40.123.170.92/31` from `azurecloud.centralus` (IPv4).
+- Added `2603:1030:9:33c::/63` to `azurecloud.centralus` (IPv6).
+- Added `2603:1030:9:33e::/64` to `azurecloud.centralus` (IPv6).
+- Removed `2603:1030:9:33c::/64` from `azurecloud.centralus` (IPv6).
+- Added `2603:1063:734:100::/64` to `azurecloud.centraluseuap` (IPv6).
+- Added `172.145.0.0/17` to `azurecloud.eastasia` (IPv4).
+- Added `172.143.0.0/17` to `azurecloud.eastus` (IPv4).
+- Added `172.139.128.0/17` to `azurecloud.eastus2` (IPv4).
+- Added `57.157.50.120/30` to `azurecloud.eastus2` (IPv4).
+- Added `57.157.50.124/31` to `azurecloud.eastus2` (IPv4).
+- Added `2603:1030:401:b20::/61` to `azurecloud.eastus2` (IPv6).
+- Removed `2603:1030:401:b20::/62` from `azurecloud.eastus2` (IPv6).
+- Removed `2603:1030:401:b24::/64` from `azurecloud.eastus2` (IPv6).
+- Added `172.140.0.0/17` to `azurecloud.eastus3` (IPv4).
+- Added `57.157.24.0/23` to `azurecloud.eastus3` (IPv4).
+- Added `57.157.26.0/25` to `azurecloud.eastus3` (IPv4).
+- Added `57.157.26.128/31` to `azurecloud.eastus3` (IPv4).
+- Removed `57.157.24.0/24` from `azurecloud.eastus3` (IPv4).
+- Removed `57.157.25.0/25` from `azurecloud.eastus3` (IPv4).
+- Removed `57.157.25.128/26` from `azurecloud.eastus3` (IPv4).
+- Removed `57.157.25.192/29` from `azurecloud.eastus3` (IPv4).
+- Removed `57.157.25.200/30` from `azurecloud.eastus3` (IPv4).
+- Added `2603:1061:101a:100::/59` to `azurecloud.eastus3` (IPv6).
+- Added `2603:1061:101a:120::/60` to `azurecloud.eastus3` (IPv6).
+- Added `2603:1061:101a:130::/61` to `azurecloud.eastus3` (IPv6).
+- Added `2603:1061:101a:138::/62` to `azurecloud.eastus3` (IPv6).
+- Added `2603:1061:101a:13c::/63` to `azurecloud.eastus3` (IPv6).
+- Added `2603:1061:101a::/56` to `azurecloud.eastus3` (IPv6).
+- Removed `2603:1061:101a:80::/58` from `azurecloud.eastus3` (IPv6).
+- Removed `2603:1061:101a::/57` from `azurecloud.eastus3` (IPv6).
+- Removed `2603:1061:101a:c0::/59` from `azurecloud.eastus3` (IPv6).
+- Removed `2603:1061:101a:e0::/63` from `azurecloud.eastus3` (IPv6).
+- Removed `2603:1061:101a:e2::/64` from `azurecloud.eastus3` (IPv6).
+- Added `57.157.61.80/29` to `azurecloud.germanywc` (IPv4).
+- Removed `57.157.61.80/31` from `azurecloud.germanywc` (IPv4).
+- Added `57.157.93.0/25` to `azurecloud.indiasouthcentral` (IPv4).
+- Added `57.157.93.128/28` to `azurecloud.indiasouthcentral` (IPv4).
+- Added `57.157.93.144/30` to `azurecloud.indiasouthcentral` (IPv4).
+- Added `57.157.93.148/31` to `azurecloud.indiasouthcentral` (IPv4).
+- Removed `57.157.93.0/26` from `azurecloud.indiasouthcentral` (IPv4).
+- Removed `57.157.93.104/31` from `azurecloud.indiasouthcentral` (IPv4).
+- Removed `57.157.93.64/27` from `azurecloud.indiasouthcentral` (IPv4).
+- Removed `57.157.93.96/29` from `azurecloud.indiasouthcentral` (IPv4).
+- Added `2603:1061:101b:80::/58` to `azurecloud.indiasouthcentral` (IPv6).
+- Added `2603:1061:101b:c0::/61` to `azurecloud.indiasouthcentral` (IPv6).
+- Added `2603:1061:101b:c8::/64` to `azurecloud.indiasouthcentral` (IPv6).
+- Removed `2603:1061:101b:80::/59` from `azurecloud.indiasouthcentral` (IPv6).
+- Removed `2603:1061:101b:a0::/60` from `azurecloud.indiasouthcentral` (IPv6).
+- Removed `2603:1061:101b:b0::/63` from `azurecloud.indiasouthcentral` (IPv6).
+- Removed `2603:1061:101b:b2::/64` from `azurecloud.indiasouthcentral` (IPv6).
+- Added `20.20.104.0/24` to `azurecloud.israelcentral` (IPv4).
+- Added `40.123.137.0/27` to `azurecloud.israelcentral` (IPv4).
+- Added `40.123.137.32/30` to `azurecloud.israelcentral` (IPv4).
+- Added `40.123.137.36/31` to `azurecloud.israelcentral` (IPv4).
+- Removed `20.20.104.0/25` from `azurecloud.israelcentral` (IPv4).
+- Removed `20.20.104.128/26` from `azurecloud.israelcentral` (IPv4).
+- Removed `20.20.104.192/27` from `azurecloud.israelcentral` (IPv4).
+- Removed `20.20.104.224/28` from `azurecloud.israelcentral` (IPv4).
+- Removed `20.20.104.240/30` from `azurecloud.israelcentral` (IPv4).
+- Removed `20.20.104.244/31` from `azurecloud.israelcentral` (IPv4).
+- Added `2603:1061:1007:100::/61` to `azurecloud.israelcentral` (IPv6).
+- Added `2603:1061:1007:108::/63` to `azurecloud.israelcentral` (IPv6).
+- Added `2603:1061:1007:10a::/64` to `azurecloud.israelcentral` (IPv6).
+- Added `2603:1061:1007::/56` to `azurecloud.israelcentral` (IPv6).
+- Removed `2603:1061:1007:80::/58` from `azurecloud.israelcentral` (IPv6).
+- Removed `2603:1061:1007::/57` from `azurecloud.israelcentral` (IPv6).
+- Removed `2603:1061:1007:c0::/59` from `azurecloud.israelcentral` (IPv6).
+- Removed `2603:1061:1007:e0::/60` from `azurecloud.israelcentral` (IPv6).
+- Removed `2603:1061:1007:f0::/63` from `azurecloud.israelcentral` (IPv6).
+- Removed `2603:1061:1007:f2::/64` from `azurecloud.israelcentral` (IPv6).
+- Added `2603:1063:4d::/56` to `azurecloud.malaysiawest` (IPv6).
+- Added `48.208.103.0/24` to `azurecloud.newzealandnorth` (IPv4).
+- Added `2603:1063:701::/56` to `azurecloud.newzealandnorth` (IPv6).
+- Added `57.157.67.104/31` to `azurecloud.northcentralus` (IPv4).
+- Added `57.157.67.96/29` to `azurecloud.northcentralus` (IPv4).
+- Removed `57.157.67.100/31` from `azurecloud.northcentralus` (IPv4).
+- Removed `57.157.67.96/30` from `azurecloud.northcentralus` (IPv4).
+- Added `40.123.139.0/25` to `azurecloud.polandcentral` (IPv4).
+- Added `40.123.139.128/28` to `azurecloud.polandcentral` (IPv4).
+- Added `40.123.139.144/30` to `azurecloud.polandcentral` (IPv4).
+- Added `48.208.95.0/24` to `azurecloud.polandcentral` (IPv4).
+- Added `48.208.97.0/24` to `azurecloud.polandcentral` (IPv4).
+- Added `48.208.99.0/24` to `azurecloud.polandcentral` (IPv4).
+- Removed `40.123.139.0/26` from `azurecloud.polandcentral` (IPv4).
+- Removed `40.123.139.64/27` from `azurecloud.polandcentral` (IPv4).
+- Removed `40.123.139.96/29` from `azurecloud.polandcentral` (IPv4).
+- Added `2603:1061:1006:180::/58` to `azurecloud.polandcentral` (IPv6).
+- Added `2603:1061:1006:1c0::/63` to `azurecloud.polandcentral` (IPv6).
+- Removed `2603:1061:1006:180::/59` from `azurecloud.polandcentral` (IPv6).
+- Removed `2603:1061:1006:1a0::/61` from `azurecloud.polandcentral` (IPv6).
+- Removed `2603:1061:1006:1a8::/62` from `azurecloud.polandcentral` (IPv6).
+- Added `40.123.164.160/28` to `azurecloud.southcentralus` (IPv4).
+- Removed `40.123.164.160/29` from `azurecloud.southcentralus` (IPv4).
+- Removed `40.123.164.168/30` from `azurecloud.southcentralus` (IPv4).
+- Removed `40.123.164.174/31` from `azurecloud.southcentralus` (IPv4).
+- Added `2603:1030:804:2e0::/62` to `azurecloud.southcentralus` (IPv6).
+- Removed `2603:1030:804:2e0::/63` from `azurecloud.southcentralus` (IPv6).
+- Removed `2603:1030:804:2e2::/64` from `azurecloud.southcentralus` (IPv6).
+- Added `20.20.72.240/30` to `azurecloud.southcentralus2` (IPv4).
+- Added `20.20.72.244/31` to `azurecloud.southcentralus2` (IPv4).
+- Removed `20.20.72.240/31` from `azurecloud.southcentralus2` (IPv4).
+- Added `2603:1061:1012:70::/63` to `azurecloud.southcentralus2` (IPv6).
+- Added `2603:1061:1012:72::/64` to `azurecloud.southcentralus2` (IPv6).
+- Removed `2603:1061:1012:70::/64` from `azurecloud.southcentralus2` (IPv6).
+- Added `20.20.68.100/31` to `azurecloud.southeastus` (IPv4).
+- Added `2603:1061:1011:2a::/64` to `azurecloud.southeastus` (IPv6).
+- Added `57.163.62.0/23` to `azurecloud.southwestus` (IPv4).
+- Added `57.163.88.0/23` to `azurecloud.southwestus` (IPv4).
+- Added `40.120.146.128/28` to `azurecloud.spaincentral` (IPv4).
+- Added `40.120.146.144/29` to `azurecloud.spaincentral` (IPv4).
+- Added `40.120.146.152/30` to `azurecloud.spaincentral` (IPv4).
+- Added `40.120.146.156/31` to `azurecloud.spaincentral` (IPv4).
+- Removed `40.120.146.128/29` from `azurecloud.spaincentral` (IPv4).
+- Removed `40.120.146.136/30` from `azurecloud.spaincentral` (IPv4).
+- Added `2603:1061:1008:100::/58` to `azurecloud.spaincentral` (IPv6).
+- Added `2603:1061:1008:140::/62` to `azurecloud.spaincentral` (IPv6).
+- Added `2603:1061:1008:144::/63` to `azurecloud.spaincentral` (IPv6).
+- Added `2603:1061:1008:146::/64` to `azurecloud.spaincentral` (IPv6).
+- Removed `2603:1061:1008:100::/59` from `azurecloud.spaincentral` (IPv6).
+- Removed `2603:1061:1008:120::/60` from `azurecloud.spaincentral` (IPv6).
+- Removed `2603:1061:1008:130::/61` from `azurecloud.spaincentral` (IPv6).
+- Removed `2603:1061:1008:138::/62` from `azurecloud.spaincentral` (IPv6).
+- Removed `2603:1061:1008:13c::/63` from `azurecloud.spaincentral` (IPv6).
+- Added `172.141.0.0/17` to `azurecloud.swedencentral` (IPv4).
+- Added `57.157.188.0/26` to `azurecloud.swedencentral` (IPv4).
+- Added `57.157.188.64/27` to `azurecloud.swedencentral` (IPv4).
+- Added `57.157.68.0/22` to `azurecloud.swedencentral` (IPv4).
+- Removed `57.157.68.0/23` from `azurecloud.swedencentral` (IPv4).
+- Removed `57.157.70.0/24` from `azurecloud.swedencentral` (IPv4).
+- Removed `57.157.71.0/25` from `azurecloud.swedencentral` (IPv4).
+- Removed `57.157.71.128/26` from `azurecloud.swedencentral` (IPv4).
+- Removed `57.157.71.192/27` from `azurecloud.swedencentral` (IPv4).
+- Removed `57.157.71.224/28` from `azurecloud.swedencentral` (IPv4).
+- Added `57.157.156.52/31` to `azurecloud.switzerlandn` (IPv4).
+- Added `172.144.0.0/17` to `azurecloud.uksouth` (IPv4).
+- Added `57.157.40.0/24` to `azurecloud.uksouth` (IPv4).
+- Added `57.157.41.0/27` to `azurecloud.uksouth` (IPv4).
+- Added `57.157.41.32/30` to `azurecloud.uksouth` (IPv4).
+- Added `57.157.41.36/31` to `azurecloud.uksouth` (IPv4).
+- Removed `57.157.40.0/25` from `azurecloud.uksouth` (IPv4).
+- Removed `57.157.40.128/26` from `azurecloud.uksouth` (IPv4).
+- Removed `57.157.40.192/27` from `azurecloud.uksouth` (IPv4).
+- Removed `57.157.40.224/28` from `azurecloud.uksouth` (IPv4).
+- Removed `57.157.40.240/29` from `azurecloud.uksouth` (IPv4).
+- Removed `57.157.40.248/31` from `azurecloud.uksouth` (IPv4).
+- Added `40.81.97.10/32` to `azurecloud.usstagee` (IPv4).
+- Added `52.112.36.0/24` to `azurecloud.westcentralus` (IPv4).
+- Added `52.112.52.0/24` to `azurecloud.westcentralus` (IPv4).
+- Added `57.157.80.0/23` to `azurecloud.westcentralus` (IPv4).
+- Added `57.157.82.0/28` to `azurecloud.westcentralus` (IPv4).
+- Added `57.157.82.16/31` to `azurecloud.westcentralus` (IPv4).
+- Removed `57.157.80.0/24` from `azurecloud.westcentralus` (IPv4).
+- Removed `57.157.81.0/25` from `azurecloud.westcentralus` (IPv4).
+- Removed `57.157.81.128/27` from `azurecloud.westcentralus` (IPv4).
+- Added `172.138.0.0/16` to `azurecloud.westeurope` (IPv4).
+- Removed `172.138.0.0/17` from `azurecloud.westeurope` (IPv4).
+- Added `172.140.128.0/17` to `azurecloud.westus2` (IPv4).
+- Added `48.208.102.0/24` to `azurecloud.westus2` (IPv4).
+- Added `57.157.73.0/25` to `azurecloud.westus2` (IPv4).
+- Removed `57.157.73.0/26` from `azurecloud.westus2` (IPv4).
+- Removed `57.157.73.64/28` from `azurecloud.westus2` (IPv4).
+- Removed `57.157.73.80/29` from `azurecloud.westus2` (IPv4).
+- Added `74.152.14.160/29` to `azurefrontdoor.backend` (IPv4).
+- Added `172.192.235.160/30` to `azurefrontdoor.frontend` (IPv4).
+- Added `172.134.20.128/25` to `azuremonitor` (IPv4).
+- Added `48.206.201.0/25` to `azuremonitor` (IPv4).
+- Added `74.146.240.128/25` to `azuremonitor` (IPv4).
+- Added `74.159.238.0/25` to `azuremonitor` (IPv4).
+- Added `74.159.237.139/32` to `azuresentinel` (IPv4).
+- Added `145.190.196.0/24` to `azurestorage` (IPv4).
+- Added `145.190.197.0/24` to `azurestorage` (IPv4).
+- Added `57.163.62.0/23` to `azurestorage` (IPv4).
+- Added `57.163.88.0/23` to `azurestorage` (IPv4).
+- Added `57.163.90.0/23` to `azurestorage` (IPv4).
+- Added `74.144.163.0/27` to `datafactory` (IPv4).
+- Added `57.170.20.48/28` to `powerbi` (IPv4).
+- Added `68.211.211.48/28` to `powerbi` (IPv4).
+- Added `74.146.233.217/32` to `powerbi` (IPv4).
+- Added `74.146.233.220/30` to `powerbi` (IPv4).
+- Added `74.146.240.0/26` to `powerbi` (IPv4).
+- Added `74.146.240.64/29` to `powerbi` (IPv4).
+- Added `74.148.21.240/28` to `powerbi` (IPv4).
+- Added `74.151.91.80/28` to `powerbi` (IPv4).
+- Added `74.152.14.224/28` to `powerbi` (IPv4).
+- Added `74.156.26.80/29` to `powerbi` (IPv4).
+- Added `74.158.67.96/27` to `powerbi` (IPv4).
+- Added `74.240.18.64/29` to `powerbi` (IPv4).
+- Added `9.205.223.80/28` to `powerbi` (IPv4).
+- Added `145.190.196.0/24` (IPv4).
+- Added `145.190.197.0/24` (IPv4).
+- Added `172.134.20.128/25` (IPv4).
+- Added `172.138.0.0/16` (IPv4).
+- Added `172.139.128.0/17` (IPv4).
+- Added `172.140.0.0/17` (IPv4).
+- Added `172.140.128.0/17` (IPv4).
+- Added `172.141.0.0/17` (IPv4).
+- Added `172.143.0.0/17` (IPv4).
+- Added `172.144.0.0/17` (IPv4).
+- Added `172.145.0.0/17` (IPv4).
+- Added `172.192.235.160/30` (IPv4).
+- Added `20.20.104.0/24` (IPv4).
+- Added `20.20.121.240/30` (IPv4).
+- Added `20.20.68.100/31` (IPv4).
+- Added `20.20.72.240/30` (IPv4).
+- Added `20.20.72.244/31` (IPv4).
+- Added `20.20.85.224/29` (IPv4).
+- Added `20.20.85.232/30` (IPv4).
+- Added `20.20.85.236/31` (IPv4).
+- Added `40.120.146.128/28` (IPv4).
+- Added `40.120.146.144/29` (IPv4).
+- Added `40.120.146.152/30` (IPv4).
+- Added `40.120.146.156/31` (IPv4).
+- Added `40.120.176.0/23` (IPv4).
+- Added `40.123.137.0/27` (IPv4).
+- Added `40.123.137.32/30` (IPv4).
+- Added `40.123.137.36/31` (IPv4).
+- Added `40.123.139.0/25` (IPv4).
+- Added `40.123.139.128/28` (IPv4).
+- Added `40.123.139.144/30` (IPv4).
+- Added `40.123.164.160/28` (IPv4).
+- Added `40.123.169.160/27` (IPv4).
+- Added `40.123.170.88/29` (IPv4).
+- Added `40.81.97.10/32` (IPv4).
+- Added `48.206.201.0/25` (IPv4).
+- Added `48.208.100.0/24` (IPv4).
+- Added `48.208.102.0/24` (IPv4).
+- Added `48.208.103.0/24` (IPv4).
+- Added `48.208.95.0/24` (IPv4).
+- Added `48.208.96.0/24` (IPv4).
+- Added `48.208.97.0/24` (IPv4).
+- Added `48.208.98.0/24` (IPv4).
+- Added `48.208.99.0/24` (IPv4).
+- Added `52.112.36.0/22` (IPv4).
+- Added `52.112.36.0/24` (IPv4).
+- Added `52.112.48.0/20` (IPv4).
+- Added `52.112.52.0/24` (IPv4).
+- Added `57.157.156.52/31` (IPv4).
+- Added `57.157.188.0/26` (IPv4).
+- Added `57.157.188.64/27` (IPv4).
+- Added `57.157.24.0/23` (IPv4).
+- Added `57.157.26.0/25` (IPv4).
+- Added `57.157.26.128/31` (IPv4).
+- Added `57.157.40.0/24` (IPv4).
+- Added `57.157.41.0/27` (IPv4).
+- Added `57.157.41.32/30` (IPv4).
+- Added `57.157.41.36/31` (IPv4).
+- Added `57.157.50.120/30` (IPv4).
+- Added `57.157.50.124/31` (IPv4).
+- Added `57.157.61.80/29` (IPv4).
+- Added `57.157.67.104/31` (IPv4).
+- Added `57.157.67.96/29` (IPv4).
+- Added `57.157.68.0/22` (IPv4).
+- Added `57.157.73.0/25` (IPv4).
+- Added `57.157.80.0/23` (IPv4).
+- Added `57.157.82.0/28` (IPv4).
+- Added `57.157.82.16/31` (IPv4).
+- Added `57.157.93.0/25` (IPv4).
+- Added `57.157.93.128/28` (IPv4).
+- Added `57.157.93.144/30` (IPv4).
+- Added `57.157.93.148/31` (IPv4).
+- Added `57.163.62.0/23` (IPv4).
+- Added `57.163.88.0/23` (IPv4).
+- Added `57.163.90.0/23` (IPv4).
+- Added `57.170.20.48/28` (IPv4).
+- Added `68.211.211.48/28` (IPv4).
+- Added `74.144.163.0/27` (IPv4).
+- Added `74.146.233.217/32` (IPv4).
+- Added `74.146.233.220/30` (IPv4).
+- Added `74.146.240.0/26` (IPv4).
+- Added `74.146.240.128/25` (IPv4).
+- Added `74.146.240.64/29` (IPv4).
+- Added `74.148.21.240/28` (IPv4).
+- Added `74.151.91.80/28` (IPv4).
+- Added `74.152.14.160/29` (IPv4).
+- Added `74.152.14.224/28` (IPv4).
+- Added `74.156.26.80/29` (IPv4).
+- Added `74.158.67.96/27` (IPv4).
+- Added `74.159.237.139/32` (IPv4).
+- Added `74.159.238.0/25` (IPv4).
+- Added `74.240.18.64/29` (IPv4).
+- Added `9.205.223.80/28` (IPv4).
+- Removed `172.138.0.0/17` (IPv4).
+- Removed `20.20.104.0/25` (IPv4).
+- Removed `20.20.104.128/26` (IPv4).
+- Removed `20.20.104.192/27` (IPv4).
+- Removed `20.20.104.224/28` (IPv4).
+- Removed `20.20.104.240/30` (IPv4).
+- Removed `20.20.104.244/31` (IPv4).
+- Removed `20.20.72.240/31` (IPv4).
+- Removed `40.120.146.128/29` (IPv4).
+- Removed `40.120.146.136/30` (IPv4).
+- Removed `40.120.176.0/24` (IPv4).
+- Removed `40.120.177.0/26` (IPv4).
+- Removed `40.120.177.128/25` (IPv4).
+- Removed `40.120.177.64/28` (IPv4).
+- Removed `40.120.177.80/29` (IPv4).
+- Removed `40.120.177.88/30` (IPv4).
+- Removed `40.120.177.94/31` (IPv4).
+- Removed `40.120.177.96/27` (IPv4).
+- Removed `40.123.139.0/26` (IPv4).
+- Removed `40.123.139.64/27` (IPv4).
+- Removed `40.123.139.96/29` (IPv4).
+- Removed `40.123.164.160/29` (IPv4).
+- Removed `40.123.164.168/30` (IPv4).
+- Removed `40.123.164.174/31` (IPv4).
+- Removed `40.123.169.160/28` (IPv4).
+- Removed `40.123.169.176/31` (IPv4).
+- Removed `40.123.169.180/30` (IPv4).
+- Removed `40.123.169.184/29` (IPv4).
+- Removed `40.123.170.88/30` (IPv4).
+- Removed `40.123.170.92/31` (IPv4).
+- Removed `52.112.38.0/23` (IPv4).
+- Removed `52.112.48.0/22` (IPv4).
+- Removed `52.112.54.0/23` (IPv4).
+- Removed `52.112.56.0/21` (IPv4).
+- Removed `57.157.24.0/24` (IPv4).
+- Removed `57.157.25.0/25` (IPv4).
+- Removed `57.157.25.128/26` (IPv4).
+- Removed `57.157.25.192/29` (IPv4).
+- Removed `57.157.25.200/30` (IPv4).
+- Removed `57.157.40.0/25` (IPv4).
+- Removed `57.157.40.128/26` (IPv4).
+- Removed `57.157.40.192/27` (IPv4).
+- Removed `57.157.40.224/28` (IPv4).
+- Removed `57.157.40.240/29` (IPv4).
+- Removed `57.157.40.248/31` (IPv4).
+- Removed `57.157.61.80/31` (IPv4).
+- Removed `57.157.67.100/31` (IPv4).
+- Removed `57.157.67.96/30` (IPv4).
+- Removed `57.157.68.0/23` (IPv4).
+- Removed `57.157.70.0/24` (IPv4).
+- Removed `57.157.71.0/25` (IPv4).
+- Removed `57.157.71.128/26` (IPv4).
+- Removed `57.157.71.192/27` (IPv4).
+- Removed `57.157.71.224/28` (IPv4).
+- Removed `57.157.73.0/26` (IPv4).
+- Removed `57.157.73.64/28` (IPv4).
+- Removed `57.157.73.80/29` (IPv4).
+- Removed `57.157.80.0/24` (IPv4).
+- Removed `57.157.81.0/25` (IPv4).
+- Removed `57.157.81.128/27` (IPv4).
+- Removed `57.157.93.0/26` (IPv4).
+- Removed `57.157.93.104/31` (IPv4).
+- Removed `57.157.93.64/27` (IPv4).
+- Removed `57.157.93.96/29` (IPv4).
+- Added `2603:1030:1008:4::/63` (IPv6).
+- Added `2603:1030:1008:6::/64` (IPv6).
+- Added `2603:1030:401:b20::/61` (IPv6).
+- Added `2603:1030:804:2e0::/62` (IPv6).
+- Added `2603:1030:9:33c::/63` (IPv6).
+- Added `2603:1030:9:33e::/64` (IPv6).
+- Added `2603:104c:0:200::/55` (IPv6).
+- Added `2603:1061:1006:180::/58` (IPv6).
+- Added `2603:1061:1006:1c0::/63` (IPv6).
+- Added `2603:1061:1007:100::/61` (IPv6).
+- Added `2603:1061:1007:108::/63` (IPv6).
+- Added `2603:1061:1007:10a::/64` (IPv6).
+- Added `2603:1061:1007::/56` (IPv6).
+- Added `2603:1061:1008:100::/58` (IPv6).
+- Added `2603:1061:1008:140::/62` (IPv6).
+- Added `2603:1061:1008:144::/63` (IPv6).
+- Added `2603:1061:1008:146::/64` (IPv6).
+- Added `2603:1061:1011:2a::/64` (IPv6).
+- Added `2603:1061:1012:70::/63` (IPv6).
+- Added `2603:1061:1012:72::/64` (IPv6).
+- Added `2603:1061:1016:f0::/63` (IPv6).
+- Added `2603:1061:101a:100::/59` (IPv6).
+- Added `2603:1061:101a:120::/60` (IPv6).
+- Added `2603:1061:101a:130::/61` (IPv6).
+- Added `2603:1061:101a:138::/62` (IPv6).
+- Added `2603:1061:101a:13c::/63` (IPv6).
+- Added `2603:1061:101a::/56` (IPv6).
+- Added `2603:1061:101b:80::/58` (IPv6).
+- Added `2603:1061:101b:c0::/61` (IPv6).
+- Added `2603:1061:101b:c8::/64` (IPv6).
+- Added `2603:1063:4d::/56` (IPv6).
+- Added `2603:1063:63a::/56` (IPv6).
+- Added `2603:1063:701::/56` (IPv6).
+- Added `2603:1063:734:100::/64` (IPv6).
+- Removed `2603:1030:1008:4::/64` (IPv6).
+- Removed `2603:1030:401:b20::/62` (IPv6).
+- Removed `2603:1030:401:b24::/64` (IPv6).
+- Removed `2603:1030:804:2e0::/63` (IPv6).
+- Removed `2603:1030:804:2e2::/64` (IPv6).
+- Removed `2603:1030:9:33c::/64` (IPv6).
+- Removed `2603:1061:1006:180::/59` (IPv6).
+- Removed `2603:1061:1006:1a0::/61` (IPv6).
+- Removed `2603:1061:1006:1a8::/62` (IPv6).
+- Removed `2603:1061:1007:80::/58` (IPv6).
+- Removed `2603:1061:1007::/57` (IPv6).
+- Removed `2603:1061:1007:c0::/59` (IPv6).
+- Removed `2603:1061:1007:e0::/60` (IPv6).
+- Removed `2603:1061:1007:f0::/63` (IPv6).
+- Removed `2603:1061:1007:f2::/64` (IPv6).
+- Removed `2603:1061:1008:100::/59` (IPv6).
+- Removed `2603:1061:1008:120::/60` (IPv6).
+- Removed `2603:1061:1008:130::/61` (IPv6).
+- Removed `2603:1061:1008:138::/62` (IPv6).
+- Removed `2603:1061:1008:13c::/63` (IPv6).
+- Removed `2603:1061:1012:70::/64` (IPv6).
+- Removed `2603:1061:101a:80::/58` (IPv6).
+- Removed `2603:1061:101a::/57` (IPv6).
+- Removed `2603:1061:101a:c0::/59` (IPv6).
+- Removed `2603:1061:101a:e0::/63` (IPv6).
+- Removed `2603:1061:101a:e2::/64` (IPv6).
+- Removed `2603:1061:101b:80::/59` (IPv6).
+- Removed `2603:1061:101b:a0::/60` (IPv6).
+- Removed `2603:1061:101b:b0::/63` (IPv6).
+- Removed `2603:1061:101b:b2::/64` (IPv6).
+
 ## 2026-09-30
 
 ### 09:40:22Z

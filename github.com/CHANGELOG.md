@@ -1,5 +1,386 @@
 # Changelog - github.com
 
+## 2026-10-06
+
+### 10:15:21Z
+
+- Added `172.134.0.0/16` to `actions` (IPv4).
+- Added `172.138.0.0/17` to `actions` (IPv4).
+- Added `172.139.0.0/17` to `actions` (IPv4).
+- Added `172.170.0.0/16` to `actions` (IPv4).
+- Added `172.199.0.0/16` to `actions` (IPv4).
+- Added `20.143.242.0/23` to `actions` (IPv4).
+- Added `20.165.0.0/17` to `actions` (IPv4).
+- Added `40.123.169.158/31` to `actions` (IPv4).
+- Added `40.123.169.160/28` to `actions` (IPv4).
+- Added `40.123.169.176/31` to `actions` (IPv4).
+- Added `48.199.0.0/16` to `actions` (IPv4).
+- Added `48.209.0.0/17` to `actions` (IPv4).
+- Added `48.211.0.0/17` to `actions` (IPv4).
+- Added `57.157.130.112/29` to `actions` (IPv4).
+- Added `57.157.130.120/30` to `actions` (IPv4).
+- Added `57.157.130.96/28` to `actions` (IPv4).
+- Added `57.157.25.200/30` to `actions` (IPv4).
+- Added `57.157.50.108/30` to `actions` (IPv4).
+- Added `57.157.50.112/29` to `actions` (IPv4).
+- Added `57.157.67.100/31` to `actions` (IPv4).
+- Added `57.157.67.64/27` to `actions` (IPv4).
+- Added `57.157.67.96/30` to `actions` (IPv4).
+- Added `57.157.81.128/27` to `actions` (IPv4).
+- Added `9.129.128.0/20` to `actions` (IPv4).
+- Added `9.129.144.0/21` to `actions` (IPv4).
+- Added `9.129.152.0/21` to `actions` (IPv4).
+- Added `9.129.160.0/21` to `actions` (IPv4).
+- Added `9.129.168.0/21` to `actions` (IPv4).
+- Added `9.129.176.0/22` to `actions` (IPv4).
+- Added `9.129.184.0/22` to `actions` (IPv4).
+- Added `9.129.188.0/22` to `actions` (IPv4).
+- Added `9.129.192.0/22` to `actions` (IPv4).
+- Added `9.129.202.0/23` to `actions` (IPv4).
+- Added `9.129.206.0/23` to `actions` (IPv4).
+- Added `9.129.208.0/23` to `actions` (IPv4).
+- Added `9.129.210.0/23` to `actions` (IPv4).
+- Added `9.129.212.0/23` to `actions` (IPv4).
+- Added `9.129.214.0/23` to `actions` (IPv4).
+- Added `9.129.216.0/23` to `actions` (IPv4).
+- Added `9.129.221.0/24` to `actions` (IPv4).
+- Added `9.129.225.0/24` to `actions` (IPv4).
+- Added `9.129.226.0/24` to `actions` (IPv4).
+- Added `9.129.227.0/24` to `actions` (IPv4).
+- Added `9.129.228.0/24` to `actions` (IPv4).
+- Added `9.129.229.0/24` to `actions` (IPv4).
+- Added `9.129.232.0/25` to `actions` (IPv4).
+- Added `9.129.235.0/25` to `actions` (IPv4).
+- Added `9.129.235.128/25` to `actions` (IPv4).
+- Added `9.129.237.128/25` to `actions` (IPv4).
+- Added `9.129.238.128/25` to `actions` (IPv4).
+- Added `9.129.239.128/25` to `actions` (IPv4).
+- Added `9.129.241.192/26` to `actions` (IPv4).
+- Added `9.129.243.64/26` to `actions` (IPv4).
+- Added `9.129.244.128/26` to `actions` (IPv4).
+- Added `9.129.244.64/26` to `actions` (IPv4).
+- Added `9.129.245.160/27` to `actions` (IPv4).
+- Added `9.129.245.64/27` to `actions` (IPv4).
+- Added `9.129.246.160/27` to `actions` (IPv4).
+- Added `9.129.246.64/27` to `actions` (IPv4).
+- Added `9.129.247.208/28` to `actions` (IPv4).
+- Added `9.129.247.224/28` to `actions` (IPv4).
+- Added `9.129.247.240/28` to `actions` (IPv4).
+- Added `9.129.247.64/27` to `actions` (IPv4).
+- Added `9.129.248.16/28` to `actions` (IPv4).
+- Added `9.129.248.96/28` to `actions` (IPv4).
+- Added `9.234.128.0/17` to `actions` (IPv4).
+- Removed `172.134.0.0/17` from `actions` (IPv4).
+- Removed `172.170.0.0/18` from `actions` (IPv4).
+- Removed `172.170.112.0/21` from `actions` (IPv4).
+- Removed `172.170.120.0/23` from `actions` (IPv4).
+- Removed `172.170.122.0/24` from `actions` (IPv4).
+- Removed `172.170.123.0/27` from `actions` (IPv4).
+- Removed `172.170.123.128/25` from `actions` (IPv4).
+- Removed `172.170.123.32/29` from `actions` (IPv4).
+- Removed `172.170.123.40/30` from `actions` (IPv4).
+- Removed `172.170.123.64/26` from `actions` (IPv4).
+- Removed `172.170.124.0/22` from `actions` (IPv4).
+- Removed `172.170.128.0/17` from `actions` (IPv4).
+- Removed `172.170.64.0/19` from `actions` (IPv4).
+- Removed `172.170.96.0/20` from `actions` (IPv4).
+- Removed `172.199.0.0/20` from `actions` (IPv4).
+- Removed `172.199.128.0/17` from `actions` (IPv4).
+- Removed `172.199.16.0/23` from `actions` (IPv4).
+- Removed `172.199.18.0/26` from `actions` (IPv4).
+- Removed `172.199.18.128/25` from `actions` (IPv4).
+- Removed `172.199.18.64/28` from `actions` (IPv4).
+- Removed `172.199.18.80/31` from `actions` (IPv4).
+- Removed `172.199.18.82/32` from `actions` (IPv4).
+- Removed `172.199.18.84/30` from `actions` (IPv4).
+- Removed `172.199.18.88/29` from `actions` (IPv4).
+- Removed `172.199.18.96/27` from `actions` (IPv4).
+- Removed `172.199.19.0/24` from `actions` (IPv4).
+- Removed `172.199.20.0/26` from `actions` (IPv4).
+- Removed `172.199.20.128/25` from `actions` (IPv4).
+- Removed `172.199.20.64/27` from `actions` (IPv4).
+- Removed `172.199.20.96/28` from `actions` (IPv4).
+- Removed `172.199.21.0/24` from `actions` (IPv4).
+- Removed `172.199.22.0/23` from `actions` (IPv4).
+- Removed `172.199.24.0/21` from `actions` (IPv4).
+- Removed `172.199.32.0/19` from `actions` (IPv4).
+- Removed `172.199.64.0/18` from `actions` (IPv4).
+- Removed `20.165.0.0/18` from `actions` (IPv4).
+- Removed `20.165.64.0/20` from `actions` (IPv4).
+- Removed `20.165.80.0/21` from `actions` (IPv4).
+- Removed `20.165.88.0/22` from `actions` (IPv4).
+- Removed `20.165.92.0/23` from `actions` (IPv4).
+- Removed `20.165.94.0/24` from `actions` (IPv4).
+- Removed `20.165.95.0/28` from `actions` (IPv4).
+- Removed `20.165.95.112/28` from `actions` (IPv4).
+- Removed `20.165.95.128/25` from `actions` (IPv4).
+- Removed `20.165.95.16/30` from `actions` (IPv4).
+- Removed `20.165.95.24/29` from `actions` (IPv4).
+- Removed `20.165.95.32/27` from `actions` (IPv4).
+- Removed `20.165.95.64/28` from `actions` (IPv4).
+- Removed `20.165.95.80/29` from `actions` (IPv4).
+- Removed `20.165.96.0/19` from `actions` (IPv4).
+- Removed `40.123.169.160/29` from `actions` (IPv4).
+- Removed `48.199.0.0/17` from `actions` (IPv4).
+- Removed `48.199.128.0/18` from `actions` (IPv4).
+- Removed `48.199.192.0/19` from `actions` (IPv4).
+- Removed `48.199.224.0/20` from `actions` (IPv4).
+- Removed `48.199.240.0/21` from `actions` (IPv4).
+- Removed `48.199.248.0/23` from `actions` (IPv4).
+- Removed `48.199.250.0/26` from `actions` (IPv4).
+- Removed `48.199.250.128/25` from `actions` (IPv4).
+- Removed `48.199.250.64/27` from `actions` (IPv4).
+- Removed `48.199.251.0/24` from `actions` (IPv4).
+- Removed `48.199.252.0/22` from `actions` (IPv4).
+- Removed `48.209.0.0/18` from `actions` (IPv4).
+- Removed `48.209.104.0/22` from `actions` (IPv4).
+- Removed `48.209.108.0/26` from `actions` (IPv4).
+- Removed `48.209.108.128/25` from `actions` (IPv4).
+- Removed `48.209.108.64/28` from `actions` (IPv4).
+- Removed `48.209.108.80/29` from `actions` (IPv4).
+- Removed `48.209.108.88/31` from `actions` (IPv4).
+- Removed `48.209.108.90/32` from `actions` (IPv4).
+- Removed `48.209.108.93/32` from `actions` (IPv4).
+- Removed `48.209.108.94/31` from `actions` (IPv4).
+- Removed `48.209.108.96/27` from `actions` (IPv4).
+- Removed `48.209.109.0/24` from `actions` (IPv4).
+- Removed `48.209.110.0/23` from `actions` (IPv4).
+- Removed `48.209.112.0/20` from `actions` (IPv4).
+- Removed `48.209.64.0/19` from `actions` (IPv4).
+- Removed `48.209.96.0/21` from `actions` (IPv4).
+- Removed `48.211.0.0/18` from `actions` (IPv4).
+- Removed `48.211.64.0/20` from `actions` (IPv4).
+- Removed `48.211.80.0/22` from `actions` (IPv4).
+- Removed `48.211.84.0/26` from `actions` (IPv4).
+- Removed `48.211.84.128/25` from `actions` (IPv4).
+- Removed `48.211.84.64/29` from `actions` (IPv4).
+- Removed `48.211.84.72/30` from `actions` (IPv4).
+- Removed `48.211.84.76/31` from `actions` (IPv4).
+- Removed `48.211.84.80/28` from `actions` (IPv4).
+- Removed `48.211.84.96/27` from `actions` (IPv4).
+- Removed `48.211.85.0/24` from `actions` (IPv4).
+- Removed `48.211.86.0/23` from `actions` (IPv4).
+- Removed `48.211.88.0/21` from `actions` (IPv4).
+- Removed `48.211.96.0/19` from `actions` (IPv4).
+- Removed `57.157.130.104/30` from `actions` (IPv4).
+- Removed `57.157.130.108/31` from `actions` (IPv4).
+- Removed `57.157.130.96/29` from `actions` (IPv4).
+- Removed `57.157.67.64/28` from `actions` (IPv4).
+- Removed `57.157.67.80/29` from `actions` (IPv4).
+- Removed `57.157.81.128/28` from `actions` (IPv4).
+- Removed `57.157.81.144/29` from `actions` (IPv4).
+- Removed `57.157.81.152/30` from `actions` (IPv4).
+- Removed `57.157.81.156/31` from `actions` (IPv4).
+- Removed `9.234.128.0/18` from `actions` (IPv4).
+- Removed `9.234.192.0/19` from `actions` (IPv4).
+- Removed `9.234.224.0/20` from `actions` (IPv4).
+- Removed `9.234.240.0/21` from `actions` (IPv4).
+- Removed `9.234.248.0/26` from `actions` (IPv4).
+- Removed `9.234.248.128/25` from `actions` (IPv4).
+- Removed `9.234.248.64/28` from `actions` (IPv4).
+- Removed `9.234.248.80/30` from `actions` (IPv4).
+- Removed `9.234.248.96/27` from `actions` (IPv4).
+- Removed `9.234.249.0/24` from `actions` (IPv4).
+- Removed `9.234.250.0/23` from `actions` (IPv4).
+- Removed `9.234.252.0/22` from `actions` (IPv4).
+- Added `2603:1030:401:b1f::/64` to `actions` (IPv6).
+- Added `2603:1030:401:b20::/62` to `actions` (IPv6).
+- Added `2603:1030:401:b24::/64` to `actions` (IPv6).
+- Added `2603:1030:9:2e4::/62` to `actions` (IPv6).
+- Added `2603:1030:9:d4::/62` to `actions` (IPv6).
+- Added `2603:1061:101a:e0::/63` to `actions` (IPv6).
+- Added `2603:1061:101a:e2::/64` to `actions` (IPv6).
+- Removed `2603:1030:9:d6::/63` from `actions` (IPv6).
+- Removed `2603:1061:101a:e0::/64` from `actions` (IPv6).
+- Added `172.134.0.0/16` (IPv4).
+- Added `172.138.0.0/17` (IPv4).
+- Added `172.139.0.0/17` (IPv4).
+- Added `172.170.0.0/16` (IPv4).
+- Added `172.199.0.0/16` (IPv4).
+- Added `20.143.242.0/23` (IPv4).
+- Added `20.165.0.0/17` (IPv4).
+- Added `40.123.169.158/31` (IPv4).
+- Added `40.123.169.160/28` (IPv4).
+- Added `40.123.169.176/31` (IPv4).
+- Added `48.199.0.0/16` (IPv4).
+- Added `48.209.0.0/17` (IPv4).
+- Added `48.211.0.0/17` (IPv4).
+- Added `57.157.130.112/29` (IPv4).
+- Added `57.157.130.120/30` (IPv4).
+- Added `57.157.130.96/28` (IPv4).
+- Added `57.157.25.200/30` (IPv4).
+- Added `57.157.50.108/30` (IPv4).
+- Added `57.157.50.112/29` (IPv4).
+- Added `57.157.67.100/31` (IPv4).
+- Added `57.157.67.64/27` (IPv4).
+- Added `57.157.67.96/30` (IPv4).
+- Added `57.157.81.128/27` (IPv4).
+- Added `9.129.128.0/20` (IPv4).
+- Added `9.129.144.0/21` (IPv4).
+- Added `9.129.152.0/21` (IPv4).
+- Added `9.129.160.0/21` (IPv4).
+- Added `9.129.168.0/21` (IPv4).
+- Added `9.129.176.0/22` (IPv4).
+- Added `9.129.184.0/22` (IPv4).
+- Added `9.129.188.0/22` (IPv4).
+- Added `9.129.192.0/22` (IPv4).
+- Added `9.129.202.0/23` (IPv4).
+- Added `9.129.206.0/23` (IPv4).
+- Added `9.129.208.0/23` (IPv4).
+- Added `9.129.210.0/23` (IPv4).
+- Added `9.129.212.0/23` (IPv4).
+- Added `9.129.214.0/23` (IPv4).
+- Added `9.129.216.0/23` (IPv4).
+- Added `9.129.221.0/24` (IPv4).
+- Added `9.129.225.0/24` (IPv4).
+- Added `9.129.226.0/24` (IPv4).
+- Added `9.129.227.0/24` (IPv4).
+- Added `9.129.228.0/24` (IPv4).
+- Added `9.129.229.0/24` (IPv4).
+- Added `9.129.232.0/25` (IPv4).
+- Added `9.129.235.0/25` (IPv4).
+- Added `9.129.235.128/25` (IPv4).
+- Added `9.129.237.128/25` (IPv4).
+- Added `9.129.238.128/25` (IPv4).
+- Added `9.129.239.128/25` (IPv4).
+- Added `9.129.241.192/26` (IPv4).
+- Added `9.129.243.64/26` (IPv4).
+- Added `9.129.244.128/26` (IPv4).
+- Added `9.129.244.64/26` (IPv4).
+- Added `9.129.245.160/27` (IPv4).
+- Added `9.129.245.64/27` (IPv4).
+- Added `9.129.246.160/27` (IPv4).
+- Added `9.129.246.64/27` (IPv4).
+- Added `9.129.247.208/28` (IPv4).
+- Added `9.129.247.224/28` (IPv4).
+- Added `9.129.247.240/28` (IPv4).
+- Added `9.129.247.64/27` (IPv4).
+- Added `9.129.248.16/28` (IPv4).
+- Added `9.129.248.96/28` (IPv4).
+- Added `9.234.128.0/17` (IPv4).
+- Removed `172.134.0.0/17` (IPv4).
+- Removed `172.170.0.0/18` (IPv4).
+- Removed `172.170.112.0/21` (IPv4).
+- Removed `172.170.120.0/23` (IPv4).
+- Removed `172.170.122.0/24` (IPv4).
+- Removed `172.170.123.0/27` (IPv4).
+- Removed `172.170.123.128/25` (IPv4).
+- Removed `172.170.123.32/29` (IPv4).
+- Removed `172.170.123.40/30` (IPv4).
+- Removed `172.170.123.64/26` (IPv4).
+- Removed `172.170.124.0/22` (IPv4).
+- Removed `172.170.128.0/17` (IPv4).
+- Removed `172.170.64.0/19` (IPv4).
+- Removed `172.170.96.0/20` (IPv4).
+- Removed `172.199.0.0/20` (IPv4).
+- Removed `172.199.128.0/17` (IPv4).
+- Removed `172.199.16.0/23` (IPv4).
+- Removed `172.199.18.0/26` (IPv4).
+- Removed `172.199.18.128/25` (IPv4).
+- Removed `172.199.18.64/28` (IPv4).
+- Removed `172.199.18.80/31` (IPv4).
+- Removed `172.199.18.82/32` (IPv4).
+- Removed `172.199.18.84/30` (IPv4).
+- Removed `172.199.18.88/29` (IPv4).
+- Removed `172.199.18.96/27` (IPv4).
+- Removed `172.199.19.0/24` (IPv4).
+- Removed `172.199.20.0/26` (IPv4).
+- Removed `172.199.20.128/25` (IPv4).
+- Removed `172.199.20.64/27` (IPv4).
+- Removed `172.199.20.96/28` (IPv4).
+- Removed `172.199.21.0/24` (IPv4).
+- Removed `172.199.22.0/23` (IPv4).
+- Removed `172.199.24.0/21` (IPv4).
+- Removed `172.199.32.0/19` (IPv4).
+- Removed `172.199.64.0/18` (IPv4).
+- Removed `20.165.0.0/18` (IPv4).
+- Removed `20.165.64.0/20` (IPv4).
+- Removed `20.165.80.0/21` (IPv4).
+- Removed `20.165.88.0/22` (IPv4).
+- Removed `20.165.92.0/23` (IPv4).
+- Removed `20.165.94.0/24` (IPv4).
+- Removed `20.165.95.0/28` (IPv4).
+- Removed `20.165.95.112/28` (IPv4).
+- Removed `20.165.95.128/25` (IPv4).
+- Removed `20.165.95.16/30` (IPv4).
+- Removed `20.165.95.24/29` (IPv4).
+- Removed `20.165.95.32/27` (IPv4).
+- Removed `20.165.95.64/28` (IPv4).
+- Removed `20.165.95.80/29` (IPv4).
+- Removed `20.165.96.0/19` (IPv4).
+- Removed `40.123.169.160/29` (IPv4).
+- Removed `48.199.0.0/17` (IPv4).
+- Removed `48.199.128.0/18` (IPv4).
+- Removed `48.199.192.0/19` (IPv4).
+- Removed `48.199.224.0/20` (IPv4).
+- Removed `48.199.240.0/21` (IPv4).
+- Removed `48.199.248.0/23` (IPv4).
+- Removed `48.199.250.0/26` (IPv4).
+- Removed `48.199.250.128/25` (IPv4).
+- Removed `48.199.250.64/27` (IPv4).
+- Removed `48.199.251.0/24` (IPv4).
+- Removed `48.199.252.0/22` (IPv4).
+- Removed `48.209.0.0/18` (IPv4).
+- Removed `48.209.104.0/22` (IPv4).
+- Removed `48.209.108.0/26` (IPv4).
+- Removed `48.209.108.128/25` (IPv4).
+- Removed `48.209.108.64/28` (IPv4).
+- Removed `48.209.108.80/29` (IPv4).
+- Removed `48.209.108.88/31` (IPv4).
+- Removed `48.209.108.90/32` (IPv4).
+- Removed `48.209.108.93/32` (IPv4).
+- Removed `48.209.108.94/31` (IPv4).
+- Removed `48.209.108.96/27` (IPv4).
+- Removed `48.209.109.0/24` (IPv4).
+- Removed `48.209.110.0/23` (IPv4).
+- Removed `48.209.112.0/20` (IPv4).
+- Removed `48.209.64.0/19` (IPv4).
+- Removed `48.209.96.0/21` (IPv4).
+- Removed `48.211.0.0/18` (IPv4).
+- Removed `48.211.64.0/20` (IPv4).
+- Removed `48.211.80.0/22` (IPv4).
+- Removed `48.211.84.0/26` (IPv4).
+- Removed `48.211.84.128/25` (IPv4).
+- Removed `48.211.84.64/29` (IPv4).
+- Removed `48.211.84.72/30` (IPv4).
+- Removed `48.211.84.76/31` (IPv4).
+- Removed `48.211.84.80/28` (IPv4).
+- Removed `48.211.84.96/27` (IPv4).
+- Removed `48.211.85.0/24` (IPv4).
+- Removed `48.211.86.0/23` (IPv4).
+- Removed `48.211.88.0/21` (IPv4).
+- Removed `48.211.96.0/19` (IPv4).
+- Removed `57.157.130.104/30` (IPv4).
+- Removed `57.157.130.108/31` (IPv4).
+- Removed `57.157.130.96/29` (IPv4).
+- Removed `57.157.67.64/28` (IPv4).
+- Removed `57.157.67.80/29` (IPv4).
+- Removed `57.157.81.128/28` (IPv4).
+- Removed `57.157.81.144/29` (IPv4).
+- Removed `57.157.81.152/30` (IPv4).
+- Removed `57.157.81.156/31` (IPv4).
+- Removed `9.234.128.0/18` (IPv4).
+- Removed `9.234.192.0/19` (IPv4).
+- Removed `9.234.224.0/20` (IPv4).
+- Removed `9.234.240.0/21` (IPv4).
+- Removed `9.234.248.0/26` (IPv4).
+- Removed `9.234.248.128/25` (IPv4).
+- Removed `9.234.248.64/28` (IPv4).
+- Removed `9.234.248.80/30` (IPv4).
+- Removed `9.234.248.96/27` (IPv4).
+- Removed `9.234.249.0/24` (IPv4).
+- Removed `9.234.250.0/23` (IPv4).
+- Removed `9.234.252.0/22` (IPv4).
+- Added `2603:1030:401:b1f::/64` (IPv6).
+- Added `2603:1030:401:b20::/62` (IPv6).
+- Added `2603:1030:401:b24::/64` (IPv6).
+- Added `2603:1030:9:2e4::/62` (IPv6).
+- Added `2603:1030:9:d4::/62` (IPv6).
+- Added `2603:1061:101a:e0::/63` (IPv6).
+- Added `2603:1061:101a:e2::/64` (IPv6).
+- Removed `2603:1030:9:d6::/63` (IPv6).
+- Removed `2603:1061:101a:e0::/64` (IPv6).
+
 ## 2026-10-02
 
 ### 09:44:43Z
