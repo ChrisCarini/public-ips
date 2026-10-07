@@ -1,5 +1,33 @@
 # Changelog - amazonaws.com
 
+## 2026-10-07
+
+### 10:14:00Z
+
+- Added `16.15.64.0/22` to `amazon` (IPv4).
+- Added `16.15.68.0/22` to `amazon` (IPv4).
+- Added `16.15.72.0/22` to `amazon` (IPv4).
+- Added `16.15.76.0/22` to `amazon` (IPv4).
+- Added `35.54.63.0/24` to `amazon` (IPv4).
+- Added `83.160.102.0/23` to `amazon` (IPv4).
+- Added `83.160.104.0/23` to `amazon` (IPv4).
+- Added `16.15.64.0/22` to `ec2` (IPv4).
+- Added `16.15.68.0/22` to `ec2` (IPv4).
+- Added `16.15.72.0/22` to `ec2` (IPv4).
+- Added `16.15.76.0/22` to `ec2` (IPv4).
+- Added `35.54.63.0/24` to `ec2` (IPv4).
+- Added `16.15.64.0/22` to `s3` (IPv4).
+- Added `16.15.68.0/22` to `s3` (IPv4).
+- Added `16.15.72.0/22` to `s3` (IPv4).
+- Added `16.15.76.0/22` to `s3` (IPv4).
+- Added `16.15.64.0/22` (IPv4).
+- Added `16.15.68.0/22` (IPv4).
+- Added `16.15.72.0/22` (IPv4).
+- Added `16.15.76.0/22` (IPv4).
+- Added `35.54.63.0/24` (IPv4).
+- Added `83.160.102.0/23` (IPv4).
+- Added `83.160.104.0/23` (IPv4).
+
 ## 2026-10-05
 
 ### 10:23:37Z
