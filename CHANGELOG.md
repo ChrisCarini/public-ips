@@ -1,5 +1,78 @@
 # Changelog
 
+## 2026-10-07
+
+### 10:14:00Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.64.0/22` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.68.0/22` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.72.0/22` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.76.0/22` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `35.54.63.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.102.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.104.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.64.0/22` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.68.0/22` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.72.0/22` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.76.0/22` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `35.54.63.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.64.0/22` to `s3` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.68.0/22` to `s3` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.72.0/22` to `s3` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.76.0/22` to `s3` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.64.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.68.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.72.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.15.76.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `35.54.63.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.102.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.104.0/23` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.193.128.0/19` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.67.64.0/18` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.69.128.0/18` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.69.192.0/19` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.69.224.0/19` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.14.224.0/19` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.130.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.131.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.132.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.133.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.136.0/22` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.144.0/20` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.129.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.130.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.131.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.132.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.133.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.136.0/22` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.144.0/20` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `8.237.160.0/19` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.193.128.0/19` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.67.64.0/18` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.69.128.0/18` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.69.192.0/19` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `179.69.224.0/19` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.14.224.0/19` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.130.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.131.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.132.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.133.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.136.0/22` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.183.144.0/20` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.129.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.130.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.131.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.132.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.133.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.136.0/22` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.184.144.0/20` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `8.237.160.0/19` (IPv4).
+- [openai.com](./openai.com/CHANGELOG.md): Added `20.212.62.208/28` (IPv4).
+- [openai.com](./openai.com/CHANGELOG.md): Added `20.219.161.192/28` (IPv4).
+- [openai.com](./openai.com/CHANGELOG.md): Added `20.254.201.208/28` (IPv4).
+- [openai.com](./openai.com/CHANGELOG.md): Added `40.119.36.240/28` (IPv4).
+- [openai.com](./openai.com/CHANGELOG.md): Added `52.190.251.112/28` (IPv4).
+
 ## 2026-10-06
 
 ### 10:15:21Z
