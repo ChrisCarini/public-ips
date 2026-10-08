@@ -3,18 +3,19 @@
   "categories": {},
   "display_name": "Zoom Meetings",
   "documentation_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060548",
-  "first_observed_at": "2026-09-22T08:31:18+00:00",
-  "generated_at": "2026-09-22T08:31:18+00:00",
-  "normalized_data_sha256": "61a36e9fb254d27070804a9e0e8418a0ed8a5c7c2ab0d19c1f76f764f8c79625",
+  "first_observed_at": "2026-10-08T10:32:50+00:00",
+  "generated_at": "2026-10-08T10:32:50+00:00",
+  "normalized_data_sha256": "07fd646dc7f904fe7488a261bf2efe9afb005774afe015893c87063addc9f996",
   "provider": {
     "counts": {
-      "ipv4": 49,
+      "ipv4": 50,
       "ipv6": 3
     },
     "ipv4": [
       "3.7.35.0/25",
       "3.235.82.0/23",
-      "3.235.96.0/23",
+      "3.235.96.26/31",
+      "3.235.96.158/31",
       "15.220.80.0/24",
       "15.220.81.0/25",
       "18.254.23.128/25",
@@ -24,7 +25,7 @@
       "52.61.100.128/25",
       "64.211.144.0/24",
       "64.224.32.0/19",
-      "69.174.108.0/22",
+      "69.174.110.0/23",
       "101.36.167.0/24",
       "101.36.170.0/23",
       "103.122.166.0/23",
@@ -78,7 +79,7 @@
   },
   "provider_id": "zoom.us",
   "schema_version": "v1",
-  "source_body_sha256": "1a21b922f1c9d0355e4481d6f5c6401e88b8d52251f2652aa3c13946402f5b77",
+  "source_body_sha256": "f85794b45ca31d3e7249c41faddcd672ef417347da5a6eea67858d185e2e03b1",
   "source_urls": [
     "https://assets.zoom.us/docs/ipranges/ZoomMeetings.txt",
     "https://assets.zoom.us/docs/ipranges/ZoomMeetings-IPv6.txt"

@@ -1,5 +1,50 @@
 # Changelog - cloud.google.com
 
+## 2026-10-08
+
+### 10:32:50Z
+
+- Removed `179.193.128.0/19` from `google_cloud` (IPv4).
+- Removed `179.67.64.0/18` from `google_cloud` (IPv4).
+- Removed `179.69.128.0/18` from `google_cloud` (IPv4).
+- Removed `179.69.192.0/19` from `google_cloud` (IPv4).
+- Removed `179.69.224.0/19` from `google_cloud` (IPv4).
+- Removed `34.14.224.0/19` from `google_cloud` (IPv4).
+- Removed `34.183.130.0/24` from `google_cloud` (IPv4).
+- Removed `34.183.131.0/24` from `google_cloud` (IPv4).
+- Removed `34.183.132.0/24` from `google_cloud` (IPv4).
+- Removed `34.183.133.0/24` from `google_cloud` (IPv4).
+- Removed `34.183.136.0/22` from `google_cloud` (IPv4).
+- Removed `34.183.144.0/20` from `google_cloud` (IPv4).
+- Removed `34.184.129.0/24` from `google_cloud` (IPv4).
+- Removed `34.184.130.0/24` from `google_cloud` (IPv4).
+- Removed `34.184.131.0/24` from `google_cloud` (IPv4).
+- Removed `34.184.132.0/24` from `google_cloud` (IPv4).
+- Removed `34.184.133.0/24` from `google_cloud` (IPv4).
+- Removed `34.184.136.0/22` from `google_cloud` (IPv4).
+- Removed `34.184.144.0/20` from `google_cloud` (IPv4).
+- Removed `8.237.160.0/19` from `google_cloud` (IPv4).
+- Removed `179.193.128.0/19` (IPv4).
+- Removed `179.67.64.0/18` (IPv4).
+- Removed `179.69.128.0/18` (IPv4).
+- Removed `179.69.192.0/19` (IPv4).
+- Removed `179.69.224.0/19` (IPv4).
+- Removed `34.14.224.0/19` (IPv4).
+- Removed `34.183.130.0/24` (IPv4).
+- Removed `34.183.131.0/24` (IPv4).
+- Removed `34.183.132.0/24` (IPv4).
+- Removed `34.183.133.0/24` (IPv4).
+- Removed `34.183.136.0/22` (IPv4).
+- Removed `34.183.144.0/20` (IPv4).
+- Removed `34.184.129.0/24` (IPv4).
+- Removed `34.184.130.0/24` (IPv4).
+- Removed `34.184.131.0/24` (IPv4).
+- Removed `34.184.132.0/24` (IPv4).
+- Removed `34.184.133.0/24` (IPv4).
+- Removed `34.184.136.0/22` (IPv4).
+- Removed `34.184.144.0/20` (IPv4).
+- Removed `8.237.160.0/19` (IPv4).
+
 ## 2026-10-07
 
 ### 10:14:00Z
