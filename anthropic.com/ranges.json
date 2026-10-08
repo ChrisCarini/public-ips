@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "Anthropic",
   "documentation_url": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
-  "first_observed_at": "2026-10-03T09:07:31+00:00",
-  "generated_at": "2026-10-03T09:07:31+00:00",
-  "normalized_data_sha256": "253ac976e6140e457915e4658cbcd578223b66eb7f4a071edd375e654992dede",
+  "first_observed_at": "2026-10-08T10:32:50+00:00",
+  "generated_at": "2026-10-08T10:32:50+00:00",
+  "normalized_data_sha256": "7e9661f91ef0efa43b7cf45827cd9c177104fba1b273ace7592741a22ffa6e04",
   "provider": {
     "counts": {
-      "ipv4": 28,
+      "ipv4": 38,
       "ipv6": 0
     },
     "ipv4": [
@@ -20,6 +20,13 @@
       "34.11.34.31/32",
       "34.85.172.162/32",
       "34.150.241.79/32",
+      "34.152.124.140/32",
+      "34.153.21.190/32",
+      "34.162.27.34/32",
+      "34.162.86.102/32",
+      "34.162.90.102/32",
+      "34.162.111.78/32",
+      "34.162.153.71/32",
       "34.162.191.81/32",
       "34.162.230.222/32",
       "34.162.244.71/32",
@@ -32,10 +39,13 @@
       "34.182.226.151/32",
       "34.182.226.221/32",
       "34.186.108.163/32",
+      "34.186.252.4/32",
       "35.221.29.174/32",
       "35.245.89.239/32",
       "35.245.175.129/32",
       "40.124.101.48/28",
+      "136.79.143.251/32",
+      "136.83.20.215/32",
       "136.107.176.208/32",
       "160.79.106.16/28",
       "160.79.106.128/28",
@@ -53,7 +63,7 @@
   },
   "provider_id": "anthropic.com",
   "schema_version": "v1",
-  "source_body_sha256": "46cb64a137e9bb6ac9dc097f7d9eec33a2719ac8245d73c88e352024c240edda",
+  "source_body_sha256": "688d19436ff3764aef21aa69a506eaeb451bfe55cfe47d3289d4b7456d29eb95",
   "source_urls": [
     "https://claude.com/crawling/bots.json"
   ],

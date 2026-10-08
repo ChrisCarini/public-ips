@@ -7473,10 +7473,13 @@
     },
     "hooks": {
       "counts": {
-        "ipv4": 4,
+        "ipv4": 7,
         "ipv6": 2
       },
       "ipv4": [
+        "9.234.98.160/28",
+        "9.234.98.176/28",
+        "9.234.106.48/28",
         "140.82.112.0/20",
         "143.55.64.0/20",
         "185.199.108.0/22",
@@ -7652,12 +7655,12 @@
   },
   "display_name": "GitHub",
   "documentation_url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-githubs-ip-addresses",
-  "first_observed_at": "2026-10-06T10:15:21+00:00",
-  "generated_at": "2026-10-06T10:15:21+00:00",
-  "normalized_data_sha256": "defab790495437fda2dd06f6ad7ef515b56edf2e55f832f5f5401c5e6a1d7d86",
+  "first_observed_at": "2026-10-08T10:32:50+00:00",
+  "generated_at": "2026-10-08T10:32:50+00:00",
+  "normalized_data_sha256": "2120e9e417a95acf05c2432a5050c6bef4e29f816a5c4a3e873ac4fa749deae0",
   "provider": {
     "counts": {
-      "ipv4": 5830,
+      "ipv4": 5833,
       "ipv6": 1534
     },
     "ipv4": [
@@ -7940,6 +7943,9 @@
       "9.169.0.0/17",
       "9.169.128.0/17",
       "9.234.0.0/17",
+      "9.234.98.160/28",
+      "9.234.98.176/28",
+      "9.234.106.48/28",
       "9.234.128.0/17",
       "13.64.0.0/16",
       "13.65.0.0/16",
@@ -15039,7 +15045,7 @@
   },
   "provider_id": "github.com",
   "schema_version": "v1",
-  "source_body_sha256": "754f606f16674a9591788ac09932543fef0138656753472241ae0be3b93b9c93",
+  "source_body_sha256": "b9374fc2f7ecfdd967d089af30a02dca7a773911e67d4b21324fa3569a91bab5",
   "source_urls": [
     "https://api.github.com/meta"
   ],

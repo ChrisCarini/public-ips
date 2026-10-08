@@ -1,5 +1,81 @@
 # Changelog - amazonaws.com
 
+## 2026-10-08
+
+### 10:32:50Z
+
+- Added `15.175.250.0/23` to `amazon` (IPv4).
+- Added `16.15.80.0/22` to `amazon` (IPv4).
+- Added `16.15.84.0/22` to `amazon` (IPv4).
+- Added `16.15.88.0/22` to `amazon` (IPv4).
+- Added `16.15.92.0/22` to `amazon` (IPv4).
+- Added `16.15.96.0/22` to `amazon` (IPv4).
+- Added `184.195.222.0/23` to `amazon` (IPv4).
+- Added `64.113.192.0/22` to `amazon` (IPv4).
+- Added `64.113.223.0/24` to `amazon` (IPv4).
+- Added `80.126.10.0/24` to `amazon` (IPv4).
+- Added `80.126.11.0/24` to `amazon` (IPv4).
+- Added `80.126.12.0/24` to `amazon` (IPv4).
+- Added `80.126.13.0/24` to `amazon` (IPv4).
+- Added `80.126.14.0/24` to `amazon` (IPv4).
+- Added `80.126.3.0/24` to `amazon` (IPv4).
+- Added `80.126.4.0/24` to `amazon` (IPv4).
+- Added `80.126.5.0/24` to `amazon` (IPv4).
+- Added `80.126.6.0/24` to `amazon` (IPv4).
+- Added `80.126.7.0/24` to `amazon` (IPv4).
+- Added `80.126.8.0/24` to `amazon` (IPv4).
+- Added `80.126.9.0/24` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Added `2600:f0fb:c801::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c802::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c803::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c804::/48` to `amazon` (IPv6).
+- Added `51.168.118.0/24` to `api_gateway` (IPv4).
+- Added `16.15.80.0/22` to `ec2` (IPv4).
+- Added `16.15.84.0/22` to `ec2` (IPv4).
+- Added `16.15.88.0/22` to `ec2` (IPv4).
+- Added `16.15.92.0/22` to `ec2` (IPv4).
+- Added `16.15.96.0/22` to `ec2` (IPv4).
+- Added `64.113.192.0/22` to `ec2` (IPv4).
+- Added `64.113.223.0/24` to `ec2` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `2600:f0fb:c801::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c802::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c803::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c804::/48` to `ec2` (IPv6).
+- Added `16.15.80.0/22` to `s3` (IPv4).
+- Added `16.15.84.0/22` to `s3` (IPv4).
+- Added `16.15.88.0/22` to `s3` (IPv4).
+- Added `16.15.92.0/22` to `s3` (IPv4).
+- Added `16.15.96.0/22` to `s3` (IPv4).
+- Added `15.175.250.0/23` (IPv4).
+- Added `16.15.80.0/22` (IPv4).
+- Added `16.15.84.0/22` (IPv4).
+- Added `16.15.88.0/22` (IPv4).
+- Added `16.15.92.0/22` (IPv4).
+- Added `16.15.96.0/22` (IPv4).
+- Added `184.195.222.0/23` (IPv4).
+- Added `51.168.118.0/24` (IPv4).
+- Added `64.113.192.0/22` (IPv4).
+- Added `64.113.223.0/24` (IPv4).
+- Added `80.126.10.0/24` (IPv4).
+- Added `80.126.11.0/24` (IPv4).
+- Added `80.126.12.0/24` (IPv4).
+- Added `80.126.13.0/24` (IPv4).
+- Added `80.126.14.0/24` (IPv4).
+- Added `80.126.3.0/24` (IPv4).
+- Added `80.126.4.0/24` (IPv4).
+- Added `80.126.5.0/24` (IPv4).
+- Added `80.126.6.0/24` (IPv4).
+- Added `80.126.7.0/24` (IPv4).
+- Added `80.126.8.0/24` (IPv4).
+- Added `80.126.9.0/24` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+- Added `2600:f0fb:c801::/48` (IPv6).
+- Added `2600:f0fb:c802::/48` (IPv6).
+- Added `2600:f0fb:c803::/48` (IPv6).
+- Added `2600:f0fb:c804::/48` (IPv6).
+
 ## 2026-10-07
 
 ### 10:14:00Z
