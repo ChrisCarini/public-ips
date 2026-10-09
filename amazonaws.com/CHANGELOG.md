@@ -1,5 +1,59 @@
 # Changelog - amazonaws.com
 
+## 2026-10-09
+
+### 10:30:58Z
+
+- Added `16.15.100.0/22` to `amazon` (IPv4).
+- Added `16.15.104.0/22` to `amazon` (IPv4).
+- Added `16.15.108.0/22` to `amazon` (IPv4).
+- Added `16.15.112.0/22` to `amazon` (IPv4).
+- Added `16.15.116.0/22` to `amazon` (IPv4).
+- Added `16.15.120.0/22` to `amazon` (IPv4).
+- Added `16.208.142.0/23` to `amazon` (IPv4).
+- Added `54.25.192.0/18` to `amazon` (IPv4).
+- Added `2600:f0fb:c900:7000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:c900:8000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:ca00:3000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:ca00:4000::/52` to `amazon` (IPv6).
+- Added `16.15.100.0/22` to `ec2` (IPv4).
+- Added `16.15.104.0/22` to `ec2` (IPv4).
+- Added `16.15.108.0/22` to `ec2` (IPv4).
+- Added `16.15.112.0/22` to `ec2` (IPv4).
+- Added `16.15.116.0/22` to `ec2` (IPv4).
+- Added `16.15.120.0/22` to `ec2` (IPv4).
+- Added `54.25.192.0/18` to `ec2` (IPv4).
+- Added `2600:f0fb:c900:7000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:c900:8000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:ca00:3000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:ca00:4000::/52` to `ec2` (IPv6).
+- Added `51.168.180.128/25` to `efs` (IPv4).
+- Added `51.168.188.0/22` to `efs` (IPv4).
+- Added `2a05:d010:82c4:9400::/56` to `efs` (IPv6).
+- Added `2a05:d010:83b8:6100::/56` to `efs` (IPv6).
+- Added `16.15.100.0/22` to `s3` (IPv4).
+- Added `16.15.104.0/22` to `s3` (IPv4).
+- Added `16.15.108.0/22` to `s3` (IPv4).
+- Added `16.15.112.0/22` to `s3` (IPv4).
+- Added `16.15.116.0/22` to `s3` (IPv4).
+- Added `16.15.120.0/22` to `s3` (IPv4).
+- Added `16.15.100.0/22` (IPv4).
+- Added `16.15.104.0/22` (IPv4).
+- Added `16.15.108.0/22` (IPv4).
+- Added `16.15.112.0/22` (IPv4).
+- Added `16.15.116.0/22` (IPv4).
+- Added `16.15.120.0/22` (IPv4).
+- Added `16.208.142.0/23` (IPv4).
+- Added `51.168.180.128/25` (IPv4).
+- Added `51.168.188.0/22` (IPv4).
+- Added `54.25.192.0/18` (IPv4).
+- Added `2600:f0fb:c900:7000::/52` (IPv6).
+- Added `2600:f0fb:c900:8000::/52` (IPv6).
+- Added `2600:f0fb:ca00:3000::/52` (IPv6).
+- Added `2600:f0fb:ca00:4000::/52` (IPv6).
+- Added `2a05:d010:82c4:9400::/56` (IPv6).
+- Added `2a05:d010:83b8:6100::/56` (IPv6).
+
 ## 2026-10-08
 
 ### 10:32:50Z
