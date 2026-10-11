@@ -1,5 +1,13 @@
 # Changelog - amazonaws.com
 
+## 2026-10-11
+
+### 09:58:30Z
+
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+
 ## 2026-10-10
 
 ### 09:48:19Z
