@@ -1,5 +1,52 @@
 # Changelog
 
+## 2026-10-12
+
+### 10:46:24Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.190/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.191/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.192/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.193/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.194/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.195/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.196/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.197/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.198/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.199/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.200/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.201/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.202/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.203/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.204/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.205/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.206/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.207/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.208/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.209/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.210/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.211/32` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/21` to `confluence` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/23` to `confluence` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.90.0/23` to `confluence` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/21` to `forge` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/23` to `forge` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.90.0/23` to `forge` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/21` to `jira` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/23` to `jira` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.90.0/23` to `jira` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/21` to `loom` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/23` to `loom` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.90.0/23` to `loom` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.90.20/30` to `rovo-crawler` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/21` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.88.0/23` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.90.0/23` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `131.162.90.20/30` (IPv4).
+
 ## 2026-10-11
 
 ### 09:58:30Z
