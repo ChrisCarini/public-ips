@@ -3,17 +3,19 @@
   "categories": {},
   "display_name": "Fastly",
   "documentation_url": "https://www.fastly.com/documentation/reference/api/utils/public-ip-list/",
-  "first_observed_at": "2026-09-15T06:04:01+00:00",
-  "generated_at": "2026-09-15T06:04:01+00:00",
-  "normalized_data_sha256": "45715195213fd3c3840a732d14bbe778ae3bfd38de461b93237e6663fd0da73d",
+  "first_observed_at": "2026-10-13T10:32:59+00:00",
+  "generated_at": "2026-10-13T10:32:59+00:00",
+  "normalized_data_sha256": "2ade035a47763a37d7384d6c77ca81fdb3305e71a03c7f5aeac488ce65a7efe9",
   "provider": {
     "counts": {
-      "ipv4": 19,
-      "ipv6": 2
+      "ipv4": 21,
+      "ipv6": 3
     },
     "ipv4": [
       "23.235.32.0/20",
       "43.249.72.0/22",
+      "90.98.0.0/17",
+      "90.98.128.0/18",
       "103.244.50.0/24",
       "103.245.222.0/23",
       "103.245.224.0/24",
@@ -34,7 +36,8 @@
     ],
     "ipv6": [
       "2a04:4e40::/32",
-      "2a04:4e42::/32"
+      "2a04:4e42::/31",
+      "2a04:4e44::/32"
     ],
     "paths": {
       "all": "all.txt",
@@ -47,7 +50,7 @@
   },
   "provider_id": "fastly.com",
   "schema_version": "v1",
-  "source_body_sha256": "89cae1a540caa1c34d46c44661f260994f39c1b584a227de7ca09d5035622fe5",
+  "source_body_sha256": "97e04f88ccdff98ecfcd38d763fa9411835c74a1dbc7decf03f3679e4f8cf8a5",
   "source_urls": [
     "https://api.fastly.com/public-ip-list"
   ],

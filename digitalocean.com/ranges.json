@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "DigitalOcean",
   "documentation_url": "https://docs.digitalocean.com/platform/",
-  "first_observed_at": "2026-09-15T06:04:01+00:00",
-  "generated_at": "2026-09-15T06:04:01+00:00",
-  "normalized_data_sha256": "44caff52be8f2dd3090916a2a8022b3a115c009e585b2bf3aa4198fd694f408b",
+  "first_observed_at": "2026-10-13T10:32:59+00:00",
+  "generated_at": "2026-10-13T10:32:59+00:00",
+  "normalized_data_sha256": "fb2339be22d3a05382416c88024695ccff6722e9f404ad5c48990af630cc03a1",
   "provider": {
     "counts": {
-      "ipv4": 1082,
+      "ipv4": 1086,
       "ipv6": 148
     },
     "ipv4": [
@@ -837,6 +837,8 @@
       "168.144.160.0/20",
       "168.144.176.0/20",
       "168.144.192.0/22",
+      "168.144.196.0/23",
+      "168.144.198.0/23",
       "168.144.208.0/20",
       "168.144.240.0/20",
       "170.64.128.0/18",
@@ -1039,6 +1041,8 @@
       "201.79.0.0/20",
       "201.79.16.0/20",
       "201.79.32.0/20",
+      "201.79.48.0/20",
+      "201.79.64.0/22",
       "204.48.16.0/20",
       "206.81.0.0/20",
       "206.81.16.0/20",
@@ -1256,7 +1260,7 @@
   },
   "provider_id": "digitalocean.com",
   "schema_version": "v1",
-  "source_body_sha256": "6ad6fad83d994cddf6e75582a6ef897d32631df7e143f4e4b82116a87eecc2e2",
+  "source_body_sha256": "18be497501f7098eae34103e1973acb40311f8122b7c6f2452de28f5fe2d8923",
   "source_urls": [
     "https://www.digitalocean.com/geo/google.csv"
   ],
