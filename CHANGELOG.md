@@ -1,5 +1,24 @@
 # Changelog
 
+## 2026-10-13
+
+### 10:32:59Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `173.83.237.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.196.190.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `173.83.237.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `173.83.237.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.196.190.0/24` (IPv4).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Added `168.144.196.0/23` (IPv4).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Added `168.144.198.0/23` (IPv4).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Added `201.79.48.0/20` (IPv4).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Added `201.79.64.0/22` (IPv4).
+- [fastly.com](./fastly.com/CHANGELOG.md): Added `90.98.0.0/17` (IPv4).
+- [fastly.com](./fastly.com/CHANGELOG.md): Added `90.98.128.0/18` (IPv4).
+- [fastly.com](./fastly.com/CHANGELOG.md): Added `2a04:4e42::/31` (IPv6).
+- [fastly.com](./fastly.com/CHANGELOG.md): Added `2a04:4e44::/32` (IPv6).
+- [fastly.com](./fastly.com/CHANGELOG.md): Removed `2a04:4e42::/32` (IPv6).
+
 ## 2026-10-12
 
 ### 10:46:24Z

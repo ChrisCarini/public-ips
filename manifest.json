@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-12T10:46:24+00:00",
+  "generated_at": "2026-10-13T10:32:59+00:00",
   "providers": {
     "amazonaws.com": {
       "attribution": "AWS IP address ranges JSON",
       "categories": {
         "amazon": {
           "counts": {
-            "ipv4": 6033,
+            "ipv4": 6035,
             "ipv6": 3228
           },
           "ipv4": [
@@ -2493,6 +2493,7 @@
             "43.196.16.0/23",
             "43.196.18.0/24",
             "43.196.19.0/24",
+            "43.196.190.0/24",
             "43.198.0.0/15",
             "43.198.166.0/23",
             "43.198.168.0/22",
@@ -5871,6 +5872,7 @@
             "173.83.233.0/24",
             "173.83.234.0/23",
             "173.83.236.0/24",
+            "173.83.237.0/24",
             "174.129.0.0/16",
             "175.41.128.0/18",
             "175.41.192.0/18",
@@ -10491,7 +10493,7 @@
         },
         "ec2": {
           "counts": {
-            "ipv4": 1883,
+            "ipv4": 1884,
             "ipv6": 2539
           },
           "ipv4": [
@@ -12269,6 +12271,7 @@
             "173.83.233.0/24",
             "173.83.234.0/23",
             "173.83.236.0/24",
+            "173.83.237.0/24",
             "174.129.0.0/16",
             "175.41.128.0/18",
             "175.41.192.0/18",
@@ -18052,12 +18055,12 @@
       },
       "display_name": "Amazon AWS",
       "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-      "first_observed_at": "2026-10-12T10:46:24+00:00",
-      "generated_at": "2026-10-12T10:46:24+00:00",
-      "normalized_data_sha256": "0ddcff7021a8652d87977dac26cc318cb403043d4e3b8c0f95402063466f4e21",
+      "first_observed_at": "2026-10-13T10:32:59+00:00",
+      "generated_at": "2026-10-13T10:32:59+00:00",
+      "normalized_data_sha256": "f38850c77cf3cf5f3cc855bce8a431ecac19913f58efff9b6722738bfc1aae4e",
       "provider": {
         "counts": {
-          "ipv4": 7861,
+          "ipv4": 7863,
           "ipv6": 3472
         },
         "ipv4": [
@@ -21887,6 +21890,7 @@
           "43.196.24.8/30",
           "43.196.168.0/25",
           "43.196.172.0/22",
+          "43.196.190.0/24",
           "43.198.0.0/15",
           "43.198.166.0/23",
           "43.198.168.0/22",
@@ -25746,6 +25750,7 @@
           "173.83.233.0/24",
           "173.83.234.0/23",
           "173.83.236.0/24",
+          "173.83.237.0/24",
           "174.129.0.0/16",
           "175.41.128.0/18",
           "175.41.192.0/18",
@@ -29408,7 +29413,7 @@
       },
       "provider_id": "amazonaws.com",
       "schema_version": "v1",
-      "source_body_sha256": "8a21234a00e385ffa6d839f74b8caca2d1d3699c3e0ea54246f4ad353282d2c2",
+      "source_body_sha256": "e92844d0ec83bbb6021d4e0ae668fd5065bcb06e0fa9d1027d7137272fcb3b39",
       "source_urls": [
         "https://ip-ranges.amazonaws.com/ip-ranges.json"
       ],
@@ -448566,12 +448571,12 @@
       "categories": {},
       "display_name": "DigitalOcean",
       "documentation_url": "https://docs.digitalocean.com/platform/",
-      "first_observed_at": "2026-09-15T06:04:01+00:00",
-      "generated_at": "2026-09-15T06:04:01+00:00",
-      "normalized_data_sha256": "44caff52be8f2dd3090916a2a8022b3a115c009e585b2bf3aa4198fd694f408b",
+      "first_observed_at": "2026-10-13T10:32:59+00:00",
+      "generated_at": "2026-10-13T10:32:59+00:00",
+      "normalized_data_sha256": "fb2339be22d3a05382416c88024695ccff6722e9f404ad5c48990af630cc03a1",
       "provider": {
         "counts": {
-          "ipv4": 1082,
+          "ipv4": 1086,
           "ipv6": 148
         },
         "ipv4": [
@@ -449400,6 +449405,8 @@
           "168.144.160.0/20",
           "168.144.176.0/20",
           "168.144.192.0/22",
+          "168.144.196.0/23",
+          "168.144.198.0/23",
           "168.144.208.0/20",
           "168.144.240.0/20",
           "170.64.128.0/18",
@@ -449602,6 +449609,8 @@
           "201.79.0.0/20",
           "201.79.16.0/20",
           "201.79.32.0/20",
+          "201.79.48.0/20",
+          "201.79.64.0/22",
           "204.48.16.0/20",
           "206.81.0.0/20",
           "206.81.16.0/20",
@@ -449819,7 +449828,7 @@
       },
       "provider_id": "digitalocean.com",
       "schema_version": "v1",
-      "source_body_sha256": "6ad6fad83d994cddf6e75582a6ef897d32631df7e143f4e4b82116a87eecc2e2",
+      "source_body_sha256": "18be497501f7098eae34103e1973acb40311f8122b7c6f2452de28f5fe2d8923",
       "source_urls": [
         "https://www.digitalocean.com/geo/google.csv"
       ],
@@ -450349,17 +450358,19 @@
       "categories": {},
       "display_name": "Fastly",
       "documentation_url": "https://www.fastly.com/documentation/reference/api/utils/public-ip-list/",
-      "first_observed_at": "2026-09-15T06:04:01+00:00",
-      "generated_at": "2026-09-15T06:04:01+00:00",
-      "normalized_data_sha256": "45715195213fd3c3840a732d14bbe778ae3bfd38de461b93237e6663fd0da73d",
+      "first_observed_at": "2026-10-13T10:32:59+00:00",
+      "generated_at": "2026-10-13T10:32:59+00:00",
+      "normalized_data_sha256": "2ade035a47763a37d7384d6c77ca81fdb3305e71a03c7f5aeac488ce65a7efe9",
       "provider": {
         "counts": {
-          "ipv4": 19,
-          "ipv6": 2
+          "ipv4": 21,
+          "ipv6": 3
         },
         "ipv4": [
           "23.235.32.0/20",
           "43.249.72.0/22",
+          "90.98.0.0/17",
+          "90.98.128.0/18",
           "103.244.50.0/24",
           "103.245.222.0/23",
           "103.245.224.0/24",
@@ -450380,7 +450391,8 @@
         ],
         "ipv6": [
           "2a04:4e40::/32",
-          "2a04:4e42::/32"
+          "2a04:4e42::/31",
+          "2a04:4e44::/32"
         ],
         "paths": {
           "all": "all.txt",
@@ -450393,7 +450405,7 @@
       },
       "provider_id": "fastly.com",
       "schema_version": "v1",
-      "source_body_sha256": "89cae1a540caa1c34d46c44661f260994f39c1b584a227de7ca09d5035622fe5",
+      "source_body_sha256": "97e04f88ccdff98ecfcd38d763fa9411835c74a1dbc7decf03f3679e4f8cf8a5",
       "source_urls": [
         "https://api.fastly.com/public-ip-list"
       ],
