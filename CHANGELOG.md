@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-14
+
+### 08:41:06Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2001:3fc6:3c::/47` to `cloudfront_origin_facing` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2001:3fc6:3c::/47` (IPv6).
+
 ## 2026-10-13
 
 ### 10:32:59Z
