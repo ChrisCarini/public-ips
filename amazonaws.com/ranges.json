@@ -10079,7 +10079,7 @@
     "cloudfront_origin_facing": {
       "counts": {
         "ipv4": 46,
-        "ipv6": 35
+        "ipv6": 36
       },
       "ipv4": [
         "3.29.57.0/26",
@@ -10130,6 +10130,7 @@
         "205.251.218.0/24"
       ],
       "ipv6": [
+        "2001:3fc6:3c::/47",
         "2406:da10:847f:a100::/56",
         "2406:da11:438:2300::/56",
         "2406:da12:4b:c200::/56",
@@ -18052,13 +18053,13 @@
   },
   "display_name": "Amazon AWS",
   "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-  "first_observed_at": "2026-10-13T10:32:59+00:00",
-  "generated_at": "2026-10-13T10:32:59+00:00",
-  "normalized_data_sha256": "f38850c77cf3cf5f3cc855bce8a431ecac19913f58efff9b6722738bfc1aae4e",
+  "first_observed_at": "2026-10-14T08:41:06+00:00",
+  "generated_at": "2026-10-14T08:41:06+00:00",
+  "normalized_data_sha256": "6b0637d94091f302acbf2ddccfdb10e738ed763df47418a9666877418b88e67d",
   "provider": {
     "counts": {
       "ipv4": 7863,
-      "ipv6": 3472
+      "ipv6": 3473
     },
     "ipv4": [
       "1.178.1.0/24",
@@ -25951,6 +25952,7 @@
       "2001:3fc6:c::/47",
       "2001:3fc6:e::/47",
       "2001:3fc6:20::/43",
+      "2001:3fc6:3c::/47",
       "2001:3fc6:100::/48",
       "2001:3fc6:200::/40",
       "2001:3fc7:800::/40",
@@ -29410,7 +29412,7 @@
   },
   "provider_id": "amazonaws.com",
   "schema_version": "v1",
-  "source_body_sha256": "e92844d0ec83bbb6021d4e0ae668fd5065bcb06e0fa9d1027d7137272fcb3b39",
+  "source_body_sha256": "94dd50551d2147653d46642dc8347ddc6221d0815fa3487c7850fbb2d9d48539",
   "source_urls": [
     "https://ip-ranges.amazonaws.com/ip-ranges.json"
   ],
