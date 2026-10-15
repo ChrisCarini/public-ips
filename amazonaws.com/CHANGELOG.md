@@ -1,5 +1,40 @@
 # Changelog - amazonaws.com
 
+## 2026-10-15
+
+### 08:16:12Z
+
+- Added `15.248.163.1/32` to `amazon` (IPv4).
+- Added `3.33.0.0/24` to `amazon` (IPv4).
+- Added `2600:1f01:494e::/47` to `amazon` (IPv6).
+- Added `2600:f0f0:8187::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:8188::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:8189::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:818a::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:818b::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:818c::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:818d::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:818e::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:8187::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:8188::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:8189::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:818a::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:818b::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:818c::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:818d::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:818e::/48` to `ec2` (IPv6).
+- Added `15.248.163.1/32` (IPv4).
+- Added `3.33.0.0/24` (IPv4).
+- Added `2600:1f01:494e::/47` (IPv6).
+- Added `2600:f0f0:8187::/48` (IPv6).
+- Added `2600:f0f0:8188::/48` (IPv6).
+- Added `2600:f0f0:8189::/48` (IPv6).
+- Added `2600:f0f0:818a::/48` (IPv6).
+- Added `2600:f0f0:818b::/48` (IPv6).
+- Added `2600:f0f0:818c::/48` (IPv6).
+- Added `2600:f0f0:818d::/48` (IPv6).
+- Added `2600:f0f0:818e::/48` (IPv6).
+
 ## 2026-10-14
 
 ### 08:41:06Z

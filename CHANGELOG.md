@@ -1,5 +1,51 @@
 # Changelog
 
+## 2026-10-15
+
+### 08:16:12Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `15.248.163.1/32` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.33.0.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f01:494e::/47` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8187::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8188::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8189::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818a::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818b::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818c::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818d::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818e::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8187::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8188::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8189::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818a::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818b::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818c::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818d::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818e::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `15.248.163.1/32` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.33.0.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f01:494e::/47` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8187::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8188::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8189::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818a::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818b::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818c::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818d::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818e::/48` (IPv6).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.212/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.213/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.214/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.215/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.216/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.217/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.218/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.219/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.220/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.221/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.222/32` (IPv4).
+
 ## 2026-10-14
 
 ### 08:41:06Z
