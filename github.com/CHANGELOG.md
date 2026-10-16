@@ -1,5 +1,14 @@
 # Changelog - github.com
 
+## 2026-10-16
+
+### 08:08:56Z
+
+- Added `3.41.210.0/24` to `actions` (IPv4).
+- Added `3.42.157.0/24` to `actions` (IPv4).
+- Added `3.41.210.0/24` (IPv4).
+- Added `3.42.157.0/24` (IPv4).
+
 ## 2026-10-08
 
 ### 10:32:50Z

@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "Apple",
   "documentation_url": "https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay",
-  "first_observed_at": "2026-10-15T08:16:12+00:00",
-  "generated_at": "2026-10-15T08:16:12+00:00",
-  "normalized_data_sha256": "fba4d0c34ca34a33430ff8a5b44dc69473d0df57648444c6c67241c7614be7d1",
+  "first_observed_at": "2026-10-16T08:08:56+00:00",
+  "generated_at": "2026-10-16T08:08:56+00:00",
+  "normalized_data_sha256": "79c998125ba591c99f649c5a31ee689b3820b6dbaaf510a75be7094fc1e9020c",
   "provider": {
     "counts": {
-      "ipv4": 41745,
+      "ipv4": 41734,
       "ipv6": 243357
     },
     "ipv4": [
@@ -16573,17 +16573,6 @@
       "104.28.138.209/32",
       "104.28.138.210/32",
       "104.28.138.211/32",
-      "104.28.138.212/32",
-      "104.28.138.213/32",
-      "104.28.138.214/32",
-      "104.28.138.215/32",
-      "104.28.138.216/32",
-      "104.28.138.217/32",
-      "104.28.138.218/32",
-      "104.28.138.219/32",
-      "104.28.138.220/32",
-      "104.28.138.221/32",
-      "104.28.138.222/32",
       "104.28.139.1/32",
       "104.28.139.2/32",
       "104.28.139.3/32",
@@ -285128,7 +285117,7 @@
   },
   "provider_id": "apple.com",
   "schema_version": "v1",
-  "source_body_sha256": "421807b7272e503729149935cf6dcce24c40eaf4a4d6093384b1fa5990edc5e4",
+  "source_body_sha256": "1dd19bfc9ab63347b3187255a399dd48e6243956054c1263f2293c70e514aba1",
   "source_urls": [
     "https://mask-api.icloud.com/egress-ip-ranges.csv"
   ],

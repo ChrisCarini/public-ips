@@ -1,5 +1,45 @@
 # Changelog - amazonaws.com
 
+## 2026-10-16
+
+### 08:08:56Z
+
+- Added `173.83.238.0/24` to `amazon` (IPv4).
+- Added `51.74.20.0/24` to `amazon` (IPv4).
+- Added `51.74.21.0/24` to `amazon` (IPv4).
+- Added `51.74.22.0/24` to `amazon` (IPv4).
+- Added `80.126.15.0/24` to `amazon` (IPv4).
+- Added `89.60.161.0/24` to `amazon` (IPv4).
+- Added `98.82.144.0/23` to `amazon` (IPv4).
+- Added `98.82.146.0/23` to `amazon` (IPv4).
+- Added `98.82.92.0/23` to `amazon` (IPv4).
+- Added `98.82.94.0/23` to `amazon` (IPv4).
+- Added `2001:3fc6:4::/48` to `amazon` (IPv6).
+- Added `2001:3fc6:5::/48` to `amazon` (IPv6).
+- Added `51.74.20.0/24` to `cloudfront` (IPv4).
+- Added `51.74.21.0/24` to `cloudfront` (IPv4).
+- Added `51.74.22.0/24` to `cloudfront` (IPv4).
+- Added `2001:3fc6:4::/48` to `cloudfront` (IPv6).
+- Added `2001:3fc6:5::/48` to `cloudfront` (IPv6).
+- Added `51.74.20.0/24` to `cloudfront_origin_facing` (IPv4).
+- Added `51.74.21.0/24` to `cloudfront_origin_facing` (IPv4).
+- Added `51.74.22.0/24` to `cloudfront_origin_facing` (IPv4).
+- Added `2001:3fc6:4::/48` to `cloudfront_origin_facing` (IPv6).
+- Added `2001:3fc6:5::/48` to `cloudfront_origin_facing` (IPv6).
+- Added `173.83.238.0/24` to `ec2` (IPv4).
+- Added `173.83.238.0/24` (IPv4).
+- Added `51.74.20.0/24` (IPv4).
+- Added `51.74.21.0/24` (IPv4).
+- Added `51.74.22.0/24` (IPv4).
+- Added `80.126.15.0/24` (IPv4).
+- Added `89.60.161.0/24` (IPv4).
+- Added `98.82.144.0/23` (IPv4).
+- Added `98.82.146.0/23` (IPv4).
+- Added `98.82.92.0/23` (IPv4).
+- Added `98.82.94.0/23` (IPv4).
+- Added `2001:3fc6:4::/48` (IPv6).
+- Added `2001:3fc6:5::/48` (IPv6).
+
 ## 2026-10-15
 
 ### 08:16:12Z
