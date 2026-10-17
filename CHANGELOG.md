@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-10-17
+
+### 07:46:05Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `191.166.0.0/16` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.192.198.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.192.200.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `44.254.6.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `51.168.206.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `71.137.18.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `191.166.0.0/16` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.192.198.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.192.200.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `44.254.6.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `51.168.206.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `71.137.18.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` (IPv4).
+
 ## 2026-10-16
 
 ### 08:08:56Z
