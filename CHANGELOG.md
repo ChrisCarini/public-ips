@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-10-18
+
+### 07:59:55Z
+
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.4.100.0/24` to `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Added `34.4.100.0/24` (IPv4).
+
 ## 2026-10-17
 
 ### 07:46:05Z
