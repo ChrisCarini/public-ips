@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-18T07:59:55+00:00",
+  "generated_at": "2026-10-19T08:50:52+00:00",
   "providers": {
     "amazonaws.com": {
       "attribution": "AWS IP address ranges JSON",
       "categories": {
         "amazon": {
           "counts": {
-            "ipv4": 6052,
+            "ipv4": 6053,
             "ipv6": 3239
           },
           "ipv4": [
@@ -1825,6 +1825,7 @@
             "16.18.0.0/16",
             "16.19.0.0/16",
             "16.22.0.0/16",
+            "16.22.202.0/23",
             "16.23.0.0/16",
             "16.24.0.0/16",
             "16.24.30.0/23",
@@ -18102,12 +18103,12 @@
       },
       "display_name": "Amazon AWS",
       "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-      "first_observed_at": "2026-10-17T07:46:05+00:00",
-      "generated_at": "2026-10-17T07:46:05+00:00",
-      "normalized_data_sha256": "726fe0af84199c219b867410459641cc0141ed06cba18baf5e73af409a91f8c0",
+      "first_observed_at": "2026-10-19T08:50:52+00:00",
+      "generated_at": "2026-10-19T08:50:52+00:00",
+      "normalized_data_sha256": "ea6503cff9691bc700d654222dffac40986f6909adc30e4b818b956c6dfe2035",
       "provider": {
         "counts": {
-          "ipv4": 7880,
+          "ipv4": 7881,
           "ipv6": 3484
         },
         "ipv4": [
@@ -20730,6 +20731,7 @@
           "16.22.121.0/26",
           "16.22.121.64/28",
           "16.22.152.0/22",
+          "16.22.202.0/23",
           "16.23.0.0/16",
           "16.24.0.0/16",
           "16.24.30.0/23",
@@ -29489,7 +29491,7 @@
       },
       "provider_id": "amazonaws.com",
       "schema_version": "v1",
-      "source_body_sha256": "7675f6987128b57567940de5fff9c61fb0d9a761c2f3424e1e48a45432e57457",
+      "source_body_sha256": "32768d25dcc6c6f71a5909057c299b65ff53df1900ebd63a7e2593dd23ca4dca",
       "source_urls": [
         "https://ip-ranges.amazonaws.com/ip-ranges.json"
       ],
@@ -29571,13 +29573,13 @@
       "categories": {},
       "display_name": "Apple",
       "documentation_url": "https://developer.apple.com/support/prepare-your-network-for-icloud-private-relay",
-      "first_observed_at": "2026-10-16T08:08:56+00:00",
-      "generated_at": "2026-10-16T08:08:56+00:00",
-      "normalized_data_sha256": "79c998125ba591c99f649c5a31ee689b3820b6dbaaf510a75be7094fc1e9020c",
+      "first_observed_at": "2026-10-19T08:50:52+00:00",
+      "generated_at": "2026-10-19T08:50:52+00:00",
+      "normalized_data_sha256": "748c26de6196a675165f5f76e021c4bc07f1611406ade785a99a94065068145d",
       "provider": {
         "counts": {
-          "ipv4": 41734,
-          "ipv6": 243357
+          "ipv4": 41747,
+          "ipv6": 243359
         },
         "ipv4": [
           "104.28.28.0/32",
@@ -46141,6 +46143,19 @@
           "104.28.138.209/32",
           "104.28.138.210/32",
           "104.28.138.211/32",
+          "104.28.138.212/32",
+          "104.28.138.213/32",
+          "104.28.138.214/32",
+          "104.28.138.215/32",
+          "104.28.138.216/32",
+          "104.28.138.217/32",
+          "104.28.138.218/32",
+          "104.28.138.219/32",
+          "104.28.138.220/32",
+          "104.28.138.221/32",
+          "104.28.138.222/32",
+          "104.28.138.223/32",
+          "104.28.138.224/32",
           "104.28.139.1/32",
           "104.28.139.2/32",
           "104.28.139.3/32",
@@ -307851,6 +307866,7 @@
           "2a09:bac2:d570::/45",
           "2a09:bac2:d578::/45",
           "2a09:bac2:d580::/45",
+          "2a09:bac2:d588::/45",
           "2a09:bac3::/45",
           "2a09:bac3:8::/45",
           "2a09:bac3:10::/45",
@@ -314672,7 +314688,8 @@
           "2a09:bac3:d568::/45",
           "2a09:bac3:d570::/45",
           "2a09:bac3:d578::/45",
-          "2a09:bac3:d580::/45"
+          "2a09:bac3:d580::/45",
+          "2a09:bac3:d588::/45"
         ],
         "paths": {
           "all": "all.txt",
@@ -314685,7 +314702,7 @@
       },
       "provider_id": "apple.com",
       "schema_version": "v1",
-      "source_body_sha256": "1dd19bfc9ab63347b3187255a399dd48e6243956054c1263f2293c70e514aba1",
+      "source_body_sha256": "da590431093567dc70ba483ce6be8d77e545a20a8dcbb643639932918dbe6ce6",
       "source_urls": [
         "https://mask-api.icloud.com/egress-ip-ranges.csv"
       ],

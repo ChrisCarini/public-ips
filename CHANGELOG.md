@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-10-19
+
+### 08:50:52Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.22.202.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.22.202.0/23` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.212/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.213/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.214/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.215/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.216/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.217/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.218/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.219/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.220/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.221/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.222/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.223/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.138.224/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `2a09:bac2:d588::/45` (IPv6).
+- [apple.com](./apple.com/CHANGELOG.md): Added `2a09:bac3:d588::/45` (IPv6).
+
 ## 2026-10-18
 
 ### 07:59:55Z
