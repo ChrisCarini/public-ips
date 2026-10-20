@@ -1,5 +1,43 @@
 # Changelog
 
+## 2026-10-20
+
+### 08:30:01Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.4.12.85/32` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.4.12.86/32` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `64.66.163.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `64.66.164.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818f::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8190::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `64.66.163.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `64.66.164.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818f::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8190::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `100.61.165.88/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `13.202.176.240/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.107.82.24/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.184.79.16/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.190.211.224/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.192.104.136/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `63.185.44.32/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `99.80.88.216/29` to `media_package_v2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `100.61.165.88/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `13.202.176.240/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.107.82.24/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.4.12.85/32` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `3.4.12.86/32` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.184.79.16/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.190.211.224/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.192.104.136/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `63.185.44.32/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `64.66.163.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `64.66.164.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `99.80.88.216/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:818f::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f0:8190::/48` (IPv6).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Added `201.79.80.0/20` (IPv4).
+
 ## 2026-10-19
 
 ### 08:50:52Z
