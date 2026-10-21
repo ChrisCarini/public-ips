@@ -1,5 +1,24 @@
 # Changelog - amazonaws.com
 
+## 2026-10-21
+
+### 08:32:47Z
+
+- Added `13.184.38.0/26` to `amazon` (IPv4).
+- Added `32.191.183.128/25` to `amazon` (IPv4).
+- Added `63.189.138.128/26` to `amazon` (IPv4).
+- Added `2600:f0f0:723::/48` to `amazon` (IPv6).
+- Added `2606:7b40:1a4f:40::/60` to `amazon` (IPv6).
+- Added `83.160.72.0/24` to `api_gateway` (IPv4).
+- Added `2600:f0f0:723::/48` to `ec2` (IPv6).
+- Added `2606:7b40:1a4f:40::/60` to `ec2` (IPv6).
+- Added `13.184.38.0/26` (IPv4).
+- Added `32.191.183.128/25` (IPv4).
+- Added `63.189.138.128/26` (IPv4).
+- Added `83.160.72.0/24` (IPv4).
+- Added `2600:f0f0:723::/48` (IPv6).
+- Added `2606:7b40:1a4f:40::/60` (IPv6).
+
 ## 2026-10-20
 
 ### 08:30:01Z

@@ -3,17 +3,18 @@
   "categories": {},
   "display_name": "Pingdom",
   "documentation_url": "https://documentation.solarwinds.com/en/success_center/pingdom/content/topics/pingdom-probe-servers-ip-addresses.htm",
-  "first_observed_at": "2026-09-14T00:42:22+00:00",
-  "generated_at": "2026-09-14T00:42:22+00:00",
-  "normalized_data_sha256": "19a2e320970a79ce44248d62b16bde1a484a9160815c5acb87fb21187ade1e74",
+  "first_observed_at": "2026-10-21T08:32:47+00:00",
+  "generated_at": "2026-10-21T08:32:47+00:00",
+  "normalized_data_sha256": "c80234d3b562d2c5566264cc6c75664222189634907a5b1e78583c3506019f84",
   "provider": {
     "counts": {
-      "ipv4": 149,
+      "ipv4": 153,
       "ipv6": 57
     },
     "ipv4": [
       "3.10.222.182/32",
       "3.11.131.95/32",
+      "3.28.176.11/32",
       "3.66.99.59/32",
       "3.120.200.34/32",
       "3.121.108.101/32",
@@ -46,6 +47,7 @@
       "35.76.210.156/32",
       "35.79.242.196/32",
       "35.85.117.184/32",
+      "40.172.23.87/32",
       "43.225.198.122/32",
       "43.229.84.12/32",
       "44.194.39.17/32",
@@ -56,6 +58,8 @@
       "50.16.153.186/32",
       "51.20.199.140/32",
       "51.21.185.148/32",
+      "51.112.113.198/32",
+      "51.112.129.195/32",
       "52.0.204.16/32",
       "52.5.245.15/32",
       "52.13.171.123/32",
@@ -232,7 +236,7 @@
   },
   "provider_id": "pingdom.com",
   "schema_version": "v1",
-  "source_body_sha256": "2af42323789207b65a4605b4b5af46021aeb6721a380e8374df77e977656566d",
+  "source_body_sha256": "5b7e7a9b9741b2b1f3ac7d70cf1d6545faee38a2dc5c6be6dddb6d8ab5bb082c",
   "source_urls": [
     "https://my.pingdom.com/probes/ipv4",
     "https://my.pingdom.com/probes/ipv6"
