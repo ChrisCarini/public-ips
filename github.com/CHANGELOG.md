@@ -1,5 +1,46 @@
 # Changelog - github.com
 
+## 2026-10-23
+
+### 08:30:56Z
+
+- Added `172.182.252.128/32` to `shared_ingress` (IPv4).
+- Added `20.199.39.224/32` to `shared_ingress` (IPv4).
+- Added `20.200.245.249/32` to `shared_ingress` (IPv4).
+- Added `20.201.28.153/32` to `shared_ingress` (IPv4).
+- Added `20.205.243.169/32` to `shared_ingress` (IPv4).
+- Added `20.207.73.89/32` to `shared_ingress` (IPv4).
+- Added `20.217.135.9/32` to `shared_ingress` (IPv4).
+- Added `20.233.83.153/32` to `shared_ingress` (IPv4).
+- Added `20.250.119.64/32` to `shared_ingress` (IPv4).
+- Added `20.26.156.217/32` to `shared_ingress` (IPv4).
+- Added `20.27.177.121/32` to `shared_ingress` (IPv4).
+- Added `20.29.134.26/32` to `shared_ingress` (IPv4).
+- Added `20.87.245.9/32` to `shared_ingress` (IPv4).
+- Added `4.172.7.153/32` to `shared_ingress` (IPv4).
+- Added `4.208.26.201/32` to `shared_ingress` (IPv4).
+- Added `4.225.11.192/32` to `shared_ingress` (IPv4).
+- Added `4.228.31.153/32` to `shared_ingress` (IPv4).
+- Added `4.237.22.41/32` to `shared_ingress` (IPv4).
+- Added `4.249.131.160/32` to `shared_ingress` (IPv4).
+- Added `48.202.248.32/32` to `shared_ingress` (IPv4).
+- Added `48.204.201.0/32` to `shared_ingress` (IPv4).
+- Added `172.182.252.128/32` (IPv4).
+- Added `20.200.245.249/32` (IPv4).
+- Added `20.201.28.153/32` (IPv4).
+- Added `20.205.243.169/32` (IPv4).
+- Added `20.207.73.89/32` (IPv4).
+- Added `20.217.135.9/32` (IPv4).
+- Added `20.233.83.153/32` (IPv4).
+- Added `20.26.156.217/32` (IPv4).
+- Added `20.27.177.121/32` (IPv4).
+- Added `20.29.134.26/32` (IPv4).
+- Added `20.87.245.9/32` (IPv4).
+- Added `4.172.7.153/32` (IPv4).
+- Added `4.208.26.201/32` (IPv4).
+- Added `48.202.248.32/32` (IPv4).
+- Added `48.204.201.0/32` (IPv4).
+
 ## 2026-10-22
 
 ### 08:34:49Z
