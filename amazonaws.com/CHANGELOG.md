@@ -1,5 +1,52 @@
 # Changelog - amazonaws.com
 
+## 2026-10-24
+
+### 08:05:54Z
+
+- Added `69.107.13.128/29` to `amazon` (IPv4).
+- Added `69.107.13.136/29` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Added `2600:1f01:4818::/47` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:2400::/56` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:7400::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:9000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:c000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:d400::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:d800::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:dc00::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:e000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:f000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:f400::/60` to `amazon` (IPv6).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `2600:f0f3:f010:2400::/56` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:7400::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:9000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:c000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:d400::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:d800::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:dc00::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:e000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:f000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:f400::/60` to `ec2` (IPv6).
+- Added `184.198.80.0/25` to `efs` (IPv4).
+- Added `2600:1f01:4818::/47` to `globalaccelerator` (IPv6).
+- Added `184.198.80.0/25` (IPv4).
+- Added `69.107.13.128/29` (IPv4).
+- Added `69.107.13.136/29` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+- Added `2600:1f01:4818::/47` (IPv6).
+- Added `2600:f0f3:f010:2400::/56` (IPv6).
+- Added `2606:7b40:1dd4:7400::/60` (IPv6).
+- Added `2606:7b40:1dd4:9000::/60` (IPv6).
+- Added `2606:7b40:1dd4:c000::/60` (IPv6).
+- Added `2606:7b40:1dd4:d400::/60` (IPv6).
+- Added `2606:7b40:1dd4:d800::/60` (IPv6).
+- Added `2606:7b40:1dd4:dc00::/60` (IPv6).
+- Added `2606:7b40:1dd4:e000::/60` (IPv6).
+- Added `2606:7b40:1dd4:f000::/60` (IPv6).
+- Added `2606:7b40:1dd4:f400::/60` (IPv6).
+
 ## 2026-10-23
 
 ### 08:30:56Z

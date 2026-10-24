@@ -1,5 +1,67 @@
 # Changelog
 
+## 2026-10-24
+
+### 08:05:54Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `69.107.13.128/29` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `69.107.13.136/29` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f01:4818::/47` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f3:f010:2400::/56` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:7400::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:9000::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:c000::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:d400::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:d800::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:dc00::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:e000::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:f000::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:f400::/60` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f3:f010:2400::/56` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:7400::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:9000::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:c000::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:d400::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:d800::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:dc00::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:e000::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:f000::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:f400::/60` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `184.198.80.0/25` to `efs` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f01:4818::/47` to `globalaccelerator` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `184.198.80.0/25` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `69.107.13.128/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `69.107.13.136/29` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f01:4818::/47` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f3:f010:2400::/56` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:7400::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:9000::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:c000::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:d400::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:d800::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:dc00::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:e000::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:f000::/60` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1dd4:f400::/60` (IPv6).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `179.193.192.0/18` from `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `179.199.0.0/17` from `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `186.242.0.0/18` from `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.183.140.0/24` from `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.183.141.0/24` from `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.184.134.0/24` from `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.184.135.0/24` from `google_cloud` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `179.193.192.0/18` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `179.199.0.0/17` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `186.242.0.0/18` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.183.140.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.183.141.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.184.134.0/24` (IPv4).
+- [cloud.google.com](./cloud.google.com/CHANGELOG.md): Removed `34.184.135.0/24` (IPv4).
+- [vultr.com](./vultr.com/CHANGELOG.md): Removed `173.199.68.0/24` (IPv4).
+
 ## 2026-10-23
 
 ### 08:30:56Z
