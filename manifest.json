@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-24T08:05:54+00:00",
+  "generated_at": "2026-10-25T08:23:18+00:00",
   "providers": {
     "amazonaws.com": {
       "attribution": "AWS IP address ranges JSON",
       "categories": {
         "amazon": {
           "counts": {
-            "ipv4": 6068,
+            "ipv4": 6070,
             "ipv6": 3259
           },
           "ipv4": [
@@ -38,6 +38,7 @@
             "1.178.64.0/24",
             "1.178.65.0/24",
             "1.178.72.0/21",
+            "1.178.86.0/24",
             "1.178.88.0/24",
             "1.178.89.0/24",
             "1.178.90.0/24",
@@ -5946,6 +5947,7 @@
             "184.192.0.0/12",
             "184.195.220.128/25",
             "184.195.222.0/23",
+            "184.198.82.0/23",
             "184.208.0.0/12",
             "185.42.204.0/22",
             "185.48.120.0/22",
@@ -10569,7 +10571,7 @@
         },
         "ec2": {
           "counts": {
-            "ipv4": 1886,
+            "ipv4": 1887,
             "ipv6": 2563
           },
           "ipv4": [
@@ -10600,6 +10602,7 @@
             "1.178.31.0/24",
             "1.178.64.0/24",
             "1.178.65.0/24",
+            "1.178.86.0/24",
             "1.178.88.0/24",
             "1.178.89.0/24",
             "1.178.90.0/24",
@@ -18169,12 +18172,12 @@
       },
       "display_name": "Amazon AWS",
       "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-      "first_observed_at": "2026-10-24T08:05:54+00:00",
-      "generated_at": "2026-10-24T08:05:54+00:00",
-      "normalized_data_sha256": "4de5f11846ee8c17bc80ca9cedb3c50071318fa1740821e630510f51375c6878",
+      "first_observed_at": "2026-10-25T08:23:18+00:00",
+      "generated_at": "2026-10-25T08:23:18+00:00",
+      "normalized_data_sha256": "c3cde266b4663900dd192c663fa8cdcf32d953f670563986b8a815323d0cf8ec",
       "provider": {
         "counts": {
-          "ipv4": 7906,
+          "ipv4": 7908,
           "ipv6": 3504
         },
         "ipv4": [
@@ -18206,6 +18209,7 @@
           "1.178.64.0/24",
           "1.178.65.0/24",
           "1.178.72.0/21",
+          "1.178.86.0/24",
           "1.178.88.0/24",
           "1.178.89.0/24",
           "1.178.90.0/24",
@@ -25950,6 +25954,7 @@
           "184.195.220.128/25",
           "184.195.222.0/23",
           "184.198.80.0/25",
+          "184.198.82.0/23",
           "184.208.0.0/12",
           "185.42.204.0/22",
           "185.48.120.0/22",
@@ -29602,7 +29607,7 @@
       },
       "provider_id": "amazonaws.com",
       "schema_version": "v1",
-      "source_body_sha256": "cb9e79862caf25c06d779aea91598c1d1254cdfb46fe3a0b2aa18c73723e09e2",
+      "source_body_sha256": "3302595fc425af94b2764b6f2df2c127802f40f43df95aecb030f92a6aedf086",
       "source_urls": [
         "https://ip-ranges.amazonaws.com/ip-ranges.json"
       ],
@@ -470290,12 +470295,12 @@
       "categories": {},
       "display_name": "DigitalOcean",
       "documentation_url": "https://docs.digitalocean.com/platform/",
-      "first_observed_at": "2026-10-20T08:30:01+00:00",
-      "generated_at": "2026-10-20T08:30:01+00:00",
-      "normalized_data_sha256": "06c924afcff8c4cb4ece97f906710ea96cf95bb41585b833853ce22bef631b82",
+      "first_observed_at": "2026-10-25T08:23:18+00:00",
+      "generated_at": "2026-10-25T08:23:18+00:00",
+      "normalized_data_sha256": "abe570fad6a0da847a94f2b2404005f72ceba0970e6f326ac044555dcf5f3a95",
       "provider": {
         "counts": {
-          "ipv4": 1087,
+          "ipv4": 1088,
           "ipv6": 148
         },
         "ipv4": [
@@ -471331,6 +471336,7 @@
           "201.79.48.0/20",
           "201.79.64.0/22",
           "201.79.80.0/20",
+          "201.79.96.0/20",
           "204.48.16.0/20",
           "206.81.0.0/20",
           "206.81.16.0/20",
@@ -471548,7 +471554,7 @@
       },
       "provider_id": "digitalocean.com",
       "schema_version": "v1",
-      "source_body_sha256": "555ea3e91214347d668e9c91882e42a71d1713b5ca6b7160f9ba7a03e72e20a6",
+      "source_body_sha256": "89184ae49f1e205be97e9956cc0d0ee0b3bfaf822c2eca03b858650bc869e523",
       "source_urls": [
         "https://www.digitalocean.com/geo/google.csv"
       ],
