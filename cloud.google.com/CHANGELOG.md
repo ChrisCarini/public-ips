@@ -1,5 +1,24 @@
 # Changelog - cloud.google.com
 
+## 2026-10-26
+
+### 08:52:28Z
+
+- Added `179.193.192.0/18` to `google_cloud` (IPv4).
+- Added `179.199.0.0/17` to `google_cloud` (IPv4).
+- Added `186.242.0.0/18` to `google_cloud` (IPv4).
+- Added `34.183.140.0/24` to `google_cloud` (IPv4).
+- Added `34.183.141.0/24` to `google_cloud` (IPv4).
+- Added `34.184.134.0/24` to `google_cloud` (IPv4).
+- Added `34.184.135.0/24` to `google_cloud` (IPv4).
+- Added `179.193.192.0/18` (IPv4).
+- Added `179.199.0.0/17` (IPv4).
+- Added `186.242.0.0/18` (IPv4).
+- Added `34.183.140.0/24` (IPv4).
+- Added `34.183.141.0/24` (IPv4).
+- Added `34.184.134.0/24` (IPv4).
+- Added `34.184.135.0/24` (IPv4).
+
 ## 2026-10-24
 
 ### 08:05:54Z

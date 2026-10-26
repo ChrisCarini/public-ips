@@ -1,5 +1,19 @@
 # Changelog - amazonaws.com
 
+## 2026-10-26
+
+### 08:52:28Z
+
+- Added `15.175.149.128/26` to `amazon` (IPv4).
+- Added `184.198.84.0/24` to `amazon` (IPv4).
+- Added `32.191.214.0/25` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `15.175.149.128/26` (IPv4).
+- Added `184.198.84.0/24` (IPv4).
+- Added `32.191.214.0/25` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+
 ## 2026-10-25
 
 ### 08:23:18Z
