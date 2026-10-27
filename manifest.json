@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T08:52:28+00:00",
+  "generated_at": "2026-10-27T08:57:19+00:00",
   "providers": {
     "amazonaws.com": {
       "attribution": "AWS IP address ranges JSON",
@@ -314831,7 +314831,7 @@
       "categories": {
         "bitbucket": {
           "counts": {
-            "ipv4": 55,
+            "ipv4": 58,
             "ipv6": 42
           },
           "ipv4": [
@@ -314845,6 +314845,7 @@
             "13.236.8.224/28",
             "18.136.214.96/28",
             "18.184.99.224/28",
+            "18.185.129.8/32",
             "18.234.32.224/28",
             "18.246.31.224/28",
             "34.196.8.197/32",
@@ -314864,8 +314865,10 @@
             "44.199.3.254/32",
             "44.199.45.64/32",
             "44.199.127.226/32",
+            "52.29.151.190/32",
             "52.41.219.63/32",
             "52.54.90.98/32",
+            "52.59.89.40/32",
             "52.72.137.240/32",
             "52.202.195.162/32",
             "52.203.14.55/32",
@@ -315895,12 +315898,12 @@
       },
       "display_name": "Atlassian",
       "documentation_url": "https://support.atlassian.com/organization-administration/docs/ip-addresses-and-domains-for-atlassian-cloud-products/",
-      "first_observed_at": "2026-10-12T10:46:24+00:00",
-      "generated_at": "2026-10-12T10:46:24+00:00",
-      "normalized_data_sha256": "054126bc4db50d9cedf631ef64173eb370e56f5ae8dad27c1c7b67a41cf6867a",
+      "first_observed_at": "2026-10-27T08:57:19+00:00",
+      "generated_at": "2026-10-27T08:57:19+00:00",
+      "normalized_data_sha256": "20811724ab2228e871a35673e86966e3541a3d90f608679e10e51d0bab0f292c",
       "provider": {
         "counts": {
-          "ipv4": 110,
+          "ipv4": 113,
           "ipv6": 60
         },
         "ipv4": [
@@ -315919,6 +315922,7 @@
           "16.63.53.240/28",
           "18.136.214.96/28",
           "18.184.99.224/28",
+          "18.185.129.8/32",
           "18.234.32.224/28",
           "18.246.31.208/28",
           "18.246.31.224/28",
@@ -315958,9 +315962,11 @@
           "44.220.40.160/28",
           "52.19.227.102/32",
           "52.24.176.31/32",
+          "52.29.151.190/32",
           "52.41.219.63/32",
           "52.51.22.205/32",
           "52.54.90.98/32",
+          "52.59.89.40/32",
           "52.72.137.240/32",
           "52.82.172.0/22",
           "52.202.195.162/32",
@@ -316088,7 +316094,7 @@
       },
       "provider_id": "atlassian.com",
       "schema_version": "v1",
-      "source_body_sha256": "df06059d23c9c287f53fdb1cb6b66921eaef608bc3dd146ec8dc07173fb14991",
+      "source_body_sha256": "73cd1e6d44d4dd43446dd9c7740bdf9fccaed684d19f6963d36e552c1a00c990",
       "source_urls": [
         "https://ip-ranges.atlassian.com/"
       ],
@@ -470335,12 +470341,12 @@
       "categories": {},
       "display_name": "DigitalOcean",
       "documentation_url": "https://docs.digitalocean.com/platform/",
-      "first_observed_at": "2026-10-25T08:23:18+00:00",
-      "generated_at": "2026-10-25T08:23:18+00:00",
-      "normalized_data_sha256": "abe570fad6a0da847a94f2b2404005f72ceba0970e6f326ac044555dcf5f3a95",
+      "first_observed_at": "2026-10-27T08:57:19+00:00",
+      "generated_at": "2026-10-27T08:57:19+00:00",
+      "normalized_data_sha256": "06c924afcff8c4cb4ece97f906710ea96cf95bb41585b833853ce22bef631b82",
       "provider": {
         "counts": {
-          "ipv4": 1088,
+          "ipv4": 1087,
           "ipv6": 148
         },
         "ipv4": [
@@ -471376,7 +471382,6 @@
           "201.79.48.0/20",
           "201.79.64.0/22",
           "201.79.80.0/20",
-          "201.79.96.0/20",
           "204.48.16.0/20",
           "206.81.0.0/20",
           "206.81.16.0/20",
@@ -471594,7 +471599,7 @@
       },
       "provider_id": "digitalocean.com",
       "schema_version": "v1",
-      "source_body_sha256": "89184ae49f1e205be97e9956cc0d0ee0b3bfaf822c2eca03b858650bc869e523",
+      "source_body_sha256": "555ea3e91214347d668e9c91882e42a71d1713b5ca6b7160f9ba7a03e72e20a6",
       "source_urls": [
         "https://www.digitalocean.com/geo/google.csv"
       ],

@@ -1,5 +1,16 @@
 # Changelog - atlassian.com
 
+## 2026-10-27
+
+### 08:57:19Z
+
+- Added `18.185.129.8/32` to `bitbucket` (IPv4).
+- Added `52.29.151.190/32` to `bitbucket` (IPv4).
+- Added `52.59.89.40/32` to `bitbucket` (IPv4).
+- Added `18.185.129.8/32` (IPv4).
+- Added `52.29.151.190/32` (IPv4).
+- Added `52.59.89.40/32` (IPv4).
+
 ## 2026-10-12
 
 ### 10:46:24Z

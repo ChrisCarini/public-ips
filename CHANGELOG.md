@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-10-27
+
+### 08:57:19Z
+
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `18.185.129.8/32` to `bitbucket` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `52.29.151.190/32` to `bitbucket` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `52.59.89.40/32` to `bitbucket` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `18.185.129.8/32` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `52.29.151.190/32` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `52.59.89.40/32` (IPv4).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Removed `201.79.96.0/20` (IPv4).
+
 ## 2026-10-26
 
 ### 08:52:28Z
