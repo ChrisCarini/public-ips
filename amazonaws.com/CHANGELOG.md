@@ -1,5 +1,16 @@
 # Changelog - amazonaws.com
 
+## 2026-10-28
+
+### 09:37:57Z
+
+- Added `40.39.198.0/23` to `amazon` (IPv4).
+- Added `13.197.100.0/22` to `efs` (IPv4).
+- Added `2406:da14:1e82:a000::/56` to `efs` (IPv6).
+- Added `13.197.100.0/22` (IPv4).
+- Added `40.39.198.0/23` (IPv4).
+- Added `2406:da14:1e82:a000::/56` (IPv6).
+
 ## 2026-10-26
 
 ### 08:52:28Z

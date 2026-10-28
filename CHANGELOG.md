@@ -1,5 +1,33 @@
 # Changelog
 
+## 2026-10-28
+
+### 09:37:57Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.39.198.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `13.197.100.0/22` to `efs` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2406:da14:1e82:a000::/56` to `efs` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `13.197.100.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.39.198.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2406:da14:1e82:a000::/56` (IPv6).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Added `201.79.96.0/20` (IPv4).
+- [openai.com](./openai.com/CHANGELOG.md): Added `135.222.99.32/28` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `129.221.128.0/17` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `129.221.32.0/19` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `129.38.64.0/18` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `149.118.128.0/19` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `155.181.128.0/18` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `155.181.16.0/20` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `155.181.8.0/21` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `51.170.176.0/20` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `84.12.128.0/18` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `84.12.224.0/19` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `84.12.64.0/18` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `2603:c002:3b00::/40` (IPv6).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `2603:c002:bb00::/40` (IPv6).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `2603:c01a:e000::/36` (IPv6).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `2603:c030::/35` (IPv6).
+
 ## 2026-10-27
 
 ### 08:57:19Z
