@@ -1,5 +1,57 @@
 # Changelog
 
+## 2026-10-29
+
+### 09:56:30Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `13.251.113.64/26` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `13.251.116.0/23` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `18.143.204.64/26` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.127.48.128/26` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.234.248.192/26` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.235.202.128/26` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.238.167.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `35.90.103.192/26` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `44.234.22.128/26` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f3:f010:2900::/56` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f3:f010:2900::/56` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `13.251.113.64/26` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `13.251.116.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `18.143.204.64/26` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.127.48.128/26` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.234.248.192/26` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.235.202.128/26` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `3.238.167.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `35.90.103.192/26` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `44.234.22.128/26` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0f3:f010:2900::/56` (IPv6).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.1.228/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.80/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.81/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.82/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.83/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.84/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.85/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.86/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.43.87/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.100/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.101/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.102/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.103/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.96/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.97/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.98/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `18.97.9.99/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Removed `18.97.1.228/30` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Removed `18.97.21.0/30` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Removed `18.97.43.80/29` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Removed `18.97.9.96/29` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Removed `3.211.124.183/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Removed `3.231.139.107/32` (IPv4).
+
 ## 2026-10-28
 
 ### 09:37:57Z
