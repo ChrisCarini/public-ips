@@ -1,5 +1,34 @@
 # Changelog - amazonaws.com
 
+## 2026-10-29
+
+### 09:56:30Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Removed `13.251.113.64/26` from `amazon` (IPv4).
+- Removed `13.251.116.0/23` from `amazon` (IPv4).
+- Removed `18.143.204.64/26` from `amazon` (IPv4).
+- Removed `3.127.48.128/26` from `amazon` (IPv4).
+- Removed `3.234.248.192/26` from `amazon` (IPv4).
+- Removed `3.235.202.128/26` from `amazon` (IPv4).
+- Removed `3.238.167.0/24` from `amazon` (IPv4).
+- Removed `35.90.103.192/26` from `amazon` (IPv4).
+- Removed `44.234.22.128/26` from `amazon` (IPv4).
+- Added `2600:f0f3:f010:2900::/56` to `amazon` (IPv6).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `2600:f0f3:f010:2900::/56` to `ec2` (IPv6).
+- Added `1.178.86.0/24` (IPv4).
+- Removed `13.251.113.64/26` (IPv4).
+- Removed `13.251.116.0/23` (IPv4).
+- Removed `18.143.204.64/26` (IPv4).
+- Removed `3.127.48.128/26` (IPv4).
+- Removed `3.234.248.192/26` (IPv4).
+- Removed `3.235.202.128/26` (IPv4).
+- Removed `3.238.167.0/24` (IPv4).
+- Removed `35.90.103.192/26` (IPv4).
+- Removed `44.234.22.128/26` (IPv4).
+- Added `2600:f0f3:f010:2900::/56` (IPv6).
+
 ## 2026-10-28
 
 ### 09:37:57Z
