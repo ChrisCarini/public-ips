@@ -1,5 +1,57 @@
 # Changelog - amazonaws.com
 
+## 2026-10-31
+
+### 09:36:22Z
+
+- Added `51.0.249.0/24` to `amazon` (IPv4).
+- Added `51.74.64.0/18` to `amazon` (IPv4).
+- Added `2001:3fc1:4000::/36` to `amazon` (IPv6).
+- Added `2600:f0f0:4300::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4304::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4308::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:430c::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4310::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4314::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4318::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:431c::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4320::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4324::/46` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:5c00::/60` to `amazon` (IPv6).
+- Added `51.72.40.128/28` to `cloudfront` (IPv4).
+- Added `51.72.40.144/28` to `cloudfront` (IPv4).
+- Added `51.74.64.0/18` to `ec2` (IPv4).
+- Added `2001:3fc1:4000::/36` to `ec2` (IPv6).
+- Added `2600:f0f0:4300::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4304::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4308::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:430c::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4310::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4314::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4318::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:431c::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4320::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4324::/46` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:5c00::/60` to `ec2` (IPv6).
+- Added `63.189.210.0/23` to `efs` (IPv4).
+- Added `51.0.249.0/24` (IPv4).
+- Added `51.72.40.128/28` (IPv4).
+- Added `51.72.40.144/28` (IPv4).
+- Added `51.74.64.0/18` (IPv4).
+- Added `63.189.210.0/23` (IPv4).
+- Added `2001:3fc1:4000::/36` (IPv6).
+- Added `2600:f0f0:4300::/46` (IPv6).
+- Added `2600:f0f0:4304::/46` (IPv6).
+- Added `2600:f0f0:4308::/46` (IPv6).
+- Added `2600:f0f0:430c::/46` (IPv6).
+- Added `2600:f0f0:4310::/46` (IPv6).
+- Added `2600:f0f0:4314::/46` (IPv6).
+- Added `2600:f0f0:4318::/46` (IPv6).
+- Added `2600:f0f0:431c::/46` (IPv6).
+- Added `2600:f0f0:4320::/46` (IPv6).
+- Added `2600:f0f0:4324::/46` (IPv6).
+- Added `2606:7b40:1dd4:5c00::/60` (IPv6).
+
 ## 2026-10-30
 
 ### 09:58:45Z

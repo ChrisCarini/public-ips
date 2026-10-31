@@ -1,5 +1,42 @@
 # Changelog - cloud.google.com
 
+## 2026-10-31
+
+### 09:36:22Z
+
+- Added `179.193.160.0/19` to `google_cloud` (IPv4).
+- Added `34.183.142.0/23` to `google_cloud` (IPv4).
+- Added `34.183.160.0/23` to `google_cloud` (IPv4).
+- Added `34.183.162.0/23` to `google_cloud` (IPv4).
+- Added `34.183.164.0/22` to `google_cloud` (IPv4).
+- Added `34.183.168.0/23` to `google_cloud` (IPv4).
+- Added `34.183.170.0/24` to `google_cloud` (IPv4).
+- Added `34.183.171.0/24` to `google_cloud` (IPv4).
+- Added `34.183.172.0/23` to `google_cloud` (IPv4).
+- Added `34.184.142.0/23` to `google_cloud` (IPv4).
+- Added `34.184.160.0/23` to `google_cloud` (IPv4).
+- Added `34.184.162.0/23` to `google_cloud` (IPv4).
+- Added `34.184.164.0/22` to `google_cloud` (IPv4).
+- Added `34.184.168.0/23` to `google_cloud` (IPv4).
+- Added `34.184.170.0/24` to `google_cloud` (IPv4).
+- Added `34.184.172.0/23` to `google_cloud` (IPv4).
+- Added `179.193.160.0/19` (IPv4).
+- Added `34.183.142.0/23` (IPv4).
+- Added `34.183.160.0/23` (IPv4).
+- Added `34.183.162.0/23` (IPv4).
+- Added `34.183.164.0/22` (IPv4).
+- Added `34.183.168.0/23` (IPv4).
+- Added `34.183.170.0/24` (IPv4).
+- Added `34.183.171.0/24` (IPv4).
+- Added `34.183.172.0/23` (IPv4).
+- Added `34.184.142.0/23` (IPv4).
+- Added `34.184.160.0/23` (IPv4).
+- Added `34.184.162.0/23` (IPv4).
+- Added `34.184.164.0/22` (IPv4).
+- Added `34.184.168.0/23` (IPv4).
+- Added `34.184.170.0/24` (IPv4).
+- Added `34.184.172.0/23` (IPv4).
+
 ## 2026-10-26
 
 ### 08:52:28Z
