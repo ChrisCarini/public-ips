@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-31T09:36:22+00:00",
+  "generated_at": "2026-11-01T10:25:36+00:00",
   "providers": {
     "amazonaws.com": {
       "attribution": "AWS IP address ranges JSON",
       "categories": {
         "amazon": {
           "counts": {
-            "ipv4": 6087,
+            "ipv4": 6086,
             "ipv6": 3275
           },
           "ipv4": [
@@ -38,7 +38,6 @@
             "1.178.64.0/24",
             "1.178.65.0/24",
             "1.178.72.0/21",
-            "1.178.86.0/24",
             "1.178.88.0/24",
             "1.178.89.0/24",
             "1.178.90.0/24",
@@ -10606,7 +10605,7 @@
         },
         "ec2": {
           "counts": {
-            "ipv4": 1899,
+            "ipv4": 1898,
             "ipv6": 2579
           },
           "ipv4": [
@@ -10637,7 +10636,6 @@
             "1.178.31.0/24",
             "1.178.64.0/24",
             "1.178.65.0/24",
-            "1.178.86.0/24",
             "1.178.88.0/24",
             "1.178.89.0/24",
             "1.178.90.0/24",
@@ -18238,12 +18236,12 @@
       },
       "display_name": "Amazon AWS",
       "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-      "first_observed_at": "2026-10-31T09:36:22+00:00",
-      "generated_at": "2026-10-31T09:36:22+00:00",
-      "normalized_data_sha256": "c4e734d924ce061b02724cd8bdda61791947e4ef2a49468e06ad4946518bdf1c",
+      "first_observed_at": "2026-11-01T10:25:36+00:00",
+      "generated_at": "2026-11-01T10:25:36+00:00",
+      "normalized_data_sha256": "aa243183d2be45429cc3f9d829776f2d1b4962f2e15aac5eabc73b1c85035a62",
       "provider": {
         "counts": {
-          "ipv4": 7929,
+          "ipv4": 7928,
           "ipv6": 3521
         },
         "ipv4": [
@@ -18275,7 +18273,6 @@
           "1.178.64.0/24",
           "1.178.65.0/24",
           "1.178.72.0/21",
-          "1.178.86.0/24",
           "1.178.88.0/24",
           "1.178.89.0/24",
           "1.178.90.0/24",
@@ -29711,7 +29708,7 @@
       },
       "provider_id": "amazonaws.com",
       "schema_version": "v1",
-      "source_body_sha256": "580f6ac72251bf0b8b4b41e1b9bda4f34f8ff7425eab3e4d478e47d9125eb00a",
+      "source_body_sha256": "a728d43eaa5aa946316164499068f89aa616bbd9bd2d421ebd261f5cf2082372",
       "source_urls": [
         "https://ip-ranges.amazonaws.com/ip-ranges.json"
       ],
