@@ -1,5 +1,14 @@
 # Changelog - atlassian.com
 
+## 2026-11-02
+
+### 11:00:05Z
+
+- Added `3.208.100.243/32` to `bitbucket` (IPv4).
+- Added `44.216.119.79/32` to `bitbucket` (IPv4).
+- Added `3.208.100.243/32` (IPv4).
+- Added `44.216.119.79/32` (IPv4).
+
 ## 2026-10-27
 
 ### 08:57:19Z
