@@ -3,10 +3,11 @@
   "categories": {
     "bitbucket": {
       "counts": {
-        "ipv4": 58,
+        "ipv4": 60,
         "ipv6": 42
       },
       "ipv4": [
+        "3.208.100.243/32",
         "3.216.235.48/32",
         "3.221.151.112/32",
         "13.35.248.0/24",
@@ -37,6 +38,7 @@
         "44.199.3.254/32",
         "44.199.45.64/32",
         "44.199.127.226/32",
+        "44.216.119.79/32",
         "52.29.151.190/32",
         "52.41.219.63/32",
         "52.54.90.98/32",
@@ -1070,15 +1072,16 @@
   },
   "display_name": "Atlassian",
   "documentation_url": "https://support.atlassian.com/organization-administration/docs/ip-addresses-and-domains-for-atlassian-cloud-products/",
-  "first_observed_at": "2026-10-27T08:57:19+00:00",
-  "generated_at": "2026-10-27T08:57:19+00:00",
-  "normalized_data_sha256": "20811724ab2228e871a35673e86966e3541a3d90f608679e10e51d0bab0f292c",
+  "first_observed_at": "2026-11-02T11:00:05+00:00",
+  "generated_at": "2026-11-02T11:00:05+00:00",
+  "normalized_data_sha256": "4c2195f1732b471e1ca4298f1acd20ec728d8a484ab211b45bef52d3715b7ff2",
   "provider": {
     "counts": {
-      "ipv4": 113,
+      "ipv4": 115,
       "ipv6": 60
     },
     "ipv4": [
+      "3.208.100.243/32",
       "3.216.235.48/32",
       "3.221.151.112/32",
       "13.35.248.0/24",
@@ -1130,6 +1133,7 @@
       "44.199.3.254/32",
       "44.199.45.64/32",
       "44.199.127.226/32",
+      "44.216.119.79/32",
       "44.220.40.128/25",
       "44.220.40.160/28",
       "52.19.227.102/32",
@@ -1266,7 +1270,7 @@
   },
   "provider_id": "atlassian.com",
   "schema_version": "v1",
-  "source_body_sha256": "73cd1e6d44d4dd43446dd9c7740bdf9fccaed684d19f6963d36e552c1a00c990",
+  "source_body_sha256": "909bad02879ca09f641fcf5b699a4975eb184f96bd9132ba3e695e580c0fabd4",
   "source_urls": [
     "https://ip-ranges.atlassian.com/"
   ],

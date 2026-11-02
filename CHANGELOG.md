@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026-11-02
+
+### 11:00:05Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.1.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.2.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.3.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.1.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.2.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.3.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.1.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.2.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.3.0/24` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `3.208.100.243/32` to `bitbucket` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `44.216.119.79/32` to `bitbucket` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `3.208.100.243/32` (IPv4).
+- [atlassian.com](./atlassian.com/CHANGELOG.md): Added `44.216.119.79/32` (IPv4).
+
 ## 2026-11-01
 
 ### 10:25:36Z
