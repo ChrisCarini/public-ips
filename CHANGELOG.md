@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-03
+
+### 10:49:43Z
+
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `46.62.141.44/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `2a01:4f9:c014:f18e::1/128` (IPv6).
+- [vultr.com](./vultr.com/CHANGELOG.md): Removed `68.232.182.0/24` (IPv4).
+
 ## 2026-11-02
 
 ### 11:00:05Z
