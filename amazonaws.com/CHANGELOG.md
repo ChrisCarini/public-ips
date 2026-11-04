@@ -1,5 +1,40 @@
 # Changelog - amazonaws.com
 
+## 2026-11-04
+
+### 10:53:04Z
+
+- Added `13.217.76.0/23` to `amazon` (IPv4).
+- Added `173.83.239.0/24` to `amazon` (IPv4).
+- Added `173.83.240.0/24` to `amazon` (IPv4).
+- Added `32.201.88.0/23` to `amazon` (IPv4).
+- Added `75.47.128.0/18` to `amazon` (IPv4).
+- Added `76.197.128.0/18` to `amazon` (IPv4).
+- Added `2600:1f15:2000::/36` to `amazon` (IPv6).
+- Added `2600:1f19:2000::/36` to `amazon` (IPv6).
+- Added `2600:f0f0:9::/48` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:b00::/56` to `amazon` (IPv6).
+- Added `2600:f0f0:9::/48` to `cloudfront` (IPv6).
+- Added `173.83.239.0/24` to `ec2` (IPv4).
+- Added `173.83.240.0/24` to `ec2` (IPv4).
+- Added `75.47.128.0/18` to `ec2` (IPv4).
+- Added `76.197.128.0/18` to `ec2` (IPv4).
+- Removed `35.54.16.0/20` from `ec2` (IPv4).
+- Added `2600:1f15:2000::/36` to `ec2` (IPv6).
+- Added `2600:1f19:2000::/36` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:b00::/56` to `ec2` (IPv6).
+- Added `35.54.16.0/20` to `globalaccelerator` (IPv4).
+- Added `13.217.76.0/23` (IPv4).
+- Added `173.83.239.0/24` (IPv4).
+- Added `173.83.240.0/24` (IPv4).
+- Added `32.201.88.0/23` (IPv4).
+- Added `75.47.128.0/18` (IPv4).
+- Added `76.197.128.0/18` (IPv4).
+- Added `2600:1f15:2000::/36` (IPv6).
+- Added `2600:1f19:2000::/36` (IPv6).
+- Added `2600:f0f0:9::/48` (IPv6).
+- Added `2600:f0f3:f010:b00::/56` (IPv6).
+
 ## 2026-11-02
 
 ### 11:00:05Z
