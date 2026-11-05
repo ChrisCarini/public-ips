@@ -3,7 +3,7 @@
   "categories": {
     "amazon": {
       "counts": {
-        "ipv4": 6096,
+        "ipv4": 6100,
         "ipv6": 3279
       },
       "ipv4": [
@@ -4743,6 +4743,10 @@
         "71.136.64.0/18",
         "71.137.0.0/18",
         "71.137.18.0/23",
+        "71.137.22.0/23",
+        "71.137.24.0/23",
+        "71.137.26.0/23",
+        "71.137.28.0/23",
         "71.152.0.0/17",
         "72.21.192.0/19",
         "72.41.0.0/20",
@@ -18259,12 +18263,12 @@
   },
   "display_name": "Amazon AWS",
   "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-  "first_observed_at": "2026-11-04T10:53:04+00:00",
-  "generated_at": "2026-11-04T10:53:04+00:00",
-  "normalized_data_sha256": "db4474f2e5af6e8d34b1cf960d72f2a4c6193bd52c3a625783c675529cb4e682",
+  "first_observed_at": "2026-11-05T10:51:45+00:00",
+  "generated_at": "2026-11-05T10:51:45+00:00",
+  "normalized_data_sha256": "f1e697402bc5c4fc79952a6a67b697cc0066979263ae301bbd04d1975bbcd693",
   "provider": {
     "counts": {
-      "ipv4": 7938,
+      "ipv4": 7942,
       "ipv6": 3525
     },
     "ipv4": [
@@ -24685,6 +24689,10 @@
       "71.136.64.0/18",
       "71.137.0.0/18",
       "71.137.18.0/23",
+      "71.137.22.0/23",
+      "71.137.24.0/23",
+      "71.137.26.0/23",
+      "71.137.28.0/23",
       "71.152.0.0/17",
       "72.21.192.0/19",
       "72.41.0.0/20",
@@ -29745,7 +29753,7 @@
   },
   "provider_id": "amazonaws.com",
   "schema_version": "v1",
-  "source_body_sha256": "a5c1ee7122236089099a4d3c311a9040edaad558619b1fafedd8dd8162017b66",
+  "source_body_sha256": "78555629fa88e7a44ff419acca1836e0ca19f3e7934bcc60bd6129f29baaac4d",
   "source_urls": [
     "https://ip-ranges.amazonaws.com/ip-ranges.json"
   ],
