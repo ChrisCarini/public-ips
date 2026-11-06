@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "Bing (BingBot)",
   "documentation_url": "https://www.bing.com/webmasters/help/Verify-Bingbot-2195837f",
-  "first_observed_at": "2026-09-14T00:42:22+00:00",
-  "generated_at": "2026-09-14T00:42:22+00:00",
-  "normalized_data_sha256": "aabe78cfaa2315b43e4295d4a760be20fe897e928ae7a44277ec30aa544537de",
+  "first_observed_at": "2026-11-06T10:50:16+00:00",
+  "generated_at": "2026-11-06T10:50:16+00:00",
+  "normalized_data_sha256": "e724c37a194cd08c37734e139fff138e3d93344dc65f94a21ab171320eede2a3",
   "provider": {
     "counts": {
-      "ipv4": 28,
+      "ipv4": 29,
       "ipv6": 0
     },
     "ipv4": [
@@ -32,6 +32,7 @@
       "40.79.131.208/28",
       "40.79.186.176/28",
       "51.105.67.0/28",
+      "52.130.224.112/28",
       "52.167.144.0/24",
       "52.231.148.0/28",
       "65.55.210.0/24",
@@ -53,7 +54,7 @@
   },
   "provider_id": "bing.com",
   "schema_version": "v1",
-  "source_body_sha256": "5aabb1b979b7fd62a7785626dd0ec1d4c041609169e9662e001545b8f6c9f391",
+  "source_body_sha256": "24feb36abaf2e8416b6449078f96b7ec7be1da6c256b6e5608e86d5726357abc",
   "source_urls": [
     "https://www.bing.com/toolbox/bingbot.json"
   ],

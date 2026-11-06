@@ -1,5 +1,83 @@
 # Changelog
 
+## 2026-11-06
+
+### 10:50:16Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:9000::/52` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca00:5000::/52` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1b0c:400::/56` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1b0f:8200::/56` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2a01:578:0:7b00::/56` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `13.166.0.0/15` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:9000::/52` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca00:5000::/52` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1b0c:400::/56` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1b0f:8200::/56` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c900:9000::/52` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:ca00:5000::/52` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1b0c:400::/56` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2606:7b40:1b0f:8200::/56` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2a01:578:0:7b00::/56` (IPv6).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.246/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.247/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.248/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.249/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.250/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.251/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.252/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.253/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.138.254/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.139.100/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.139.99/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.43/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.44/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.45/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.46/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.47/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.48/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.49/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.50/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.53/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.54/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.55/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.56/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.57/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.140.58/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.141.144/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.141.145/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.142.145/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.142.156/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.142.67/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.143.23/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.143.24/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.143.25/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.143.45/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.144.160/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.144.161/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.144.26/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.144.29/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.144.97/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.145.12/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.145.19/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.145.2/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.145.46/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.145.5/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.145.7/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Removed `104.28.145.9/32` (IPv4).
+- [bing.com](./bing.com/CHANGELOG.md): Added `52.130.224.112/28` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `172.236.162.33/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `172.236.162.40/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `172.236.162.42/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `68.183.90.120/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `2600:3c16::2000:4aff:febf:b61/128` (IPv6).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `2600:3c16::2000:74ff:fe05:5fa3/128` (IPv6).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Added `2600:3c16::2000:80ff:fef0:6f28/128` (IPv6).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `2400:6180:100:d0::982:d001/128` (IPv6).
+
 ## 2026-11-05
 
 ### 10:51:45Z

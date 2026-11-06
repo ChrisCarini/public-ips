@@ -1,5 +1,28 @@
 # Changelog - amazonaws.com
 
+## 2026-11-06
+
+### 10:50:16Z
+
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Added `2600:f0fb:c900:9000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:ca00:5000::/52` to `amazon` (IPv6).
+- Added `2606:7b40:1b0c:400::/56` to `amazon` (IPv6).
+- Added `2606:7b40:1b0f:8200::/56` to `amazon` (IPv6).
+- Added `2a01:578:0:7b00::/56` to `amazon` (IPv6).
+- Added `13.166.0.0/15` to `ec2` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `2600:f0fb:c900:9000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:ca00:5000::/52` to `ec2` (IPv6).
+- Added `2606:7b40:1b0c:400::/56` to `ec2` (IPv6).
+- Added `2606:7b40:1b0f:8200::/56` to `ec2` (IPv6).
+- Removed `1.178.86.0/24` (IPv4).
+- Added `2600:f0fb:c900:9000::/52` (IPv6).
+- Added `2600:f0fb:ca00:5000::/52` (IPv6).
+- Added `2606:7b40:1b0c:400::/56` (IPv6).
+- Added `2606:7b40:1b0f:8200::/56` (IPv6).
+- Added `2a01:578:0:7b00::/56` (IPv6).
+
 ## 2026-11-05
 
 ### 10:51:45Z
