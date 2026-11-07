@@ -1,5 +1,134 @@
 # Changelog - github.com
 
+## 2026-11-07
+
+### 10:03:42Z
+
+- Added `135.235.149.144/28` to `copilot` (IPv4).
+- Added `172.130.153.16/28` to `copilot` (IPv4).
+- Added `172.130.201.80/28` to `copilot` (IPv4).
+- Added `172.194.155.208/28` to `copilot` (IPv4).
+- Added `172.194.218.192/28` to `copilot` (IPv4).
+- Added `20.169.109.160/28` to `copilot` (IPv4).
+- Added `20.172.24.160/28` to `copilot` (IPv4).
+- Added `20.27.163.208/28` to `copilot` (IPv4).
+- Added `4.149.173.80/28` to `copilot` (IPv4).
+- Added `4.186.157.192/28` to `copilot` (IPv4).
+- Added `4.187.247.160/28` to `copilot` (IPv4).
+- Added `4.195.217.80/28` to `copilot` (IPv4).
+- Added `4.196.32.112/28` to `copilot` (IPv4).
+- Added `4.207.215.240/28` to `copilot` (IPv4).
+- Added `4.225.187.240/28` to `copilot` (IPv4).
+- Added `4.236.95.112/28` to `copilot` (IPv4).
+- Added `40.121.125.128/28` to `copilot` (IPv4).
+- Added `40.121.125.144/28` to `copilot` (IPv4).
+- Added `40.121.125.160/28` to `copilot` (IPv4).
+- Added `40.121.125.176/28` to `copilot` (IPv4).
+- Added `40.121.125.192/28` to `copilot` (IPv4).
+- Added `40.121.125.208/28` to `copilot` (IPv4).
+- Added `40.121.125.32/28` to `copilot` (IPv4).
+- Added `48.200.82.112/28` to `copilot` (IPv4).
+- Added `48.202.10.80/28` to `copilot` (IPv4).
+- Added `135.235.149.144/28` to `git` (IPv4).
+- Added `172.130.153.16/28` to `git` (IPv4).
+- Added `172.130.201.80/28` to `git` (IPv4).
+- Added `172.194.155.208/28` to `git` (IPv4).
+- Added `172.194.218.192/28` to `git` (IPv4).
+- Added `20.169.109.160/28` to `git` (IPv4).
+- Added `20.172.24.160/28` to `git` (IPv4).
+- Added `20.27.163.208/28` to `git` (IPv4).
+- Added `4.149.173.80/28` to `git` (IPv4).
+- Added `4.186.157.192/28` to `git` (IPv4).
+- Added `4.187.247.160/28` to `git` (IPv4).
+- Added `4.195.217.80/28` to `git` (IPv4).
+- Added `4.196.32.112/28` to `git` (IPv4).
+- Added `4.225.187.240/28` to `git` (IPv4).
+- Added `4.236.95.112/28` to `git` (IPv4).
+- Added `40.121.125.128/28` to `git` (IPv4).
+- Added `40.121.125.144/28` to `git` (IPv4).
+- Added `40.121.125.160/28` to `git` (IPv4).
+- Added `40.121.125.176/28` to `git` (IPv4).
+- Added `40.121.125.192/28` to `git` (IPv4).
+- Added `40.121.125.208/28` to `git` (IPv4).
+- Added `40.121.125.32/28` to `git` (IPv4).
+- Added `48.200.82.112/28` to `git` (IPv4).
+- Added `48.202.10.80/28` to `git` (IPv4).
+- Added `4.207.215.240/28` to `packages` (IPv4).
+- Added `135.235.149.144/28` to `shared_ingress` (IPv4).
+- Added `172.130.153.16/28` to `shared_ingress` (IPv4).
+- Added `172.130.201.80/28` to `shared_ingress` (IPv4).
+- Added `172.194.155.208/28` to `shared_ingress` (IPv4).
+- Added `172.194.218.192/28` to `shared_ingress` (IPv4).
+- Added `20.169.109.160/28` to `shared_ingress` (IPv4).
+- Added `20.172.24.160/28` to `shared_ingress` (IPv4).
+- Added `20.27.163.208/28` to `shared_ingress` (IPv4).
+- Added `4.149.173.80/28` to `shared_ingress` (IPv4).
+- Added `4.186.157.192/28` to `shared_ingress` (IPv4).
+- Added `4.187.247.160/28` to `shared_ingress` (IPv4).
+- Added `4.195.217.80/28` to `shared_ingress` (IPv4).
+- Added `4.196.32.112/28` to `shared_ingress` (IPv4).
+- Added `4.207.215.240/28` to `shared_ingress` (IPv4).
+- Added `4.225.187.240/28` to `shared_ingress` (IPv4).
+- Added `4.236.95.112/28` to `shared_ingress` (IPv4).
+- Added `40.121.125.128/28` to `shared_ingress` (IPv4).
+- Added `40.121.125.144/28` to `shared_ingress` (IPv4).
+- Added `40.121.125.160/28` to `shared_ingress` (IPv4).
+- Added `40.121.125.176/28` to `shared_ingress` (IPv4).
+- Added `40.121.125.192/28` to `shared_ingress` (IPv4).
+- Added `40.121.125.208/28` to `shared_ingress` (IPv4).
+- Added `40.121.125.32/28` to `shared_ingress` (IPv4).
+- Added `48.200.82.112/28` to `shared_ingress` (IPv4).
+- Added `48.202.10.80/28` to `shared_ingress` (IPv4).
+- Added `135.235.149.144/28` to `web` (IPv4).
+- Added `172.130.153.16/28` to `web` (IPv4).
+- Added `172.130.201.80/28` to `web` (IPv4).
+- Added `172.194.155.208/28` to `web` (IPv4).
+- Added `172.194.218.192/28` to `web` (IPv4).
+- Added `20.169.109.160/28` to `web` (IPv4).
+- Added `20.172.24.160/28` to `web` (IPv4).
+- Added `20.27.163.208/28` to `web` (IPv4).
+- Added `4.149.173.80/28` to `web` (IPv4).
+- Added `4.186.157.192/28` to `web` (IPv4).
+- Added `4.187.247.160/28` to `web` (IPv4).
+- Added `4.195.217.80/28` to `web` (IPv4).
+- Added `4.196.32.112/28` to `web` (IPv4).
+- Added `4.225.187.240/28` to `web` (IPv4).
+- Added `4.236.95.112/28` to `web` (IPv4).
+- Added `40.121.125.128/28` to `web` (IPv4).
+- Added `40.121.125.144/28` to `web` (IPv4).
+- Added `40.121.125.160/28` to `web` (IPv4).
+- Added `40.121.125.176/28` to `web` (IPv4).
+- Added `40.121.125.192/28` to `web` (IPv4).
+- Added `40.121.125.208/28` to `web` (IPv4).
+- Added `40.121.125.32/28` to `web` (IPv4).
+- Added `48.200.82.112/28` to `web` (IPv4).
+- Added `48.202.10.80/28` to `web` (IPv4).
+- Added `135.235.149.144/28` (IPv4).
+- Added `172.130.153.16/28` (IPv4).
+- Added `172.130.201.80/28` (IPv4).
+- Added `172.194.155.208/28` (IPv4).
+- Added `172.194.218.192/28` (IPv4).
+- Added `20.169.109.160/28` (IPv4).
+- Added `20.172.24.160/28` (IPv4).
+- Added `20.27.163.208/28` (IPv4).
+- Added `4.149.173.80/28` (IPv4).
+- Added `4.186.157.192/28` (IPv4).
+- Added `4.187.247.160/28` (IPv4).
+- Added `4.195.217.80/28` (IPv4).
+- Added `4.196.32.112/28` (IPv4).
+- Added `4.207.215.240/28` (IPv4).
+- Added `4.225.187.240/28` (IPv4).
+- Added `4.236.95.112/28` (IPv4).
+- Added `40.121.125.128/28` (IPv4).
+- Added `40.121.125.144/28` (IPv4).
+- Added `40.121.125.160/28` (IPv4).
+- Added `40.121.125.176/28` (IPv4).
+- Added `40.121.125.192/28` (IPv4).
+- Added `40.121.125.208/28` (IPv4).
+- Added `40.121.125.32/28` (IPv4).
+- Added `48.200.82.112/28` (IPv4).
+- Added `48.202.10.80/28` (IPv4).
+
 ## 2026-10-31
 
 ### 09:36:22Z
