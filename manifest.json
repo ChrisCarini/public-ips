@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-07T10:03:42+00:00",
+  "generated_at": "2026-11-08T10:17:57+00:00",
   "providers": {
     "amazonaws.com": {
       "attribution": "AWS IP address ranges JSON",
       "categories": {
         "amazon": {
           "counts": {
-            "ipv4": 6102,
+            "ipv4": 6103,
             "ipv6": 3287
           },
           "ipv4": [
@@ -38,6 +38,7 @@
             "1.178.64.0/24",
             "1.178.65.0/24",
             "1.178.72.0/21",
+            "1.178.86.0/24",
             "1.178.88.0/24",
             "1.178.89.0/24",
             "1.178.90.0/24",
@@ -10634,7 +10635,7 @@
         },
         "ec2": {
           "counts": {
-            "ipv4": 1906,
+            "ipv4": 1907,
             "ipv6": 2588
           },
           "ipv4": [
@@ -10665,6 +10666,7 @@
             "1.178.31.0/24",
             "1.178.64.0/24",
             "1.178.65.0/24",
+            "1.178.86.0/24",
             "1.178.88.0/24",
             "1.178.89.0/24",
             "1.178.90.0/24",
@@ -18283,12 +18285,12 @@
       },
       "display_name": "Amazon AWS",
       "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-      "first_observed_at": "2026-11-07T10:03:42+00:00",
-      "generated_at": "2026-11-07T10:03:42+00:00",
-      "normalized_data_sha256": "5f9a48091809dc49f1534c2f9580e6b3ee1ac1b6af1a942a32252e8ee71a44b1",
+      "first_observed_at": "2026-11-08T10:17:57+00:00",
+      "generated_at": "2026-11-08T10:17:57+00:00",
+      "normalized_data_sha256": "c048047cd5a5f62ea7af60eeb9875c7dde8f3df9b04d67cba9760491bf548227",
       "provider": {
         "counts": {
-          "ipv4": 7944,
+          "ipv4": 7945,
           "ipv6": 3533
         },
         "ipv4": [
@@ -18320,6 +18322,7 @@
           "1.178.64.0/24",
           "1.178.65.0/24",
           "1.178.72.0/21",
+          "1.178.86.0/24",
           "1.178.88.0/24",
           "1.178.89.0/24",
           "1.178.90.0/24",
@@ -29783,7 +29786,7 @@
       },
       "provider_id": "amazonaws.com",
       "schema_version": "v1",
-      "source_body_sha256": "bebcf4a11560e41f4b616268bf2676ad5dce6e7050c0508a82f49e4bb98482b9",
+      "source_body_sha256": "219ba42a5b5bc95317a7d02f9548fffb386057220f775c30ab2aea854bb6681d",
       "source_urls": [
         "https://ip-ranges.amazonaws.com/ip-ranges.json"
       ],
@@ -459858,12 +459861,12 @@
       "categories": {},
       "display_name": "DigitalOcean",
       "documentation_url": "https://docs.digitalocean.com/platform/",
-      "first_observed_at": "2026-11-04T10:53:04+00:00",
-      "generated_at": "2026-11-04T10:53:04+00:00",
-      "normalized_data_sha256": "7871ab1b6770b0f204bc6149ed5b6d9e037db5ce4a7e7b8aa184bff0445cbd08",
+      "first_observed_at": "2026-11-08T10:17:57+00:00",
+      "generated_at": "2026-11-08T10:17:57+00:00",
+      "normalized_data_sha256": "8f67bccb2da91edec014ce1831aad2c187e67de046f566f1c5f32c8e97fa867b",
       "provider": {
         "counts": {
-          "ipv4": 1090,
+          "ipv4": 1091,
           "ipv6": 148
         },
         "ipv4": [
@@ -460898,6 +460901,7 @@
           "201.79.32.0/20",
           "201.79.48.0/20",
           "201.79.64.0/22",
+          "201.79.68.0/22",
           "201.79.80.0/20",
           "201.79.96.0/20",
           "201.79.112.0/20",
@@ -461119,7 +461123,7 @@
       },
       "provider_id": "digitalocean.com",
       "schema_version": "v1",
-      "source_body_sha256": "3f097068b376ca864318545b6fd5f963dda6a63f94babec899e866cea0144b38",
+      "source_body_sha256": "0a00742f01f6d8fe7bdde7a601a7c2162b72e5ccb8cd0cd025b0f0da4c581d28",
       "source_urls": [
         "https://www.digitalocean.com/geo/google.csv"
       ],
