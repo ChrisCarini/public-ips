@@ -1,5 +1,14 @@
 # Changelog
 
+## 2026-11-08
+
+### 10:17:57Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` (IPv4).
+- [digitalocean.com](./digitalocean.com/CHANGELOG.md): Added `201.79.68.0/22` (IPv4).
+
 ## 2026-11-07
 
 ### 10:03:42Z
