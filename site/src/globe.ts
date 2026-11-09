@@ -2,13 +2,17 @@ import { geoDistance, geoGraticule10, geoOrthographic, geoPath } from 'd3-geo';
 import { feature } from 'topojson-client';
 import type { Topology, GeometryCollection } from 'topojson-specification';
 import landData from 'world-atlas/land-110m.json';
+import { createConnection } from './connection';
+import type { Connection } from './connection';
 import type { Marker } from './data';
+import type { Coordinates } from './visitor-location';
 
 const land = feature(
   landData as unknown as Topology,
   landData.objects.land as GeometryCollection,
 );
 const graticule = geoGraticule10();
+const connectionColor = '#ffd27a';
 
 export class Globe {
   private context: CanvasRenderingContext2D;
@@ -16,6 +20,8 @@ export class Globe {
   private markers: Marker[] = [];
   private visible: { marker: Marker; x: number; y: number }[] = [];
   private selected = '';
+  private visitorLocation: Coordinates | undefined;
+  private connection: Connection | undefined;
   private width = 0;
   private height = 0;
   private zoom = 1;
@@ -85,19 +91,60 @@ export class Globe {
 
   setMarkers(markers: Marker[]): void {
     this.markers = markers;
+    this.updateConnection();
     this.drawSoon();
   }
 
   select(id = ''): void {
     this.selected = id;
+    this.updateConnection();
     this.drawSoon();
   }
 
+  setVisitorLocation(location?: Coordinates): void {
+    const hadLocation = Boolean(this.visitorLocation);
+    this.visitorLocation = location;
+    this.updateConnection();
+    if (location) {
+      const selected = this.markers.find((marker) => marker.id === this.selected);
+      if (selected) this.focus(selected);
+      else {
+        this.zoom = 1;
+        this.resize();
+        this.focusCoordinates([location.longitude, location.latitude]);
+      }
+    } else if (hadLocation) {
+      cancelAnimationFrame(this.animation);
+      const selected = this.markers.find((marker) => marker.id === this.selected);
+      this.projection.rotate(selected
+        ? [-selected.location.longitude, -selected.location.latitude] : [-15, -15]);
+      this.zoom = 1;
+      this.resize();
+    }
+    this.drawSoon();
+  }
+
+  private updateConnection(): void {
+    this.connection = undefined;
+    if (this.visitorLocation && this.selected) {
+      const selected = this.markers.find((marker) => marker.id === this.selected);
+      if (selected) this.connection = createConnection(this.visitorLocation, selected.location);
+    }
+  }
+
   focus(marker: Marker): void {
+    this.select(marker.id);
+    if (this.connection) {
+      this.zoom = 1;
+      this.resize();
+    }
+    this.focusCoordinates(this.connection?.focus ?? [marker.location.longitude, marker.location.latitude]);
+  }
+
+  private focusCoordinates([longitude, latitude]: [number, number]): void {
     cancelAnimationFrame(this.animation);
-    this.selected = marker.id;
     const start = this.projection.rotate();
-    const target = [-marker.location.longitude, -marker.location.latitude];
+    const target = [-longitude, -latitude];
     const delta = ((target[0] - start[0] + 540) % 360) - 180;
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const started = performance.now();
@@ -184,6 +231,14 @@ export class Globe {
     ctx.fillStyle = '#31586a'; ctx.fill();
     ctx.strokeStyle = '#639092'; ctx.lineWidth = 0.5; ctx.stroke();
 
+    if (this.connection) {
+      ctx.save();
+      ctx.beginPath(); path(this.connection.path);
+      ctx.strokeStyle = connectionColor; ctx.lineWidth = 2.5;
+      ctx.setLineDash([6, 4]); ctx.stroke();
+      ctx.restore();
+    }
+
     this.visible = [];
     const rotation = this.projection.rotate();
     const center: [number, number] = [-rotation[0], -rotation[1]];
@@ -205,7 +260,8 @@ export class Globe {
         const x = projected[0] + Math.cos(angle) * offset;
         const y = projected[1] + Math.sin(angle) * offset;
         const radius = this.projection.scale();
-        if (Math.hypot(x - this.width / 2, y - this.height / 2) > radius - 4) return;
+        if (Math.hypot(x - this.width / 2, y - this.height / 2) > radius - 4 &&
+            (!this.connection || marker.id !== this.selected)) return;
         if (x < -16 || y < -16 || x > this.width + 16 || y > this.height + 16) return;
         this.visible.push({ marker, x, y });
         ctx.beginPath(); ctx.arc(x, y, 3.5, 0, Math.PI * 2);
@@ -215,10 +271,31 @@ export class Globe {
     }
     const selected = this.visible.find(({ marker }) => marker.id === this.selected);
     if (selected) {
+      if (this.connection) {
+        const endpoint = this.projection([
+          selected.marker.location.longitude, selected.marker.location.latitude,
+        ]);
+        if (endpoint) {
+          ctx.beginPath(); ctx.moveTo(...endpoint); ctx.lineTo(selected.x, selected.y);
+          ctx.strokeStyle = connectionColor; ctx.lineWidth = 2.5; ctx.stroke();
+        }
+      }
       ctx.beginPath(); ctx.arc(selected.x, selected.y, 9, 0, Math.PI * 2);
       ctx.strokeStyle = '#fff'; ctx.lineWidth = 2.5; ctx.stroke();
       ctx.beginPath(); ctx.arc(selected.x, selected.y, 4, 0, Math.PI * 2);
       ctx.fillStyle = this.colors.get(selected.marker.provider)!; ctx.fill();
+    }
+    if (this.visitorLocation) {
+      const point: [number, number] = [this.visitorLocation.longitude, this.visitorLocation.latitude];
+      const projected = this.projection(point);
+      if (projected && geoDistance(point, center) < Math.PI / 2) {
+        const [x, y] = projected;
+        ctx.beginPath();
+        ctx.moveTo(x, y - 7); ctx.lineTo(x + 7, y);
+        ctx.lineTo(x, y + 7); ctx.lineTo(x - 7, y); ctx.closePath();
+        ctx.fillStyle = connectionColor; ctx.fill();
+        ctx.strokeStyle = '#071827'; ctx.lineWidth = 1.5; ctx.stroke();
+      }
     }
     ctx.restore();
   }

@@ -28,6 +28,7 @@ button, select, input {
 }
 button { cursor: pointer; }
 button:hover { background: #264360; border-color: #83daff; }
+button:disabled { cursor: not-allowed; opacity: .6; }
 :focus-visible { outline: 3px solid #a2e5ff; outline-offset: 4px; }
 input, select { width: 100%; min-width: 0; }
 label { display: block; font-size: .9rem; font-weight: 600; }
@@ -44,6 +45,11 @@ li { margin: .5rem 0; overflow-wrap: anywhere; }
 .badge { font-size: .75rem; border: 1px solid #416079; border-radius: 2rem; padding: .25rem .6rem; white-space: nowrap; }
 .filters { display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; gap: .8rem; align-items: end; }
 #globe-status { color: #b2c8da; font-size: .9rem; min-height: 1.5rem; }
+.location-connection { margin: 1rem 0; padding: .8rem 1rem; border: 1px solid #2c455c; border-radius: .8rem; background: #101f30; }
+.location-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
+#location-status, #visitor-legend { font-size: .85rem; }
+#visitor-legend { display: inline-flex; align-items: center; gap: .6rem; }
+.visitor-swatch { display: inline-block; width: .65rem; height: .65rem; background: #ffd27a; transform: rotate(45deg); }
 .explorer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, min(42vw, 640px)); gap: 1rem; align-items: start; }
 .globe-stage { position: relative; min-width: 0; border: 1px solid #253e54; border-radius: 1rem; background: radial-gradient(ellipse at 50% 42%, #172c43, #0b1827 70%); overflow: hidden; }
 #globe { width: 100%; height: auto; aspect-ratio: 1.12; display: block; touch-action: none; cursor: grab; }

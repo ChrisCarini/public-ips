@@ -184,6 +184,32 @@ can span multiple locations.
   appear in search results. Coverage counts show ranges with at least one mapped
   segment, not the percentage of individual addresses geolocated.
 
+### Optional connection from your location
+
+Select **Show connection from my location** to request browser location permission.
+After permission is granted, a gold diamond marks **You (approximate)** and a
+flight-style geographic arc connects you to the selected mapped location. Single-IP
+searches, including `?q=` links, reuse the same connection behavior. Location is
+never requested automatically, even if the browser previously granted permission.
+CIDR searches remain list-only; select a mapped location or search a single IP to
+choose a destination rather than assigning a whole subnet an arbitrary location.
+
+The site rounds latitude and longitude to **0.1 degree** before keeping them in
+page memory. It does not upload coordinates, put them in URLs, log them, or write
+them to cookies or browser storage. **Forget my location**, leaving the page, or
+reloading clears the location and connection. Cancelling a pending request ignores
+any later result; the browser may still display its own permission prompt.
+This uses a one-time browser reading, not continuous location tracking or an
+IP-geolocation API. The browser or operating system may use its own external
+location services, and the original reading can be more precise than what this
+site retains. HTTPS (or localhost) and browser support are required; permission
+denials, timeouts, and unavailable locations leave normal IP search usable.
+
+When focusing a connection, the globe zooms out and frames both endpoints where
+possible. Routes follow the globe and are clipped on its far side; drag to explore
+them. The arc is a geographic illustration, **not an observed network route**.
+Both endpoints are approximate, and an anycast IP may operate in many locations.
+
 ### Geographic data and local preview
 
 Every Pages deployment regenerates **all configured providers**, regardless of which

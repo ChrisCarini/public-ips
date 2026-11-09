@@ -1,6 +1,8 @@
 import './styles.css';
 import ipaddr from 'ipaddr.js';
 import { Globe } from './globe';
+import { VisitorLocation } from './visitor-location';
+import type { VisitorLocationState } from './visitor-location';
 import {
   buildMarkers, locateAddress, continents, decodeSearchIndex, groupSearchEntries, listFileUrl,
   sortBySpecificity,
@@ -37,9 +39,19 @@ app.innerHTML = `
       <button id="clear-filters" type="button">Clear filters</button>
     </div>
     <p id="globe-status" role="status">Loading geographic data…</p>
+    <div class="location-connection">
+      <div class="location-actions">
+        <button id="locate-me" type="button" aria-describedby="location-privacy" disabled>Show connection from my location</button>
+        <button id="forget-location" type="button" hidden>Forget my location</button>
+        <span id="visitor-legend" hidden><span class="visitor-swatch"></span>You (approximate)</span>
+      </div>
+      <p id="location-status" role="status">Location sharing is off.</p>
+      <p id="location-privacy" class="muted">Optional browser permission. Coordinates are rounded to 0.1° and kept only
+        in this page's memory, never uploaded by this site. Your browser or operating system may use a location service.</p>
+    </div>
     <div class="explorer">
       <div class="globe-stage">
-        <canvas id="globe" tabindex="0" role="img" aria-label="Interactive globe of provider IP ranges" aria-describedby="globe-help">
+        <canvas id="globe" tabindex="0" role="img" aria-label="Interactive globe of provider IP ranges" aria-describedby="globe-help location-status">
           Use the mapped locations list below to explore the same locations without the globe.
         </canvas>
         <div class="globe-controls" aria-label="Globe controls">
@@ -87,6 +99,13 @@ const details = document.querySelector<HTMLElement>('#details')!;
 const globeStage = document.querySelector<HTMLElement>('.globe-stage')!;
 const locations = document.querySelector<HTMLUListElement>('#locations')!;
 const moreLocations = document.querySelector<HTMLButtonElement>('#more-locations')!;
+const locateMe = document.querySelector<HTMLButtonElement>('#locate-me')!;
+const forgetLocation = document.querySelector<HTMLButtonElement>('#forget-location')!;
+const locationStatus = document.querySelector<HTMLParagraphElement>('#location-status')!;
+const visitorLegend = document.querySelector<HTMLSpanElement>('#visitor-legend')!;
+const locationUnavailable = !window.isSecureContext
+  ? 'Browser location requires HTTPS or localhost. IP search still works.'
+  : !navigator.geolocation ? 'Your browser does not support location sharing. IP search still works.' : '';
 const colors = new Map<string, string>();
 const palette = ['#59d8ff', '#ffb454', '#d8a0ff', '#6ee7ac', '#ff809c', '#fff08a', '#8ba9ff',
   '#ff946c', '#b4e478', '#f4a5e0', '#65e3d3', '#dfc7a3', '#b5c9ed'];
@@ -96,6 +115,8 @@ let geoIndex: GeoIndex | undefined;
 let markers: Marker[] = [];
 let locationLimit = 50;
 let searchVersion = 0;
+let selectedMarker: Marker | undefined;
+let locationState: VisitorLocationState = { status: 'off' };
 
 for (const [code, name] of Object.entries(continents)) {
   continentFilter.add(new Option(name, code));
@@ -138,6 +159,41 @@ const revealGlobe = (): void => {
 
 const locationName = (marker: Marker): string =>
   [marker.location.city, marker.location.country, continents[marker.location.continent]].filter(Boolean).join(', ');
+
+const renderLocationControls = (): void => {
+  const pending = locationState.status === 'pending';
+  const ready = locationState.status === 'ready';
+  locateMe.disabled = Boolean(locationUnavailable) || !globe || !geoIndex || pending;
+  locateMe.hidden = ready;
+  locateMe.textContent = pending ? 'Finding your location...' : 'Show connection from my location';
+  forgetLocation.hidden = !pending && !ready;
+  forgetLocation.textContent = pending ? 'Cancel location request' : 'Forget my location';
+  visitorLegend.hidden = !ready;
+  if (locationUnavailable) locationStatus.textContent = locationUnavailable;
+  else if (pending) locationStatus.textContent = 'Waiting for your browser to provide a location. You may need to grant permission.';
+  else if (locationState.status === 'error') locationStatus.textContent = locationState.message;
+  else if (ready) {
+    locationStatus.textContent = selectedMarker
+      ? `Connection to ${selectedMarker.provider} — ${locationName(selectedMarker)}. This is not a measured network route; the globe's far side is hidden.`
+      : 'Your approximate location is enabled. Search a single IP or select a mapped location to draw a connection.';
+  } else {
+    locationStatus.textContent = geoIndex
+      ? 'Location sharing is off.'
+      : 'Location connections require a loaded globe. IP search is still available.';
+  }
+};
+
+const selectMarker = (marker?: Marker): void => {
+  selectedMarker = marker;
+  globe?.select(marker?.id);
+  renderLocationControls();
+};
+
+const visitorLocation = new VisitorLocation((state) => {
+  locationState = state;
+  globe?.setVisitorLocation(state.status === 'ready' ? state.coordinates : undefined);
+  renderLocationControls();
+});
 
 type MembershipProviderGroup = {
   provider: string;
@@ -216,7 +272,7 @@ const showDetails = (
   address?: string,
   memberships: SearchEntry[] = marker.entries,
 ): void => {
-  globe?.select(marker.id);
+  selectMarker(marker);
   details.classList.add('has-selection');
   details.replaceChildren();
   const heading = document.createElement('h3');
@@ -227,7 +283,7 @@ const showDetails = (
   close.textContent = 'Close details';
   close.className = 'close-details';
   close.addEventListener('click', () => {
-    globe?.select();
+    selectMarker();
     details.classList.remove('has-selection');
     details.innerHTML = '<h3 id="details-title">Explore a location</h3><p>Select a dot or search for an IP to explore.</p>';
     document.querySelector<HTMLCanvasElement>('#globe')!.focus({ preventScroll: true });
@@ -292,7 +348,7 @@ const applyFilters = (): void => {
     provider: providerFilter.value, family: familyFilter.value, continent: continentFilter.value,
   });
   globe?.setMarkers(markers);
-  globe?.select();
+  selectMarker();
   details.classList.remove('has-selection');
   details.innerHTML = '<h3 id="details-title">Explore a location</h3><p>Select a dot or search for an IP to explore.</p>';
   const eligible = searchIndex.entries.filter((entry) =>
@@ -432,7 +488,7 @@ const runSearch = async (): Promise<void> => {
   const version = ++searchVersion;
   error.textContent = '';
   searchStatus.textContent = '';
-  globe?.select();
+  selectMarker();
   details.classList.remove('has-selection');
   details.innerHTML = '<h3 id="details-title">Explore a location</h3><p>Select a dot or search for an IP to explore.</p>';
   try {
@@ -509,11 +565,17 @@ document.querySelector('#rotate-right')!.addEventListener('click', () => globe?.
 document.querySelector('#zoom-in')!.addEventListener('click', () => globe?.changeZoom(1.25));
 document.querySelector('#zoom-out')!.addEventListener('click', () => globe?.changeZoom(0.8));
 document.querySelector('#reset-view')!.addEventListener('click', () => globe?.reset());
+locateMe.addEventListener('click', () => visitorLocation.request(navigator.geolocation));
+forgetLocation.addEventListener('click', () => {
+  visitorLocation.forget();
+  locateMe.focus({ preventScroll: true });
+});
+window.addEventListener('pagehide', () => visitorLocation.forget());
 moreLocations.addEventListener('click', () => { locationLimit += 50; renderLocations(); });
 details.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') details.querySelector<HTMLButtonElement>('.close-details')?.click();
 });
-const globeReady = initializeGlobe();
+const globeReady = initializeGlobe().then(renderLocationControls);
 void renderExamples();
 if (queryParam) {
   void runSearch();
