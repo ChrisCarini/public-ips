@@ -18280,8 +18280,8 @@
   },
   "display_name": "Amazon AWS",
   "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-  "first_observed_at": "2026-11-07T10:03:42+00:00",
-  "generated_at": "2026-11-07T10:03:42+00:00",
+  "first_observed_at": "2026-11-09T11:28:04+00:00",
+  "generated_at": "2026-11-09T11:28:04+00:00",
   "normalized_data_sha256": "5f9a48091809dc49f1534c2f9580e6b3ee1ac1b6af1a942a32252e8ee71a44b1",
   "provider": {
     "counts": {
@@ -29780,7 +29780,7 @@
   },
   "provider_id": "amazonaws.com",
   "schema_version": "v1",
-  "source_body_sha256": "bebcf4a11560e41f4b616268bf2676ad5dce6e7050c0508a82f49e4bb98482b9",
+  "source_body_sha256": "377f8cad1babd8a9af9a55af9f7dae2a65e04b24da0608177d7e7471837033ae",
   "source_urls": [
     "https://ip-ranges.amazonaws.com/ip-ranges.json"
   ],
