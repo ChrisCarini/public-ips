@@ -1,5 +1,479 @@
 # Changelog - amazonaws.com
 
+## 2026-11-09
+
+### 11:28:04Z
+
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+
+## 2026-11-08
+
+### 10:17:57Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `1.178.86.0/24` (IPv4).
+
+## 2026-11-07
+
+### 10:03:42Z
+
+- Added `3.33.2.0/24` to `amazon` (IPv4).
+- Added `69.107.13.144/29` to `amazon` (IPv4).
+- Added `69.107.13.152/29` to `amazon` (IPv4).
+- Added `2600:1f01:4952::/47` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:2e00::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:500::/56` to `amazon` (IPv6).
+- Added `191.166.0.0/16` to `ec2` (IPv4).
+- Added `2600:f0f3:f010:2e00::/56` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:500::/56` to `ec2` (IPv6).
+- Added `3.33.2.0/24` (IPv4).
+- Added `69.107.13.144/29` (IPv4).
+- Added `69.107.13.152/29` (IPv4).
+- Added `2600:1f01:4952::/47` (IPv6).
+- Added `2600:f0f3:f010:2e00::/56` (IPv6).
+- Added `2600:f0f3:f010:500::/56` (IPv6).
+
+## 2026-11-06
+
+### 10:50:16Z
+
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Added `2600:f0fb:c900:9000::/52` to `amazon` (IPv6).
+- Added `2600:f0fb:ca00:5000::/52` to `amazon` (IPv6).
+- Added `2606:7b40:1b0c:400::/56` to `amazon` (IPv6).
+- Added `2606:7b40:1b0f:8200::/56` to `amazon` (IPv6).
+- Added `2a01:578:0:7b00::/56` to `amazon` (IPv6).
+- Added `13.166.0.0/15` to `ec2` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `2600:f0fb:c900:9000::/52` to `ec2` (IPv6).
+- Added `2600:f0fb:ca00:5000::/52` to `ec2` (IPv6).
+- Added `2606:7b40:1b0c:400::/56` to `ec2` (IPv6).
+- Added `2606:7b40:1b0f:8200::/56` to `ec2` (IPv6).
+- Removed `1.178.86.0/24` (IPv4).
+- Added `2600:f0fb:c900:9000::/52` (IPv6).
+- Added `2600:f0fb:ca00:5000::/52` (IPv6).
+- Added `2606:7b40:1b0c:400::/56` (IPv6).
+- Added `2606:7b40:1b0f:8200::/56` (IPv6).
+- Added `2a01:578:0:7b00::/56` (IPv6).
+
+## 2026-11-05
+
+### 10:51:45Z
+
+- Added `71.137.22.0/23` to `amazon` (IPv4).
+- Added `71.137.24.0/23` to `amazon` (IPv4).
+- Added `71.137.26.0/23` to `amazon` (IPv4).
+- Added `71.137.28.0/23` to `amazon` (IPv4).
+- Added `71.137.22.0/23` (IPv4).
+- Added `71.137.24.0/23` (IPv4).
+- Added `71.137.26.0/23` (IPv4).
+- Added `71.137.28.0/23` (IPv4).
+
+## 2026-11-04
+
+### 10:53:04Z
+
+- Added `13.217.76.0/23` to `amazon` (IPv4).
+- Added `173.83.239.0/24` to `amazon` (IPv4).
+- Added `173.83.240.0/24` to `amazon` (IPv4).
+- Added `32.201.88.0/23` to `amazon` (IPv4).
+- Added `75.47.128.0/18` to `amazon` (IPv4).
+- Added `76.197.128.0/18` to `amazon` (IPv4).
+- Added `2600:1f15:2000::/36` to `amazon` (IPv6).
+- Added `2600:1f19:2000::/36` to `amazon` (IPv6).
+- Added `2600:f0f0:9::/48` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:b00::/56` to `amazon` (IPv6).
+- Added `2600:f0f0:9::/48` to `cloudfront` (IPv6).
+- Added `173.83.239.0/24` to `ec2` (IPv4).
+- Added `173.83.240.0/24` to `ec2` (IPv4).
+- Added `75.47.128.0/18` to `ec2` (IPv4).
+- Added `76.197.128.0/18` to `ec2` (IPv4).
+- Removed `35.54.16.0/20` from `ec2` (IPv4).
+- Added `2600:1f15:2000::/36` to `ec2` (IPv6).
+- Added `2600:1f19:2000::/36` to `ec2` (IPv6).
+- Added `2600:f0f3:f010:b00::/56` to `ec2` (IPv6).
+- Added `35.54.16.0/20` to `globalaccelerator` (IPv4).
+- Added `13.217.76.0/23` (IPv4).
+- Added `173.83.239.0/24` (IPv4).
+- Added `173.83.240.0/24` (IPv4).
+- Added `32.201.88.0/23` (IPv4).
+- Added `75.47.128.0/18` (IPv4).
+- Added `76.197.128.0/18` (IPv4).
+- Added `2600:1f15:2000::/36` (IPv6).
+- Added `2600:1f19:2000::/36` (IPv6).
+- Added `2600:f0f0:9::/48` (IPv6).
+- Added `2600:f0f3:f010:b00::/56` (IPv6).
+
+## 2026-11-02
+
+### 11:00:05Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Added `40.163.1.0/24` to `amazon` (IPv4).
+- Added `40.163.2.0/24` to `amazon` (IPv4).
+- Added `40.163.3.0/24` to `amazon` (IPv4).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `40.163.1.0/24` to `ec2` (IPv4).
+- Added `40.163.2.0/24` to `ec2` (IPv4).
+- Added `40.163.3.0/24` to `ec2` (IPv4).
+- Added `1.178.86.0/24` (IPv4).
+- Added `40.163.1.0/24` (IPv4).
+- Added `40.163.2.0/24` (IPv4).
+- Added `40.163.3.0/24` (IPv4).
+
+## 2026-11-01
+
+### 10:25:36Z
+
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+
+## 2026-10-31
+
+### 09:36:22Z
+
+- Added `51.0.249.0/24` to `amazon` (IPv4).
+- Added `51.74.64.0/18` to `amazon` (IPv4).
+- Added `2001:3fc1:4000::/36` to `amazon` (IPv6).
+- Added `2600:f0f0:4300::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4304::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4308::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:430c::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4310::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4314::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4318::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:431c::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4320::/46` to `amazon` (IPv6).
+- Added `2600:f0f0:4324::/46` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:5c00::/60` to `amazon` (IPv6).
+- Added `51.72.40.128/28` to `cloudfront` (IPv4).
+- Added `51.72.40.144/28` to `cloudfront` (IPv4).
+- Added `51.74.64.0/18` to `ec2` (IPv4).
+- Added `2001:3fc1:4000::/36` to `ec2` (IPv6).
+- Added `2600:f0f0:4300::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4304::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4308::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:430c::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4310::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4314::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4318::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:431c::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4320::/46` to `ec2` (IPv6).
+- Added `2600:f0f0:4324::/46` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:5c00::/60` to `ec2` (IPv6).
+- Added `63.189.210.0/23` to `efs` (IPv4).
+- Added `51.0.249.0/24` (IPv4).
+- Added `51.72.40.128/28` (IPv4).
+- Added `51.72.40.144/28` (IPv4).
+- Added `51.74.64.0/18` (IPv4).
+- Added `63.189.210.0/23` (IPv4).
+- Added `2001:3fc1:4000::/36` (IPv6).
+- Added `2600:f0f0:4300::/46` (IPv6).
+- Added `2600:f0f0:4304::/46` (IPv6).
+- Added `2600:f0f0:4308::/46` (IPv6).
+- Added `2600:f0f0:430c::/46` (IPv6).
+- Added `2600:f0f0:4310::/46` (IPv6).
+- Added `2600:f0f0:4314::/46` (IPv6).
+- Added `2600:f0f0:4318::/46` (IPv6).
+- Added `2600:f0f0:431c::/46` (IPv6).
+- Added `2600:f0f0:4320::/46` (IPv6).
+- Added `2600:f0f0:4324::/46` (IPv6).
+- Added `2606:7b40:1dd4:5c00::/60` (IPv6).
+
+## 2026-10-30
+
+### 09:58:45Z
+
+- Added `13.251.113.64/26` to `amazon` (IPv4).
+- Added `13.251.116.0/23` to `amazon` (IPv4).
+- Added `18.143.204.64/26` to `amazon` (IPv4).
+- Added `3.127.48.128/26` to `amazon` (IPv4).
+- Added `3.234.248.192/26` to `amazon` (IPv4).
+- Added `3.235.202.128/26` to `amazon` (IPv4).
+- Added `3.238.167.0/24` to `amazon` (IPv4).
+- Added `35.90.103.192/26` to `amazon` (IPv4).
+- Added `44.234.22.128/26` to `amazon` (IPv4).
+- Added `72.150.0.0/23` to `amazon` (IPv4).
+- Added `72.150.10.0/23` to `amazon` (IPv4).
+- Added `72.150.12.0/23` to `amazon` (IPv4).
+- Added `72.150.14.0/23` to `amazon` (IPv4).
+- Added `72.150.16.0/23` to `amazon` (IPv4).
+- Added `72.150.18.0/23` to `amazon` (IPv4).
+- Added `72.150.2.0/23` to `amazon` (IPv4).
+- Added `72.150.20.0/24` to `amazon` (IPv4).
+- Added `72.150.4.0/23` to `amazon` (IPv4).
+- Added `72.150.6.0/23` to `amazon` (IPv4).
+- Added `72.150.8.0/23` to `amazon` (IPv4).
+- Added `2606:7b40:1dd1:fc00::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd2:fc00::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd3:fc00::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:fc00::/60` to `amazon` (IPv6).
+- Removed `2606:7b40:1800::/40` from `amazon` (IPv6).
+- Added `72.150.0.0/23` to `ec2` (IPv4).
+- Added `72.150.10.0/23` to `ec2` (IPv4).
+- Added `72.150.12.0/23` to `ec2` (IPv4).
+- Added `72.150.14.0/23` to `ec2` (IPv4).
+- Added `72.150.16.0/23` to `ec2` (IPv4).
+- Added `72.150.18.0/23` to `ec2` (IPv4).
+- Added `72.150.2.0/23` to `ec2` (IPv4).
+- Added `72.150.20.0/24` to `ec2` (IPv4).
+- Added `72.150.4.0/23` to `ec2` (IPv4).
+- Added `72.150.6.0/23` to `ec2` (IPv4).
+- Added `72.150.8.0/23` to `ec2` (IPv4).
+- Added `2606:7b40:1dd1:fc00::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd2:fc00::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd3:fc00::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:fc00::/60` to `ec2` (IPv6).
+- Removed `2606:7b40:1800::/40` from `ec2` (IPv6).
+- Added `13.251.113.64/26` (IPv4).
+- Added `13.251.116.0/23` (IPv4).
+- Added `18.143.204.64/26` (IPv4).
+- Added `3.127.48.128/26` (IPv4).
+- Added `3.234.248.192/26` (IPv4).
+- Added `3.235.202.128/26` (IPv4).
+- Added `3.238.167.0/24` (IPv4).
+- Added `35.90.103.192/26` (IPv4).
+- Added `44.234.22.128/26` (IPv4).
+- Added `72.150.0.0/23` (IPv4).
+- Added `72.150.10.0/23` (IPv4).
+- Added `72.150.12.0/23` (IPv4).
+- Added `72.150.14.0/23` (IPv4).
+- Added `72.150.16.0/23` (IPv4).
+- Added `72.150.18.0/23` (IPv4).
+- Added `72.150.2.0/23` (IPv4).
+- Added `72.150.20.0/24` (IPv4).
+- Added `72.150.4.0/23` (IPv4).
+- Added `72.150.6.0/23` (IPv4).
+- Added `72.150.8.0/23` (IPv4).
+- Added `2606:7b40:1dd1:fc00::/60` (IPv6).
+- Added `2606:7b40:1dd2:fc00::/60` (IPv6).
+- Added `2606:7b40:1dd3:fc00::/60` (IPv6).
+- Added `2606:7b40:1dd4:fc00::/60` (IPv6).
+- Removed `2606:7b40:1800::/40` (IPv6).
+
+## 2026-10-29
+
+### 09:56:30Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Removed `13.251.113.64/26` from `amazon` (IPv4).
+- Removed `13.251.116.0/23` from `amazon` (IPv4).
+- Removed `18.143.204.64/26` from `amazon` (IPv4).
+- Removed `3.127.48.128/26` from `amazon` (IPv4).
+- Removed `3.234.248.192/26` from `amazon` (IPv4).
+- Removed `3.235.202.128/26` from `amazon` (IPv4).
+- Removed `3.238.167.0/24` from `amazon` (IPv4).
+- Removed `35.90.103.192/26` from `amazon` (IPv4).
+- Removed `44.234.22.128/26` from `amazon` (IPv4).
+- Added `2600:f0f3:f010:2900::/56` to `amazon` (IPv6).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `2600:f0f3:f010:2900::/56` to `ec2` (IPv6).
+- Added `1.178.86.0/24` (IPv4).
+- Removed `13.251.113.64/26` (IPv4).
+- Removed `13.251.116.0/23` (IPv4).
+- Removed `18.143.204.64/26` (IPv4).
+- Removed `3.127.48.128/26` (IPv4).
+- Removed `3.234.248.192/26` (IPv4).
+- Removed `3.235.202.128/26` (IPv4).
+- Removed `3.238.167.0/24` (IPv4).
+- Removed `35.90.103.192/26` (IPv4).
+- Removed `44.234.22.128/26` (IPv4).
+- Added `2600:f0f3:f010:2900::/56` (IPv6).
+
+## 2026-10-28
+
+### 09:37:57Z
+
+- Added `40.39.198.0/23` to `amazon` (IPv4).
+- Added `13.197.100.0/22` to `efs` (IPv4).
+- Added `2406:da14:1e82:a000::/56` to `efs` (IPv6).
+- Added `13.197.100.0/22` (IPv4).
+- Added `40.39.198.0/23` (IPv4).
+- Added `2406:da14:1e82:a000::/56` (IPv6).
+
+## 2026-10-26
+
+### 08:52:28Z
+
+- Added `15.175.149.128/26` to `amazon` (IPv4).
+- Added `184.198.84.0/24` to `amazon` (IPv4).
+- Added `32.191.214.0/25` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `15.175.149.128/26` (IPv4).
+- Added `184.198.84.0/24` (IPv4).
+- Added `32.191.214.0/25` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+
+## 2026-10-25
+
+### 08:23:18Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Added `184.198.82.0/23` to `amazon` (IPv4).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `1.178.86.0/24` (IPv4).
+- Added `184.198.82.0/23` (IPv4).
+
+## 2026-10-24
+
+### 08:05:54Z
+
+- Added `69.107.13.128/29` to `amazon` (IPv4).
+- Added `69.107.13.136/29` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Added `2600:1f01:4818::/47` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:2400::/56` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:7400::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:9000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:c000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:d400::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:d800::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:dc00::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:e000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:f000::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1dd4:f400::/60` to `amazon` (IPv6).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `2600:f0f3:f010:2400::/56` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:7400::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:9000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:c000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:d400::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:d800::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:dc00::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:e000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:f000::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1dd4:f400::/60` to `ec2` (IPv6).
+- Added `184.198.80.0/25` to `efs` (IPv4).
+- Added `2600:1f01:4818::/47` to `globalaccelerator` (IPv6).
+- Added `184.198.80.0/25` (IPv4).
+- Added `69.107.13.128/29` (IPv4).
+- Added `69.107.13.136/29` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+- Added `2600:1f01:4818::/47` (IPv6).
+- Added `2600:f0f3:f010:2400::/56` (IPv6).
+- Added `2606:7b40:1dd4:7400::/60` (IPv6).
+- Added `2606:7b40:1dd4:9000::/60` (IPv6).
+- Added `2606:7b40:1dd4:c000::/60` (IPv6).
+- Added `2606:7b40:1dd4:d400::/60` (IPv6).
+- Added `2606:7b40:1dd4:d800::/60` (IPv6).
+- Added `2606:7b40:1dd4:dc00::/60` (IPv6).
+- Added `2606:7b40:1dd4:e000::/60` (IPv6).
+- Added `2606:7b40:1dd4:f000::/60` (IPv6).
+- Added `2606:7b40:1dd4:f400::/60` (IPv6).
+
+## 2026-10-23
+
+### 08:30:56Z
+
+- Added `3.33.1.0/24` to `amazon` (IPv4).
+- Added `35.34.106.0/24` to `amazon` (IPv4).
+- Added `69.107.13.112/29` to `amazon` (IPv4).
+- Added `69.107.13.120/29` to `amazon` (IPv4).
+- Added `2600:1f01:4816::/47` to `amazon` (IPv6).
+- Added `2600:1f01:4950::/47` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:2500::/56` to `amazon` (IPv6).
+- Added `2620:107:4000:8b00::/56` to `amazon` (IPv6).
+- Added `2600:f0f3:f010:2500::/56` to `ec2` (IPv6).
+- Added `35.34.106.0/24` to `globalaccelerator` (IPv4).
+- Added `2600:1f01:4816::/47` to `globalaccelerator` (IPv6).
+- Added `3.33.1.0/24` (IPv4).
+- Added `35.34.106.0/24` (IPv4).
+- Added `69.107.13.112/29` (IPv4).
+- Added `69.107.13.120/29` (IPv4).
+- Added `2600:1f01:4816::/47` (IPv6).
+- Added `2600:1f01:4950::/47` (IPv6).
+- Added `2600:f0f3:f010:2500::/56` (IPv6).
+- Added `2620:107:4000:8b00::/56` (IPv6).
+
+## 2026-10-22
+
+### 08:34:49Z
+
+- Added `1.178.86.0/24` to `amazon` (IPv4).
+- Added `13.184.86.0/23` to `amazon` (IPv4).
+- Added `13.197.98.0/23` to `amazon` (IPv4).
+- Added `2606:7b40:1a3f:4320::/60` to `amazon` (IPv6).
+- Added `2606:7b40:1a4f:4320::/60` to `amazon` (IPv6).
+- Removed `2606:7b40:1a4f:40::/60` from `amazon` (IPv6).
+- Added `1.178.86.0/24` to `ec2` (IPv4).
+- Added `2606:7b40:1a3f:4320::/60` to `ec2` (IPv6).
+- Added `2606:7b40:1a4f:4320::/60` to `ec2` (IPv6).
+- Removed `2606:7b40:1a4f:40::/60` from `ec2` (IPv6).
+- Added `1.178.86.0/24` (IPv4).
+- Added `13.184.86.0/23` (IPv4).
+- Added `13.197.98.0/23` (IPv4).
+- Added `2606:7b40:1a3f:4320::/60` (IPv6).
+- Added `2606:7b40:1a4f:4320::/60` (IPv6).
+- Removed `2606:7b40:1a4f:40::/60` (IPv6).
+
+## 2026-10-21
+
+### 08:32:47Z
+
+- Added `13.184.38.0/26` to `amazon` (IPv4).
+- Added `32.191.183.128/25` to `amazon` (IPv4).
+- Added `63.189.138.128/26` to `amazon` (IPv4).
+- Added `2600:f0f0:723::/48` to `amazon` (IPv6).
+- Added `2606:7b40:1a4f:40::/60` to `amazon` (IPv6).
+- Added `83.160.72.0/24` to `api_gateway` (IPv4).
+- Added `2600:f0f0:723::/48` to `ec2` (IPv6).
+- Added `2606:7b40:1a4f:40::/60` to `ec2` (IPv6).
+- Added `13.184.38.0/26` (IPv4).
+- Added `32.191.183.128/25` (IPv4).
+- Added `63.189.138.128/26` (IPv4).
+- Added `83.160.72.0/24` (IPv4).
+- Added `2600:f0f0:723::/48` (IPv6).
+- Added `2606:7b40:1a4f:40::/60` (IPv6).
+
+## 2026-10-20
+
+### 08:30:01Z
+
+- Added `3.4.12.85/32` to `amazon` (IPv4).
+- Added `3.4.12.86/32` to `amazon` (IPv4).
+- Added `64.66.163.0/24` to `amazon` (IPv4).
+- Added `64.66.164.0/24` to `amazon` (IPv4).
+- Added `2600:f0f0:818f::/48` to `amazon` (IPv6).
+- Added `2600:f0f0:8190::/48` to `amazon` (IPv6).
+- Added `64.66.163.0/24` to `ec2` (IPv4).
+- Added `64.66.164.0/24` to `ec2` (IPv4).
+- Added `2600:f0f0:818f::/48` to `ec2` (IPv6).
+- Added `2600:f0f0:8190::/48` to `ec2` (IPv6).
+- Added `100.61.165.88/29` to `media_package_v2` (IPv4).
+- Added `13.202.176.240/29` to `media_package_v2` (IPv4).
+- Added `3.107.82.24/29` to `media_package_v2` (IPv4).
+- Added `32.184.79.16/29` to `media_package_v2` (IPv4).
+- Added `32.190.211.224/29` to `media_package_v2` (IPv4).
+- Added `32.192.104.136/29` to `media_package_v2` (IPv4).
+- Added `63.185.44.32/29` to `media_package_v2` (IPv4).
+- Added `99.80.88.216/29` to `media_package_v2` (IPv4).
+- Added `100.61.165.88/29` (IPv4).
+- Added `13.202.176.240/29` (IPv4).
+- Added `3.107.82.24/29` (IPv4).
+- Added `3.4.12.85/32` (IPv4).
+- Added `3.4.12.86/32` (IPv4).
+- Added `32.184.79.16/29` (IPv4).
+- Added `32.190.211.224/29` (IPv4).
+- Added `32.192.104.136/29` (IPv4).
+- Added `63.185.44.32/29` (IPv4).
+- Added `64.66.163.0/24` (IPv4).
+- Added `64.66.164.0/24` (IPv4).
+- Added `99.80.88.216/29` (IPv4).
+- Added `2600:f0f0:818f::/48` (IPv6).
+- Added `2600:f0f0:8190::/48` (IPv6).
+
+## 2026-10-19
+
+### 08:50:52Z
+
+- Added `16.22.202.0/23` to `amazon` (IPv4).
+- Added `16.22.202.0/23` (IPv4).
+
 ## 2026-10-17
 
 ### 07:46:05Z
