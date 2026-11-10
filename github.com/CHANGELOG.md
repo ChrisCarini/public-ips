@@ -1,5 +1,35 @@
 # Changelog - github.com
 
+## 2026-11-10
+
+### 11:08:41Z
+
+- Added `20.26.58.32/28` to `copilot` (IPv4).
+- Added `20.26.68.64/28` to `copilot` (IPv4).
+- Added `4.159.108.160/28` to `copilot` (IPv4).
+- Added `4.159.197.192/28` to `copilot` (IPv4).
+- Added `4.234.31.32/28` to `copilot` (IPv4).
+- Added `20.26.58.32/28` to `git` (IPv4).
+- Added `20.26.68.64/28` to `git` (IPv4).
+- Added `4.159.108.160/28` to `git` (IPv4).
+- Added `4.159.197.192/28` to `git` (IPv4).
+- Added `4.234.31.32/28` to `git` (IPv4).
+- Added `20.26.58.32/28` to `shared_ingress` (IPv4).
+- Added `20.26.68.64/28` to `shared_ingress` (IPv4).
+- Added `4.159.108.160/28` to `shared_ingress` (IPv4).
+- Added `4.159.197.192/28` to `shared_ingress` (IPv4).
+- Added `4.234.31.32/28` to `shared_ingress` (IPv4).
+- Added `20.26.58.32/28` to `web` (IPv4).
+- Added `20.26.68.64/28` to `web` (IPv4).
+- Added `4.159.108.160/28` to `web` (IPv4).
+- Added `4.159.197.192/28` to `web` (IPv4).
+- Added `4.234.31.32/28` to `web` (IPv4).
+- Added `20.26.58.32/28` (IPv4).
+- Added `20.26.68.64/28` (IPv4).
+- Added `4.159.108.160/28` (IPv4).
+- Added `4.159.197.192/28` (IPv4).
+- Added `4.234.31.32/28` (IPv4).
+
 ## 2026-11-07
 
 ### 10:03:42Z

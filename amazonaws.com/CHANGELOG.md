@@ -1,5 +1,42 @@
 # Changelog - amazonaws.com
 
+## 2026-11-10
+
+### 11:08:41Z
+
+- Added `32.201.196.0/23` to `amazon` (IPv4).
+- Added `51.72.100.0/23` to `amazon` (IPv4).
+- Added `51.72.98.0/23` to `amazon` (IPv4).
+- Added `2600:1f1d:2000::/36` to `amazon` (IPv6).
+- Added `2600:1f25:2000::/36` to `amazon` (IPv6).
+- Added `2600:1f29:2000::/36` to `amazon` (IPv6).
+- Added `2600:1f2d:2000::/36` to `amazon` (IPv6).
+- Added `2600:1f6a:5200::/46` to `amazon` (IPv6).
+- Added `2600:1f6a:9200::/46` to `amazon` (IPv6).
+- Added `2600:1f6a:d200::/46` to `amazon` (IPv6).
+- Removed `2606:f40:8800::/40` from `amazon` (IPv6).
+- Added `2600:1f1d:2000::/36` to `ec2` (IPv6).
+- Added `2600:1f25:2000::/36` to `ec2` (IPv6).
+- Added `2600:1f29:2000::/36` to `ec2` (IPv6).
+- Added `2600:1f2d:2000::/36` to `ec2` (IPv6).
+- Added `2600:1f6a:5200::/46` to `ec2` (IPv6).
+- Added `2600:1f6a:9200::/46` to `ec2` (IPv6).
+- Added `2600:1f6a:d200::/46` to `ec2` (IPv6).
+- Removed `2606:f40:8800::/40` from `ec2` (IPv6).
+- Added `51.74.17.0/24` to `s3` (IPv4).
+- Added `2001:3fc6:2::/48` to `s3` (IPv6).
+- Added `32.201.196.0/23` (IPv4).
+- Added `51.72.100.0/23` (IPv4).
+- Added `51.72.98.0/23` (IPv4).
+- Added `2600:1f1d:2000::/36` (IPv6).
+- Added `2600:1f25:2000::/36` (IPv6).
+- Added `2600:1f29:2000::/36` (IPv6).
+- Added `2600:1f2d:2000::/36` (IPv6).
+- Added `2600:1f6a:5200::/46` (IPv6).
+- Added `2600:1f6a:9200::/46` (IPv6).
+- Added `2600:1f6a:d200::/46` (IPv6).
+- Removed `2606:f40:8800::/40` (IPv6).
+
 ## 2026-11-09
 
 ### 11:28:04Z
