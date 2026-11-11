@@ -3,13 +3,13 @@
   "categories": {},
   "display_name": "DigitalOcean",
   "documentation_url": "https://docs.digitalocean.com/platform/",
-  "first_observed_at": "2026-11-10T11:08:41+00:00",
-  "generated_at": "2026-11-10T11:08:41+00:00",
-  "normalized_data_sha256": "74098a5629d57e7b39b1b0bc29dead01feaf57a7afd62d6139fdeb8f3a2d55c0",
+  "first_observed_at": "2026-11-11T10:54:32+00:00",
+  "generated_at": "2026-11-11T10:54:32+00:00",
+  "normalized_data_sha256": "3f57bdafe825bd39438cc30f809741532848be294bf6026fb09f73ab282e4f5a",
   "provider": {
     "counts": {
-      "ipv4": 1092,
-      "ipv6": 148
+      "ipv4": 1094,
+      "ipv6": 149
     },
     "ipv4": [
       "5.101.96.0/21",
@@ -840,6 +840,8 @@
       "168.144.196.0/23",
       "168.144.198.0/23",
       "168.144.208.0/20",
+      "168.144.228.0/22",
+      "168.144.232.0/21",
       "168.144.240.0/20",
       "170.64.128.0/18",
       "170.64.192.0/19",
@@ -1162,6 +1164,7 @@
       "2604:a880:6:7::/64",
       "2604:a880:7:7::/64",
       "2604:a880:8:7::/64",
+      "2604:a880:9:1::/64",
       "2604:a880:400:d0::/64",
       "2604:a880:400:d1::/64",
       "2604:a880:800:10::/64",
@@ -1266,7 +1269,7 @@
   },
   "provider_id": "digitalocean.com",
   "schema_version": "v1",
-  "source_body_sha256": "641e72397f74c84c402482ac618072a04e9833d2aee0b7c9122734e40fc9cbcf",
+  "source_body_sha256": "353da50616fe50cb41fb8826faae8e0babe4aa1fa077756afafb2410669a19fe",
   "source_urls": [
     "https://www.digitalocean.com/geo/google.csv"
   ],

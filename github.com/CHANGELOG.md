@@ -1,5 +1,22 @@
 # Changelog - github.com
 
+## 2026-11-11
+
+### 10:54:32Z
+
+- Removed `20.201.28.148/32` from `api` (IPv4).
+- Removed `20.201.28.153/32` from `copilot` (IPv4).
+- Removed `20.201.28.151/32` from `git` (IPv4).
+- Removed `20.201.28.152/32` from `git` (IPv4).
+- Removed `20.201.28.144/32` from `packages` (IPv4).
+- Removed `20.201.28.153/32` from `shared_ingress` (IPv4).
+- Removed `20.201.28.151/32` from `web` (IPv4).
+- Removed `20.201.28.144/32` (IPv4).
+- Removed `20.201.28.148/32` (IPv4).
+- Removed `20.201.28.151/32` (IPv4).
+- Removed `20.201.28.152/32` (IPv4).
+- Removed `20.201.28.153/32` (IPv4).
+
 ## 2026-11-10
 
 ### 11:08:41Z
