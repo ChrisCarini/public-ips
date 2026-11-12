@@ -37,15 +37,29 @@ ul { padding-left: 1.3rem; }
 li { margin: .5rem 0; overflow-wrap: anywhere; }
 [hidden] { display: none !important; }
 .eyebrow { color: #65d6db; font-size: .75rem; font-weight: 700; letter-spacing: .18em; }
-.search-bar { padding: 1.2rem; background: #101f30; border: 1px solid #2c455c; border-radius: .8rem; }
-.search-fields { display: flex; gap: .75rem; margin-top: .5rem; }
+.explorer-toolbar { padding: 1rem; margin-bottom: 1rem; background: #101f30; border: 1px solid #2c455c; border-radius: .8rem; }
+.toolbar-fields { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 1.2rem; align-items: end; }
+.search-bar { min-width: 0; }
+.search-fields { display: flex; gap: .6rem; margin-top: .35rem; }
 #run { background: #83daff; color: #081320; font-weight: 700; white-space: nowrap; }
 #error { color: #ffadb9; }
-.section-heading { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: 1.5rem; }
+#error, #search-status { margin: .6rem 0 0; font-size: .85rem; }
+#error:empty, #search-status:empty { margin: 0; }
+.section-heading { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-bottom: .75rem; }
+.section-heading h2 { margin: 0; }
 .badge { font-size: .75rem; border: 1px solid #416079; border-radius: 2rem; padding: .25rem .6rem; white-space: nowrap; }
-.filters { display: grid; grid-template-columns: 1.4fr 1fr 1fr auto; gap: .8rem; align-items: end; }
-#globe-status { color: #b2c8da; font-size: .9rem; min-height: 1.5rem; }
-.location-connection { margin: 1rem 0; padding: .8rem 1rem; border: 1px solid #2c455c; border-radius: .8rem; background: #101f30; }
+.filters { display: grid; grid-template-columns: minmax(0, 1.2fr) repeat(2, minmax(0, 1fr)) auto; gap: .6rem; align-items: end; }
+.toolbar-meta { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .25rem 1rem; align-items: start; margin-top: .75rem; padding-top: .5rem; border-top: 1px solid #2c455c; }
+#globe-status { color: #b2c8da; font-size: .85rem; min-height: 1.5rem; margin: .6rem 0; }
+.location-connection { min-width: 0; }
+.location-connection > summary { padding: .5rem; border-radius: .5rem; font-size: .85rem; }
+.location-connection > summary:hover, .location-connection[open] > summary { background: #1b3249; }
+.location-state { display: inline-block; margin-left: .4rem; padding: .05rem .5rem; border-radius: 2rem; background: #24394d; color: #b2c8da; font-size: .75rem; }
+.location-state[data-state="ready"] { color: #ffd27a; }
+.location-state[data-state="pending"] { color: #83daff; }
+.location-state[data-state="error"] { color: #ffadb9; }
+.location-content { max-width: 28rem; padding: .65rem .5rem 0; }
+.location-content p:last-child { margin-bottom: 0; }
 .location-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; }
 #location-status, #visitor-legend { font-size: .85rem; }
 #visitor-legend { display: inline-flex; align-items: center; gap: .6rem; }
@@ -77,17 +91,25 @@ summary { cursor: pointer; min-height: 44px; }
 .examples-section { margin-top: 2rem; border-top: 1px solid #2c455c; padding-top: .5rem; }
 #examples { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; list-style: none; padding: 0; }
 #examples a { display: inline-block; padding: .4rem 0; }
+@media (max-width: 1100px) {
+  .toolbar-fields { grid-template-columns: minmax(0, 1fr); gap: .8rem; }
+}
 @media (max-width: 850px) {
   .explorer { grid-template-columns: minmax(0, 1fr); }
   #details { max-height: 420px; }
   #details.has-selection { position: fixed; z-index: 5; left: .6rem; right: .6rem; bottom: .6rem; max-height: 42vh; box-shadow: 0 -8px 40px #0008; }
   #globe { max-height: 620px; aspect-ratio: 1.1; }
 }
+@media (max-width: 700px) {
+  .toolbar-meta { grid-template-columns: minmax(0, 1fr); }
+  #globe-status { margin: .2rem 0; }
+  .location-content { max-width: none; }
+}
 @media (max-width: 540px) {
   main { padding: 1.2rem .8rem; }
   header { margin-bottom: 1.2rem; }
-  .search-fields { flex-direction: column; }
+  .locate-label { display: none; }
   .filters { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: .65rem; }
-  .search-bar { padding: .9rem; }
+  .explorer-toolbar { padding: .8rem; }
   .section-heading h2 { font-size: 1.15rem; }
 }

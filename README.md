@@ -186,7 +186,14 @@ can span multiple locations.
 
 ### Optional connection from your location
 
-Select **Show connection from my location** to request browser location permission.
+Search and globe filters share a compact toolbar, wrapping on smaller screens.
+**My location** shows the current sharing status; expand it to see connection
+controls, status details, and privacy information. These details are collapsed
+by default and can be opened with a click, tap, or the keyboard. Location errors
+reopen the details so they are not missed.
+
+Inside **My location**, select **Show connection from my location** to request
+browser location permission.
 After permission is granted, a gold diamond marks **You (approximate)** and a
 flight-style geographic arc connects you to the selected mapped location. Single-IP
 searches, including `?q=` links, reuse the same connection behavior. Location is
