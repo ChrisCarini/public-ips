@@ -21,33 +21,42 @@ app.innerHTML = `
     <h1>public-ips <span>explorer</span></h1>
     <p>Explore the networks published by or associated with providers around the world.</p>
   </header>
-  <form id="search" class="search-bar">
-    <label for="query">Find an IP address or CIDR</label>
-    <div class="search-fields">
-      <input id="query" placeholder="203.0.113.1 or 2001:db8::/32" autocomplete="off" spellcheck="false" />
-      <button id="run" type="submit">Search & locate</button>
-    </div>
-  </form>
-  <p id="error" role="alert"></p>
-  <p id="search-status" role="status"></p>
   <section aria-labelledby="globe-title">
     <div class="section-heading"><h2 id="globe-title">A world of networks</h2><span class="badge">IPv4 + IPv6</span></div>
-    <div class="filters">
-      <label>Provider<select id="provider"><option value="">All providers</option></select></label>
-      <label>IP version<select id="family"><option value="">IPv4 + IPv6</option><option value="ipv4">IPv4 only</option><option value="ipv6">IPv6 only</option></select></label>
-      <label>Continent<select id="continent"><option value="">All continents</option></select></label>
-      <button id="clear-filters" type="button">Clear filters</button>
-    </div>
-    <p id="globe-status" role="status">Loading geographic data…</p>
-    <div class="location-connection">
-      <div class="location-actions">
-        <button id="locate-me" type="button" aria-describedby="location-privacy" disabled>Show connection from my location</button>
-        <button id="forget-location" type="button" hidden>Forget my location</button>
-        <span id="visitor-legend" hidden><span class="visitor-swatch"></span>You (approximate)</span>
+    <div class="explorer-toolbar">
+      <div class="toolbar-fields">
+        <form id="search" class="search-bar">
+          <label for="query">Find an IP address or CIDR</label>
+          <div class="search-fields">
+            <input id="query" placeholder="203.0.113.1 or 2001:db8::/32" autocomplete="off" spellcheck="false" />
+            <button id="run" type="submit">Search<span class="locate-label"> &amp; locate</span></button>
+          </div>
+        </form>
+        <div class="filters">
+          <label>Provider<select id="provider"><option value="">All providers</option></select></label>
+          <label>IP version<select id="family"><option value="">IPv4 + IPv6</option><option value="ipv4">IPv4 only</option><option value="ipv6">IPv6 only</option></select></label>
+          <label>Continent<select id="continent"><option value="">All continents</option></select></label>
+          <button id="clear-filters" type="button">Clear filters</button>
+        </div>
       </div>
-      <p id="location-status" role="status">Location sharing is off.</p>
-      <p id="location-privacy" class="muted">Optional browser permission. Coordinates are rounded to 0.1° and kept only
-        in this page's memory, never uploaded by this site. Your browser or operating system may use a location service.</p>
+      <p id="error" role="alert"></p>
+      <p id="search-status" role="status"></p>
+      <div class="toolbar-meta">
+        <p id="globe-status" role="status">Loading geographic data…</p>
+        <details id="location-connection" class="location-connection">
+          <summary id="location-summary">My location <span id="location-state" class="location-state" role="status">Off</span></summary>
+          <div class="location-content">
+            <div class="location-actions">
+              <button id="locate-me" type="button" aria-describedby="location-privacy" disabled>Show connection from my location</button>
+              <button id="forget-location" type="button" hidden>Forget my location</button>
+              <span id="visitor-legend" hidden><span class="visitor-swatch"></span>You (approximate)</span>
+            </div>
+            <p id="location-status" role="status">Location sharing is off.</p>
+            <p id="location-privacy" class="muted">Optional browser permission. Coordinates are rounded to 0.1° and kept only
+              in this page's memory, never uploaded by this site. Your browser or operating system may use a location service.</p>
+          </div>
+        </details>
+      </div>
     </div>
     <div class="explorer">
       <div class="globe-stage">
@@ -102,6 +111,9 @@ const moreLocations = document.querySelector<HTMLButtonElement>('#more-locations
 const locateMe = document.querySelector<HTMLButtonElement>('#locate-me')!;
 const forgetLocation = document.querySelector<HTMLButtonElement>('#forget-location')!;
 const locationStatus = document.querySelector<HTMLParagraphElement>('#location-status')!;
+const locationConnection = document.querySelector<HTMLDetailsElement>('#location-connection')!;
+const locationSummary = document.querySelector<HTMLElement>('#location-summary')!;
+const locationStateLabel = document.querySelector<HTMLSpanElement>('#location-state')!;
 const visitorLegend = document.querySelector<HTMLSpanElement>('#visitor-legend')!;
 const locationUnavailable = !window.isSecureContext
   ? 'Browser location requires HTTPS or localhost. IP search still works.'
@@ -164,6 +176,9 @@ const renderLocationControls = (): void => {
   const pending = locationState.status === 'pending';
   const ready = locationState.status === 'ready';
   locateMe.disabled = Boolean(locationUnavailable) || !globe || !geoIndex || pending;
+  locationStateLabel.textContent = locationUnavailable || !geoIndex ? 'Unavailable'
+    : pending ? 'Locating...' : ready ? 'On' : locationState.status === 'error' ? 'Needs attention' : 'Off';
+  locationStateLabel.dataset.state = locationState.status;
   locateMe.hidden = ready;
   locateMe.textContent = pending ? 'Finding your location...' : 'Show connection from my location';
   forgetLocation.hidden = !pending && !ready;
@@ -193,6 +208,7 @@ const visitorLocation = new VisitorLocation((state) => {
   locationState = state;
   globe?.setVisitorLocation(state.status === 'ready' ? state.coordinates : undefined);
   renderLocationControls();
+  if (state.status === 'error') locationConnection.open = true;
 });
 
 type MembershipProviderGroup = {
@@ -569,6 +585,13 @@ locateMe.addEventListener('click', () => visitorLocation.request(navigator.geolo
 forgetLocation.addEventListener('click', () => {
   visitorLocation.forget();
   locateMe.focus({ preventScroll: true });
+});
+locationConnection.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && locationConnection.open) {
+    event.preventDefault();
+    locationConnection.open = false;
+    locationSummary.focus({ preventScroll: true });
+  }
 });
 window.addEventListener('pagehide', () => visitorLocation.forget());
 moreLocations.addEventListener('click', () => { locationLimit += 50; renderLocations(); });
