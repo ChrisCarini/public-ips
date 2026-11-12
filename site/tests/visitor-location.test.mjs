@@ -14,7 +14,7 @@ const setup = () => {
   return { visitor, geolocation, states, requests };
 };
 
-test('location is requested only explicitly, without high-accuracy tracking', () => {
+test('manual location requests use a single, low-accuracy reading', () => {
   const { visitor, geolocation, states, requests } = setup();
   assert.deepEqual(states, []);
   assert.deepEqual(requests, []);
@@ -24,6 +24,95 @@ test('location is requested only explicitly, without high-accuracy tracking', ()
   assert.deepEqual(requests[0].options, {
     enableHighAccuracy: false, timeout: 10_000, maximumAge: 60_000,
   });
+});
+
+test('already-granted permission enables location without a second opt-in', async () => {
+  const { visitor, geolocation, states, requests } = setup();
+  const queries = [];
+  const permissions = {
+    async query(descriptor) {
+      queries.push(descriptor);
+      return { state: 'granted' };
+    },
+  };
+  await visitor.requestIfGranted(geolocation, permissions);
+  await visitor.requestIfGranted(geolocation, permissions);
+  assert.deepEqual(queries, [{ name: 'geolocation' }]);
+  assert.equal(requests.length, 1);
+  assert.deepEqual(states, [{ status: 'pending' }]);
+  requests[0].success({ coords: { latitude: 37.7749, longitude: -122.4194 } });
+  assert.deepEqual(states.at(-1), {
+    status: 'ready', coordinates: { latitude: 37.8, longitude: -122.4 },
+  });
+});
+
+test('ungranted or unsupported permissions never trigger automatic location requests', async () => {
+  for (const permissions of [
+    undefined, {},
+    { query: async () => ({ state: 'prompt' }) },
+    { query: async () => ({ state: 'denied' }) },
+  ]) {
+    const { visitor, geolocation, states, requests } = setup();
+    await visitor.requestIfGranted(geolocation, permissions);
+    assert.deepEqual(states, []);
+    assert.deepEqual(requests, []);
+    visitor.request(geolocation);
+    assert.equal(requests.length, 1);
+  }
+});
+
+test('failed permission checks warn and leave manual location usable', async (t) => {
+  const warn = t.mock.method(console, 'warn', () => {});
+  for (const query of [
+    () => { throw new TypeError('unsupported permission'); },
+    async () => { throw new Error('permission service unavailable'); },
+  ]) {
+    const { visitor, geolocation, states, requests } = setup();
+    await visitor.requestIfGranted(geolocation, { query });
+    assert.deepEqual(states, []);
+    assert.deepEqual(requests, []);
+    visitor.request(geolocation);
+    assert.equal(requests.length, 1);
+  }
+  assert.equal(warn.mock.callCount(), 2);
+  for (const call of warn.mock.calls) {
+    assert.match(call.arguments[0], /check.*location permission/i);
+    assert.match(call.arguments[0], /Show connection from my location/);
+  }
+});
+
+test('late permission checks cannot override a manual request or forgetting', async () => {
+  for (const action of ['request', 'forget']) {
+    const { visitor, geolocation, states, requests } = setup();
+    let resolvePermission;
+    const checking = visitor.requestIfGranted(geolocation, {
+      query: () => new Promise((resolve) => { resolvePermission = resolve; }),
+    });
+    visitor[action](geolocation);
+    const expectedStates = [...states];
+    resolvePermission({ state: 'granted' });
+    await checking;
+    assert.deepEqual(states, expectedStates);
+    assert.equal(requests.length, action === 'request' ? 1 : 0);
+  }
+});
+
+test('automatic startup respects manual requests and forgetting before the globe loads', async () => {
+  for (const action of ['request', 'forget']) {
+    const { visitor, geolocation, states, requests } = setup();
+    visitor[action](geolocation);
+    const expectedStates = [...states];
+    let queries = 0;
+    await visitor.requestIfGranted(geolocation, {
+      async query() {
+        queries++;
+        return { state: 'granted' };
+      },
+    });
+    assert.equal(queries, 0);
+    assert.deepEqual(states, expectedStates);
+    assert.equal(requests.length, action === 'request' ? 1 : 0);
+  }
 });
 
 test('only rounded coordinates leave the location callback', () => {
