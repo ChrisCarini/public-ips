@@ -13,6 +13,25 @@ export class VisitorLocation {
     this.onChange = onChange;
   }
 
+  async requestIfGranted(
+    geolocation: Pick<Geolocation, 'getCurrentPosition'>,
+    permissions?: Pick<Permissions, 'query'>,
+  ): Promise<void> {
+    // Explicit requests and forgetting take precedence over automatic startup.
+    if (!permissions?.query || this.version !== 0) return;
+    const version = this.version;
+    let permission: PermissionStatus;
+    try {
+      permission = await permissions.query({ name: 'geolocation' });
+    } catch {
+      console.warn('Unable to check existing location permission. Use "Show connection from my location" to enable it.');
+      return;
+    }
+    if (permission.state === 'granted' && this.version === version) {
+      this.request(geolocation);
+    }
+  }
+
   request(geolocation: Pick<Geolocation, 'getCurrentPosition'>): void {
     const version = ++this.version;
     this.onChange({ status: 'pending' });

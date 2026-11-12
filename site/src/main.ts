@@ -52,7 +52,8 @@ app.innerHTML = `
               <span id="visitor-legend" hidden><span class="visitor-swatch"></span>You (approximate)</span>
             </div>
             <p id="location-status" role="status">Location sharing is off.</p>
-            <p id="location-privacy" class="muted">Optional browser permission. Coordinates are rounded to 0.1° and kept only
+            <p id="location-privacy" class="muted">Location is optional; existing browser permission enables connections automatically.
+              Forget my location turns them off until reload. Coordinates are rounded to 0.1° and kept only
               in this page's memory, never uploaded by this site. Your browser or operating system may use a location service.</p>
           </div>
         </details>
@@ -598,7 +599,12 @@ moreLocations.addEventListener('click', () => { locationLimit += 50; renderLocat
 details.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') details.querySelector<HTMLButtonElement>('.close-details')?.click();
 });
-const globeReady = initializeGlobe().then(renderLocationControls);
+const globeReady = initializeGlobe().then(() => {
+  renderLocationControls();
+  if (!locationUnavailable && globe && geoIndex) {
+    void visitorLocation.requestIfGranted(navigator.geolocation, navigator.permissions);
+  }
+});
 void renderExamples();
 if (queryParam) {
   void runSearch();
