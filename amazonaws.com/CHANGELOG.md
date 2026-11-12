@@ -1,5 +1,15 @@
 # Changelog - amazonaws.com
 
+## 2026-11-12
+
+### 11:03:19Z
+
+- Added `16.66.86.0/23` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Added `16.66.86.0/23` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+
 ## 2026-11-11
 
 ### 10:54:32Z
