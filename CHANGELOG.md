@@ -1,5 +1,79 @@
 # Changelog
 
+## 2026-11-12
+
+### 11:03:19Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.66.86.0/23` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `16.66.86.0/23` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2602:fec3:201:8::1209:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2a02:6ea0:c54c::725:1/128` (IPv6).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.18.192/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.45.112/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.139.64.112/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.208.89.80/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.247.166.64/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.6.7.16/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.163.8.144/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.111.112/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.112.0/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.225.189.240/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `57.155.223.240/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `74.161.79.192/28` to `copilot` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.18.192/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.45.112/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.139.64.112/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.208.89.80/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.247.166.64/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.6.7.16/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.163.8.144/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.207.215.240/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.111.112/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.112.0/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.225.189.240/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `57.155.223.240/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `74.161.79.192/28` to `git` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.18.192/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.45.112/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.139.64.112/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.208.89.80/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.247.166.64/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.6.7.16/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.163.8.144/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.111.112/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.112.0/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.225.189.240/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `57.155.223.240/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `74.161.79.192/28` to `shared_ingress` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.18.192/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.45.112/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.139.64.112/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.208.89.80/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.247.166.64/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.6.7.16/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.163.8.144/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.207.215.240/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.111.112/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.112.0/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.225.189.240/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `57.155.223.240/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `74.161.79.192/28` to `web` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.18.192/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.130.45.112/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `172.139.64.112/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.208.89.80/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.247.166.64/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `20.6.7.16/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.163.8.144/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.111.112/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.209.112.0/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `4.225.189.240/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `57.155.223.240/28` (IPv4).
+- [github.com](./github.com/CHANGELOG.md): Added `74.161.79.192/28` (IPv4).
+
 ## 2026-11-11
 
 ### 10:54:32Z
