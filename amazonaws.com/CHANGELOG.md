@@ -1,5 +1,99 @@
 # Changelog - amazonaws.com
 
+## 2026-11-14
+
+### 10:22:58Z
+
+- Added `16.15.124.0/22` to `amazon` (IPv4).
+- Added `16.15.128.0/22` to `amazon` (IPv4).
+- Added `16.15.132.0/22` to `amazon` (IPv4).
+- Added `184.34.156.192/26` to `amazon` (IPv4).
+- Added `72.150.21.0/24` to `amazon` (IPv4).
+- Added `72.150.22.0/24` to `amazon` (IPv4).
+- Removed `1.178.86.0/24` from `amazon` (IPv4).
+- Removed `72.150.0.0/23` from `amazon` (IPv4).
+- Removed `72.150.10.0/23` from `amazon` (IPv4).
+- Removed `72.150.12.0/23` from `amazon` (IPv4).
+- Removed `72.150.14.0/23` from `amazon` (IPv4).
+- Removed `72.150.16.0/23` from `amazon` (IPv4).
+- Removed `72.150.18.0/23` from `amazon` (IPv4).
+- Removed `72.150.2.0/23` from `amazon` (IPv4).
+- Removed `72.150.4.0/23` from `amazon` (IPv4).
+- Removed `72.150.6.0/23` from `amazon` (IPv4).
+- Removed `72.150.8.0/23` from `amazon` (IPv4).
+- Added `2600:f0f0:c102::/48` to `amazon` (IPv6).
+- Removed `2600:f0f0:4300::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:4304::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:4308::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:430c::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:4310::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:4314::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:4318::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:431c::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:4320::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:4324::/46` from `amazon` (IPv6).
+- Removed `2600:f0f0:c14e::/48` from `amazon` (IPv6).
+- Added `16.15.124.0/22` to `ec2` (IPv4).
+- Added `16.15.128.0/22` to `ec2` (IPv4).
+- Added `16.15.132.0/22` to `ec2` (IPv4).
+- Added `72.150.21.0/24` to `ec2` (IPv4).
+- Added `72.150.22.0/24` to `ec2` (IPv4).
+- Removed `1.178.86.0/24` from `ec2` (IPv4).
+- Removed `72.150.0.0/23` from `ec2` (IPv4).
+- Removed `72.150.10.0/23` from `ec2` (IPv4).
+- Removed `72.150.12.0/23` from `ec2` (IPv4).
+- Removed `72.150.14.0/23` from `ec2` (IPv4).
+- Removed `72.150.16.0/23` from `ec2` (IPv4).
+- Removed `72.150.18.0/23` from `ec2` (IPv4).
+- Removed `72.150.2.0/23` from `ec2` (IPv4).
+- Removed `72.150.4.0/23` from `ec2` (IPv4).
+- Removed `72.150.6.0/23` from `ec2` (IPv4).
+- Removed `72.150.8.0/23` from `ec2` (IPv4).
+- Added `2600:f0f0:c102::/48` to `ec2` (IPv6).
+- Removed `2600:f0f0:4300::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:4304::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:4308::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:430c::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:4310::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:4314::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:4318::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:431c::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:4320::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:4324::/46` from `ec2` (IPv6).
+- Removed `2600:f0f0:c14e::/48` from `ec2` (IPv6).
+- Added `16.15.124.0/22` to `s3` (IPv4).
+- Added `16.15.128.0/22` to `s3` (IPv4).
+- Added `16.15.132.0/22` to `s3` (IPv4).
+- Added `16.15.124.0/22` (IPv4).
+- Added `16.15.128.0/22` (IPv4).
+- Added `16.15.132.0/22` (IPv4).
+- Added `184.34.156.192/26` (IPv4).
+- Added `72.150.21.0/24` (IPv4).
+- Added `72.150.22.0/24` (IPv4).
+- Removed `1.178.86.0/24` (IPv4).
+- Removed `72.150.0.0/23` (IPv4).
+- Removed `72.150.10.0/23` (IPv4).
+- Removed `72.150.12.0/23` (IPv4).
+- Removed `72.150.14.0/23` (IPv4).
+- Removed `72.150.16.0/23` (IPv4).
+- Removed `72.150.18.0/23` (IPv4).
+- Removed `72.150.2.0/23` (IPv4).
+- Removed `72.150.4.0/23` (IPv4).
+- Removed `72.150.6.0/23` (IPv4).
+- Removed `72.150.8.0/23` (IPv4).
+- Added `2600:f0f0:c102::/48` (IPv6).
+- Removed `2600:f0f0:4300::/46` (IPv6).
+- Removed `2600:f0f0:4304::/46` (IPv6).
+- Removed `2600:f0f0:4308::/46` (IPv6).
+- Removed `2600:f0f0:430c::/46` (IPv6).
+- Removed `2600:f0f0:4310::/46` (IPv6).
+- Removed `2600:f0f0:4314::/46` (IPv6).
+- Removed `2600:f0f0:4318::/46` (IPv6).
+- Removed `2600:f0f0:431c::/46` (IPv6).
+- Removed `2600:f0f0:4320::/46` (IPv6).
+- Removed `2600:f0f0:4324::/46` (IPv6).
+- Removed `2600:f0f0:c14e::/48` (IPv6).
+
 ## 2026-11-13
 
 ### 10:56:10Z
