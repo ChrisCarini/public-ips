@@ -1,5 +1,36 @@
 # Changelog
 
+## 2026-11-16
+
+### 11:12:58Z
+
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.100/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.101/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.102/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.103/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.109/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.110/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.111/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.112/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.113/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.253/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.47/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.82/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.145.99/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.41/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.44/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.53/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.54/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `2a09:bac2:d598::/45` (IPv6).
+- [apple.com](./apple.com/CHANGELOG.md): Added `2a09:bac3:d598::/45` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `79.127.205.135/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `79.127.205.136/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `79.127.205.137/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `79.127.205.138/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `79.127.205.140/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `79.127.205.141/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `79.127.205.146/32` (IPv4).
+
 ## 2026-11-14
 
 ### 10:22:58Z
