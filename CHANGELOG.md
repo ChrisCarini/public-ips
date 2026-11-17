@@ -1,5 +1,1012 @@
 # Changelog
 
+## 2026-11-17
+
+### 11:48:24Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `51.72.96.0/23` to `cloudfront` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `51.72.96.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.133.209.248/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.133.209.252/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.133.209.254/32` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.129.196.164/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.132.61.124/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.133.11.28/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.134.133.0/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.135.74.140/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.140.134.156/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.143.14.16/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.146.5.128/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.146.5.132/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.146.5.134/32` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.147.11.24/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.147.134.84/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.149.7.92/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.161.116.162/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.170.50.184/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.173.222.206/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.146.109.20/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.160.12.10/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.160.12.12/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.161.190.120/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.174.6.32/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.174.6.36/32` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.186.251.41/32` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.186.251.44/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.211.127.100/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.215.35.20/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.219.40.40/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.222.15.190/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.230.60.160/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.240.138.176/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.240.138.178/32` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.252.17.68/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.173.70.200/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `70.157.200.208/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.144.178.252/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.146.69.166/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.151.95.145/32` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.151.95.146/31` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.151.95.148/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.155.63.244/30` to `azurearcinfrastructure` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1000:104:12::510/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1a::5d5/128` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1b::71c/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1b::7d0/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1004:19::3e4/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1204:f::698/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:206:37::24/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:5:1::438/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:1f::751/128` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:21::7e0/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:21::7e4/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:805:18::67c/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:a04:12::6e8/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:c04:6::124/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:e04:11::5e/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:10:30::77c/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:210:4a::60c/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:18::2a5/128` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:18::3a4/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:18::3a8/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40c:3d::2f0/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:504:25::cc/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:608::c60/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:807:26::398/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:a07:33::4ca/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:b04:1a::7c/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:c06:35::394/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f05:16::3eb/128` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f05:7::758/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f:16::218/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1002:e::e4/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104::3aa/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6ac/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6b0/125` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6b8/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6ba/128` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1302:b::4ec/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:207:1a::464/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:407::c30/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:5:24::2e4/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:904:11::50/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:a06:15::284/126` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:a06:15::a7/128` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:f05:15::21c/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:6:8::19c/127` to `azurearcinfrastructure` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.100.81.0/26` to `azurecloud` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1026:900:5c::/64` to `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1046:a00::/58` to `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2a01:111:f403:c10a::/64` to `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:20::/60` from `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:30::/61` from `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:38::/63` from `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:3b::/64` from `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:3c::/62` from `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00::/59` from `azurecloud` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.100.81.0/26` to `azurecloud.australiacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1046:a00:3a::/64` to `azurecloud.australiacentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.128/26` to `azurecloud.australiaeast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.192/28` to `azurecloud.australiaeast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.168.0/26` to `azurecloud.australiasoutheast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.168.64/30` to `azurecloud.australiasoutheast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.0/27` from `azurecloud.australiasoutheast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.32/28` from `azurecloud.australiasoutheast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.48/29` from `azurecloud.australiasoutheast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.56/30` from `azurecloud.australiasoutheast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.60/31` from `azurecloud.australiasoutheast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.120.0/23` to `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.122.0/29` to `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.122.8/31` to `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.120.0/24` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.0/25` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.128/26` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.192/27` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.224/28` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.240/29` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.248/30` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.252/31` from `azurecloud.belgiumcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1016:f0::/61` to `azurecloud.belgiumcentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1016:f8::/62` to `azurecloud.belgiumcentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1016:fc::/64` to `azurecloud.belgiumcentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1016:f0::/62` from `azurecloud.belgiumcentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1016:f4::/63` from `azurecloud.belgiumcentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1016:f6::/64` from `azurecloud.belgiumcentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.112/28` to `azurecloud.brazilsouth` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.128/25` to `azurecloud.brazilsouth` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.0/26` to `azurecloud.brazilsouth` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.209.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.81.97.120/32` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.76.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.78.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.80.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.82.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.84.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.86.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.88.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.90.0/24` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.45.82/31` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.106.0/23` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.160/27` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.192/26` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.0/26` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.64/27` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.96/28` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.176/28` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.192/28` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.64/28` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.132.0.0/17` to `azurecloud.centralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:9:8bf::/64` to `azurecloud.centralus` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.45.72/29` to `azurecloud.centraluseuap` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.45.80/31` to `azurecloud.centraluseuap` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.45.72/30` from `azurecloud.centraluseuap` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.45.76/31` from `azurecloud.centraluseuap` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:9:8bc::/63` to `azurecloud.centraluseuap` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:9:8be::/64` to `azurecloud.centraluseuap` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1030:9:8bc::/64` from `azurecloud.centraluseuap` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.0/27` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.32/28` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.48/29` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.56/30` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.60/31` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.66/31` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.68/30` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.72/29` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.80/28` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.96/27` to `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.89.0/25` from `azurecloud.chilec` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:80::/60` to `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:90::/62` to `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:94::/63` to `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:96::/64` to `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:99::/64` to `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:9a::/63` to `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:9c::/62` to `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1013:80::/59` from `azurecloud.chilec` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.128/27` to `azurecloud.denmarkeast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.208/28` to `azurecloud.denmarkeast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.206.0/24` to `azurecloud.eastus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.208.0/24` to `azurecloud.eastus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.35.160/28` to `azurecloud.eastus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.108.0/23` to `azurecloud.eastus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.35.160/29` from `azurecloud.eastus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.50.240/29` to `azurecloud.eastus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.0/25` to `azurecloud.eastus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.50.240/31` from `azurecloud.eastus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:401:b62::/63` to `azurecloud.eastus2` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:401:b64::/64` to `azurecloud.eastus2` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.93.3.0/24` to `azurecloud.eastus2euap` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.50.248/31` to `azurecloud.eastus2euap` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:401:b65::/64` to `azurecloud.eastus2euap` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2a01:111:f403:c10a::/64` to `azurecloud.eastus2euap` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.207.0/24` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.210.0/24` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.152.138.0/23` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.27.0/27` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.27.32/29` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.27.40/30` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.110.0/23` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.114.0/23` to `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.27.0/28` from `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.27.16/29` from `azurecloud.eastus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:101a:180::/60` to `azurecloud.eastus3` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:101a:190::/63` to `azurecloud.eastus3` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:101a:192::/64` to `azurecloud.eastus3` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:101a:180::/61` from `azurecloud.eastus3` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:101a:188::/64` from `azurecloud.eastus3` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1026:900:5c::/64` to `azurecloud.germanyn` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.61.128/26` to `azurecloud.germanywc` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.61.192/31` to `azurecloud.germanywc` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.128/27` from `azurecloud.germanywc` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.160/28` from `azurecloud.germanywc` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.176/29` from `azurecloud.germanywc` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.184/30` from `azurecloud.germanywc` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.188/31` from `azurecloud.germanywc` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.160/28` to `azurecloud.indonesiacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.224/27` to `azurecloud.indonesiacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.0/28` to `azurecloud.indonesiacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.144/28` to `azurecloud.japaneast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.160/27` to `azurecloud.japaneast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.192/26` to `azurecloud.japaneast` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.66.0/24` to `azurecloud.japanwest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.68.0/24` to `azurecloud.japanwest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.70.0/24` to `azurecloud.japanwest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.72.0/24` to `azurecloud.japanwest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.74.0/24` to `azurecloud.japanwest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.128/28` to `azurecloud.koreacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.16/28` to `azurecloud.koreacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.32/27` to `azurecloud.koreacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.64/28` to `azurecloud.koreacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.96/27` to `azurecloud.koreacentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.170.0/26` to `azurecloud.malaysiawest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.170.64/31` to `azurecloud.malaysiawest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.0/27` from `azurecloud.malaysiawest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.32/28` from `azurecloud.malaysiawest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.48/29` from `azurecloud.malaysiawest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.56/30` from `azurecloud.malaysiawest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.60/31` from `azurecloud.malaysiawest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:100d:110::/61` to `azurecloud.malaysiawest` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:100d:118::/64` to `azurecloud.malaysiawest` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:100d:110::/62` from `azurecloud.malaysiawest` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:100d:114::/63` from `azurecloud.malaysiawest` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:100d:116::/64` from `azurecloud.malaysiawest` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.67.112/29` to `azurecloud.northcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.67.120/30` to `azurecloud.northcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.16/28` to `azurecloud.polandcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.64/27` to `azurecloud.polandcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.96/28` to `azurecloud.polandcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.144/28` to `azurecloud.polandcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.80/28` to `azurecloud.polandcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.96/27` to `azurecloud.polandcentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.208/28` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.224/27` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.128/26` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.224/27` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.0/28` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.112/28` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.128/26` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.192/27` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.32/27` to `azurecloud.southcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.72.0/24` to `azurecloud.southcentralus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.0/25` from `azurecloud.southcentralus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.128/26` from `azurecloud.southcentralus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.192/27` from `azurecloud.southcentralus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.224/28` from `azurecloud.southcentralus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.240/29` from `azurecloud.southcentralus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.248/30` from `azurecloud.southcentralus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1012:70::/61` to `azurecloud.southcentralus2` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1012:70::/62` from `azurecloud.southcentralus2` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1012:74::/63` from `azurecloud.southcentralus2` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.204.0/24` to `azurecloud.southeastus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.104.0/23` to `azurecloud.southeastus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.146.128/26` to `azurecloud.spaincentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.146.192/30` to `azurecloud.spaincentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.146.196/31` to `azurecloud.spaincentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.128/27` from `azurecloud.spaincentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.160/28` from `azurecloud.spaincentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.176/29` from `azurecloud.spaincentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.184/31` from `azurecloud.spaincentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1008:150::/61` to `azurecloud.spaincentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1008:158::/63` to `azurecloud.spaincentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1008:15a::/64` to `azurecloud.spaincentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1008:150::/62` from `azurecloud.spaincentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1008:154::/64` from `azurecloud.spaincentral` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.188.128/26` to `azurecloud.swedencentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.128/27` from `azurecloud.swedencentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.160/28` from `azurecloud.swedencentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.176/29` from `azurecloud.swedencentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.184/30` from `azurecloud.swedencentral` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.106.128/29` to `azurecloud.taiwannorth` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.106.128/30` from `azurecloud.taiwannorth` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1005:80::/58` to `azurecloud.taiwannorth` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:80::/59` from `azurecloud.taiwannorth` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:a0::/60` from `azurecloud.taiwannorth` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:b0::/61` from `azurecloud.taiwannorth` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:b8::/62` from `azurecloud.taiwannorth` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:bc::/63` from `azurecloud.taiwannorth` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.80/28` to `azurecloud.ukwest` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.192/27` to `azurecloud.westcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.224/28` to `azurecloud.westcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.240/28` to `azurecloud.westcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.0/27` to `azurecloud.westcentralus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.65.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.67.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.69.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.71.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.73.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.75.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.77.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.79.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.81.0/24` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.112.0/23` to `azurecloud.westeurope` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.92.0/23` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.94.0/24` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.0/26` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.140/30` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.144/28` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.160/27` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.192/26` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.64/27` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.192/27` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.224/28` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.128/28` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.32/27` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.64/26` to `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.92.0/22` from `azurecloud.westus` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.74.0/24` to `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.75.0/28` to `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.32/28` to `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.131.128.0/17` to `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.0/25` from `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.128/26` from `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.192/27` from `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.224/31` from `azurecloud.westus2` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.205.0/24` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.152.136.0/23` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.130.0/24` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.131.0/28` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.131.16/30` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.240/28` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.0/27` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.128/26` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.48/28` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.64/26` to `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.0/25` from `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.128/26` from `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.192/28` from `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.208/29` from `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.216/30` from `azurecloud.westus3` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `150.171.116.0/23` to `azurefrontdoor` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `150.171.118.0/24` to `azurefrontdoor` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:18::/48` to `azurefrontdoor` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.219.53.128/27` to `azuremonitor` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `128.24.235.168/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `135.235.135.248/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `167.105.228.32/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.160.160.138/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.165.41.196/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.182.17.150/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.187.17.242/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.192.144.118/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.204.108.140/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.209.182.108/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.213.134.116/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.167.202.74/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.170.161.100/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.197.160.76/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.207.9.12/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.216.121.86/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.244.251.20/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.250.248.212/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.28.89.168/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.6.192.76/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.66.192.58/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.66.192.60/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.91.56.20/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.145.226.20/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.161.168.72/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.173.130.2/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.177.48.38/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.189.210.114/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.200.192.84/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.211.144.238/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.217.144.108/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.220.129.96/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.238.16.74/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.243.130.76/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.244.154.88/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.251.217.36/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.117.3.32/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.193.0.32/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.195.92.100/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.203.176.222/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.216.60.10/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.223.123.172/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `51.4.172.18/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `51.56.172.40/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `51.58.2.100/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.167.224.148/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.169.129.12/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.169.129.8/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.175.74.172/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.154.156.16/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.155.250.54/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.210.1.32/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.211.33.24/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `70.156.216.204/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `70.157.83.68/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.144.134.4/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.144.43.100/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.145.160.112/30` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.145.160.120/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.146.135.138/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.224.241.226/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.242.25.104/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.248.243.212/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.7.100.16/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `85.211.145.128/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `85.211.69.18/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.160.17.32/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.205.13.18/31` to `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `48.223.123.172/31` from `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `74.145.160.112/31` from `azureresourcemanager` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1000:104:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1000:4:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:101:c00::4/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:304:800::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:404:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:502:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1000::1c/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1004:1000::36/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:104:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1104:800::6/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1204:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1302:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1403:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1502:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1602:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:206:1000::48/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:5:1000::cc/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:605:800::18/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:1000::14/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:805:1000::16/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:905:800::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:a04:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:b04:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:c04:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:d04:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:e04:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:f04:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:10:1000::c0/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:1102:800::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:1302:800::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:210:1000::84/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:210:1000::88/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:1400::68/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40c:1800::c4/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:504:1400::12/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:608:1000::20/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:702:1000::16/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:807:1400::1c/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:807:1400::20/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:902:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:a07:1000::106/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:b04:1000::3c/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:c06:1000::1c/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f05:1000::10/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1002:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:800::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1202:800::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1302:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1402:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1503:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1602:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1702:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1802:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:207:1000::38/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:407:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:5:1000::6c/126` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:606:1000::16/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:904:1000::4/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:a06:1000::1a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:b04:c00::4/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:c06:800::34/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:d04:1000::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:e05:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:f05:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:301:1000::a/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:403:800::2/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:6:1000::52/127` to `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1030:807:1400::1c/127` from `azureresourcemanager` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.204.0/24` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.205.0/24` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.206.0/24` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.207.0/24` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.208.0/24` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.209.0/24` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.210.0/24` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.104.0/23` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.106.0/23` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.108.0/23` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.110.0/23` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.112.0/23` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.114.0/23` to `azurestorage` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.198.210.192/29` to `storagesyncservice` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.171.9.16/29` to `windows365` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `128.24.235.168/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `135.235.135.248/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.133.209.248/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.133.209.252/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.133.209.254/32` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.204.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.205.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.206.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.207.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.208.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.209.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `145.190.210.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `150.171.116.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `150.171.118.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `167.105.228.32/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.129.196.164/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.132.61.124/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.133.11.28/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.134.133.0/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.135.74.140/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.140.134.156/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.143.14.16/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.146.5.128/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.146.5.132/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.146.5.134/32` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.147.11.24/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.147.134.84/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.149.7.92/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.160.160.138/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.161.116.162/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.165.41.196/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.182.17.150/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.187.17.242/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.192.144.118/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.204.108.140/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.209.182.108/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `172.213.134.116/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.152.136.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.152.138.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.167.202.74/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.170.161.100/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.170.50.184/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.173.222.206/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.197.160.76/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.106.128/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.120.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.122.0/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.122.8/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.72.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.0/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.32/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.48/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.56/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.60/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.66/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.68/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.72/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.80/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.89.96/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.92.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.94.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.0/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.140/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.144/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.160/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.192/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.20.95.64/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.207.9.12/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.216.121.86/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.244.251.20/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.250.248.212/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.28.89.168/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.6.192.76/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.66.192.58/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.66.192.60/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `20.91.56.20/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.145.226.20/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.146.109.20/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.160.12.10/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.160.12.12/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.161.168.72/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.161.190.120/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.171.9.16/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.173.130.2/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.174.6.32/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.174.6.36/32` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.177.48.38/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.186.251.41/32` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.186.251.44/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.189.210.114/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.200.192.84/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.211.127.100/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.211.144.238/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.215.35.20/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.217.144.108/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.219.40.40/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.220.129.96/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.222.15.190/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.230.60.160/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.238.16.74/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.240.138.176/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.240.138.178/32` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.243.130.76/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.244.154.88/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.251.217.36/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `4.252.17.68/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.100.81.0/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.117.3.32/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.146.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.146.192/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.146.196/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.170.0/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.120.170.64/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.81.97.120/32` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `40.93.3.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.193.0.32/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.195.92.100/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.198.210.192/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.203.176.222/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.216.60.10/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.219.53.128/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `48.223.123.172/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `51.4.172.18/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `51.56.172.40/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `51.58.2.100/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.65.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.66.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.67.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.68.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.69.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.70.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.71.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.72.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.73.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.74.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.75.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.76.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.77.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.78.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.79.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.80.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.81.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.82.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.84.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.86.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.88.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `52.123.90.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.130.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.131.0/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.131.16/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.168.0/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.168.64/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.188.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.27.0/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.27.32/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.27.40/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.35.160/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.45.72/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.45.80/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.45.82/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.50.240/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.50.248/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.61.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.61.192/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.67.112/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.67.120/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.74.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.157.75.0/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.104.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.106.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.108.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.110.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.112.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.163.114.0/23` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.167.224.148/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.169.129.12/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.169.129.8/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.173.70.200/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `57.175.74.172/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.154.156.16/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.155.250.54/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.210.1.32/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `68.211.33.24/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `70.156.216.204/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `70.157.200.208/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `70.157.83.68/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.144.134.4/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.144.178.252/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.144.43.100/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.145.160.112/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.145.160.120/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.146.135.138/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.146.69.166/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.151.95.145/32` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.151.95.146/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.151.95.148/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.155.63.244/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.224.241.226/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.242.25.104/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.248.243.212/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `74.7.100.16/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `85.211.145.128/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `85.211.69.18/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.192/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.208/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.248.224/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.0/25` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.192/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.249.224/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.0/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.112/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.16/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.192/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.224/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.240/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.32/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.64/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.250.96/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.0/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.192/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.224/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.240/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.32/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.48/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.251.64/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.0/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.128/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.144/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.160/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.192/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.32/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.252.64/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.0/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.112/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.128/25` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.64/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.253.96/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.0/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.128/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.160/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.176/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.192/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.208/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.224/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.64/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.80/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.254.96/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.0/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.128/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.144/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.16/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.160/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.192/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.32/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.64/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.80/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.129.255.96/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.131.128.0/17` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.132.0.0/17` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.160.17.32/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `9.205.13.18/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.106.128/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.120.0/24` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.0/25` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.192/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.224/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.240/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.248/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.121.252/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.0/25` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.192/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.224/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.240/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.72.248/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.89.0/25` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `20.20.92.0/22` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.128/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.160/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.176/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.146.184/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.0/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.32/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.48/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.56/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `40.120.170.60/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `48.223.123.172/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.0/25` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.192/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.208/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.130.216/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.0/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.32/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.48/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.56/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.168.60/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.128/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.160/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.176/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.188.184/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.27.0/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.27.16/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.35.160/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.45.72/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.45.76/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.50.240/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.128/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.160/28` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.176/29` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.184/30` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.61.188/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.0/25` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.128/26` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.192/27` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `57.157.74.224/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `74.145.160.112/31` (IPv4).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1000:104:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1000:104:12::510/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1000:4:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:101:c00::4/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:304:800::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:404:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:502:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1000::1c/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1a::5d5/128` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1b::71c/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1010:6:1b::7d0/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1004:1000::36/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1004:19::3e4/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:104:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1104:800::6/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1204:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1204:f::698/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1302:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1403:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1502:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:1602:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:206:1000::48/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:206:37::24/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:5:1000::cc/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:5:1::438/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:605:800::18/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:1000::14/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:1f::751/128` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:21::7e0/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:705:21::7e4/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:805:1000::16/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:805:18::67c/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:905:800::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:a04:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:a04:12::6e8/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:b04:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:c04:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:c04:6::124/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:d04:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:e04:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:e04:11::5e/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1020:f04:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1026:900:5c::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:10:1000::c0/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:10:30::77c/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:1102:800::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:1302:800::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:210:1000::84/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:210:1000::88/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:210:4a::60c/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:401:b62::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:401:b64::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:401:b65::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:1400::68/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:18::2a5/128` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:18::3a4/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40b:18::3a8/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40c:1800::c4/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:40c:3d::2f0/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:504:1400::12/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:504:25::cc/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:608:1000::20/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:608::c60/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:702:1000::16/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:807:1400::1c/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:807:1400::20/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:807:26::398/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:902:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:9:8bc::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:9:8be::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:9:8bf::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:a07:1000::106/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:a07:33::4ca/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:b04:1000::3c/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:b04:1a::7c/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:c06:1000::1c/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:c06:35::394/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f05:1000::10/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f05:16::3eb/128` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f05:7::758/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1030:f:16::218/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1002:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1002:e::e4/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:800::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104::3aa/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6ac/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6b0/125` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6b8/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1104:b::6ba/128` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1202:800::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1302:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1302:b::4ec/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1402:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1503:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1602:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1702:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:1802:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:207:1000::38/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:207:1a::464/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:407:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:407::c30/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:5:1000::6c/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:5:24::2e4/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:606:1000::16/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:904:1000::4/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:904:11::50/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:a06:1000::1a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:a06:15::284/126` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:a06:15::a7/128` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:b04:c00::4/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:c06:800::34/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:d04:1000::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:e05:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:f05:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1040:f05:15::21c/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1046:a00:3a::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1046:a00::/58` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:301:1000::a/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:403:800::2/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:6:1000::52/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1050:6:8::19c/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1005:80::/58` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1008:150::/61` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1008:158::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1008:15a::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:100d:110::/61` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:100d:118::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1012:70::/61` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:80::/60` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:90::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:94::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:96::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:99::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:9a::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1013:9c::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1016:f0::/61` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1016:f8::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:1016:fc::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:101a:180::/60` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:101a:190::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:101a:192::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2603:1061:18::/48` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Added `2a01:111:f403:c10a::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1030:807:1400::1c/127` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1030:9:8bc::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:20::/60` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:30::/61` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:38::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00:3c::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1046:a00::/59` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:80::/59` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:a0::/60` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:b0::/61` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:b8::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1005:bc::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1008:150::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1008:154::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:100d:110::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:100d:114::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:100d:116::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1012:70::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1012:74::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1013:80::/59` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1016:f0::/62` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1016:f4::/63` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:1016:f6::/64` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:101a:180::/61` (IPv6).
+- [azure.microsoft.com](./azure.microsoft.com/CHANGELOG.md): Removed `2603:1061:101a:188::/64` (IPv6).
+
 ## 2026-11-16
 
 ### 11:12:58Z
