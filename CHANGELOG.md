@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-11-18
+
+### 11:38:33Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.4.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `72.150.21.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c007::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `51.72.40.128/28` to `cloudfront_origin_facing` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `51.72.40.144/28` to `cloudfront_origin_facing` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `51.72.96.0/23` to `cloudfront_origin_facing` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.4.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `72.150.21.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c007::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `40.163.4.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `72.150.21.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c007::/48` (IPv6).
+
 ## 2026-11-17
 
 ### 11:48:24Z
