@@ -1,5 +1,59 @@
 # Changelog
 
+## 2026-11-19
+
+### 11:36:21Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.193.80.0/20` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.195.32.0/20` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c805::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c806::/48` to `amazon` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `2001:3fc6:3c::/47` from `cloudfront_origin_facing` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.193.80.0/20` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.195.32.0/20` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c805::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c806::/48` to `ec2` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.193.80.0/20` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `43.195.32.0/20` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c805::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:f0fb:c806::/48` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `2001:3fc6:3c::/47` (IPv6).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.124/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.214/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.218/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.238/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.239/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.55/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.56/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.57/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.58/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.59/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.60/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.61/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.62/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.68/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.85/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.86/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.87/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.88/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.89/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.90/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.91/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.92/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.146.93/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.147.63/32` (IPv4).
+- [apple.com](./apple.com/CHANGELOG.md): Added `104.28.147.73/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `156.59.67.46/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2602:ffe4:c4d:a9::3/128` (IPv6).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.160/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.161/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.162/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.163/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.164/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.165/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.166/32` (IPv4).
+- [perplexity.com](./perplexity.com/CHANGELOG.md): Added `3.41.218.167/32` (IPv4).
+
 ## 2026-11-18
 
 ### 11:38:33Z

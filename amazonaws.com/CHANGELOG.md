@@ -1,5 +1,24 @@
 # Changelog - amazonaws.com
 
+## 2026-11-19
+
+### 11:36:21Z
+
+- Added `43.193.80.0/20` to `amazon` (IPv4).
+- Added `43.195.32.0/20` to `amazon` (IPv4).
+- Added `2600:f0fb:c805::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c806::/48` to `amazon` (IPv6).
+- Removed `2001:3fc6:3c::/47` from `cloudfront_origin_facing` (IPv6).
+- Added `43.193.80.0/20` to `ec2` (IPv4).
+- Added `43.195.32.0/20` to `ec2` (IPv4).
+- Added `2600:f0fb:c805::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c806::/48` to `ec2` (IPv6).
+- Added `43.193.80.0/20` (IPv4).
+- Added `43.195.32.0/20` (IPv4).
+- Added `2600:f0fb:c805::/48` (IPv6).
+- Added `2600:f0fb:c806::/48` (IPv6).
+- Removed `2001:3fc6:3c::/47` (IPv6).
+
 ## 2026-11-18
 
 ### 11:38:33Z
