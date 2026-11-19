@@ -3,15 +3,23 @@
   "categories": {},
   "display_name": "Perplexity",
   "documentation_url": "https://docs.perplexity.ai/docs/resources/perplexity-crawlers",
-  "first_observed_at": "2026-10-29T09:56:30+00:00",
-  "generated_at": "2026-10-29T09:56:30+00:00",
-  "normalized_data_sha256": "4823a32ab0a4ef2c08915b00a5c05c1ce916d6429aee6a741fb60773973ef1a3",
+  "first_observed_at": "2026-11-19T11:36:21+00:00",
+  "generated_at": "2026-11-19T11:36:21+00:00",
+  "normalized_data_sha256": "5a3f36a18ac8f445d22890dd43e75f164e36e4fcd3e76b81bba0b6948c5aac31",
   "provider": {
     "counts": {
-      "ipv4": 23,
+      "ipv4": 31,
       "ipv6": 0
     },
     "ipv4": [
+      "3.41.218.160/32",
+      "3.41.218.161/32",
+      "3.41.218.162/32",
+      "3.41.218.163/32",
+      "3.41.218.164/32",
+      "3.41.218.165/32",
+      "3.41.218.166/32",
+      "3.41.218.167/32",
       "3.222.232.239/32",
       "3.224.62.45/32",
       "18.97.1.228/32",
@@ -48,7 +56,7 @@
   },
   "provider_id": "perplexity.com",
   "schema_version": "v1",
-  "source_body_sha256": "6f71a222801c1747c478a61b3f18239250bfee47fd1c56f4c1607efc25f3b8b7",
+  "source_body_sha256": "b6861d7d1f27a2f830f78cc5a76cde0286b575ffd0f9303eba40606feff7601d",
   "source_urls": [
     "https://www.perplexity.com/perplexitybot.json",
     "https://www.perplexity.com/perplexity-user.json"
