@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "Linode",
   "documentation_url": "https://geoip.linode.com/",
-  "first_observed_at": "2026-09-22T08:31:18+00:00",
-  "generated_at": "2026-09-22T08:31:18+00:00",
-  "normalized_data_sha256": "bced4bf602c0f645d772e018d531fbc83e9d71602937b88899d68703f02c680f",
+  "first_observed_at": "2026-11-20T11:35:26+00:00",
+  "generated_at": "2026-11-20T11:35:26+00:00",
+  "normalized_data_sha256": "88b631cc3305cdc7643b6b1c65ebda761165234aa5911ced6bbc5ce8ab2b52f0",
   "provider": {
     "counts": {
-      "ipv4": 5409,
+      "ipv4": 5413,
       "ipv6": 96
     },
     "ipv4": [
@@ -1095,6 +1095,10 @@
       "104.66.223.0/24",
       "104.66.224.0/24",
       "104.66.225.0/24",
+      "104.66.228.0/24",
+      "104.66.229.0/24",
+      "104.66.230.0/24",
+      "104.66.231.0/24",
       "104.67.0.0/24",
       "104.67.1.0/24",
       "104.67.2.0/24",
@@ -5531,7 +5535,7 @@
   },
   "provider_id": "linode.com",
   "schema_version": "v1",
-  "source_body_sha256": "51de88cd384bf9a1c093dd1a8d7b1c5dbe9a343f0885d7716a133b517c79dafa",
+  "source_body_sha256": "78146f03829ab9a93aa8f417ab0e94f32b7c819e611d5ba676dc64b62eb50513",
   "source_urls": [
     "https://geoip.linode.com/"
   ],

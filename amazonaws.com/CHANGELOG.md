@@ -1,5 +1,15 @@
 # Changelog - amazonaws.com
 
+## 2026-11-20
+
+### 11:35:26Z
+
+- Added `40.163.5.0/24` to `amazon` (IPv4).
+- Added `89.60.238.0/23` to `amazon` (IPv4).
+- Added `40.163.5.0/24` to `ec2` (IPv4).
+- Added `40.163.5.0/24` (IPv4).
+- Added `89.60.238.0/23` (IPv4).
+
 ## 2026-11-19
 
 ### 11:36:21Z
