@@ -1,5 +1,25 @@
 # Changelog
 
+## 2026-11-21
+
+### 10:58:23Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` to `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.202.228.0/22` to `efs` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.241.0/25` to `efs` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.244.0/22` to `efs` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f18:7cdd:1a00::/56` to `efs` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f1e:c38f:1500::/56` to `efs` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f1e:cbe6:6700::/56` to `efs` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `1.178.86.0/24` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `32.202.228.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.241.0/25` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `83.160.244.0/22` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f18:7cdd:1a00::/56` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f1e:c38f:1500::/56` (IPv6).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `2600:1f1e:cbe6:6700::/56` (IPv6).
+
 ## 2026-11-20
 
 ### 11:35:26Z
