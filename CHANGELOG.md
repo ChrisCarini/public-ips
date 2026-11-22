@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-11-22
+
+### 11:19:29Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` from `ec2` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Removed `1.178.86.0/24` (IPv4).
+
 ## 2026-11-21
 
 ### 10:58:23Z

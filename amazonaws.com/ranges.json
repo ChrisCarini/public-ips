@@ -3,7 +3,7 @@
   "categories": {
     "amazon": {
       "counts": {
-        "ipv4": 6117,
+        "ipv4": 6116,
         "ipv6": 3287
       },
       "ipv4": [
@@ -35,7 +35,6 @@
         "1.178.64.0/24",
         "1.178.65.0/24",
         "1.178.72.0/21",
-        "1.178.86.0/24",
         "1.178.88.0/24",
         "1.178.89.0/24",
         "1.178.90.0/24",
@@ -10649,7 +10648,7 @@
     },
     "ec2": {
       "counts": {
-        "ipv4": 1909,
+        "ipv4": 1908,
         "ipv6": 2588
       },
       "ipv4": [
@@ -10680,7 +10679,6 @@
         "1.178.31.0/24",
         "1.178.64.0/24",
         "1.178.65.0/24",
-        "1.178.86.0/24",
         "1.178.88.0/24",
         "1.178.89.0/24",
         "1.178.90.0/24",
@@ -18313,12 +18311,12 @@
   },
   "display_name": "Amazon AWS",
   "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-  "first_observed_at": "2026-11-21T10:58:23+00:00",
-  "generated_at": "2026-11-21T10:58:23+00:00",
-  "normalized_data_sha256": "b32009202ed9408c2fd9338c00a23ec649bd49ba7fae26ec6720895104ebbcad",
+  "first_observed_at": "2026-11-22T11:19:29+00:00",
+  "generated_at": "2026-11-22T11:19:29+00:00",
+  "normalized_data_sha256": "7c26dba2ef6210fa285c874ae44a027d86a512fb99ca0c60cafcdb85a43813cf",
   "provider": {
     "counts": {
-      "ipv4": 7963,
+      "ipv4": 7962,
       "ipv6": 3535
     },
     "ipv4": [
@@ -18350,7 +18348,6 @@
       "1.178.64.0/24",
       "1.178.65.0/24",
       "1.178.72.0/21",
-      "1.178.86.0/24",
       "1.178.88.0/24",
       "1.178.89.0/24",
       "1.178.90.0/24",
@@ -29834,7 +29831,7 @@
   },
   "provider_id": "amazonaws.com",
   "schema_version": "v1",
-  "source_body_sha256": "c7c413bfc669e410d0389e3b34f8bc94a384eab586fa44c5001bcccae8abba57",
+  "source_body_sha256": "bde2014f9d17b22c199594758ec425940b272f9243903093e83ea9935406bb93",
   "source_urls": [
     "https://ip-ranges.amazonaws.com/ip-ranges.json"
   ],
