@@ -3,13 +3,13 @@
   "categories": {},
   "display_name": "Linode",
   "documentation_url": "https://geoip.linode.com/",
-  "first_observed_at": "2026-11-20T11:35:26+00:00",
-  "generated_at": "2026-11-20T11:35:26+00:00",
-  "normalized_data_sha256": "88b631cc3305cdc7643b6b1c65ebda761165234aa5911ced6bbc5ce8ab2b52f0",
+  "first_observed_at": "2026-11-23T12:32:53+00:00",
+  "generated_at": "2026-11-23T12:32:53+00:00",
+  "normalized_data_sha256": "c863428d72984c83d2aaa87b1250eb835819a701a410980ffcb181a314c34279",
   "provider": {
     "counts": {
       "ipv4": 5413,
-      "ipv6": 96
+      "ipv6": 98
     },
     "ipv4": [
       "23.92.16.0/24",
@@ -5495,6 +5495,7 @@
       "2600:3c0f:56::/48",
       "2600:3c0f:57::/48",
       "2600:3c0f:58::/48",
+      "2600:3c0f:62::/48",
       "2600:3c12:100::/40",
       "2600:3c12:300::/40",
       "2600:3c12:400::/40",
@@ -5518,6 +5519,7 @@
       "2600:3c1b::/32",
       "2600:3c1c::/32",
       "2600:3c1e::/32",
+      "2600:3c20::/32",
       "2a01:7e00::/32",
       "2a01:7e01::/32",
       "2a01:7e02::/32",
@@ -5535,7 +5537,7 @@
   },
   "provider_id": "linode.com",
   "schema_version": "v1",
-  "source_body_sha256": "78146f03829ab9a93aa8f417ab0e94f32b7c819e611d5ba676dc64b62eb50513",
+  "source_body_sha256": "f5ca04216ab02987266c748250eb2004566401b04e788b4bfa81040a03650504",
   "source_urls": [
     "https://geoip.linode.com/"
   ],

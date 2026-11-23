@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-11-23
+
+### 12:32:53Z
+
+- [linode.com](./linode.com/CHANGELOG.md): Added `2600:3c0f:62::/48` (IPv6).
+- [linode.com](./linode.com/CHANGELOG.md): Added `2600:3c20::/32` (IPv6).
+
 ## 2026-11-22
 
 ### 11:19:29Z
