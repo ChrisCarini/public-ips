@@ -3,13 +3,13 @@
   "categories": {},
   "display_name": "Bunny.net CDN",
   "documentation_url": "https://bunny.net/docs/cdn/connectivity",
-  "first_observed_at": "2026-11-20T11:35:26+00:00",
-  "generated_at": "2026-11-20T11:35:26+00:00",
-  "normalized_data_sha256": "3a8ab1e8c68d55fff816b0188a5993bf16da19202fabccc9c232f5ca9a577539",
+  "first_observed_at": "2026-11-24T13:39:45+00:00",
+  "generated_at": "2026-11-24T13:39:45+00:00",
+  "normalized_data_sha256": "ad4ae18fc69a77a9e6ff66c76954edbe8bf6183a07e38f59af0e6f503ce976f1",
   "provider": {
     "counts": {
       "ipv4": 594,
-      "ipv6": 340
+      "ipv6": 339
     },
     "ipv4": [
       "5.9.71.119/32",
@@ -282,6 +282,7 @@
       "128.1.35.170/32",
       "128.1.52.179/32",
       "128.140.70.141/32",
+      "134.195.197.135/32",
       "136.243.2.236/32",
       "136.243.16.49/32",
       "136.243.42.10/32",
@@ -417,7 +418,6 @@
       "156.146.56.170/32",
       "156.146.56.171/32",
       "157.90.180.205/32",
-      "158.51.123.205/32",
       "159.69.57.80/32",
       "159.69.68.171/32",
       "162.55.135.11/32",
@@ -862,7 +862,6 @@
       "2404:f780:0:2::15/128",
       "2404:f780:5:cafe::13/128",
       "2405:5700:1:380::1436:1/128",
-      "2602:fec3:201:8::1209:1/128",
       "2602:ffe4:c06:40a5::2/128",
       "2602:ffe4:c09:106::1154/128",
       "2602:ffe4:c34:2093::ff/128",
@@ -960,7 +959,7 @@
   },
   "provider_id": "bunny.net",
   "schema_version": "v1",
-  "source_body_sha256": "8271e032a7352964ce5a328d074c1e29ebcdbaa7574a8f126fd57b4d4cf52ae6",
+  "source_body_sha256": "a719c8007ec23b61329c5cd0f27e630b8f77d674c4ba3568888e19ff99eb3736",
   "source_urls": [
     "https://api.bunny.net/system/edgeserverlist",
     "https://api.bunny.net/system/edgeserverlist/ipv6"
