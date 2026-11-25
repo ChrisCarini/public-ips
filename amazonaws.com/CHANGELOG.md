@@ -1,5 +1,13 @@
 # Changelog - amazonaws.com
 
+## 2026-11-25
+
+### 12:49:57Z
+
+- Added `2600:f0fb:c008::/48` to `amazon` (IPv6).
+- Added `2600:f0fb:c008::/48` to `ec2` (IPv6).
+- Added `2600:f0fb:c008::/48` (IPv6).
+
 ## 2026-11-24
 
 ### 13:39:45Z
