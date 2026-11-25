@@ -3,13 +3,13 @@
   "categories": {},
   "display_name": "Tailscale DERP",
   "documentation_url": "https://tailscale.com/docs/reference/derp-servers",
-  "first_observed_at": "2026-11-07T10:03:42+00:00",
-  "generated_at": "2026-11-07T10:03:42+00:00",
-  "normalized_data_sha256": "f99239576ae2f952f750b9046bd9f148d9f5da8bc7a650e17eac66e6855c41f9",
+  "first_observed_at": "2026-11-25T12:49:57+00:00",
+  "generated_at": "2026-11-25T12:49:57+00:00",
+  "normalized_data_sha256": "ff23410e638e8686d7ef556fe245d6a6b01d3be4e833667d84017fe380c90d56",
   "provider": {
     "counts": {
-      "ipv4": 95,
-      "ipv6": 95
+      "ipv4": 96,
+      "ipv6": 96
     },
     "ipv4": [
       "5.161.218.233/32",
@@ -59,6 +59,7 @@
       "176.58.90.207/32",
       "176.58.92.144/32",
       "176.58.92.254/32",
+      "176.58.93.27/32",
       "176.58.93.147/32",
       "176.58.93.154/32",
       "176.58.93.248/32",
@@ -175,6 +176,7 @@
       "2a00:dd80:3a::ed/128",
       "2a00:dd80:3a::b33/128",
       "2a00:dd80:3a::dfa/128",
+      "2a00:dd80:3c::343/128",
       "2a00:dd80:3c::3d5/128",
       "2a00:dd80:3c::807/128",
       "2a00:dd80:3c::b09/128",
@@ -216,7 +218,7 @@
   },
   "provider_id": "tailscale.com",
   "schema_version": "v1",
-  "source_body_sha256": "ab4bf8fde9d279955f6ea5b7e30650f80a5dc9c1847ebd0e654a7f9f3e919ed9",
+  "source_body_sha256": "c2fbf5b62f7398362700bac64d0fad1ae74f2b4a8eb1db3b20eac1ec82e9d05e",
   "source_urls": [
     "https://controlplane.tailscale.com/derpmap/default"
   ],
