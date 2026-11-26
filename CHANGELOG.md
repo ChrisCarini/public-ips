@@ -1,5 +1,19 @@
 # Changelog
 
+## 2026-11-26
+
+### 12:28:23Z
+
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `15.248.208.128/26` to `amazon` (IPv4).
+- [amazonaws.com](./amazonaws.com/CHANGELOG.md): Added `15.248.208.128/26` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `208.72.155.133/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `208.83.233.233/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `208.83.234.151/32` (IPv4).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `2001:19f0:c000:c564:5400:4ff:fe26:2ba8/128` (IPv6).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `2001:19f0:c000:c586:5400:4ff:fe26:2ba6/128` (IPv6).
+- [tailscale.com](./tailscale.com/CHANGELOG.md): Removed `2001:19f0:c000:c591:5400:4ff:fe26:2c5f/128` (IPv6).
+- [vultr.com](./vultr.com/CHANGELOG.md): Added `64.176.144.0/21` (IPv4).
+
 ## 2026-11-25
 
 ### 12:49:57Z

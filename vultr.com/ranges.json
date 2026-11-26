@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "Vultr",
   "documentation_url": "https://docs.vultr.com/vultr-ip-space",
-  "first_observed_at": "2026-11-03T10:49:43+00:00",
-  "generated_at": "2026-11-03T10:49:43+00:00",
-  "normalized_data_sha256": "5fb9624ecf0559527516111464ec33fb928c1010bbd96a2366b95a3b4574678b",
+  "first_observed_at": "2026-11-26T12:28:23+00:00",
+  "generated_at": "2026-11-26T12:28:23+00:00",
+  "normalized_data_sha256": "9eaeeae5b689c06938f0d15bc8c204f33a135e613085313c46704f3199680027",
   "provider": {
     "counts": {
-      "ipv4": 441,
+      "ipv4": 442,
       "ipv6": 52
     },
     "ipv4": [
@@ -112,6 +112,7 @@
       "64.176.64.0/20",
       "64.176.80.0/20",
       "64.176.96.0/19",
+      "64.176.144.0/21",
       "64.176.160.0/20",
       "64.176.176.0/20",
       "64.176.192.0/19",
@@ -519,7 +520,7 @@
   },
   "provider_id": "vultr.com",
   "schema_version": "v1",
-  "source_body_sha256": "b045d712bbb90b7cd57ff2924beec546da4f44a4233012d68464fb426311e16c",
+  "source_body_sha256": "24d56975f5d9d2e95cbd01e2ef2656e36b06864a02a60a2212c3fef196f5c205",
   "source_urls": [
     "https://geofeed.constant.com/?text"
   ],

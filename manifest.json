@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-25T12:49:57+00:00",
+  "generated_at": "2026-11-26T12:28:23+00:00",
   "providers": {
     "amazonaws.com": {
       "attribution": "AWS IP address ranges JSON",
       "categories": {
         "amazon": {
           "counts": {
-            "ipv4": 6119,
+            "ipv4": 6120,
             "ipv6": 3287
           },
           "ipv4": [
@@ -1716,6 +1716,7 @@
             "15.248.200.0/26",
             "15.248.208.0/26",
             "15.248.208.64/26",
+            "15.248.208.128/26",
             "15.249.0.0/16",
             "15.251.0.0/32",
             "15.251.0.1/32",
@@ -18319,12 +18320,12 @@
       },
       "display_name": "Amazon AWS",
       "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-      "first_observed_at": "2026-11-25T12:49:57+00:00",
-      "generated_at": "2026-11-25T12:49:57+00:00",
-      "normalized_data_sha256": "bd1f1f84ff980c87ba5437264e606bce24d9313b72d19c148b30c3ce763f73e3",
+      "first_observed_at": "2026-11-26T12:28:23+00:00",
+      "generated_at": "2026-11-26T12:28:23+00:00",
+      "normalized_data_sha256": "2e2442523c9168b49e0e1c1bdb3400d8940c63b8ad99fd6aa144f8382be36305",
       "provider": {
         "counts": {
-          "ipv4": 7965,
+          "ipv4": 7966,
           "ipv6": 3535
         },
         "ipv4": [
@@ -20831,6 +20832,7 @@
           "15.248.200.0/26",
           "15.248.208.0/26",
           "15.248.208.64/26",
+          "15.248.208.128/26",
           "15.249.0.0/16",
           "15.251.0.0/32",
           "15.251.0.1/32",
@@ -29842,7 +29844,7 @@
       },
       "provider_id": "amazonaws.com",
       "schema_version": "v1",
-      "source_body_sha256": "7a364d558902cdd80d79448929e1eca2ae9c1dad8fe79c30282ec231ef8e4277",
+      "source_body_sha256": "5cf4aab15227f2764b6a2602350cd612e6e8bbccf033c5e91b95b7a0df05b3c7",
       "source_urls": [
         "https://ip-ranges.amazonaws.com/ip-ranges.json"
       ],
@@ -503149,13 +503151,13 @@
       "categories": {},
       "display_name": "Tailscale DERP",
       "documentation_url": "https://tailscale.com/docs/reference/derp-servers",
-      "first_observed_at": "2026-11-25T12:49:57+00:00",
-      "generated_at": "2026-11-25T12:49:57+00:00",
-      "normalized_data_sha256": "ff23410e638e8686d7ef556fe245d6a6b01d3be4e833667d84017fe380c90d56",
+      "first_observed_at": "2026-11-26T12:28:23+00:00",
+      "generated_at": "2026-11-26T12:28:23+00:00",
+      "normalized_data_sha256": "bd2b7fa2f6950b4036eef7410ccbf219cc0ca66fd2d8b0058b41b43065e09718",
       "provider": {
         "counts": {
-          "ipv4": 96,
-          "ipv6": 96
+          "ipv4": 93,
+          "ipv6": 93
         },
         "ipv4": [
           "5.161.218.233/32",
@@ -503242,9 +503244,6 @@
           "199.38.182.118/32",
           "205.147.105.30/32",
           "205.147.105.78/32",
-          "208.72.155.133/32",
-          "208.83.233.233/32",
-          "208.83.234.151/32",
           "208.111.34.178/32",
           "208.111.40.12/32",
           "208.111.40.216/32",
@@ -503256,9 +503255,6 @@
           "209.177.158.246/32"
         ],
         "ipv6": [
-          "2001:19f0:c000:c564:5400:4ff:fe26:2ba8/128",
-          "2001:19f0:c000:c586:5400:4ff:fe26:2ba6/128",
-          "2001:19f0:c000:c591:5400:4ff:fe26:2c5f/128",
           "2400:8907::2000:2fff:fea7:57f4/128",
           "2400:8907::2000:ccff:fe1f:80da/128",
           "2400:8907::2000:ceff:fe8d:4f4e/128",
@@ -503364,7 +503360,7 @@
       },
       "provider_id": "tailscale.com",
       "schema_version": "v1",
-      "source_body_sha256": "c2fbf5b62f7398362700bac64d0fad1ae74f2b4a8eb1db3b20eac1ec82e9d05e",
+      "source_body_sha256": "233fb0aecdff75d0e6a101057bef6e137d5adf56f9968c6f96dd8664b0dd0f83",
       "source_urls": [
         "https://controlplane.tailscale.com/derpmap/default"
       ],
@@ -503664,12 +503660,12 @@
       "categories": {},
       "display_name": "Vultr",
       "documentation_url": "https://docs.vultr.com/vultr-ip-space",
-      "first_observed_at": "2026-11-03T10:49:43+00:00",
-      "generated_at": "2026-11-03T10:49:43+00:00",
-      "normalized_data_sha256": "5fb9624ecf0559527516111464ec33fb928c1010bbd96a2366b95a3b4574678b",
+      "first_observed_at": "2026-11-26T12:28:23+00:00",
+      "generated_at": "2026-11-26T12:28:23+00:00",
+      "normalized_data_sha256": "9eaeeae5b689c06938f0d15bc8c204f33a135e613085313c46704f3199680027",
       "provider": {
         "counts": {
-          "ipv4": 441,
+          "ipv4": 442,
           "ipv6": 52
         },
         "ipv4": [
@@ -503773,6 +503769,7 @@
           "64.176.64.0/20",
           "64.176.80.0/20",
           "64.176.96.0/19",
+          "64.176.144.0/21",
           "64.176.160.0/20",
           "64.176.176.0/20",
           "64.176.192.0/19",
@@ -504180,7 +504177,7 @@
       },
       "provider_id": "vultr.com",
       "schema_version": "v1",
-      "source_body_sha256": "b045d712bbb90b7cd57ff2924beec546da4f44a4233012d68464fb426311e16c",
+      "source_body_sha256": "24d56975f5d9d2e95cbd01e2ef2656e36b06864a02a60a2212c3fef196f5c205",
       "source_urls": [
         "https://geofeed.constant.com/?text"
       ],
