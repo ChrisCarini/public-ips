@@ -3,7 +3,7 @@
   "categories": {
     "amazon": {
       "counts": {
-        "ipv4": 6119,
+        "ipv4": 6120,
         "ipv6": 3287
       },
       "ipv4": [
@@ -1713,6 +1713,7 @@
         "15.248.200.0/26",
         "15.248.208.0/26",
         "15.248.208.64/26",
+        "15.248.208.128/26",
         "15.249.0.0/16",
         "15.251.0.0/32",
         "15.251.0.1/32",
@@ -18316,12 +18317,12 @@
   },
   "display_name": "Amazon AWS",
   "documentation_url": "https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html",
-  "first_observed_at": "2026-11-25T12:49:57+00:00",
-  "generated_at": "2026-11-25T12:49:57+00:00",
-  "normalized_data_sha256": "bd1f1f84ff980c87ba5437264e606bce24d9313b72d19c148b30c3ce763f73e3",
+  "first_observed_at": "2026-11-26T12:28:23+00:00",
+  "generated_at": "2026-11-26T12:28:23+00:00",
+  "normalized_data_sha256": "2e2442523c9168b49e0e1c1bdb3400d8940c63b8ad99fd6aa144f8382be36305",
   "provider": {
     "counts": {
-      "ipv4": 7965,
+      "ipv4": 7966,
       "ipv6": 3535
     },
     "ipv4": [
@@ -20828,6 +20829,7 @@
       "15.248.200.0/26",
       "15.248.208.0/26",
       "15.248.208.64/26",
+      "15.248.208.128/26",
       "15.249.0.0/16",
       "15.251.0.0/32",
       "15.251.0.1/32",
@@ -29839,7 +29841,7 @@
   },
   "provider_id": "amazonaws.com",
   "schema_version": "v1",
-  "source_body_sha256": "7a364d558902cdd80d79448929e1eca2ae9c1dad8fe79c30282ec231ef8e4277",
+  "source_body_sha256": "5cf4aab15227f2764b6a2602350cd612e6e8bbccf033c5e91b95b7a0df05b3c7",
   "source_urls": [
     "https://ip-ranges.amazonaws.com/ip-ranges.json"
   ],
