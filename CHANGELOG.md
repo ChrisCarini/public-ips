@@ -1,5 +1,34 @@
 # Changelog
 
+## 2026-11-27
+
+### 12:14:15Z
+
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.148/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.149/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.150/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.151/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.152/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.153/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.154/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.92.155/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.93.49/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `152.233.93.50/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `65.20.82.179/32` (IPv4).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1540:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1541:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1542:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1543:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1544:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1545:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1546:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1547:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1548:1/128` (IPv6).
+- [bunny.net](./bunny.net/CHANGELOG.md): Added `2400:52e0:1e00::1549:1/128` (IPv6).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `107.186.224.0/19` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `129.203.128.0/17` (IPv4).
+- [oracle.com](./oracle.com/CHANGELOG.md): Added `92.6.0.0/16` (IPv4).
+
 ## 2026-11-26
 
 ### 12:28:23Z

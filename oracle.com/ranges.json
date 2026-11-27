@@ -3,12 +3,12 @@
   "categories": {},
   "display_name": "Oracle Cloud",
   "documentation_url": "https://docs.oracle.com/en-us/iaas/Content/General/Concepts/addressranges.htm",
-  "first_observed_at": "2026-10-28T09:37:57+00:00",
-  "generated_at": "2026-10-28T09:37:57+00:00",
-  "normalized_data_sha256": "6d37e62fb49b47cf1c1df5624b7cc759be2f8c47752c0c38b13b06c4a56ebe49",
+  "first_observed_at": "2026-11-27T12:14:15+00:00",
+  "generated_at": "2026-11-27T12:14:15+00:00",
+  "normalized_data_sha256": "d3992521e8e6c9e683b169ff332924756334d746795487520a7bbc3dbd97f6b6",
   "provider": {
     "counts": {
-      "ipv4": 1118,
+      "ipv4": 1121,
       "ipv6": 224
     },
     "ipv4": [
@@ -123,6 +123,8 @@
       "92.5.248.0/22",
       "92.5.254.0/24",
       "92.5.255.0/24",
+      "92.6.0.0/16",
+      "107.186.224.0/19",
       "129.38.64.0/18",
       "129.80.0.0/16",
       "129.91.0.0/23",
@@ -243,6 +245,7 @@
       "129.159.224.0/20",
       "129.159.240.0/20",
       "129.191.0.0/17",
+      "129.203.128.0/17",
       "129.213.0.128/25",
       "129.213.2.128/25",
       "129.213.4.128/25",
@@ -1368,7 +1371,7 @@
   },
   "provider_id": "oracle.com",
   "schema_version": "v1",
-  "source_body_sha256": "59dbb510cc9564787d2069c59291ea63ac69fb4aafe166c03810eb51d3ca762a",
+  "source_body_sha256": "9729a8def2383173e4aa76dbd495ffabb8420cf76eb992e2ffb8dfc570dec3b5",
   "source_urls": [
     "https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json"
   ],
